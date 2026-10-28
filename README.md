@@ -1,7 +1,7 @@
 # On two open questions of Gaiser on restricted generalized Schur numbers
 
-**Author:** Puyi Sun (ORCID [0009-0004-1644-5300](https://orcid.org/0009-0004-1644-5300))
-**Version:** 1.0, 28 October 2026
+**Author:** Puyi Sun (ORCID [0009-0004-1644-5300](https://orcid.org/0009-0004-1644-5300))<br>
+**Version:** 1.0, 28 October 2026<br>
 **Status:** computer-assisted proof candidate. **Not peer reviewed.**
 
 Preprint: [`paper/restricted-schur-v1.0.pdf`](paper/restricted-schur-v1.0.pdf) (source: `paper/restricted-schur-v1.0.tex`).
