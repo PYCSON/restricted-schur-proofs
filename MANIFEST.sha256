@@ -1,6 +1,6 @@
 dcb104ea42dcfd3813db244ad05de239ad55de18f699dd4f1189de76ee73b925  ./CITATION.cff
 bd01f08f64381bf0cda6cb76c322136f9cd6603c82c0608c376222e62488d5d3  ./LICENSE
-d2b9e45bb98824f88172b18cfed01b1257bff21bdae98e386a679e98401385a0  ./README.md
+b0cc56e2540d6f68cc14590e5c199be0542dc6ad9208e0147983417e438db24c  ./README.md
 074ce4682969592ba2729be54ffba7f2db172ff3649d287a6a066b11d7eaad3a  ./evidence/oq64_diag/SHA256SUMS
 8c10cc54c8195d9c547e5bf9cc9232de0acd23fee947fb6b434aee74c5a1eb85  ./evidence/oq64_diag/diag_10_675.good
 e1ca4701906bcbdc59d8c9bec52a47bd7fa094f2e703fd62c4662e32e8fc6e8c  ./evidence/oq64_diag/diag_10_676.core.cnf.xz
@@ -12719,7 +12719,7 @@ e482e79e7d71b1dc7e3464a86e4941e42bcaa21914b4fb569c4517dc29015c8a  ./lean/s3k2-fu
 0e10515600cc87adb8b10947a99aca7960bec776a06683faa4fa2bae5748ddb8  ./logs/checker_outputs_v1.0.tar.xz
 76cf967903ef31b7c02fe4ab26c4771899b76db59f6be33d0b5769c114557d3b  ./logs/negative_controls_v1.0.log
 4a8c30b0438824ffc1da74accf3233b3ee51ee249c818c8b356483136054b601  ./logs/verify_all_v1.0.log
-da3f7fca8844caf582b72c88fdd36ee8356c4bbbd1a86dd2f0a6a67900898c7e  ./paper/restricted-schur-v1.0.pdf
-53f7769ab67191da49c04bf5dca7059708d8203de1326be8aeba61753285a683  ./paper/restricted-schur-v1.0.tex
+d0183dee2456734e9f92ed2b0f243a16c9ed33f22dc799da88a60af17759ac5c  ./paper/restricted-schur-v1.0.pdf
+a5f7dc9740526392ec32424b8f1a685ce33ddaa51ad108cea0a81d118a6fd810  ./paper/restricted-schur-v1.0.tex
 04573cad726f9a42b9ac473f24ca624fd7fd45e176bdf53235261ae7732daa14  ./tests/negative_controls.sh
 90f4aa6f9e6485a879b864668f9ccad78447788e57ce488dfd2670ba7cb53db0  ./verify_all.sh

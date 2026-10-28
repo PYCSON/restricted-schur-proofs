@@ -33,7 +33,9 @@ Appendix A. In short:
 
 * For Result 1 and for the cases `ℓ ≤ 7` of Result 2, independent checker replays are reported: a second, independently written checker was run on the certificates.
 * For `ℓ = 8, 9, 10` and Results 3, 4, 6 and 7, only first-party tools (written and run within this project) have checked them so far.
+* Codex reported a separate replay of the chain for `WS_8(2)=365` (independent encoder, fresh solver run, its own LRAT checker). That report does not replace an independent examination of its original logs.
 * The archived first-party logs report that every included LRAT proof is accepted by both `lrat-check` and the formally verified checker `cake_lpr`. How far each result has been independently replayed is stated result by result in the preprint.
+* The levels of checking are kept distinct. An *independently written* checker means separate source code. A *second-party replay* means the certificate was actually run by a separate system. Neither means that the human author has personally verified the mathematics, which he has not done for every step (see "Use of AI").
 * On 28 October 2026 the full `./verify_all.sh all` was run from this package. Its complete output is in `logs/verify_all_v1.0.log`, and the checker outputs are in `logs/checker_outputs_v1.0.tar.xz`.
 
 ## How the certificates work
@@ -65,10 +67,10 @@ they are not needed for verification.
 | cake_lpr (formally verified) | https://github.com/tanyongkiam/cake_lpr | `a36874a8b750b43fe4b385b8ddbf5b033e46a3fa` | `1822ca1e5d0f925e8f3b73047941a8261bee65eef6ccb0e33bb49f92821a09ca` |
 | CaDiCaL 3.0.1 (only to regenerate proofs) | https://github.com/arminbiere/cadical | `c60730422e758ef1cebe7aeddf2dda31c996bf04` | `f66d249718a03a6188d7850cafb7a8f57ef22493973bffa0a6fd28fa485c7333` |
 
-### One command
+### Main verification commands and scope
 
 ```bash
-sha256sum -c MANIFEST.sha256 --quiet          # integrity of every file (MANIFEST.sha256 does not list itself)
+sha256sum -c MANIFEST.sha256 --quiet          # integrity of every payload file (the manifest does not hash itself)
 export LRAT_CHECK=/path/to/lrat-check CAKE_LPR=/path/to/cake_lpr
 ./verify_all.sh all                            # Results 1-4, 6 and 7
 tests/negative_controls.sh                     # tampered inputs and fake checkers; every one must be rejected
@@ -94,7 +96,9 @@ For every certificate it:
 * runs both LRAT checkers.
 
 A step passes only if the checker exits with status 0 **and** prints its exact success line. Set `LOGDIR=dir`
-to keep every checker output.
+to keep every checker output. Result 5 is checked separately (Lean and the scripts listed below). Accepting each certificate does not
+by itself validate the coverage argument across certificates; for Result 7 that argument is the separate
+`windows_coverage.py` step.
 
 Running time depends strongly on hardware, memory limits and the checker builds. The largest proofs take
 several hours and need a few GB of disk space. `cake_lpr` needs about 4 GB of heap for them; set `CAKE_HEAP`
