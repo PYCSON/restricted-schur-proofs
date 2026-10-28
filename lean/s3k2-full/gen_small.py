@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# NOTE (public release): absolute paths of the original workspace were replaced by <TOOLS>/<REPO>/<WORKDIR>; this script was used to generate certificates and is not part of the verification chain.
 """Direct weak-family instance for a small k: vertices 1..F (vertex id = integer), edges (u, v, (k-1)u+v),
 u != v, plus unit clause 'vertex 1 has colour 0'. Writes inputs/small_k{k}.cnf (caseCNF order), runs CaDiCaL
 (LRAT), and generates Lean data + segment checks.  usage: gen_small.py k SEG"""
@@ -16,8 +17,8 @@ for (u, v, w) in E:
 cl.append([var(1, 0)])
 fn = f'inputs/small_k{k}.cnf'
 open(fn, 'w').write(f'p cnf {3*F} {len(cl)}\n' + ''.join(' '.join(map(str, c)) + ' 0\n' for c in cl))
-CAD = '/tmp/claude-0/-home-claude/e4d196b7-05e8-510e-8550-4ec4df7c279d/scratchpad/tools/cadical/build/cadical'
-LC = '/tmp/claude-0/-home-claude/e4d196b7-05e8-510e-8550-4ec4df7c279d/scratchpad/tools/drat-trim/lrat-check'
+CAD = '<TOOLS>/cadical/build/cadical'
+LC = '<TOOLS>/drat-trim/lrat-check'
 out = subprocess.run([CAD, '-q', fn, f'inputs/small_k{k}.lrat', '--lrat=true', '--binary=false'], capture_output=True, text=True).stdout
 res = [l for l in out.split('\n') if l.startswith('s ')]
 chk = subprocess.run([LC, fn, f'inputs/small_k{k}.lrat'], capture_output=True, text=True).stdout

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# NOTE (public release): absolute paths of the original workspace were replaced by <TOOLS>/<REPO>/<WORKDIR>; this script was used to generate certificates and is not part of the verification chain.
 """Adaptive cube driver for symeng_v13 (restartable, with in-cube checkpoints).
 Each cube runs with CKPT_DEPTH (env, default 9) and CKPT_FILE=work/<prefix>/ckpt.txt, so a killed cube resumes
 without redoing closed subtrees; a finished cube's edges = ckpt edges + final edges.
@@ -9,7 +10,7 @@ usage: cubedrive.py DIR WORKERS PER_CUBE_SEC DEADLINE_SEC -- engine args (l k0 m
 import os, sys, time, subprocess
 DIR, W, PER, DEAD = sys.argv[1], int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4])
 eng = sys.argv[sys.argv.index('--') + 1:]
-ENGINE = os.environ.get('ENGINE', '/home/claude/explore/oq64/symeng_v16')
+ENGINE = os.environ.get('ENGINE', '<WORKDIR>/explore/oq64/symeng_v16')
 CKD = os.environ.get('CKPT_DEPTH', '9')
 for d in ('q', 'done', 'fail', 'run'): os.makedirs(f'{DIR}/{d}', exist_ok=True)
 t0 = time.time()

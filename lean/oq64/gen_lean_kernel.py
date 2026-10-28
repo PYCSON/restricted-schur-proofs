@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
+# NOTE (public release): absolute paths of the original workspace were replaced by <TOOLS>/<REPO>/<WORKDIR>; this script was used to generate certificates and is not part of the verification chain.
 """Generate Lean data + proof modules for one kernel certificate.
 usage: gen_lean_kernel.py NAME cert.json cert.lrat [SEG] [EDGECHUNK]
 Writes OQ64/Data/<Name>.lean (V, E, F, u, k0, k1), OQ64/Data/<Name>Seg*.lean (LRAT steps),
 OQ64/<Name>.lean (edge checks, unsat, final theorem)."""
 import sys, json
-sys.path.insert(0, '/home/claude/rsnlean')
+sys.path.insert(0, '<WORKDIR>/rsnlean')
 name, cf, lrat = sys.argv[1], sys.argv[2], sys.argv[3]
 SEG = int(sys.argv[4]) if len(sys.argv) > 4 else 200
 CH = int(sys.argv[5]) if len(sys.argv) > 5 else 200

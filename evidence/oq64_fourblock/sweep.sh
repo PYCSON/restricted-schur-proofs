@@ -1,6 +1,7 @@
 #!/bin/bash
+# NOTE (public release): absolute paths of the original workspace were replaced by <TOOLS>/<REPO>/<WORKDIR>; this script was used to generate certificates and is not part of the verification chain.
 # numfast probes: k=l+1, n=F(k,l), prefix = R B^j R^(2l-1-j) (four-block-shaped window)
-cd /home/claude/explore/oq64cert
+cd <WORKDIR>/explore/oq64cert
 for l in 23 22 21 20; do
   k=$((l+1)); F=$(python3 -c "k,l=$k,$l;print(k*k+((l+1)*(l-2)//2+2)*k+l*(l-2))")
   for j in 1 2 3 4 5 6 7 8 9 10; do

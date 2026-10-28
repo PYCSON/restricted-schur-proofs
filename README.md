@@ -26,30 +26,37 @@ Gaiser proved `S_2(k;ℓ) ≥ F(k,ℓ) := k² + [(ℓ+1)(ℓ−2)/2 + 2]·k + �
 | 4 | `S_2(12;11) = 915 = F(12,11)`. The symbolic certificate for all `k ≥ 13`, which would give `K(11)=12`, is still being computed and is **not** claimed. | paper §9; `evidence/oq64_l11/k12` |
 | 5 | Four-block colourings: `K(ℓ) ≥ ℓ+2` for every `ℓ ≥ 24` and `K(ℓ) ≥ (9/8 − o(1))ℓ`. This is elementary, with Lean for the main construction. | paper Thm 5, Cor 6; `evidence/oq64_fourblock`, `lean/oq64` (`OQ64.Four`) |
 | 6 | Uniqueness of the extremal colouring for 12 pairs `(k,ℓ)`. | paper §6; `evidence/oq64_structure` |
-| 7 | For `11 ≤ ℓ ≤ 23` and every `k ≥ ℓ+1`, no good colouring of `[1,F(k,ℓ)]` has a window `W_j` (1470 certificates plus a forcing lemma). Not yet checked by a second party. | paper §7; `evidence/oq64_windows` |
+| 7 | For `11 ≤ ℓ ≤ 23` and every `k ≥ ℓ+1`, no good colouring of `[1,F(k,ℓ)]` has a window `W_j` (1470 certificates plus a forcing lemma). First-party certificate checks only; an independent second-party replay of all 1470 certificates and of the forcing lemma is still pending. | paper §7; `evidence/oq64_windows` |
 
 What each result has been checked with is stated in the status box on page 1 of the preprint and in its
 Appendix A. In short:
 
-* For results 1 and 2 with `ℓ ≤ 7`, the certificates were also replayed by a second, independently written checker.
-* For `ℓ = 8, 9, 10` and results 3–4, only our own tools have checked them so far.
-* Every LRAT proof is accepted by `lrat-check` and by the formally verified checker `cake_lpr`.
+* For Result 1 and for the cases `ℓ ≤ 7` of Result 2, independent checker replays are reported: a second, independently written checker was run on the certificates.
+* For `ℓ = 8, 9, 10` and Results 3, 4, 6 and 7, only first-party tools (written and run within this project) have checked them so far.
+* The archived first-party logs report that every included LRAT proof is accepted by both `lrat-check` and the formally verified checker `cake_lpr`. How far each result has been independently replayed is stated result by result in the preprint.
+* On 28 October 2026 the full `./verify_all.sh all` was run from this package. Its complete output is in `logs/verify_all_v1.0.log`, and the checker outputs are in `logs/checker_outputs_v1.0.tar.xz`.
 
 ## How the certificates work
 
 A *symbolic certificate* is a finite hypergraph whose vertices are integer polynomials in `k`. Each edge is a
 polynomial identity `w = (k−c)·a + Σ m_i o_i` encoding a valid solution for **every** `k ≥ k0`. All range,
 multiplicity and distinctness conditions are checked exactly on the whole region by `check_cert.py`, with no
-sampling. A colouring of `[1,F]` that avoids all edges is impossible exactly when the 2-colouring CNF is
-unsatisfiable, and that is certified by LRAT. *Single-value* certificates are ordinary hypergraphs on integers,
-and every hyperedge is re-checked from the definition by `mkcnf.py`. The search programs that found the
-certificates (`evidence/oq64_kernel/symeng*`, `evidence/oq64_l8/*`) play no role in correctness.
+sampling. A colouring avoiding the certified edges exists if and only if the associated colouring CNF is
+satisfiable (the colour of 1 is fixed by symmetry). That CNF's unsatisfiability is certified by an LRAT proof,
+which is checked independently. *Single-value* certificates are ordinary hypergraphs on integers, and every
+hyperedge is re-checked from the definition by `mkcnf.py`. The search programs
+(`evidence/oq64_kernel/symeng*`, `evidence/oq64_l8/*`) are not trusted components of the verification chain.
+The certificate validators and the proof checkers must establish the required conditions on their own.
+
+Some generation scripts and logs contained absolute paths of the original workspace. These were replaced by the
+placeholders `<TOOLS>`, `<REPO>` and `<WORKDIR>`. Such scripts are records of how the certificates were produced;
+they are not needed for verification.
 
 ## Verifying
 
 ### Requirements
 
-* `bash`, `xz`, Python 3 with `sympy`. The commands are for Linux, macOS, or WSL on Windows.
+* `bash`, `xz`, Python 3 with `sympy`. The commands target a POSIX shell (Linux, macOS, or WSL on Windows). The binary hashes below apply to the stated Linux x86-64 builds; builds on other platforms may differ.
 * The two LRAT checkers:
 
 | Tool | Repository | Commit | SHA-256 of the binary we used (Linux x86-64) |
@@ -61,19 +68,37 @@ certificates (`evidence/oq64_kernel/symeng*`, `evidence/oq64_l8/*`) play no role
 ### One command
 
 ```bash
-sha256sum -c MANIFEST.sha256 --quiet          # integrity of every file
-LRAT_CHECK=/path/to/lrat-check CAKE_LPR=/path/to/cake_lpr ./verify_all.sh
+sha256sum -c MANIFEST.sha256 --quiet          # integrity of every file (MANIFEST.sha256 does not list itself)
+export LRAT_CHECK=/path/to/lrat-check CAKE_LPR=/path/to/cake_lpr
+./verify_all.sh all                            # Results 1-4, 6 and 7
+tests/negative_controls.sh                     # tampered inputs and fake checkers; every one must be rejected
 ```
 
-`verify_all.sh` replays results 1–4. Sections can be run separately: `oq62`, `oq64sym`, `oq64single`, `diag`, `l11k12`.
-For each certificate it:
+The sections can also be run on their own:
 
-* re-derives the CNF from the certificate (or from the definition), and checks every edge;
-* checks that the stored CNF is byte-identical to the regenerated one;
+| Section | Result | What it checks |
+|---|---|---|
+| `oq62` | 1 | The seven symbolic cases with `check_kernel.py`, and the CNFs for `3 ≤ k ≤ 7` regenerated from the definition |
+| `oq64sym` | 2, 3 | All symbolic certificates with `check_cert.py` (`certeq_*` re-prove `WS_5`–`WS_7`) |
+| `oq64single` | 2 | `S_2(9;8)`, `S_2(10;9)`, `S_2(11;10)` |
+| `diag` | 3 | `WS_8(2)`, `WS_9(2)`, `WS_10(2)` upper bounds |
+| `l11k12` | 4 | `S_2(12;11) ≤ 915` |
+| `unique` | 6 | The 12 extremal colourings are good, and the blocking-clause CNFs are unsatisfiable |
+| `windows` | 7 | All 1470 window certificates (each prefix must be exactly the window `W_j`), then the combined forcing-lemma argument |
+
+With no arguments the script runs `oq62 oq64sym oq64single diag l11k12`; an unknown section name is an error.
+For every certificate it:
+
+* re-checks every edge (or regenerates the CNF from the definition);
+* requires the regenerated CNF to be byte-identical to the stored one;
 * runs both LRAT checkers.
 
-A full run takes a few hours. `cake_lpr` needs about 4 GB of heap for the largest proofs; set `CAKE_HEAP`
-(in MB) to change it.
+A step passes only if the checker exits with status 0 **and** prints its exact success line. Set `LOGDIR=dir`
+to keep every checker output.
+
+Running time depends strongly on hardware, memory limits and the checker builds. The largest proofs take
+several hours and need a few GB of disk space. `cake_lpr` needs about 4 GB of heap for them; set `CAKE_HEAP`
+(in MB) to change this.
 
 ### Lean 4
 
@@ -81,11 +106,15 @@ Both Lean projects use Lean v4.35.0 with the core library only (see each `lean-t
 
 ```bash
 cd lean/s3k2-full && ulimit -s unlimited && lake build && lake env lean Test/Axioms.lean
-lake env lean Test/Fault.lean      # 4 tampered inputs; every one must be rejected
+lake env lean Test/Fault.lean      # 4 tampered inputs: must print exactly 4 errors (see below)
+lake env lean Test/FaultControl.lean   # the untampered version of input 3: must succeed
 cd ../oq64 && lake build OQ64.Final OQ64.Final2 OQ64.Four
 ```
 
-The axiom check shows only `propext`, `Classical.choice` and `Quot.sound`.
+The axiom check shows only `propext`, `Classical.choice` and `Quot.sound`. `Test/Fault.lean` is a negative
+test. It must fail with four errors: three of the form "Tactic `decide` proved that the proposition … is false"
+(lines 4, 6, 11) and one "(kernel) application type mismatch" (line 9). The recorded output is
+`lean/s3k2-full/logs/fault.out`.
 
 * `lean/s3k2-full` proves `RSN.S3_two_eq` (result 1).
 * `lean/oq64` covers `K(3),…,K(7)`, the Ahmed et al. lower bound and the four-block construction.
@@ -94,11 +123,22 @@ The axiom check shows only `propext`, `Classical.choice` and `Quot.sound`.
 ### Results 5–7
 
 * `evidence/oq64_fourblock/verify4.py` and `sym4.py` check the four-block colourings and inequalities.
-* `evidence/oq64_structure`: for each pair, `u_<k>_<ℓ>.edges.xz` and `.lrat.xz` certify uniqueness, and
-  `g_<k>_<ℓ>.good` is the extremal colouring.
-* `evidence/oq64_windows/wj_certs*/W_l<ℓ>_j<j>*`: each directory has `W.edges`, `W.cnf.xz`, `W.lrat.xz` and
-  `prefix.txt`. Check with `tools/mkcnfw.py k ℓ n W.edges out.cnf PREFIX`, then the two LRAT checkers.
-  `z1*_combined.py` checks the forcing-lemma inequalities.
+  These are not part of `verify_all.sh`.
+* Result 6, `evidence/oq64_structure`: for each pair `(k,ℓ)` the files are named **`u_<ℓ>_<k>`** and **`g_<ℓ>_<k>`**.
+  For example, `(k,ℓ)=(4,3)` uses `u_3_4.edges.xz`, `u_3_4.lrat.xz` and `g_3_4.good`. The `.good` file is the
+  extremal colouring of `[1,F(k,ℓ)−1]`. `mkcnf_block.py` adds a clause excluding it. Section `unique` automates
+  both steps.
+* Result 7, `evidence/oq64_windows/wj_certs*/…`: each directory contains `W.edges.xz`, `W.cnf.xz`, `W.lrat.xz`
+  and `prefix.txt`. Decompress the edge file, then run `tools/mkcnfw.py k ℓ n W.edges out.cnf PREFIX` with the
+  parameters of that case and the prefix from `prefix.txt`. Compare the result with the decompressed `W.cnf.xz`
+  and run both LRAT checkers. Section `windows` automates this for all 1470 cases.
+  * `wj_certs/` holds the cases with `k = ℓ+1`.
+  * `wj_certs_e2_5/e<e>/` holds `k = ℓ+e`.
+  * `wj_certs_gap/e<e>_W_…` holds the remaining pairs.
+* The combined argument for Result 7 is checked in exact integer arithmetic by `windows_coverage.py`. It collects
+  the certified `(ℓ,j,e)` from the directories and runs `z1c_combined.py`. Section `windows` runs it after the
+  certificates. `z1_r23_all_e.py` and `z1b_combined.py` are intermediate steps, and their recorded outputs are in
+  `*_out.txt`.
 
 ## Use of AI
 
@@ -114,4 +154,4 @@ Text and data: CC BY 4.0. Code: MIT. See [`LICENSE`](LICENSE).
 
 ## Citation
 
-See [`CITATION.cff`](CITATION.cff). A Zenodo DOI will be added for each release.
+See [`CITATION.cff`](CITATION.cff). A Zenodo DOI may be added to an archived release.

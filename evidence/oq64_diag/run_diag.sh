@@ -1,9 +1,10 @@
 #!/bin/bash
+# NOTE (public release): absolute paths of the original workspace were replaced by <TOOLS>/<REPO>/<WORKDIR>; this script was used to generate certificates and is not part of the verification chain.
 # Certify WS_k(2) = S2(k;k) = n at a single point: UNSAT at n (hypergraph + LRAT), good colouring at n-1.
 set -u
 k=$1; n=$2; TMAX=${3:-7200}
-L8=/home/claude/rs-remote/evidence/oq64_l8
-T=/tmp/claude-0/-home-claude/e4d196b7-05e8-510e-8550-4ec4df7c279d/scratchpad/tools
+L8=<REPO>/evidence/oq64_l8
+T=<TOOLS>
 P=diag_${k}_${n}
 log() { echo "$(date '+%H:%M:%S') $*" | tee -a $P.log; }
 log "numeng2 $k $k $n"

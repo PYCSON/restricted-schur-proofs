@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# NOTE (public release): absolute paths of the original workspace were replaced by <TOOLS>/<REPO>/<WORKDIR>; this script was used to generate certificates and is not part of the verification chain.
 """Build a symbolic-kernel certificate for one case of the S_3(k;2) <= F proof, minimise it, write files.
 Cases: uni const:a | uni top:c   (region k>=K)     bi mid (region A0<=a<=k-B0)
 Monomials (bi): 1,a,k,ak,k^2,ak^2,k^3 ; (uni): 1,k,k^2,k^3.
@@ -90,8 +91,8 @@ open(f"cert/{name}.cnf","w").write(cnf)
 json.dump({'name':name,'region':region,'monomials':MON,'F':[int(x) for x in F],'vertices':verts,'edges':E,'red':R,'blue':Bl,
            'cnf_sha256':hashlib.sha256(cnf.encode()).hexdigest(),
            'var_convention':'colour c of vertex i is variable 3*i+c+1; c=0 red, 1 blue, 2 green'},open(f"cert/{name}.json","w"),indent=0)
-CAD='/tmp/claude-0/-home-claude/e4d196b7-05e8-510e-8550-4ec4df7c279d/scratchpad/tools/cadical/build/cadical'
-LC='/tmp/claude-0/-home-claude/e4d196b7-05e8-510e-8550-4ec4df7c279d/scratchpad/tools/drat-trim/lrat-check'
+CAD='<TOOLS>/cadical/build/cadical'
+LC='<TOOLS>/drat-trim/lrat-check'
 out=subprocess.run([CAD,'-q',f'cert/{name}.cnf',f'cert/{name}.lrat','--lrat=true','--binary=false'],capture_output=True,text=True).stdout
 res=[l for l in out.split('\n') if l.startswith('s ')]
 chk=subprocess.run([LC,f'cert/{name}.cnf',f'cert/{name}.lrat'],capture_output=True,text=True).stdout

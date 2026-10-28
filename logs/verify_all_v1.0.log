@@ -1,0 +1,116 @@
+90f4aa6f9e6485a879b864668f9ccad78447788e57ce488dfd2670ba7cb53db0  <PACKAGE>/verify_all.sh
+Wed Oct 28 19:00:13 CST 2026
+== Result 1 (OQ 6.2): S_3(k;2) <= k^3+3k^2+2k-2 for k>=8 (seven symbolic cases)
+uni_const1: region={'mode': 'uni', 'K': 8, 'case': 'const:1'} vertices=54 edges=326 symbolic_ok=True numeric_grid=60 cnf_match=True
+uni_const2: region={'mode': 'uni', 'K': 8, 'case': 'const:2'} vertices=55 edges=345 symbolic_ok=True numeric_grid=60 cnf_match=True
+uni_const3: region={'mode': 'uni', 'K': 8, 'case': 'const:3'} vertices=83 edges=561 symbolic_ok=True numeric_grid=60 cnf_match=True
+uni_top0: region={'mode': 'uni', 'K': 8, 'case': 'top:0'} vertices=55 edges=301 symbolic_ok=True numeric_grid=60 cnf_match=True
+uni_top1: region={'mode': 'uni', 'K': 8, 'case': 'top:1'} vertices=50 edges=276 symbolic_ok=True numeric_grid=60 cnf_match=True
+uni_top2: region={'mode': 'uni', 'K': 8, 'case': 'top:2'} vertices=46 edges=265 symbolic_ok=True numeric_grid=60 cnf_match=True
+bi_mid: region={'mode': 'bi', 'A0': 4, 'B0': 3, 'case': 'mid'} vertices=86 edges=579 symbolic_ok=True numeric_grid=820 cnf_match=True
+ALL OK
+  PASS lrat-check + cake_lpr: uni_const1
+  PASS lrat-check + cake_lpr: uni_const2
+  PASS lrat-check + cake_lpr: uni_const3
+  PASS lrat-check + cake_lpr: uni_top0
+  PASS lrat-check + cake_lpr: uni_top1
+  PASS lrat-check + cake_lpr: uni_top2
+  PASS lrat-check + cake_lpr: bi_mid
+== Result 1: 3<=k<=7, CNFs at n=F(k) regenerated from the definition and compared
+  PASS CNF regenerated identically: s3_3_58
+  PASS lrat-check + cake_lpr: s3_3_58
+  PASS CNF regenerated identically: s3_4_118
+  PASS lrat-check + cake_lpr: s3_4_118
+  PASS CNF regenerated identically: s3_5_208
+  PASS lrat-check + cake_lpr: s3_5_208
+  PASS CNF regenerated identically: s3_6_334
+  PASS lrat-check + cake_lpr: s3_6_334
+  PASS CNF regenerated identically: s3_7_502
+  PASS lrat-check + cake_lpr: s3_7_502
+== Result 2 (OQ 6.4): symbolic certificates, valid for all k >= k0 (certeq_*: WS_5..WS_7 re-proved)
+cert l=3 k0=3 F_extra=0: vertices=67 edges=103 symbolic_problems=0 cnf_matches=True numeric_problems=0 (k=3..203 + 3 large)
+  PASS lrat-check + cake_lpr: cert_3_3
+cert l=4 k0=4 F_extra=0: vertices=181 edges=387 symbolic_problems=0 cnf_matches=True numeric_problems=0 (k=4..204 + 3 large)
+  PASS lrat-check + cake_lpr: cert_4_4
+cert l=5 k0=6 F_extra=0: vertices=288 edges=836 symbolic_problems=0 cnf_matches=True numeric_problems=0 (k=6..206 + 3 large)
+  PASS lrat-check + cake_lpr: cert_5_6
+cert l=6 k0=7 F_extra=0: vertices=864 edges=3298 symbolic_problems=0 cnf_matches=True numeric_problems=0 (k=7..207 + 3 large)
+  PASS lrat-check + cake_lpr: cert_6_7
+cert l=7 k0=8 F_extra=0: vertices=843 edges=11168 symbolic_problems=0 cnf_matches=True numeric_problems=0 (k=8..208 + 3 large)
+  PASS lrat-check + cake_lpr: cert_7_8
+cert l=8 k0=10 F_extra=0: vertices=1538 edges=42170 symbolic_problems=0 cnf_matches=True numeric_problems=0 (k=10..210 + 3 large)
+  PASS lrat-check + cake_lpr: cert_8_10
+cert l=9 k0=11 F_extra=0: vertices=2707 edges=160068 symbolic_problems=0 cnf_matches=True numeric_problems=0 (k=11..211 + 3 large)
+  PASS lrat-check + cake_lpr: cert_9_11
+cert l=10 k0=12 F_extra=0: vertices=4448 edges=609886 symbolic_problems=0 cnf_matches=True numeric_problems=0 (k=12..212 + 3 large)
+  PASS lrat-check + cake_lpr: cert_10_12
+cert l=5 k0=5 F_extra=6: vertices=498 edges=1563 symbolic_problems=0 cnf_matches=True numeric_problems=0 (k=5..205 + 3 large)
+  PASS lrat-check + cake_lpr: certeq_5_5
+cert l=6 k0=6 F_extra=10: vertices=1051 edges=5294 symbolic_problems=0 cnf_matches=True numeric_problems=0 (k=6..206 + 3 large)
+  PASS lrat-check + cake_lpr: certeq_6_6
+cert l=7 k0=7 F_extra=15: vertices=1967 edges=19369 symbolic_problems=0 cnf_matches=True numeric_problems=0 (k=7..207 + 3 large)
+  PASS lrat-check + cake_lpr: certeq_7_7
+== Result 2: single values S_2(9;8)=390, S_2(10;9)=533, S_2(11;10)=707
+  PASS hyperedges ok=45478 bad=0 clauses=90957; CNF rebuilt identically (k=9, l=8, n=390)
+  PASS lrat-check + cake_lpr: num_8_9_390.core
+  PASS hyperedges ok=140250 bad=0 clauses=280501; CNF rebuilt identically (k=10, l=9, n=533)
+  PASS lrat-check + cake_lpr: num_9_10_533.core
+  PASS hyperedges ok=535635 bad=0 clauses=1071271; CNF rebuilt identically (k=11, l=10, n=707)
+  PASS lrat-check + cake_lpr: num_10_11_707.core
+== Result 3: WS_8(2)<=365, WS_9(2)<=505, WS_10(2)<=676 (lower bounds: Ahmed et al. 2023)
+  PASS hyperedges ok=47825 bad=0 clauses=95651; CNF rebuilt identically (k=8, l=8, n=365)
+  PASS lrat-check + cake_lpr: diag_8_365.core
+  PASS hyperedges ok=184325 bad=0 clauses=368651; CNF rebuilt identically (k=9, l=9, n=505)
+  PASS lrat-check + cake_lpr: diag_9_505.core
+  PASS hyperedges ok=705419 bad=0 clauses=1410839; CNF rebuilt identically (k=10, l=10, n=676)
+  PASS lrat-check + cake_lpr: diag_10_676.core
+== Result 4: S_2(12;11)<=915
+  PASS hyperedges ok=2053595 bad=0 clauses=4107191; CNF rebuilt identically (k=12, l=11, n=915)
+  PASS lrat-check + cake_lpr: core
+== Result 6: uniqueness of the good colouring of [1,F(k,l)-1] (files u_<l>_<k>, g_<l>_<k>)
+  PASS (k=11, l=10, n=706): colouring is good; hyperedges ok=537090 bad=0 clauses=1074182 (incl. unit and blocking clause)
+  PASS lrat-check + cake_lpr: u_10_11
+  PASS (k=3, l=3, n=23): colouring is good; hyperedges ok=71 bad=0 clauses=144 (incl. unit and blocking clause)
+  PASS lrat-check + cake_lpr: u_3_3
+  PASS (k=4, l=3, n=34): colouring is good; hyperedges ok=75 bad=0 clauses=152 (incl. unit and blocking clause)
+  PASS lrat-check + cake_lpr: u_3_4
+  PASS (k=5, l=4, n=67): colouring is good; hyperedges ok=243 bad=0 clauses=488 (incl. unit and blocking clause)
+  PASS lrat-check + cake_lpr: u_4_5
+  PASS (k=6, l=5, n=116): colouring is good; hyperedges ok=797 bad=0 clauses=1596 (incl. unit and blocking clause)
+  PASS lrat-check + cake_lpr: u_5_6
+  PASS (k=7, l=5, n=140): colouring is good; hyperedges ok=915 bad=0 clauses=1832 (incl. unit and blocking clause)
+  PASS lrat-check + cake_lpr: u_5_7
+  PASS (k=7, l=6, n=184): colouring is good; hyperedges ok=2750 bad=0 clauses=5502 (incl. unit and blocking clause)
+  PASS lrat-check + cake_lpr: u_6_7
+  PASS (k=8, l=6, n=215): colouring is good; hyperedges ok=3139 bad=0 clauses=6280 (incl. unit and blocking clause)
+  PASS lrat-check + cake_lpr: u_6_8
+  PASS (k=8, l=7, n=274): colouring is good; hyperedges ok=10025 bad=0 clauses=20052 (incl. unit and blocking clause)
+  PASS lrat-check + cake_lpr: u_7_8
+  PASS (k=9, l=7, n=313): colouring is good; hyperedges ok=11356 bad=0 clauses=22714 (incl. unit and blocking clause)
+  PASS lrat-check + cake_lpr: u_7_9
+  PASS (k=9, l=8, n=389): colouring is good; hyperedges ok=37364 bad=0 clauses=74730 (incl. unit and blocking clause)
+  PASS lrat-check + cake_lpr: u_8_9
+  PASS (k=10, l=9, n=532): colouring is good; hyperedges ok=140980 bad=0 clauses=281962 (incl. unit and blocking clause)
+  PASS lrat-check + cake_lpr: u_9_10
+== Result 7: window certificates W_j (1470 cases; prints one line per directory group)
+  PASS 100 window certificates so far
+  PASS 200 window certificates so far
+  PASS 300 window certificates so far
+  PASS 400 window certificates so far
+  PASS 500 window certificates so far
+  PASS 600 window certificates so far
+  PASS 700 window certificates so far
+  PASS 800 window certificates so far
+  PASS 900 window certificates so far
+  PASS 1000 window certificates so far
+  PASS 1100 window certificates so far
+  PASS 1200 window certificates so far
+  PASS 1300 window certificates so far
+  PASS 1400 window certificates so far
+  PASS all 1470 window certificates (prefix = W_j, hyperedges re-checked, CNF identical, both LRAT checkers)
+== Result 7: combined argument (forcing lemma R-23', R-22 for large k, balanced windows) with these certificates
+certified (l,j,e) triples found: 1470
+windows excluded for every k>=l+1: 208 of 208
+ALL SELECTED SECTIONS PASSED: oq62 oq64sym oq64single diag l11k12 unique windows
+EXIT 0
+Wed Oct 28 19:25:23 CST 2026

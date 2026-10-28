@@ -1,6 +1,6 @@
 NanoDa strict-mode run on RSN.S3_two_eq export (s3k2.ndjson, 177427848 bytes, sha256 aaa809b7e00fb1784b6eac02aeb04af6ff1c5a21ed051863b3f018dcfc7738f7)
 config: {
-  "export_file_path": "/home/claude/nanoda_run/rsn/s3k2.ndjson",
+  "export_file_path": "<WORKDIR>/nanoda_run/rsn/s3k2.ndjson",
   "permitted_axioms": ["propext", "Classical.choice", "Quot.sound"],
   "unpermitted_axiom_hard_error": true,
   "nat_extension": true,
