@@ -36,7 +36,7 @@ Appendix A. In short:
 * Codex reported a separate replay of the chain for `WS_8(2)=365` (independent encoder, fresh solver run, its own LRAT checker). That report does not replace an independent examination of its original logs.
 * The archived first-party logs report that every included LRAT proof is accepted by both `lrat-check` and the formally verified checker `cake_lpr`. How far each result has been independently replayed is stated result by result in the preprint.
 * The levels of checking are kept distinct. An *independently written* checker means separate source code. A *second-party replay* means the certificate was actually run by a separate system. Neither means that the human author has personally verified the mathematics, which he has not done for every step (see "Use of AI").
-* On 28 October 2026 the full `./verify_all.sh all` was run from this package. Its complete output is in `logs/verify_all_v1.0.log`, and the checker outputs are in `logs/checker_outputs_v1.0.tar.xz`.
+* On 28 October 2026 the final `verify_all.sh` and the certificate inputs of this release were replayed with `./verify_all.sh all`. The first-party logs are archived in `logs/` (`verify_all_v1.0.log`, `checker_outputs_v1.0.tar.xz`, `negative_controls_v1.0.log`).
 
 ## How the certificates work
 
@@ -73,7 +73,7 @@ they are not needed for verification.
 sha256sum -c MANIFEST.sha256 --quiet          # integrity of every payload file (the manifest does not hash itself)
 export LRAT_CHECK=/path/to/lrat-check CAKE_LPR=/path/to/cake_lpr
 ./verify_all.sh all                            # Results 1-4, 6 and 7
-tests/negative_controls.sh                     # tampered inputs and fake checkers; every one must be rejected
+tests/negative_controls.sh                     # 11 tampered inputs / fake checkers; every one must be rejected
 ```
 
 The sections can also be run on their own:
@@ -89,11 +89,11 @@ The sections can also be run on their own:
 | `windows` | 7 | All 1470 window certificates (each prefix must be exactly the window `W_j`), then the combined forcing-lemma argument |
 
 With no arguments the script runs `oq62 oq64sym oq64single diag l11k12`; an unknown section name is an error.
-For every certificate it:
-
-* re-checks every edge (or regenerates the CNF from the definition);
-* requires the regenerated CNF to be byte-identical to the stored one;
-* runs both LRAT checkers.
+For each certificate, the script checks the hyperedges or the symbolic semantics and reconstructs the
+corresponding CNF. Where a stored CNF is supplied, the reconstructed CNF is compared byte for byte with it. For
+the uniqueness certificates, the CNF is generated from the checked hyperedges and the explicit blocking clause
+before the LRAT replay. Section `unique` requires exactly the 12 pairs of Result 6. Every selected LRAT proof is
+checked by both checkers.
 
 A step passes only if the checker exits with status 0 **and** prints its exact success line. Set `LOGDIR=dir`
 to keep every checker output. Result 5 is checked separately (Lean and the scripts listed below). Accepting each certificate does not

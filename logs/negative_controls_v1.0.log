@@ -1,3 +1,5 @@
+ca6a91021f16dac41f2aa9ef8f5a17a42db1f84b482f48a698d79004beb480d1  <PACKAGE>/tests/negative_controls.sh
+Wed Oct 28 22:56:34 CST 2026
 rejected (ok): lrat-check prints success but exits 1
 rejected (ok): lrat-check exits 0 without success line
 rejected (ok): cake_lpr prints success but exits 1
@@ -8,5 +10,6 @@ rejected (ok): lrat-check on truncated proof
 rejected (ok): cake_lpr on truncated proof
 rejected (ok): tampered hyperedge (hyperedges ok=0 bad=1 clauses=1)
 rejected (ok): tampered symbolic certificate
+rejected (ok): section unique with one of the 12 colourings missing
 ALL NEGATIVE CONTROLS REJECTED
 EXIT 0

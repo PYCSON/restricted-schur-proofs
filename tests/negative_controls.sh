@@ -38,4 +38,10 @@ EOF
 cp "$EV/oq64_kernel/cert_3_3.cnf" "$W/cert_3_3.cnf"
 expect_fail "tampered symbolic certificate" python3 "$EV/oq64_kernel/check_cert.py" "$W/cert_3_3.json"
 
+# Result 6 must fail closed: in an isolated copy with one extremal colouring removed, section `unique` must fail.
+C="$W/copy"; mkdir -p "$C/evidence/oq64_l8/k9"; cp "$ROOT/verify_all.sh" "$C/"
+cp -r "$EV/oq64_structure" "$C/evidence/"; cp "$EV/oq64_l8/k9/checkgood.py" "$C/evidence/oq64_l8/k9/"
+rm "$C/evidence/oq64_structure/g_5_7.good"
+expect_fail "section unique with one of the 12 colourings missing" env LRAT_CHECK="$LRAT_CHECK" CAKE_LPR="$CAKE_LPR" "$C/verify_all.sh" unique
+
 [ $bad -eq 0 ] && echo "ALL NEGATIVE CONTROLS REJECTED" || { echo "$bad negative control(s) NOT rejected"; exit 1; }

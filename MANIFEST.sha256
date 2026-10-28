@@ -1,6 +1,6 @@
 dcb104ea42dcfd3813db244ad05de239ad55de18f699dd4f1189de76ee73b925  ./CITATION.cff
 bd01f08f64381bf0cda6cb76c322136f9cd6603c82c0608c376222e62488d5d3  ./LICENSE
-b0cc56e2540d6f68cc14590e5c199be0542dc6ad9208e0147983417e438db24c  ./README.md
+d782d06ddfccf03d14bad3af37379c06afc2023d2f0c6845f61ab60beb7cd6b1  ./README.md
 074ce4682969592ba2729be54ffba7f2db172ff3649d287a6a066b11d7eaad3a  ./evidence/oq64_diag/SHA256SUMS
 8c10cc54c8195d9c547e5bf9cc9232de0acd23fee947fb6b434aee74c5a1eb85  ./evidence/oq64_diag/diag_10_675.good
 e1ca4701906bcbdc59d8c9bec52a47bd7fa094f2e703fd62c4662e32e8fc6e8c  ./evidence/oq64_diag/diag_10_676.core.cnf.xz
@@ -12715,11 +12715,11 @@ e74cf66e658c28e46b12b4f040961728f7eeca490bb5c83d2d85cbd920cc45ad  ./lean/s3k2-fu
 98e62472b91ad1b4c013e2460ff2d7df80d4449f6aaddc548ecde0e8594b7194  ./lean/s3k2-full/logs/streamA.out
 e482e79e7d71b1dc7e3464a86e4941e42bcaa21914b4fb569c4517dc29015c8a  ./lean/s3k2-full/logs/streamB.out
 3ff31ce898d772e11374a33de648ed6384bb5f0a4df5e78b284e269fe072a3a5  ./lean/s3k2-full/segwriter.py
-9a73c619c83f07fc3b54ec37b3bc49317721e1ef1fc386909f25a1c037f33b21  ./logs/README.md
-0e10515600cc87adb8b10947a99aca7960bec776a06683faa4fa2bae5748ddb8  ./logs/checker_outputs_v1.0.tar.xz
-76cf967903ef31b7c02fe4ab26c4771899b76db59f6be33d0b5769c114557d3b  ./logs/negative_controls_v1.0.log
-4a8c30b0438824ffc1da74accf3233b3ee51ee249c818c8b356483136054b601  ./logs/verify_all_v1.0.log
-d0183dee2456734e9f92ed2b0f243a16c9ed33f22dc799da88a60af17759ac5c  ./paper/restricted-schur-v1.0.pdf
-a5f7dc9740526392ec32424b8f1a685ce33ddaa51ad108cea0a81d118a6fd810  ./paper/restricted-schur-v1.0.tex
-04573cad726f9a42b9ac473f24ca624fd7fd45e176bdf53235261ae7732daa14  ./tests/negative_controls.sh
-90f4aa6f9e6485a879b864668f9ccad78447788e57ce488dfd2670ba7cb53db0  ./verify_all.sh
+da4a551d2153ef0e32f2a9f4c7c1a61ac77d78efc78c1021d533da31f16a342f  ./logs/README.md
+dc725389831a104389edf6c4b4fb7a65ec805a3748471ebea344e2d647340045  ./logs/checker_outputs_v1.0.tar.xz
+6970f3613792c98ccbead22522fdce90e5a7f0fd64cca7a6da85ff20484539a2  ./logs/negative_controls_v1.0.log
+af70da7429733c518317351f07ff92a1dc32275d602906ba6ac85ceff60b4f1e  ./logs/verify_all_v1.0.log
+c4ba679b30159c97e15fbe7a8521d4c990fa7003036a4a16051b731f12292210  ./paper/restricted-schur-v1.0.pdf
+e4c3febc5e154211c0d3a49343896fa8164e4e17aec9f4d6ab7621e4e5130e3f  ./paper/restricted-schur-v1.0.tex
+ca6a91021f16dac41f2aa9ef8f5a17a42db1f84b482f48a698d79004beb480d1  ./tests/negative_controls.sh
+5411e6cd17aac1163188379fbd35c76a196b5225fd0ab150ff5e0dc177fb5885  ./verify_all.sh

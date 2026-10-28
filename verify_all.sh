@@ -97,7 +97,12 @@ fi
 if want unique; then
   echo "== Result 6: uniqueness of the good colouring of [1,F(k,l)-1] (files u_<l>_<k>, g_<l>_<k>)"
   D=$EV/oq64_structure
-  for g in "$D"/g_*_*.good; do b=$(basename "$g" .good); l=$(echo "$b" | cut -d_ -f2); k=$(echo "$b" | cut -d_ -f3); n=$(( $(F2 "$k" "$l") - 1 ))
+  expected=(3_3 3_4 4_5 5_6 5_7 6_7 6_8 7_8 7_9 8_9 9_10 10_11)   # (l,k) of Proposition 11 / README Result 6
+  [ "$(find "$D" -maxdepth 1 -type f -name 'g_*_*.good' | wc -l)" -eq "${#expected[@]}" ] || fail "Result 6: expected exactly ${#expected[@]} extremal colourings"
+  for pair in "${expected[@]}"; do
+    g="$D/g_${pair}.good"; [ -s "$g" ] || fail "Result 6: missing or empty $g"
+    [ -s "$D/u_${pair}.edges.xz" ] && [ -s "$D/u_${pair}.lrat.xz" ] || fail "Result 6: missing certificate files for $pair"
+    b="g_${pair}"; l=${pair%%_*}; k=${pair##*_}; n=$(( $(F2 "$k" "$l") - 1 ))
     python3 "$EV/oq64_l8/k9/checkgood.py" "$k" "$l" "$n" "$g" > "$W/cg.out" || { cat "$W/cg.out" >&2; fail "colouring $b is not good"; }
     grep -qx GOOD "$W/cg.out" || { cat "$W/cg.out" >&2; fail "checkgood $b"; }
     xz -dc "$D/u_${l}_${k}.edges.xz" > "$W/e.txt"

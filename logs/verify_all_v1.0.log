@@ -1,5 +1,5 @@
-90f4aa6f9e6485a879b864668f9ccad78447788e57ce488dfd2670ba7cb53db0  <PACKAGE>/verify_all.sh
-Wed Oct 28 19:00:13 CST 2026
+5411e6cd17aac1163188379fbd35c76a196b5225fd0ab150ff5e0dc177fb5885  <PACKAGE>/verify_all.sh
+Wed Oct 28 22:32:16 CST 2026
 == Result 1 (OQ 6.2): S_3(k;2) <= k^3+3k^2+2k-2 for k>=8 (seven symbolic cases)
 uni_const1: region={'mode': 'uni', 'K': 8, 'case': 'const:1'} vertices=54 edges=326 symbolic_ok=True numeric_grid=60 cnf_match=True
 uni_const2: region={'mode': 'uni', 'K': 8, 'case': 'const:2'} vertices=55 edges=345 symbolic_ok=True numeric_grid=60 cnf_match=True
@@ -68,8 +68,6 @@ cert l=7 k0=7 F_extra=15: vertices=1967 edges=19369 symbolic_problems=0 cnf_matc
   PASS hyperedges ok=2053595 bad=0 clauses=4107191; CNF rebuilt identically (k=12, l=11, n=915)
   PASS lrat-check + cake_lpr: core
 == Result 6: uniqueness of the good colouring of [1,F(k,l)-1] (files u_<l>_<k>, g_<l>_<k>)
-  PASS (k=11, l=10, n=706): colouring is good; hyperedges ok=537090 bad=0 clauses=1074182 (incl. unit and blocking clause)
-  PASS lrat-check + cake_lpr: u_10_11
   PASS (k=3, l=3, n=23): colouring is good; hyperedges ok=71 bad=0 clauses=144 (incl. unit and blocking clause)
   PASS lrat-check + cake_lpr: u_3_3
   PASS (k=4, l=3, n=34): colouring is good; hyperedges ok=75 bad=0 clauses=152 (incl. unit and blocking clause)
@@ -92,6 +90,8 @@ cert l=7 k0=7 F_extra=15: vertices=1967 edges=19369 symbolic_problems=0 cnf_matc
   PASS lrat-check + cake_lpr: u_8_9
   PASS (k=10, l=9, n=532): colouring is good; hyperedges ok=140980 bad=0 clauses=281962 (incl. unit and blocking clause)
   PASS lrat-check + cake_lpr: u_9_10
+  PASS (k=11, l=10, n=706): colouring is good; hyperedges ok=537090 bad=0 clauses=1074182 (incl. unit and blocking clause)
+  PASS lrat-check + cake_lpr: u_10_11
 == Result 7: window certificates W_j (1470 cases; prints one line per directory group)
   PASS 100 window certificates so far
   PASS 200 window certificates so far
@@ -113,4 +113,4 @@ certified (l,j,e) triples found: 1470
 windows excluded for every k>=l+1: 208 of 208
 ALL SELECTED SECTIONS PASSED: oq62 oq64sym oq64single diag l11k12 unique windows
 EXIT 0
-Wed Oct 28 19:25:23 CST 2026
+Wed Oct 28 22:56:34 CST 2026
