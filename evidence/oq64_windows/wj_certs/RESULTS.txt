@@ -1,0 +1,210 @@
+l=11 j=1 n=915 | UNSAT (conflict at root): k=12 l=11 n=915 nodes=0 maxdepth=0 edges=19 0.0s | hyperedges ok=19 bad=0 clauses=60 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=11 j=2 n=915 | UNSAT (conflict at root): k=12 l=11 n=915 nodes=0 maxdepth=0 edges=20 0.0s | hyperedges ok=20 bad=0 clauses=62 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=11 j=3 n=915 | UNSAT (conflict at root): k=12 l=11 n=915 nodes=0 maxdepth=0 edges=19 0.0s | hyperedges ok=19 bad=0 clauses=60 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=11 j=4 n=915 | UNSAT (conflict at root): k=12 l=11 n=915 nodes=0 maxdepth=0 edges=17 0.0s | hyperedges ok=17 bad=0 clauses=56 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=11 j=5 n=915 | UNSAT (conflict at root): k=12 l=11 n=915 nodes=0 maxdepth=0 edges=15 0.0s | hyperedges ok=15 bad=0 clauses=52 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=11 j=6 n=915 | UNSAT (conflict at root): k=12 l=11 n=915 nodes=0 maxdepth=0 edges=13 0.0s | hyperedges ok=13 bad=0 clauses=48 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=11 j=7 n=915 | UNSAT (conflict at root): k=12 l=11 n=915 nodes=0 maxdepth=0 edges=11 0.0s | hyperedges ok=11 bad=0 clauses=44 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=11 j=8 n=915 | UNSAT (conflict at root): k=12 l=11 n=915 nodes=0 maxdepth=0 edges=9 0.0s | hyperedges ok=9 bad=0 clauses=40 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=11 j=9 n=915 | UNSAT (conflict at root): k=12 l=11 n=915 nodes=0 maxdepth=0 edges=6 0.0s | hyperedges ok=6 bad=0 clauses=34 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=11 j=10 n=915 | UNSAT (conflict at root): k=12 l=11 n=915 nodes=0 maxdepth=0 edges=5 0.0s | hyperedges ok=5 bad=0 clauses=32 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=12 j=1 n=1160 | UNSAT (conflict at root): k=13 l=12 n=1160 nodes=0 maxdepth=0 edges=21 0.0s | hyperedges ok=21 bad=0 clauses=66 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=12 j=2 n=1160 | UNSAT (conflict at root): k=13 l=12 n=1160 nodes=0 maxdepth=0 edges=21 0.0s | hyperedges ok=21 bad=0 clauses=66 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=12 j=3 n=1160 | UNSAT (conflict at root): k=13 l=12 n=1160 nodes=0 maxdepth=0 edges=21 0.0s | hyperedges ok=21 bad=0 clauses=66 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=12 j=4 n=1160 | UNSAT (conflict at root): k=13 l=12 n=1160 nodes=0 maxdepth=0 edges=19 0.0s | hyperedges ok=19 bad=0 clauses=62 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=12 j=5 n=1160 | UNSAT (conflict at root): k=13 l=12 n=1160 nodes=0 maxdepth=0 edges=17 0.0s | hyperedges ok=17 bad=0 clauses=58 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=12 j=6 n=1160 | UNSAT (conflict at root): k=13 l=12 n=1160 nodes=0 maxdepth=0 edges=15 0.0s | hyperedges ok=15 bad=0 clauses=54 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=12 j=7 n=1160 | UNSAT (conflict at root): k=13 l=12 n=1160 nodes=0 maxdepth=0 edges=13 0.0s | hyperedges ok=13 bad=0 clauses=50 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=12 j=8 n=1160 | UNSAT (conflict at root): k=13 l=12 n=1160 nodes=0 maxdepth=0 edges=11 0.0s | hyperedges ok=11 bad=0 clauses=46 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=12 j=9 n=1160 | UNSAT (conflict at root): k=13 l=12 n=1160 nodes=0 maxdepth=0 edges=9 0.0s | hyperedges ok=9 bad=0 clauses=42 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=12 j=10 n=1160 | UNSAT (conflict at root): k=13 l=12 n=1160 nodes=0 maxdepth=0 edges=6 0.0s | hyperedges ok=6 bad=0 clauses=36 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=12 j=11 n=1160 | UNSAT (conflict at root): k=13 l=12 n=1160 nodes=0 maxdepth=0 edges=5 0.0s | hyperedges ok=5 bad=0 clauses=34 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=13 j=1 n=1445 | UNSAT (conflict at root): k=14 l=13 n=1445 nodes=0 maxdepth=0 edges=22 0.0s | hyperedges ok=22 bad=0 clauses=70 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=13 j=2 n=1445 | UNSAT (conflict at root): k=14 l=13 n=1445 nodes=0 maxdepth=0 edges=23 0.0s | hyperedges ok=23 bad=0 clauses=72 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=13 j=3 n=1445 | UNSAT: k=14 l=13 n=1445 nodes=75 maxdepth=74 edges=243 0.0s | hyperedges ok=243 bad=0 clauses=512 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=13 j=4 n=1445 | UNSAT (conflict at root): k=14 l=13 n=1445 nodes=0 maxdepth=0 edges=21 0.0s | hyperedges ok=21 bad=0 clauses=68 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=13 j=5 n=1445 | UNSAT (conflict at root): k=14 l=13 n=1445 nodes=0 maxdepth=0 edges=19 0.0s | hyperedges ok=19 bad=0 clauses=64 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=13 j=6 n=1445 | UNSAT (conflict at root): k=14 l=13 n=1445 nodes=0 maxdepth=0 edges=17 0.0s | hyperedges ok=17 bad=0 clauses=60 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=13 j=7 n=1445 | UNSAT (conflict at root): k=14 l=13 n=1445 nodes=0 maxdepth=0 edges=15 0.0s | hyperedges ok=15 bad=0 clauses=56 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=13 j=8 n=1445 | UNSAT (conflict at root): k=14 l=13 n=1445 nodes=0 maxdepth=0 edges=13 0.0s | hyperedges ok=13 bad=0 clauses=52 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=13 j=9 n=1445 | UNSAT (conflict at root): k=14 l=13 n=1445 nodes=0 maxdepth=0 edges=11 0.0s | hyperedges ok=11 bad=0 clauses=48 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=13 j=10 n=1445 | UNSAT (conflict at root): k=14 l=13 n=1445 nodes=0 maxdepth=0 edges=9 0.0s | hyperedges ok=9 bad=0 clauses=44 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=13 j=11 n=1445 | UNSAT (conflict at root): k=14 l=13 n=1445 nodes=0 maxdepth=0 edges=6 0.0s | hyperedges ok=6 bad=0 clauses=38 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=13 j=12 n=1445 | UNSAT (conflict at root): k=14 l=13 n=1445 nodes=0 maxdepth=0 edges=5 0.0s | hyperedges ok=5 bad=0 clauses=36 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=14 j=1 n=1773 | UNSAT (conflict at root): k=15 l=14 n=1773 nodes=0 maxdepth=0 edges=24 0.0s | hyperedges ok=24 bad=0 clauses=76 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=14 j=2 n=1773 | UNSAT (conflict at root): k=15 l=14 n=1773 nodes=0 maxdepth=0 edges=24 0.0s | hyperedges ok=24 bad=0 clauses=76 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=14 j=3 n=1773 | UNSAT: k=15 l=14 n=1773 nodes=89 maxdepth=88 edges=286 0.1s | hyperedges ok=286 bad=0 clauses=600 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=14 j=4 n=1773 | UNSAT: k=15 l=14 n=1773 nodes=88 maxdepth=87 edges=281 0.1s | hyperedges ok=281 bad=0 clauses=590 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=14 j=5 n=1773 | UNSAT (conflict at root): k=15 l=14 n=1773 nodes=0 maxdepth=0 edges=21 0.0s | hyperedges ok=21 bad=0 clauses=70 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=14 j=6 n=1773 | UNSAT (conflict at root): k=15 l=14 n=1773 nodes=0 maxdepth=0 edges=19 0.0s | hyperedges ok=19 bad=0 clauses=66 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=14 j=7 n=1773 | UNSAT (conflict at root): k=15 l=14 n=1773 nodes=0 maxdepth=0 edges=17 0.0s | hyperedges ok=17 bad=0 clauses=62 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=14 j=8 n=1773 | UNSAT (conflict at root): k=15 l=14 n=1773 nodes=0 maxdepth=0 edges=15 0.0s | hyperedges ok=15 bad=0 clauses=58 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=14 j=9 n=1773 | UNSAT (conflict at root): k=15 l=14 n=1773 nodes=0 maxdepth=0 edges=13 0.0s | hyperedges ok=13 bad=0 clauses=54 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=14 j=10 n=1773 | UNSAT (conflict at root): k=15 l=14 n=1773 nodes=0 maxdepth=0 edges=11 0.0s | hyperedges ok=11 bad=0 clauses=50 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=14 j=11 n=1773 | UNSAT (conflict at root): k=15 l=14 n=1773 nodes=0 maxdepth=0 edges=9 0.0s | hyperedges ok=9 bad=0 clauses=46 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=14 j=12 n=1773 | UNSAT (conflict at root): k=15 l=14 n=1773 nodes=0 maxdepth=0 edges=6 0.0s | hyperedges ok=6 bad=0 clauses=40 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=14 j=13 n=1773 | UNSAT (conflict at root): k=15 l=14 n=1773 nodes=0 maxdepth=0 edges=5 0.0s | hyperedges ok=5 bad=0 clauses=38 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=15 j=1 n=2147 | UNSAT (conflict at root): k=16 l=15 n=2147 nodes=0 maxdepth=0 edges=25 0.0s | hyperedges ok=25 bad=0 clauses=80 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=15 j=2 n=2147 | UNSAT: k=16 l=15 n=2147 nodes=103 maxdepth=102 edges=331 0.2s | hyperedges ok=331 bad=0 clauses=692 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=15 j=3 n=2147 | UNSAT: k=16 l=15 n=2147 nodes=104 maxdepth=103 edges=332 0.2s | hyperedges ok=332 bad=0 clauses=694 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=15 j=4 n=2147 | UNSAT: k=16 l=15 n=2147 nodes=103 maxdepth=102 edges=328 0.1s | hyperedges ok=328 bad=0 clauses=686 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=15 j=5 n=2147 | UNSAT: k=16 l=15 n=2147 nodes=101 maxdepth=100 edges=320 0.2s | hyperedges ok=320 bad=0 clauses=670 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=15 j=6 n=2147 | UNSAT (conflict at root): k=16 l=15 n=2147 nodes=0 maxdepth=0 edges=21 0.0s | hyperedges ok=21 bad=0 clauses=72 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=15 j=7 n=2147 | UNSAT (conflict at root): k=16 l=15 n=2147 nodes=0 maxdepth=0 edges=19 0.0s | hyperedges ok=19 bad=0 clauses=68 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=15 j=8 n=2147 | UNSAT (conflict at root): k=16 l=15 n=2147 nodes=0 maxdepth=0 edges=17 0.0s | hyperedges ok=17 bad=0 clauses=64 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=15 j=9 n=2147 | UNSAT (conflict at root): k=16 l=15 n=2147 nodes=0 maxdepth=0 edges=15 0.0s | hyperedges ok=15 bad=0 clauses=60 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=15 j=10 n=2147 | UNSAT (conflict at root): k=16 l=15 n=2147 nodes=0 maxdepth=0 edges=13 0.0s | hyperedges ok=13 bad=0 clauses=56 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=15 j=11 n=2147 | UNSAT (conflict at root): k=16 l=15 n=2147 nodes=0 maxdepth=0 edges=11 0.0s | hyperedges ok=11 bad=0 clauses=52 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=15 j=12 n=2147 | UNSAT (conflict at root): k=16 l=15 n=2147 nodes=0 maxdepth=0 edges=9 0.0s | hyperedges ok=9 bad=0 clauses=48 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=15 j=13 n=2147 | UNSAT (conflict at root): k=16 l=15 n=2147 nodes=0 maxdepth=0 edges=6 0.0s | hyperedges ok=6 bad=0 clauses=42 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=15 j=14 n=2147 | UNSAT (conflict at root): k=16 l=15 n=2147 nodes=0 maxdepth=0 edges=5 0.0s | hyperedges ok=5 bad=0 clauses=40 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=16 j=1 n=2570 | UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s | hyperedges ok=27 bad=0 clauses=86 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=16 j=2 n=2570 | UNSAT: k=17 l=16 n=2570 nodes=119 maxdepth=118 edges=380 0.4s | hyperedges ok=380 bad=0 clauses=792 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=16 j=3 n=2570 | UNSAT: k=17 l=16 n=2570 nodes=126 maxdepth=119 edges=389 0.4s | hyperedges ok=389 bad=0 clauses=810 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=16 j=4 n=2570 | UNSAT: k=17 l=16 n=2570 nodes=119 maxdepth=118 edges=378 0.2s | hyperedges ok=378 bad=0 clauses=788 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=16 j=5 n=2570 | UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=370 0.2s | hyperedges ok=370 bad=0 clauses=772 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=16 j=6 n=2570 | UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s | hyperedges ok=23 bad=0 clauses=78 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=16 j=7 n=2570 | UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=21 0.0s | hyperedges ok=21 bad=0 clauses=74 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=16 j=8 n=2570 | UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=19 0.0s | hyperedges ok=19 bad=0 clauses=70 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=16 j=9 n=2570 | UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=17 0.0s | hyperedges ok=17 bad=0 clauses=66 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=16 j=10 n=2570 | UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=15 0.0s | hyperedges ok=15 bad=0 clauses=62 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=16 j=11 n=2570 | UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=13 0.0s | hyperedges ok=13 bad=0 clauses=58 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=16 j=12 n=2570 | UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=11 0.0s | hyperedges ok=11 bad=0 clauses=54 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=16 j=13 n=2570 | UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=7 0.0s | hyperedges ok=7 bad=0 clauses=46 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=16 j=14 n=2570 | UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=6 0.0s | hyperedges ok=6 bad=0 clauses=44 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=16 j=15 n=2570 | UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=5 0.0s | hyperedges ok=5 bad=0 clauses=42 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=17 j=1 n=3045 | UNSAT (conflict at root): k=18 l=17 n=3045 nodes=0 maxdepth=0 edges=28 0.0s | hyperedges ok=28 bad=0 clauses=90 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=17 j=2 n=3045 | UNSAT: k=18 l=17 n=3045 nodes=135 maxdepth=134 edges=429 0.5s | hyperedges ok=429 bad=0 clauses=892 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=17 j=3 n=3045 | UNSAT: k=18 l=17 n=3045 nodes=329 maxdepth=136 edges=653 1.1s | hyperedges ok=653 bad=0 clauses=1340 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=17 j=4 n=3045 | UNSAT: k=18 l=17 n=3045 nodes=278 maxdepth=136 edges=609 0.9s | hyperedges ok=609 bad=0 clauses=1252 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=17 j=5 n=3045 | UNSAT: k=18 l=17 n=3045 nodes=135 maxdepth=134 edges=425 0.4s | hyperedges ok=425 bad=0 clauses=884 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=17 j=6 n=3045 | UNSAT: k=18 l=17 n=3045 nodes=131 maxdepth=130 edges=413 0.4s | hyperedges ok=413 bad=0 clauses=860 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=17 j=7 n=3045 | UNSAT (conflict at root): k=18 l=17 n=3045 nodes=0 maxdepth=0 edges=23 0.0s | hyperedges ok=23 bad=0 clauses=80 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=17 j=8 n=3045 | UNSAT (conflict at root): k=18 l=17 n=3045 nodes=0 maxdepth=0 edges=21 0.0s | hyperedges ok=21 bad=0 clauses=76 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=17 j=9 n=3045 | UNSAT (conflict at root): k=18 l=17 n=3045 nodes=0 maxdepth=0 edges=19 0.0s | hyperedges ok=19 bad=0 clauses=72 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=17 j=10 n=3045 | UNSAT (conflict at root): k=18 l=17 n=3045 nodes=0 maxdepth=0 edges=17 0.0s | hyperedges ok=17 bad=0 clauses=68 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=17 j=11 n=3045 | UNSAT (conflict at root): k=18 l=17 n=3045 nodes=0 maxdepth=0 edges=15 0.0s | hyperedges ok=15 bad=0 clauses=64 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=17 j=12 n=3045 | UNSAT (conflict at root): k=18 l=17 n=3045 nodes=0 maxdepth=0 edges=13 0.0s | hyperedges ok=13 bad=0 clauses=60 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=17 j=13 n=3045 | UNSAT (conflict at root): k=18 l=17 n=3045 nodes=0 maxdepth=0 edges=11 0.0s | hyperedges ok=11 bad=0 clauses=56 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=17 j=14 n=3045 | UNSAT (conflict at root): k=18 l=17 n=3045 nodes=0 maxdepth=0 edges=7 0.0s | hyperedges ok=7 bad=0 clauses=48 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=17 j=15 n=3045 | UNSAT (conflict at root): k=18 l=17 n=3045 nodes=0 maxdepth=0 edges=6 0.0s | hyperedges ok=6 bad=0 clauses=46 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=17 j=16 n=3045 | UNSAT (conflict at root): k=18 l=17 n=3045 nodes=0 maxdepth=0 edges=5 0.0s | hyperedges ok=5 bad=0 clauses=44 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=18 j=1 n=3575 | UNSAT (conflict at root): k=19 l=18 n=3575 nodes=0 maxdepth=0 edges=30 0.0s | hyperedges ok=30 bad=0 clauses=96 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=18 j=2 n=3575 | UNSAT: k=19 l=18 n=3575 nodes=153 maxdepth=152 edges=485 0.8s | hyperedges ok=485 bad=0 clauses=1006 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=18 j=3 n=3575 | UNSAT: k=19 l=18 n=3575 nodes=871 maxdepth=154 edges=1238 5.1s | hyperedges ok=1238 bad=0 clauses=2512 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=18 j=4 n=3575 | UNSAT: k=19 l=18 n=3575 nodes=1083 maxdepth=154 edges=1465 6.1s | hyperedges ok=1465 bad=0 clauses=2966 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=18 j=5 n=3575 | UNSAT: k=19 l=18 n=3575 nodes=281 maxdepth=153 edges=654 1.6s | hyperedges ok=654 bad=0 clauses=1344 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=18 j=6 n=3575 | UNSAT: k=19 l=18 n=3575 nodes=151 maxdepth=150 edges=473 0.7s | hyperedges ok=473 bad=0 clauses=982 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=18 j=7 n=3575 | UNSAT (conflict at root): k=19 l=18 n=3575 nodes=0 maxdepth=0 edges=25 0.0s | hyperedges ok=25 bad=0 clauses=86 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=18 j=8 n=3575 | UNSAT (conflict at root): k=19 l=18 n=3575 nodes=0 maxdepth=0 edges=23 0.0s | hyperedges ok=23 bad=0 clauses=82 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=18 j=9 n=3575 | UNSAT (conflict at root): k=19 l=18 n=3575 nodes=0 maxdepth=0 edges=21 0.0s | hyperedges ok=21 bad=0 clauses=78 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=18 j=10 n=3575 | UNSAT (conflict at root): k=19 l=18 n=3575 nodes=0 maxdepth=0 edges=19 0.0s | hyperedges ok=19 bad=0 clauses=74 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=18 j=11 n=3575 | UNSAT (conflict at root): k=19 l=18 n=3575 nodes=0 maxdepth=0 edges=17 0.0s | hyperedges ok=17 bad=0 clauses=70 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=18 j=12 n=3575 | UNSAT (conflict at root): k=19 l=18 n=3575 nodes=0 maxdepth=0 edges=15 0.0s | hyperedges ok=15 bad=0 clauses=66 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=18 j=13 n=3575 | UNSAT (conflict at root): k=19 l=18 n=3575 nodes=0 maxdepth=0 edges=13 0.0s | hyperedges ok=13 bad=0 clauses=62 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=18 j=14 n=3575 | UNSAT (conflict at root): k=19 l=18 n=3575 nodes=0 maxdepth=0 edges=11 0.0s | hyperedges ok=11 bad=0 clauses=58 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=18 j=15 n=3575 | UNSAT (conflict at root): k=19 l=18 n=3575 nodes=0 maxdepth=0 edges=7 0.0s | hyperedges ok=7 bad=0 clauses=50 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=18 j=16 n=3575 | UNSAT (conflict at root): k=19 l=18 n=3575 nodes=0 maxdepth=0 edges=6 0.0s | hyperedges ok=6 bad=0 clauses=48 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=18 j=17 n=3575 | UNSAT (conflict at root): k=19 l=18 n=3575 nodes=0 maxdepth=0 edges=5 0.0s | hyperedges ok=5 bad=0 clauses=46 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=19 j=1 n=4163 | UNSAT (conflict at root): k=20 l=19 n=4163 nodes=0 maxdepth=0 edges=31 0.0s | hyperedges ok=31 bad=0 clauses=100 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=19 j=2 n=4163 | UNSAT: k=20 l=19 n=4163 nodes=215 maxdepth=170 edges=590 2.1s | hyperedges ok=590 bad=0 clauses=1218 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=19 j=3 n=4163 | UNSAT: k=20 l=19 n=4163 nodes=1881 maxdepth=173 edges=2299 16.4s | hyperedges ok=2299 bad=0 clauses=4636 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=19 j=4 n=4163 | UNSAT: k=20 l=19 n=4163 nodes=2816 maxdepth=173 edges=3743 26.5s | hyperedges ok=3743 bad=0 clauses=7524 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=19 j=5 n=4163 | UNSAT: k=20 l=19 n=4163 nodes=1545 maxdepth=172 edges=2134 13.0s | hyperedges ok=2134 bad=0 clauses=4306 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=19 j=6 n=4163 | UNSAT: k=20 l=19 n=4163 nodes=171 maxdepth=170 edges=535 1.3s | hyperedges ok=535 bad=0 clauses=1108 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=19 j=7 n=4163 | UNSAT: k=20 l=19 n=4163 nodes=166 maxdepth=165 edges=519 1.1s | hyperedges ok=519 bad=0 clauses=1076 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=19 j=8 n=4163 | UNSAT (conflict at root): k=20 l=19 n=4163 nodes=0 maxdepth=0 edges=25 0.0s | hyperedges ok=25 bad=0 clauses=88 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=19 j=9 n=4163 | UNSAT (conflict at root): k=20 l=19 n=4163 nodes=0 maxdepth=0 edges=23 0.0s | hyperedges ok=23 bad=0 clauses=84 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=19 j=10 n=4163 | UNSAT (conflict at root): k=20 l=19 n=4163 nodes=0 maxdepth=0 edges=21 0.0s | hyperedges ok=21 bad=0 clauses=80 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=19 j=11 n=4163 | UNSAT (conflict at root): k=20 l=19 n=4163 nodes=0 maxdepth=0 edges=19 0.0s | hyperedges ok=19 bad=0 clauses=76 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=19 j=12 n=4163 | UNSAT (conflict at root): k=20 l=19 n=4163 nodes=0 maxdepth=0 edges=17 0.0s | hyperedges ok=17 bad=0 clauses=72 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=19 j=13 n=4163 | UNSAT (conflict at root): k=20 l=19 n=4163 nodes=0 maxdepth=0 edges=15 0.0s | hyperedges ok=15 bad=0 clauses=68 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=19 j=14 n=4163 | UNSAT (conflict at root): k=20 l=19 n=4163 nodes=0 maxdepth=0 edges=13 0.0s | hyperedges ok=13 bad=0 clauses=64 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=19 j=15 n=4163 | UNSAT (conflict at root): k=20 l=19 n=4163 nodes=0 maxdepth=0 edges=11 0.0s | hyperedges ok=11 bad=0 clauses=60 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=19 j=16 n=4163 | UNSAT (conflict at root): k=20 l=19 n=4163 nodes=0 maxdepth=0 edges=7 0.0s | hyperedges ok=7 bad=0 clauses=52 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=19 j=17 n=4163 | UNSAT (conflict at root): k=20 l=19 n=4163 nodes=0 maxdepth=0 edges=6 0.0s | hyperedges ok=6 bad=0 clauses=50 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=19 j=18 n=4163 | UNSAT (conflict at root): k=20 l=19 n=4163 nodes=0 maxdepth=0 edges=5 0.0s | hyperedges ok=5 bad=0 clauses=48 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=20 j=1 n=4812 | UNSAT (conflict at root): k=21 l=20 n=4812 nodes=0 maxdepth=0 edges=33 0.0s | hyperedges ok=33 bad=0 clauses=106 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=20 j=2 n=4812 | UNSAT: k=21 l=20 n=4812 nodes=378 maxdepth=190 edges=800 5.3s | hyperedges ok=800 bad=0 clauses=1640 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=20 j=3 n=4812 | UNSAT: k=21 l=20 n=4812 nodes=4111 maxdepth=192 edges=5192 60.4s | hyperedges ok=5192 bad=0 clauses=10424 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=20 j=4 n=4812 | UNSAT: k=21 l=20 n=4812 nodes=6914 maxdepth=194 edges=10370 113.9s | hyperedges ok=10370 bad=0 clauses=20780 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=20 j=5 n=4812 | UNSAT: k=21 l=20 n=4812 nodes=4535 maxdepth=193 edges=7043 86.0s | hyperedges ok=7043 bad=0 clauses=14126 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=20 j=6 n=4812 | UNSAT: k=21 l=20 n=4812 nodes=1171 maxdepth=191 edges=1726 17.7s | hyperedges ok=1726 bad=0 clauses=3492 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=20 j=7 n=4812 | UNSAT: k=21 l=20 n=4812 nodes=188 maxdepth=187 edges=587 2.1s | hyperedges ok=587 bad=0 clauses=1214 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=20 j=8 n=4812 | UNSAT (conflict at root): k=21 l=20 n=4812 nodes=0 maxdepth=0 edges=27 0.0s | hyperedges ok=27 bad=0 clauses=94 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=20 j=9 n=4812 | UNSAT (conflict at root): k=21 l=20 n=4812 nodes=0 maxdepth=0 edges=25 0.0s | hyperedges ok=25 bad=0 clauses=90 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=20 j=10 n=4812 | UNSAT (conflict at root): k=21 l=20 n=4812 nodes=0 maxdepth=0 edges=23 0.0s | hyperedges ok=23 bad=0 clauses=86 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=20 j=11 n=4812 | UNSAT (conflict at root): k=21 l=20 n=4812 nodes=0 maxdepth=0 edges=21 0.0s | hyperedges ok=21 bad=0 clauses=82 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=20 j=12 n=4812 | UNSAT (conflict at root): k=21 l=20 n=4812 nodes=0 maxdepth=0 edges=19 0.0s | hyperedges ok=19 bad=0 clauses=78 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=20 j=13 n=4812 | UNSAT (conflict at root): k=21 l=20 n=4812 nodes=0 maxdepth=0 edges=17 0.0s | hyperedges ok=17 bad=0 clauses=74 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=20 j=14 n=4812 | UNSAT (conflict at root): k=21 l=20 n=4812 nodes=0 maxdepth=0 edges=15 0.0s | hyperedges ok=15 bad=0 clauses=70 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=20 j=15 n=4812 | UNSAT (conflict at root): k=21 l=20 n=4812 nodes=0 maxdepth=0 edges=13 0.0s | hyperedges ok=13 bad=0 clauses=66 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=20 j=16 n=4812 | UNSAT (conflict at root): k=21 l=20 n=4812 nodes=0 maxdepth=0 edges=11 0.0s | hyperedges ok=11 bad=0 clauses=62 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=20 j=17 n=4812 | UNSAT (conflict at root): k=21 l=20 n=4812 nodes=0 maxdepth=0 edges=7 0.0s | hyperedges ok=7 bad=0 clauses=54 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=20 j=18 n=4812 | UNSAT (conflict at root): k=21 l=20 n=4812 nodes=0 maxdepth=0 edges=6 0.0s | hyperedges ok=6 bad=0 clauses=52 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=20 j=19 n=4812 | UNSAT (conflict at root): k=21 l=20 n=4812 nodes=0 maxdepth=0 edges=5 0.0s | hyperedges ok=5 bad=0 clauses=50 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=21 j=1 n=5525 | UNSAT (conflict at root): k=22 l=21 n=5525 nodes=0 maxdepth=0 edges=34 0.0s | hyperedges ok=34 bad=0 clauses=110 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=21 j=2 n=5525 | UNSAT: k=22 l=21 n=5525 nodes=673 maxdepth=210 edges=1141 15.3s | hyperedges ok=1141 bad=0 clauses=2324 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=21 j=3 n=5525 | UNSAT: k=22 l=21 n=5525 nodes=9798 maxdepth=213 edges=12518 238.3s | hyperedges ok=12518 bad=0 clauses=25078 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=21 j=4 n=5525 | UNSAT: k=22 l=21 n=5525 nodes=19806 maxdepth=215 edges=28847 487.1s | hyperedges ok=28847 bad=0 clauses=57736 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=21 j=5 n=5525 | UNSAT: k=22 l=21 n=5525 nodes=12134 maxdepth=215 edges=20646 298.6s | hyperedges ok=20646 bad=0 clauses=41334 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=21 j=6 n=5525 | UNSAT: k=22 l=21 n=5525 nodes=4846 maxdepth=213 edges=7940 115.7s | hyperedges ok=7940 bad=0 clauses=15922 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=21 j=7 n=5525 | UNSAT: k=22 l=21 n=5525 nodes=339 maxdepth=210 edges=841 5.7s | hyperedges ok=841 bad=0 clauses=1724 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=21 j=8 n=5525 | UNSAT: k=22 l=21 n=5525 nodes=205 maxdepth=204 edges=638 2.7s | hyperedges ok=638 bad=0 clauses=1318 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=21 j=9 n=5525 | UNSAT (conflict at root): k=22 l=21 n=5525 nodes=0 maxdepth=0 edges=27 0.0s | hyperedges ok=27 bad=0 clauses=96 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=21 j=10 n=5525 | UNSAT (conflict at root): k=22 l=21 n=5525 nodes=0 maxdepth=0 edges=25 0.0s | hyperedges ok=25 bad=0 clauses=92 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=21 j=11 n=5525 | UNSAT (conflict at root): k=22 l=21 n=5525 nodes=0 maxdepth=0 edges=23 0.0s | hyperedges ok=23 bad=0 clauses=88 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=21 j=12 n=5525 | UNSAT (conflict at root): k=22 l=21 n=5525 nodes=0 maxdepth=0 edges=21 0.0s | hyperedges ok=21 bad=0 clauses=84 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=21 j=13 n=5525 | UNSAT (conflict at root): k=22 l=21 n=5525 nodes=0 maxdepth=0 edges=19 0.0s | hyperedges ok=19 bad=0 clauses=80 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=21 j=14 n=5525 | UNSAT (conflict at root): k=22 l=21 n=5525 nodes=0 maxdepth=0 edges=17 0.0s | hyperedges ok=17 bad=0 clauses=76 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=21 j=15 n=5525 | UNSAT (conflict at root): k=22 l=21 n=5525 nodes=0 maxdepth=0 edges=15 0.0s | hyperedges ok=15 bad=0 clauses=72 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=21 j=16 n=5525 | UNSAT (conflict at root): k=22 l=21 n=5525 nodes=0 maxdepth=0 edges=13 0.0s | hyperedges ok=13 bad=0 clauses=68 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=21 j=17 n=5525 | UNSAT (conflict at root): k=22 l=21 n=5525 nodes=0 maxdepth=0 edges=11 0.0s | hyperedges ok=11 bad=0 clauses=64 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=21 j=18 n=5525 | UNSAT (conflict at root): k=22 l=21 n=5525 nodes=0 maxdepth=0 edges=7 0.0s | hyperedges ok=7 bad=0 clauses=56 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=21 j=19 n=5525 | UNSAT (conflict at root): k=22 l=21 n=5525 nodes=0 maxdepth=0 edges=6 0.0s | hyperedges ok=6 bad=0 clauses=54 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=21 j=20 n=5525 | UNSAT (conflict at root): k=22 l=21 n=5525 nodes=0 maxdepth=0 edges=5 0.0s | hyperedges ok=5 bad=0 clauses=52 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=22 j=1 n=6305 | UNSAT (conflict at root): k=23 l=22 n=6305 nodes=0 maxdepth=0 edges=36 0.0s | hyperedges ok=36 bad=0 clauses=116 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=22 j=2 n=6305 | UNSAT: k=23 l=22 n=6305 nodes=1139 maxdepth=231 edges=1652 34.9s | hyperedges ok=1652 bad=0 clauses=3348 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=22 j=3 n=6305 | UNSAT: k=23 l=22 n=6305 nodes=22735 maxdepth=235 edges=27929 750.4s | hyperedges ok=27929 bad=0 clauses=55902 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=22 j=4 n=6305 | UNSAT: k=23 l=22 n=6305 nodes=53384 maxdepth=237 edges=71020 1874.5s | hyperedges ok=71020 bad=0 clauses=142084 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=22 j=5 n=6305 | UNSAT: k=23 l=22 n=6305 nodes=40618 maxdepth=238 edges=60304 1462.1s | hyperedges ok=60304 bad=0 clauses=120652 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=22 j=6 n=6305 | UNSAT: k=23 l=22 n=6305 nodes=12896 maxdepth=236 edges=22920 501.5s | hyperedges ok=22920 bad=0 clauses=45884 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=22 j=7 n=6305 | UNSAT: k=23 l=22 n=6305 nodes=3348 maxdepth=233 edges=5380 130.1s | hyperedges ok=5380 bad=0 clauses=10804 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=22 j=8 n=6305 | UNSAT: k=23 l=22 n=6305 nodes=229 maxdepth=228 edges=712 4.6s | hyperedges ok=712 bad=0 clauses=1468 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=22 j=9 n=6305 | UNSAT (conflict at root): k=23 l=22 n=6305 nodes=0 maxdepth=0 edges=29 0.0s | hyperedges ok=29 bad=0 clauses=102 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=22 j=10 n=6305 | UNSAT (conflict at root): k=23 l=22 n=6305 nodes=0 maxdepth=0 edges=27 0.0s | hyperedges ok=27 bad=0 clauses=98 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=22 j=11 n=6305 | UNSAT (conflict at root): k=23 l=22 n=6305 nodes=0 maxdepth=0 edges=25 0.0s | hyperedges ok=25 bad=0 clauses=94 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=22 j=12 n=6305 | UNSAT (conflict at root): k=23 l=22 n=6305 nodes=0 maxdepth=0 edges=23 0.0s | hyperedges ok=23 bad=0 clauses=90 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=22 j=13 n=6305 | UNSAT (conflict at root): k=23 l=22 n=6305 nodes=0 maxdepth=0 edges=21 0.0s | hyperedges ok=21 bad=0 clauses=86 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=22 j=14 n=6305 | UNSAT (conflict at root): k=23 l=22 n=6305 nodes=0 maxdepth=0 edges=19 0.0s | hyperedges ok=19 bad=0 clauses=82 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=22 j=15 n=6305 | UNSAT (conflict at root): k=23 l=22 n=6305 nodes=0 maxdepth=0 edges=17 0.0s | hyperedges ok=17 bad=0 clauses=78 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=22 j=16 n=6305 | UNSAT (conflict at root): k=23 l=22 n=6305 nodes=0 maxdepth=0 edges=15 0.0s | hyperedges ok=15 bad=0 clauses=74 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=22 j=17 n=6305 | UNSAT (conflict at root): k=23 l=22 n=6305 nodes=0 maxdepth=0 edges=13 0.0s | hyperedges ok=13 bad=0 clauses=70 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=22 j=18 n=6305 | UNSAT (conflict at root): k=23 l=22 n=6305 nodes=0 maxdepth=0 edges=11 0.0s | hyperedges ok=11 bad=0 clauses=66 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=22 j=19 n=6305 | UNSAT (conflict at root): k=23 l=22 n=6305 nodes=0 maxdepth=0 edges=7 0.0s | hyperedges ok=7 bad=0 clauses=58 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=22 j=20 n=6305 | UNSAT (conflict at root): k=23 l=22 n=6305 nodes=0 maxdepth=0 edges=6 0.0s | hyperedges ok=6 bad=0 clauses=56 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=22 j=21 n=6305 | UNSAT (conflict at root): k=23 l=22 n=6305 nodes=0 maxdepth=0 edges=5 0.0s | hyperedges ok=5 bad=0 clauses=54 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=23 j=1 n=7155 | UNSAT (conflict at root): k=24 l=23 n=7155 nodes=0 maxdepth=0 edges=37 0.0s | hyperedges ok=37 bad=0 clauses=120 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=23 j=2 n=7155 | UNSAT: k=24 l=23 n=7155 nodes=1928 maxdepth=254 edges=2596 82.9s | hyperedges ok=2596 bad=0 clauses=5238 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=23 j=3 n=7155 | UNSAT: k=24 l=23 n=7155 nodes=50997 maxdepth=258 edges=62033 2298.0s | hyperedges ok=62033 bad=0 clauses=124112 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=23 j=4 n=7155 SEARCH: TIMEOUT: k=24 l=23 n=7155 nodes=79872 maxdepth=261 edges=97397 3613.4s
+l=23 j=4 n=7155 | UNSAT: k=24 l=23 n=7155 nodes=137246 maxdepth=261 edges=175816 cubes=0 6854.8s | hyperedges ok=175816 bad=0 clauses=351678 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=23 j=5 n=7155 SEARCH: TIMEOUT: k=24 l=23 n=7155 nodes=105472 maxdepth=262 edges=126924 cubes=0 5400.9s
+l=23 j=5 n=7155 | UNSAT: k=24 l=23 n=7155 nodes=120945 maxdepth=262 edges=157912 cubes=0 5474.4s | hyperedges ok=157912 bad=0 clauses=315870 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=23 j=6 n=7155 | UNSAT: k=24 l=23 n=7155 nodes=47376 maxdepth=261 edges=73496 cubes=0 2222.3s | hyperedges ok=73496 bad=0 clauses=147038 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=23 j=7 n=7155 | UNSAT: k=24 l=23 n=7155 nodes=11236 maxdepth=258 edges=20035 cubes=0 614.3s | hyperedges ok=20035 bad=0 clauses=40116 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=23 j=8 n=7155 | UNSAT: k=24 l=23 n=7155 nodes=985 maxdepth=253 edges=1686 cubes=0 33.8s | hyperedges ok=1686 bad=0 clauses=3418 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=23 j=9 n=7155 | UNSAT: k=24 l=23 n=7155 nodes=248 maxdepth=247 edges=769 cubes=0 6.7s | hyperedges ok=769 bad=0 clauses=1584 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=23 j=10 n=7155 | UNSAT (conflict at root): k=24 l=23 n=7155 nodes=0 maxdepth=0 edges=29 cubes=0 0.0s | hyperedges ok=29 bad=0 clauses=104 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=23 j=11 n=7155 | UNSAT (conflict at root): k=24 l=23 n=7155 nodes=0 maxdepth=0 edges=27 cubes=0 0.0s | hyperedges ok=27 bad=0 clauses=100 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=23 j=12 n=7155 | UNSAT (conflict at root): k=24 l=23 n=7155 nodes=0 maxdepth=0 edges=25 cubes=0 0.0s | hyperedges ok=25 bad=0 clauses=96 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=23 j=13 n=7155 | UNSAT (conflict at root): k=24 l=23 n=7155 nodes=0 maxdepth=0 edges=23 cubes=0 0.0s | hyperedges ok=23 bad=0 clauses=92 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=23 j=14 n=7155 | UNSAT (conflict at root): k=24 l=23 n=7155 nodes=0 maxdepth=0 edges=21 cubes=0 0.0s | hyperedges ok=21 bad=0 clauses=88 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=23 j=15 n=7155 | UNSAT (conflict at root): k=24 l=23 n=7155 nodes=0 maxdepth=0 edges=19 cubes=0 0.0s | hyperedges ok=19 bad=0 clauses=84 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=23 j=16 n=7155 | UNSAT (conflict at root): k=24 l=23 n=7155 nodes=0 maxdepth=0 edges=17 cubes=0 0.0s | hyperedges ok=17 bad=0 clauses=80 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=23 j=17 n=7155 | UNSAT (conflict at root): k=24 l=23 n=7155 nodes=0 maxdepth=0 edges=15 cubes=0 0.0s | hyperedges ok=15 bad=0 clauses=76 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=23 j=18 n=7155 | UNSAT (conflict at root): k=24 l=23 n=7155 nodes=0 maxdepth=0 edges=13 cubes=0 0.0s | hyperedges ok=13 bad=0 clauses=72 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=23 j=19 n=7155 | UNSAT (conflict at root): k=24 l=23 n=7155 nodes=0 maxdepth=0 edges=8 cubes=0 0.0s | hyperedges ok=8 bad=0 clauses=62 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=23 j=20 n=7155 | UNSAT (conflict at root): k=24 l=23 n=7155 nodes=0 maxdepth=0 edges=7 cubes=0 0.0s | hyperedges ok=7 bad=0 clauses=60 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=23 j=21 n=7155 | UNSAT (conflict at root): k=24 l=23 n=7155 nodes=0 maxdepth=0 edges=6 cubes=0 0.0s | hyperedges ok=6 bad=0 clauses=58 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT
+l=23 j=22 n=7155 | UNSAT (conflict at root): k=24 l=23 n=7155 nodes=0 maxdepth=0 edges=5 cubes=0 0.0s | hyperedges ok=5 bad=0 clauses=56 | cadical_rc=20 | lrat-check:c VERIFIED | cake_lpr:s VERIFIED UNSAT

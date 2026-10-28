@@ -1,0 +1,5 @@
+c parsed a formula with 5282 variables and 66 clauses
+c VERIFIED
+c allocated 1024 1000 52820
+c Added clauses = 80.  Deleted clauses = 24.  Max live clauses = 67
+c verification time = 0.01 secs

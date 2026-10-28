@@ -1,0 +1,11 @@
+def OQ64.ValueIs : Nat → Nat → Nat → Prop :=
+fun k l n => ∀ (M : Nat), (∀ (c : Nat → Bool), OQ64.ExactSol k l M c) ↔ n ≤ M
+OQ64.K7 : (∀ (k : Nat), 8 ≤ k → OQ64.FormulaHolds k 7) ∧ ¬OQ64.FormulaHolds 7 7
+OQ64.S2_5_5 : OQ64.ValueIs 5 5 101
+OQ64.S2_6_6 : OQ64.ValueIs 6 6 166
+OQ64.l7_upper : ∀ (k : Nat), 8 ≤ k → ∀ (c : Nat → Bool), OQ64.ExactSol k 7 (OQ64.natv OQ64.l7F k) c
+OQ64.q5_upper : ∀ (k : Nat), 5 ≤ k → ∀ (c : Nat → Bool), OQ64.ExactSol k 5 (OQ64.natv OQ64.q5F k) c
+OQ64.q6_upper : ∀ (k : Nat), 6 ≤ k → ∀ (c : Nat → Bool), OQ64.ExactSol k 6 (OQ64.natv OQ64.q6F k) c
+'OQ64.K7' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ64.S2_5_5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ64.S2_6_6' depends on axioms: [propext, Classical.choice, Quot.sound]

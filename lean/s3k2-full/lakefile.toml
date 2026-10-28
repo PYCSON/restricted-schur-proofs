@@ -1,0 +1,9 @@
+name = "RSN"
+defaultTargets = ["RSN"]
+
+[[lean_lib]]
+name = "Gaiser"
+
+[[lean_lib]]
+name = "RSN"
+moreLeanArgs = ["--tstack=4000000"]

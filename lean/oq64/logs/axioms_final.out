@@ -1,0 +1,28 @@
+def OQ64.FormulaHolds : Nat → Nat → Prop :=
+fun k l => ∀ (M : Nat), (∀ (c : Nat → Bool), OQ64.ExactSol k l M c) ↔ OQ64.F k l ≤ M
+def OQ64.rbr : Nat → Nat → Nat → Bool :=
+fun s t x => decide (x < s) || decide (t ≤ x)
+def OQ64.colA : Nat → Nat → Nat → Bool :=
+fun a b x => decide (x = 1) || decide (a + 1 ≤ x) && decide (x ≤ b)
+OQ64.K3 : ∀ (k : Nat), 3 ≤ k → OQ64.FormulaHolds k 3
+OQ64.K4 : ∀ (k : Nat), 4 ≤ k → OQ64.FormulaHolds k 4
+OQ64.K5 : (∀ (k : Nat), 6 ≤ k → OQ64.FormulaHolds k 5) ∧ ¬OQ64.FormulaHolds 5 5
+OQ64.K6 : (∀ (k : Nat), 7 ≤ k → OQ64.FormulaHolds k 6) ∧ ¬OQ64.FormulaHolds 6 6
+OQ64.gaiser_lower : ∀ (k l D E : Nat),
+  2 ≤ l →
+    l ≤ k →
+      2 * D = l * (l - 1) →
+        2 * E = (l - 1) * (l - 2) →
+          ¬OQ64.ExactSol k l (k * (k + D) + D + k - 2 + E) (OQ64.rbr (k + D) (k * (k + D) + D))
+OQ64.propA : ∀ (l D E T a b : Nat),
+  5 ≤ l →
+    2 * D = l * (l - 1) →
+      2 * E = (l - 1) * (l - 2) →
+        2 * T = l * (l + 1) →
+          2 * (a + 1) = l * (l + 3) → b = (l - 1) * a + D → ¬OQ64.ExactSol l l (b + T - 1) (OQ64.colA a b)
+'OQ64.K3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ64.K4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ64.K5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ64.K6' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ64.propA' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ64.gaiser_lower' depends on axioms: [propext, Classical.choice, Quot.sound]

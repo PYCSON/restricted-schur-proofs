@@ -1,0 +1,9 @@
+name = "OQ64"
+defaultTargets = ["OQ64"]
+
+[[lean_lib]]
+name = "RSN"
+
+[[lean_lib]]
+name = "OQ64"
+moreLeanArgs = ["--tstack=4000000"]

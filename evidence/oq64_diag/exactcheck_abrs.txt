@@ -1,0 +1,16 @@
+# exactcheck.py on the ABRS colourings of [1, n-1], k=l=8..11 (2026-10-23 02:26 +0800)
+== k=l=8 N=364 red={1}u[44,329]
+red: size=287 no monochromatic solution
+blue: size=77 no monochromatic solution
+== k=l=9 N=504 red={1}u[54,460]
+red: size=408 no monochromatic solution
+blue: size=96 no monochromatic solution
+== k=l=10 N=675 red={1}u[65,621]
+red: size=558 no monochromatic solution
+blue: size=117 no monochromatic solution
+== k=l=11 N=880 red={1}u[77,815]
+red: size=740 no monochromatic solution
+blue: size=140 no monochromatic solution
+== k=l=14 N=1729 red={1}u[119,1625]  (2026-10-23 05:01 +0800)
+red: size=1508 no monochromatic solution
+blue: size=221 no monochromatic solution

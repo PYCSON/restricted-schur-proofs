@@ -1,0 +1,1 @@
+windows excluded for every k>=l+1: 208 of 208

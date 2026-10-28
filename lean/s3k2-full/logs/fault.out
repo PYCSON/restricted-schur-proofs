@@ -1,0 +1,16 @@
+Test/Fault.lean:4:66: error: Tactic `decide` proved that the proposition
+  identOK top0Verts ((1, 2, 3) :: top0Edges) = true
+is false
+Test/Fault.lean:6:64: error: Tactic `decide` proved that the proposition
+  vertsOK (top0N + 1) (top0Verts ++ [[0]]) = true
+is false
+Test/Fault.lean:9:2: error: (kernel) application type mismatch
+  id (Eq.refl true)
+argument has type
+  true = true
+but function has type
+  decide (checkSegF ({ id := 967, clause := [81], hints := [962] } :: top0Seg0.tail) top0Db0 = true) = true →
+    decide (checkSegF ({ id := 967, clause := [81], hints := [962] } :: top0Seg0.tail) top0Db0 = true) = true
+Test/Fault.lean:11:57: error: Tactic `decide` proved that the proposition
+  blueOK top0Verts [9, 1] top0Blues = true
+is false

@@ -1,0 +1,1 @@
+UNSAT: k=14 l=14 n=1730 nodes=37456292 maxdepth=125 4528.6s   (numfast, 2026-10-23 ~04:40; the n-1 search was stopped; the ABRS colouring of [1,1729] was checked by exactcheck.py instead)

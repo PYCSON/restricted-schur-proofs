@@ -1,0 +1,30 @@
+RSN.Statement rc=0 0s 0 errors
+RSN.Bridge rc=0 0s 0 errors
+RSN.UniCase rc=0 1s 0 errors
+RSN.Poly2 rc=0 0s 0 errors
+RSN.BiCase rc=0 1s 0 errors
+RSN.Direct rc=0 1s 0 errors
+Gaiser.Lower rc=0 9s 0 errors
+RSN.Top0 rc=0 31s 0 errors
+RSN.Top1 rc=0 40s 0 errors
+RSN.Top2 rc=0 132s 0 errors
+RSN.Small3Unsat rc=0 90s 0 errors
+RSN.Small4Unsat rc=1 50s 16 errors
+error: RSN/Small4Unsat.lean:33:68: (kernel) deep recursion detected, use `set_option maxRecDepth <num>` to increase the limit
+error: RSN/Small4Unsat.lean:34:68: (kernel) deep recursion detected, use `set_option maxRecDepth <num>` to increase the limit
+error: RSN/Small4Unsat.lean:35:68: (kernel) deep recursion detected, use `set_option maxRecDepth <num>` to increase the limit
+error: RSN/Small4Unsat.lean:36:68: (kernel) deep recursion detected, use `set_option maxRecDepth <num>` to increase the limit
+error: RSN/Small4Unsat.lean:37:68: (kernel) deep recursion detected, use `set_option maxRecDepth <num>` to increase the limit
+error: RSN/Small4Unsat.lean:38:68: (kernel) deep recursion detected, use `set_option maxRecDepth <num>` to increase the limit
+error: RSN/Small4Unsat.lean:39:68: (kernel) deep recursion detected, use `set_option maxRecDepth <num>` to increase the limit
+error: RSN/Small4Unsat.lean:40:68: (kernel) deep recursion detected, use `set_option maxRecDepth <num>` to increase the limit
+error: RSN/Small4Unsat.lean:41:68: (kernel) deep recursion detected, use `set_option maxRecDepth <num>` to increase the limit
+error: RSN/Small4Unsat.lean:42:68: (kernel) deep recursion detected, use `set_option maxRecDepth <num>` to increase the limit
+error: RSN/Small4Unsat.lean:43:71: (kernel) deep recursion detected, use `set_option maxRecDepth <num>` to increase the limit
+error: RSN/Small4Unsat.lean:44:71: (kernel) deep recursion detected, use `set_option maxRecDepth <num>` to increase the limit
+error: RSN/Small4Unsat.lean:45:71: (kernel) deep recursion detected, use `set_option maxRecDepth <num>` to increase the limit
+error: RSN/Small4Unsat.lean:46:71: (kernel) deep recursion detected, use `set_option maxRecDepth <num>` to increase the limit
+error: RSN/Small4Unsat.lean:47:71: (kernel) deep recursion detected, use `set_option maxRecDepth <num>` to increase the limit
+Some required targets logged failures:
+- RSN.Small4Unsat
+error: build failed

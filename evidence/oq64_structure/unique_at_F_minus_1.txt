@@ -1,0 +1,22 @@
+COMPLETE: k=4 l=3 n=34 good colourings with 1 red: 1  nodes=45 0.0s
+   [(1, 6, 'R'), (7, 30, 'B'), (31, 34, 'R')]
+COMPLETE: k=5 l=4 n=67 good colourings with 1 red: 1  nodes=115 0.0s
+   [(1, 10, 'R'), (11, 60, 'B'), (61, 67, 'R')]
+COMPLETE: k=6 l=5 n=116 good colourings with 1 red: 1  nodes=325 0.1s
+   [(1, 15, 'R'), (16, 105, 'B'), (106, 116, 'R')]
+COMPLETE: k=7 l=5 n=140 good colourings with 1 red: 1  nodes=325 0.2s
+   [(1, 16, 'R'), (17, 128, 'B'), (129, 140, 'R')]
+COMPLETE: k=8 l=5 n=166 good colourings with 1 red: 1  nodes=329 0.2s
+   [(1, 17, 'R'), (18, 153, 'B'), (154, 166, 'R')]
+COMPLETE: k=7 l=6 n=184 good colourings with 1 red: 1  nodes=1029 0.4s
+   [(1, 21, 'R'), (22, 168, 'B'), (169, 184, 'R')]
+COMPLETE: k=8 l=6 n=215 good colourings with 1 red: 1  nodes=1029 1.2s
+   [(1, 22, 'R'), (23, 198, 'B'), (199, 215, 'R')]
+COMPLETE: k=9 l=6 n=248 good colourings with 1 red: 1  nodes=1033 1.5s
+   [(1, 23, 'R'), (24, 230, 'B'), (231, 248, 'R')]
+COMPLETE: k=8 l=7 n=274 good colourings with 1 red: 1  nodes=3625 2.8s
+   [(1, 28, 'R'), (29, 252, 'B'), (253, 274, 'R')]
+COMPLETE: k=9 l=8 n=389 good colourings with 1 red: 1  nodes=13183 15.7s
+   [(1, 36, 'R'), (37, 360, 'B'), (361, 389, 'R')]
+COMPLETE: k=10 l=9 n=532 good colourings with 1 red: 1  nodes=49033 96.0s
+   [(1, 45, 'R'), (46, 495, 'B'), (496, 532, 'R')]

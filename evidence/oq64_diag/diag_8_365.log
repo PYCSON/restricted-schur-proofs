@@ -1,0 +1,12 @@
+02:21:27 numeng2 8 8 365
+02:21:44 numeng2 rc=0 UNSAT: k=8 l=8 n=365 nodes=23037 leaves=11519 maxdepth=44 forced=972252 edges=51782 16.6s
+02:21:45 mkcnf: hyperedges ok=51782 bad=0 clauses=103565
+02:21:46 cadical rc=20
+02:21:46 trimcore: original clauses used 48053; hyperedges kept 47825 of 51782
+02:21:47 mkcnf core: hyperedges ok=47825 bad=0 clauses=95651
+02:21:48 cadical core rc=20
+02:21:48 lrat-check: c VERIFIED
+02:21:49 cake_lpr: s VERIFIED UNSAT
+02:22:06 numeng2 at n-1: GOOD_COLOURING: k=8 l=8 n=364 nodes=23176 leaves=11581 maxdepth=55 forced=970531 edges=51952 16.5s
+02:22:06 checkgood: GOOD
+02:22:06 done

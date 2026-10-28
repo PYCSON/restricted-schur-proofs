@@ -1,0 +1,20 @@
+def OQ64.ExactSol : Nat → Nat → Nat → (Nat → Bool) → Prop :=
+fun k l N c =>
+  ∃ x vals,
+    (∀ (i : Nat), i ≤ k → 1 ≤ x i ∧ x i ≤ N) ∧
+      (List.map x (List.range k)).sum = x k ∧
+        vals.Nodup ∧
+          vals.length = l + 1 ∧
+            (∀ (i : Nat), i ≤ k → x i ∈ vals) ∧
+              (∀ (v : Nat), v ∈ vals → ∃ i, i ≤ k ∧ x i = v) ∧ ∀ (i : Nat), i ≤ k → c (x i) = c (x k)
+def OQ64.F : Nat → Nat → Nat :=
+fun k l => k * k + ((l + 1) * (l - 2) / 2 + 2) * k + l * (l - 2)
+OQ64.S2_3_upper : ∀ (k : Nat), 3 ≤ k → ∀ (c : Nat → Bool), OQ64.ExactSol k 3 (OQ64.F k 3) c
+OQ64.S2_4_upper : ∀ (k : Nat), 4 ≤ k → ∀ (c : Nat → Bool), OQ64.ExactSol k 4 (OQ64.F k 4) c
+OQ64.S2_5_upper : ∀ (k : Nat), 6 ≤ k → ∀ (c : Nat → Bool), OQ64.ExactSol k 5 (OQ64.F k 5) c
+OQ64.S2_6_upper : ∀ (k : Nat), 7 ≤ k → ∀ (c : Nat → Bool), OQ64.ExactSol k 6 (OQ64.F k 6) c
+'OQ64.S2_3_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ64.S2_4_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ64.S2_5_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ64.S2_6_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ64.kernel_upper' depends on axioms: [propext, Classical.choice, Quot.sound]

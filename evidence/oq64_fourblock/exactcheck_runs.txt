@@ -1,0 +1,52 @@
+# exactcheck.py runs  (2026-10-23 01:53 +0800)
+## controls on Gaiser's three-block colouring, (k,l)=(6,4), F=86
+N=85 red [1,11]u[78,85]:
+red: size=19 no monochromatic solution
+blue: size=66 no monochromatic solution
+N=86 with 86 red:
+red: size=20 MONOCHROMATIC solution with sum y=86
+blue: size=66 no monochromatic solution
+N=86 with 86 blue:
+red: size=19 no monochromatic solution
+blue: size=67 MONOCHROMATIC solution with sum y=86
+## four-block colourings of [1,V-1] (red = {1} u [j+2,m])
+== k=26 l=25 j=6 m=469 N=9129 (the colouring numfast found first, extended to V-1)
+red: size=463 no monochromatic solution
+blue: size=8666 no monochromatic solution
+== k=25 l=24 N=8096  F=8078 V=8097 j=5 m=415
+red: size=410 no monochromatic solution
+blue: size=7686 no monochromatic solution
+== k=26 l=24 N=8117  F=8406 V=8118 j=5 m=416
+red: size=411 no monochromatic solution
+blue: size=7706 no monochromatic solution
+== k=26 l=25 N=9131  F=9077 V=9132 j=5 m=445
+red: size=440 no monochromatic solution
+blue: size=8691 no monochromatic solution
+== k=31 l=30 N=15676  F=15317 V=15677 j=7 m=668
+red: size=661 no monochromatic solution
+blue: size=15015 no monochromatic solution
+== k=32 l=30 N=15701  F=15816 V=15702 j=7 m=669
+red: size=662 no monochromatic solution
+blue: size=15039 no monochromatic solution
+== k=33 l=30 N=15726  F=16317 V=15727 j=7 m=670
+red: size=663 no monochromatic solution
+blue: size=15063 no monochromatic solution
+== k=42 l=40 N=36885  F=36086 V=36886 j=9 m=1172
+red: size=1163 no monochromatic solution
+blue: size=35722 no monochromatic solution
+== k=22 l=22 N=6241  F=6028 V=6242 j=5 m=357
+red: size=352 no monochromatic solution
+blue: size=5889 no monochromatic solution
+== k=30 l=30 N=15651  F=14820 V=15652 j=7 m=667
+red: size=660 no monochromatic solution
+blue: size=14991 no monochromatic solution
+== k=40 l=40 N=36819  F=34360 V=36820 j=9 m=1170
+red: size=1161 no monochromatic solution
+blue: size=35658 no monochromatic solution
+## negative controls: N=V with V coloured blue (V is a blue k-sum by construction)
+== k=25 l=24 N=8097 (V blue)
+red: size=410 no monochromatic solution
+blue: size=7687 MONOCHROMATIC solution with sum y=8097
+== k=26 l=25 N=9132 (V blue)
+red: size=440 no monochromatic solution
+blue: size=8692 MONOCHROMATIC solution with sum y=9132

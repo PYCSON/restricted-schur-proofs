@@ -1,0 +1,15 @@
+RSN.S3_two_eq : ∀ (k : Nat),
+  3 ≤ k → ∀ (M : Nat), (∀ (c : Nat → Fin 3), Gaiser.MonoSol k M c) ↔ k ^ 3 + 3 * k ^ 2 + 2 * k - 2 ≤ M
+RSN.upper : ∀ (k : Nat), 3 ≤ k → ∀ (c : Nat → Fin 3), Gaiser.MonoSol k (RSN.F k) c
+Gaiser.lower : ∀ (k : Nat), 2 ≤ k → ¬Gaiser.MonoSol k (k * (k * k) + 3 * (k * k) + 2 * k - 3) (Gaiser.col k)
+def Gaiser.MonoSol : Nat → Nat → (Nat → Fin 3) → Prop :=
+fun k N c =>
+  ∃ i u v w,
+    1 ≤ i ∧
+      i < k ∧ 1 ≤ u ∧ u ≤ N ∧ 1 ≤ v ∧ v ≤ N ∧ 1 ≤ w ∧ w ≤ N ∧ u ≠ v ∧ i * u + (k - i) * v = w ∧ c u = c v ∧ c v = c w
+def RSN.F : Nat → Nat :=
+fun k => k ^ 3 + 3 * k ^ 2 + 2 * k - 2
+'RSN.S3_two_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RSN.upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RSN.weak_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Gaiser.lower' depends on axioms: [propext, Classical.choice, Quot.sound]

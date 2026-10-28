@@ -1,0 +1,7 @@
+t=0s nodes=1 leaves=0 depth=0 maxdepth=0 edges=0 path=
+t=30s nodes=9335 leaves=4664 depth=15 maxdepth=16 edges=27257 path=001111001110101
+t=60s nodes=18776 leaves=9384 depth=16 maxdepth=51 edges=54343 path=0110110010101101
+t=90s nodes=28414 leaves=14203 depth=15 maxdepth=52 edges=81978 path=100111010001101
+t=120s nodes=37914 leaves=18953 depth=16 maxdepth=52 edges=109165 path=1100100111100011
+t=150s nodes=47082 leaves=23537 depth=16 maxdepth=52 edges=135338 path=1111001101010001
+UNSAT: k=10 l=9 n=533 nodes=48799 leaves=24400 maxdepth=52 forced=6407741 edges=140485 155.9s

@@ -1,0 +1,28 @@
+windowed optimiser == full loop for 5<=l<260
+smallest l with S2(l+1;l) > F(l+1,l) via four-block: 24
+emax(l)>=1 for all l in [24,5000]: True
+for all 24<=l<=5000: emax(l) >= max(1, floor((l-18)/8))
+  l=24: four-block beats F for k=l+1..l+1  =>  K(l) >= 26  (K/l >= 1.0833)
+  l=25: four-block beats F for k=l+1..l+1  =>  K(l) >= 27  (K/l >= 1.0800)
+  l=26: four-block beats F for k=l+1..l+1  =>  K(l) >= 28  (K/l >= 1.0769)
+  l=30: four-block beats F for k=l+1..l+1  =>  K(l) >= 32  (K/l >= 1.0667)
+  l=32: four-block beats F for k=l+1..l+1  =>  K(l) >= 34  (K/l >= 1.0625)
+  l=40: four-block beats F for k=l+1..l+2  =>  K(l) >= 43  (K/l >= 1.0750)
+  l=50: four-block beats F for k=l+1..l+4  =>  K(l) >= 55  (K/l >= 1.1000)
+  l=64: four-block beats F for k=l+1..l+5  =>  K(l) >= 70  (K/l >= 1.0938)
+  l=100: four-block beats F for k=l+1..l+10  =>  K(l) >= 111  (K/l >= 1.1100)
+  l=200: four-block beats F for k=l+1..l+22  =>  K(l) >= 223  (K/l >= 1.1150)
+  l=500: four-block beats F for k=l+1..l+60  =>  K(l) >= 561  (K/l >= 1.1220)
+  l=1000: four-block beats F for k=l+1..l+122  =>  K(l) >= 1123  (K/l >= 1.1230)
+  l=2000: four-block beats F for k=l+1..l+247  =>  K(l) >= 2248  (K/l >= 1.1240)
+  l=5000: four-block beats F for k=l+1..l+622  =>  K(l) >= 5623  (K/l >= 1.1246)
+ r=0: dG/de=-2*e - l**2/2 - 3*l/4 + 1 (<0 for l>=1); G(e=(l-18)/8)=l**2/64 + 27*l/8 - 117/16; real roots [-218.15, 2.15]
+ r=1: dG/de=-2*e - l**2/2 - 3*l/4 + 5/4 (<0 for l>=1); G(e=(l-18)/8)=l**2/64 + 119*l/32 - 33/4; real roots [-240.2, 2.2]
+ r=2: dG/de=-2*e - l**2/2 - 3*l/4 + 3/2 (<0 for l>=1); G(e=(l-18)/8)=l**2/64 + 63*l/16 - 143/16; real roots [-254.25, 2.25]
+ r=3: dG/de=-2*e - l**2/2 - 3*l/4 + 7/4 (<0 for l>=1); G(e=(l-18)/8)=l**2/64 + 129*l/32 - 75/8; real roots [-260.3, 2.3]
+diagonal k=l: smallest k with four-block > ABRS bound (k^3+4k^2-5k+2)/2: 22 ; holds for all k in [22,5000]: True
+  k=22: four-block 6242 (j=5) vs ABRS 6238  ratio to k^3: 0.5862
+  k=25: four-block 9110 (j=5) vs ABRS 9001  ratio to k^3: 0.5830
+  k=30: four-block 15652 (j=7) vs ABRS 15226  ratio to k^3: 0.5797
+  k=50: four-block 71587 (j=12) vs ABRS 67376  ratio to k^3: 0.5727
+  k=100: four-block 567550 (j=24) vs ABRS 519751  ratio to k^3: 0.5675

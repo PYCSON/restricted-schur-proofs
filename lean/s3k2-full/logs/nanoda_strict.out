@@ -1,0 +1,14 @@
+NanoDa strict-mode run on RSN.S3_two_eq export (s3k2.ndjson, 177427848 bytes, sha256 aaa809b7e00fb1784b6eac02aeb04af6ff1c5a21ed051863b3f018dcfc7738f7)
+config: {
+  "export_file_path": "/home/claude/nanoda_run/rsn/s3k2.ndjson",
+  "permitted_axioms": ["propext", "Classical.choice", "Quot.sound"],
+  "unpermitted_axiom_hard_error": true,
+  "nat_extension": true,
+  "string_extension": true,
+  "num_threads": 1,
+  "print_success_message": true
+}
+
+command: ulimit -s unlimited; timeout 7000 nanoda_bin config_strict.json  (nanoda_lib 9d6964f7; started 2026-10-21 18:26 +08:00)
+--- output ---
+nanoda rc=124 7001s

@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "On two open questions of Gaiser on restricted generalized Schur numbers (computer-assisted proof candidate)"
+type: dataset
+authors:
+  - family-names: Sun
+    given-names: Puyi
+    orcid: "https://orcid.org/0009-0004-1644-5300"
+version: "1.0.0"
+date-released: "2026-10-28"
+abstract: "Computer-assisted proof candidates for Open Questions 6.2 and 6.4 of C. Gaiser, Restricted generalized Schur numbers (arXiv:2608.08789): S_3(k;2) = k^3+3k^2+2k-2 for every k >= 3; the exact thresholds K(3),...,K(10) = 3,4,6,7,8,9,10,11; S_2(12;11) = 915; the two-colour weak Schur numbers WS_8(2)=365, WS_9(2)=505, WS_10(2)=676; and K(l) >= l+2 for l >= 24. Not peer reviewed."
+keywords: ["Schur numbers", "Ramsey theory", "SAT", "LRAT", "Lean", "computer-assisted proof"]
+license: ["CC-BY-4.0", "MIT"]
+preferred-citation:
+  type: unpublished
+  title: "On two open questions of Gaiser on restricted generalized Schur numbers"
+  authors:
+    - family-names: Sun
+      given-names: Puyi
+  notes: "Preprint v1.0. Computer-assisted proof candidate; not peer reviewed. Text and data CC BY 4.0, code MIT (see LICENSE)."

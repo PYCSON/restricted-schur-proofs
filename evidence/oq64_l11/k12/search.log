@@ -1,0 +1,2 @@
+t=42s nodes=262144 depth=16 maxdepth=75
+UNSAT: k=12 l=11 n=915 nodes=353169 maxdepth=75 edges=2055147 cubes=0 58.7s

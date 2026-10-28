@@ -1,0 +1,759 @@
+l=4 k>=4: 106 leaves
+CASE 1R 2R 3R 4R 5R 6R
+            k+6 is B   since  (k-3)·1 + 2 + 3 + 4 = k+6 (all R)
+            k+7 is B   since  (k-3)·1 + 2 + 3 + 5 = k+7 (all R)
+           k+10 is B   since  (k-3)·1 + 2 + 5 + 6 = k+10 (all R)
+           2k+9 is B   since  (k-3)·2 + 4 + 5 + 6 = 2k+9 (all R)
+            k+8 is B   since  (k-3)·1 + 2 + 4 + 5 = k+8 (all R)
+            k+9 is B   since  (k-3)·1 + 3 + 4 + 5 = k+9 (all R)
+       k^2+6k+6 is R   since  (k-3)·k+6 + k+7 + k+8 + k+9 = k^2+6k+6 (all B)
+       k^2+7k+8 is B   since  (k-3)·1 + 2 + 3 + k^2+6k+6 = k^2+7k+8 (all R)
+   CONTRADICTION: (k-3)·k+6 + k+7 + k+10 + 2k+9 = k^2+7k+8, all B
+CASE 1R 2R 3R 4R 5R 6B
+            k+6 is B   since  (k-3)·1 + 2 + 3 + 4 = k+6 (all R)
+            k+7 is B   since  (k-3)·1 + 2 + 3 + 5 = k+7 (all R)
+            k+8 is B   since  (k-3)·1 + 2 + 4 + 5 = k+8 (all R)
+           9k+3 is R   since  (k-3)·6 + k+6 + k+7 + k+8 = 9k+3 (all B)
+            k+9 is B   since  (k-3)·1 + 3 + 4 + 5 = k+9 (all R)
+           2k+6 is B   since  (k-3)·2 + 3 + 4 + 5 = 2k+6 (all R)
+          10k+5 is R   since  (k-3)·6 + k+8 + k+9 + 2k+6 = 10k+5 (all B)
+   CONTRADICTION: (k-3)·1 + 2 + 3 + 9k+3 = 10k+5, all R
+CASE 1R 2R 3R 4R 5B 6R
+            k+6 is B   since  (k-3)·1 + 2 + 3 + 4 = k+6 (all R)
+            k+8 is B   since  (k-3)·1 + 2 + 3 + 6 = k+8 (all R)
+            k+9 is B   since  (k-3)·1 + 2 + 4 + 6 = k+9 (all R)
+           8k+8 is R   since  (k-3)·5 + k+6 + k+8 + k+9 = 8k+8 (all B)
+           k+10 is B   since  (k-3)·1 + 3 + 4 + 6 = k+10 (all R)
+           2k+7 is B   since  (k-3)·2 + 3 + 4 + 6 = 2k+7 (all R)
+          9k+10 is R   since  (k-3)·5 + k+8 + k+10 + 2k+7 = 9k+10 (all B)
+   CONTRADICTION: (k-3)·1 + 2 + 3 + 8k+8 = 9k+10, all R
+CASE 1R 2R 3R 4R 5B 6B 7R
+            k+6 is B   since  (k-3)·1 + 2 + 3 + 4 = k+6 (all R)
+            k+9 is B   since  (k-3)·1 + 2 + 3 + 7 = k+9 (all R)
+           7k+6 is R   since  (k-3)·5 + 6 + k+6 + k+9 = 7k+6 (all B)
+           2k+8 is B   since  (k-3)·2 + 3 + 4 + 7 = 2k+8 (all R)
+           8k+8 is R   since  (k-3)·5 + 6 + k+9 + 2k+8 = 8k+8 (all B)
+   CONTRADICTION: (k-3)·1 + 2 + 3 + 7k+6 = 8k+8, all R
+CASE 1R 2R 3R 4R 5B 6B 7B 8R
+           2k+9 is B   since  (k-3)·2 + 3 + 4 + 8 = 2k+9 (all R)
+            k+6 is B   since  (k-3)·1 + 2 + 3 + 4 = k+6 (all R)
+           6k+4 is R   since  (k-3)·5 + 6 + 7 + k+6 = 6k+4 (all B)
+           7k+7 is B   since  (k-3)·1 + 2 + 4 + 6k+4 = 7k+7 (all R)
+   CONTRADICTION: (k-3)·5 + 6 + 7 + 2k+9 = 7k+7, all B
+CASE 1R 2R 3R 4R 5B 6B 7B 8B 9R
+           k+11 is B   since  (k-3)·1 + 2 + 3 + 9 = k+11 (all R)
+           5k+6 is R   since  (k-3)·5 + 6 + 7 + 8 = 5k+6 (all B)
+           6k+9 is B   since  (k-3)·1 + 2 + 4 + 5k+6 = 6k+9 (all R)
+   CONTRADICTION: (k-3)·5 + 6 + 7 + k+11 = 6k+9, all B
+CASE 1R 2R 3R 4R 5B 6B 7B 8B 9B
+            k+6 is B   since  (k-3)·1 + 2 + 3 + 4 = k+6 (all R)
+           5k+6 is R   since  (k-3)·5 + 6 + 7 + 8 = 5k+6 (all B)
+           6k+8 is B   since  (k-3)·1 + 2 + 3 + 5k+6 = 6k+8 (all R)
+   CONTRADICTION: (k-3)·5 + 8 + 9 + k+6 = 6k+8, all B
+CASE 1R 2R 3R 4B 5R 6R
+            k+7 is B   since  (k-3)·1 + 2 + 3 + 5 = k+7 (all R)
+            k+8 is B   since  (k-3)·1 + 2 + 3 + 6 = k+8 (all R)
+           k+10 is B   since  (k-3)·1 + 2 + 5 + 6 = k+10 (all R)
+          7k+13 is R   since  (k-3)·4 + k+7 + k+8 + k+10 = 7k+13 (all B)
+           k+11 is B   since  (k-3)·1 + 3 + 5 + 6 = k+11 (all R)
+           2k+8 is B   since  (k-3)·2 + 3 + 5 + 6 = 2k+8 (all R)
+          8k+15 is R   since  (k-3)·4 + k+8 + k+11 + 2k+8 = 8k+15 (all B)
+   CONTRADICTION: (k-3)·1 + 2 + 3 + 7k+13 = 8k+15, all R
+CASE 1R 2R 3R 4B 5R 6B 7R
+            k+7 is B   since  (k-3)·1 + 2 + 3 + 5 = k+7 (all R)
+            k+9 is B   since  (k-3)·1 + 2 + 3 + 7 = k+9 (all R)
+          6k+10 is R   since  (k-3)·4 + 6 + k+7 + k+9 = 6k+10 (all B)
+           2k+9 is B   since  (k-3)·2 + 3 + 5 + 7 = 2k+9 (all R)
+          7k+12 is R   since  (k-3)·4 + 6 + k+9 + 2k+9 = 7k+12 (all B)
+   CONTRADICTION: (k-3)·1 + 2 + 3 + 6k+10 = 7k+12, all R
+CASE 1R 2R 3R 4B 5R 6B 7B 8R
+           3k+5 is B   since  (k-3)·3 + 1 + 5 + 8 = 3k+5 (all R)
+           2k+3 is B   since  (k-3)·2 + 1 + 3 + 5 = 2k+3 (all R)
+           6k+4 is R   since  (k-3)·4 + 6 + 7 + 2k+3 = 6k+4 (all B)
+           7k+6 is B   since  (k-3)·1 + 2 + 3 + 6k+4 = 7k+6 (all R)
+   CONTRADICTION: (k-3)·4 + 6 + 7 + 3k+5 = 7k+6, all B
+CASE 1R 2R 3R 4B 5R 6B 7B 8B 9R
+            k+7 is B   since  (k-3)·1 + 2 + 3 + 5 = k+7 (all R)
+           7k+4 is R   since  (k-3)·6 + 7 + 8 + k+7 = 7k+4 (all B)
+           4k+9 is R   since  (k-3)·4 + 6 + 7 + 8 = 4k+9 (all B)
+          5k+11 is B   since  (k-3)·1 + 2 + 3 + 4k+9 = 5k+11 (all R)
+          9k+12 is R   since  (k-3)·4 + 6 + 7 + 5k+11 = 9k+12 (all B)
+   CONTRADICTION: (k-3)·2 + 5 + 9 + 7k+4 = 9k+12, all R
+CASE 1R 2R 3R 4B 5R 6B 7B 8B 9B
+            k+7 is B   since  (k-3)·1 + 2 + 3 + 5 = k+7 (all R)
+           4k+9 is R   since  (k-3)·4 + 6 + 7 + 8 = 4k+9 (all B)
+          5k+11 is B   since  (k-3)·1 + 2 + 3 + 4k+9 = 5k+11 (all R)
+   CONTRADICTION: (k-3)·4 + 7 + 9 + k+7 = 5k+11, all B
+CASE 1R 2R 3R 4B 5B 6R 7R
+            k+8 is B   since  (k-3)·1 + 2 + 3 + 6 = k+8 (all R)
+            k+9 is B   since  (k-3)·1 + 2 + 3 + 7 = k+9 (all R)
+          6k+10 is R   since  (k-3)·4 + 5 + k+8 + k+9 = 6k+10 (all B)
+          2k+10 is B   since  (k-3)·2 + 3 + 6 + 7 = 2k+10 (all R)
+          7k+12 is R   since  (k-3)·4 + 5 + k+9 + 2k+10 = 7k+12 (all B)
+   CONTRADICTION: (k-3)·1 + 2 + 3 + 6k+10 = 7k+12, all R
+CASE 1R 2R 3R 4B 5B 6R 7B 8R
+           3k+6 is B   since  (k-3)·3 + 1 + 6 + 8 = 3k+6 (all R)
+           2k+4 is B   since  (k-3)·2 + 1 + 3 + 6 = 2k+4 (all R)
+           6k+4 is R   since  (k-3)·4 + 5 + 7 + 2k+4 = 6k+4 (all B)
+           7k+6 is B   since  (k-3)·1 + 2 + 3 + 6k+4 = 7k+6 (all R)
+   CONTRADICTION: (k-3)·4 + 5 + 7 + 3k+6 = 7k+6, all B
+CASE 1R 2R 3R 4B 5B 6R 7B 8B
+           4k+8 is R   since  (k-3)·4 + 5 + 7 + 8 = 4k+8 (all B)
+          5k+10 is B   since  (k-3)·1 + 2 + 3 + 4k+8 = 5k+10 (all R)
+          9k+10 is R   since  (k-3)·4 + 5 + 7 + 5k+10 = 9k+10 (all B)
+            k+8 is B   since  (k-3)·1 + 2 + 3 + 6 = k+8 (all R)
+           5k+9 is R   since  (k-3)·4 + 5 + 8 + k+8 = 5k+9 (all B)
+          6k+11 is B   since  (k-3)·1 + 2 + 3 + 5k+9 = 6k+11 (all R)
+         10k+12 is R   since  (k-3)·4 + 5 + 8 + 6k+11 = 10k+12 (all B)
+   CONTRADICTION: (k-3)·1 + 2 + 3 + 9k+10 = 10k+12, all R
+CASE 1R 2R 3R 4B 5B 6B 7R 8R
+           3k+7 is B   since  (k-3)·3 + 1 + 7 + 8 = 3k+7 (all R)
+           2k+5 is B   since  (k-3)·2 + 1 + 3 + 7 = 2k+5 (all R)
+           6k+4 is R   since  (k-3)·4 + 5 + 6 + 2k+5 = 6k+4 (all B)
+           7k+6 is B   since  (k-3)·1 + 2 + 3 + 6k+4 = 7k+6 (all R)
+   CONTRADICTION: (k-3)·4 + 5 + 6 + 3k+7 = 7k+6, all B
+CASE 1R 2R 3R 4B 5B 6B 7R 8B
+           4k+7 is R   since  (k-3)·4 + 5 + 6 + 8 = 4k+7 (all B)
+           5k+9 is B   since  (k-3)·1 + 2 + 3 + 4k+7 = 5k+9 (all R)
+           2k+5 is B   since  (k-3)·2 + 1 + 3 + 7 = 2k+5 (all R)
+           7k+4 is R   since  (k-3)·5 + 6 + 8 + 2k+5 = 7k+4 (all B)
+           9k+8 is B   since  (k-3)·2 + 3 + 7 + 7k+4 = 9k+8 (all R)
+   CONTRADICTION: (k-3)·4 + 5 + 6 + 5k+9 = 9k+8, all B
+CASE 1R 2R 3R 4B 5B 6B 7B 8R
+           5k+2 is R   since  (k-3)·5 + 4 + 6 + 7 = 5k+2 (all B)
+          6k+10 is B   since  (k-3)·1 + 3 + 8 + 5k+2 = 6k+10 (all R)
+           4k+6 is R   since  (k-3)·4 + 5 + 6 + 7 = 4k+6 (all B)
+           5k+8 is B   since  (k-3)·1 + 2 + 3 + 4k+6 = 5k+8 (all R)
+           9k+7 is R   since  (k-3)·4 + 5 + 6 + 5k+8 = 9k+7 (all B)
+          10k+9 is B   since  (k-3)·1 + 2 + 3 + 9k+7 = 10k+9 (all R)
+   CONTRADICTION: (k-3)·4 + 5 + 6 + 6k+10 = 10k+9, all B
+CASE 1R 2R 3R 4B 5B 6B 7B 8B
+           4k+6 is R   since  (k-3)·4 + 5 + 6 + 7 = 4k+6 (all B)
+           5k+8 is B   since  (k-3)·1 + 2 + 3 + 4k+6 = 5k+8 (all R)
+           5k+2 is R   since  (k-3)·5 + 4 + 6 + 7 = 5k+2 (all B)
+           6k+4 is B   since  (k-3)·1 + 2 + 3 + 5k+2 = 6k+4 (all R)
+          10k+3 is R   since  (k-3)·4 + 5 + 6 + 6k+4 = 10k+3 (all B)
+          11k+5 is B   since  (k-3)·1 + 2 + 3 + 10k+3 = 11k+5 (all R)
+   CONTRADICTION: (k-3)·6 + 7 + 8 + 5k+8 = 11k+5, all B
+CASE 1R 2R 3B 4R 5R 6R
+            k+8 is B   since  (k-3)·1 + 2 + 4 + 5 = k+8 (all R)
+            k+9 is B   since  (k-3)·1 + 2 + 4 + 6 = k+9 (all R)
+           k+10 is B   since  (k-3)·1 + 2 + 5 + 6 = k+10 (all R)
+          6k+18 is R   since  (k-3)·3 + k+8 + k+9 + k+10 = 6k+18 (all B)
+           k+12 is B   since  (k-3)·1 + 4 + 5 + 6 = k+12 (all R)
+           2k+9 is B   since  (k-3)·2 + 4 + 5 + 6 = 2k+9 (all R)
+          7k+21 is R   since  (k-3)·3 + k+9 + k+12 + 2k+9 = 7k+21 (all B)
+   CONTRADICTION: (k-3)·1 + 2 + 4 + 6k+18 = 7k+21, all R
+CASE 1R 2R 3B 4R 5R 6B 7R
+            k+8 is B   since  (k-3)·1 + 2 + 4 + 5 = k+8 (all R)
+           k+10 is B   since  (k-3)·1 + 2 + 4 + 7 = k+10 (all R)
+          5k+15 is R   since  (k-3)·3 + 6 + k+8 + k+10 = 5k+15 (all B)
+           k+11 is B   since  (k-3)·1 + 2 + 5 + 7 = k+11 (all R)
+          2k+10 is B   since  (k-3)·2 + 4 + 5 + 7 = 2k+10 (all R)
+          6k+18 is R   since  (k-3)·3 + 6 + k+11 + 2k+10 = 6k+18 (all B)
+   CONTRADICTION: (k-3)·1 + 2 + 4 + 5k+15 = 6k+18, all R
+CASE 1R 2R 3B 4R 5R 6B 7B 8R
+          2k+11 is B   since  (k-3)·2 + 4 + 5 + 8 = 2k+11 (all R)
+            k+8 is B   since  (k-3)·1 + 2 + 4 + 5 = k+8 (all R)
+          4k+12 is R   since  (k-3)·3 + 6 + 7 + k+8 = 4k+12 (all B)
+          5k+15 is B   since  (k-3)·1 + 2 + 4 + 4k+12 = 5k+15 (all R)
+   CONTRADICTION: (k-3)·3 + 6 + 7 + 2k+11 = 5k+15, all B
+CASE 1R 2R 3B 4R 5R 6B 7B 8B 9R
+            k+8 is B   since  (k-3)·1 + 2 + 4 + 5 = k+8 (all R)
+           7k+5 is R   since  (k-3)·6 + 7 + 8 + k+8 = 7k+5 (all B)
+          3k+12 is R   since  (k-3)·3 + 6 + 7 + 8 = 3k+12 (all B)
+          5k+11 is B   since  (k-3)·2 + 1 + 4 + 3k+12 = 5k+11 (all R)
+          8k+15 is R   since  (k-3)·3 + 6 + 7 + 5k+11 = 8k+15 (all B)
+   CONTRADICTION: (k-3)·1 + 4 + 9 + 7k+5 = 8k+15, all R
+CASE 1R 2R 3B 4R 5R 6B 7B 8B 9B
+            k+8 is B   since  (k-3)·1 + 2 + 4 + 5 = k+8 (all R)
+          3k+12 is R   since  (k-3)·3 + 6 + 7 + 8 = 3k+12 (all B)
+          4k+15 is B   since  (k-3)·1 + 2 + 4 + 3k+12 = 4k+15 (all R)
+   CONTRADICTION: (k-3)·3 + 7 + 9 + k+8 = 4k+15, all B
+CASE 1R 2R 3B 4R 5B 6R 7R
+           k+10 is B   since  (k-3)·1 + 2 + 4 + 7 = k+10 (all R)
+           k+12 is B   since  (k-3)·1 + 2 + 6 + 7 = k+12 (all R)
+          5k+18 is R   since  (k-3)·3 + 5 + k+10 + k+12 = 5k+18 (all B)
+           k+14 is B   since  (k-3)·1 + 4 + 6 + 7 = k+14 (all R)
+          2k+11 is B   since  (k-3)·2 + 4 + 6 + 7 = 2k+11 (all R)
+          6k+21 is R   since  (k-3)·3 + 5 + k+14 + 2k+11 = 6k+21 (all B)
+   CONTRADICTION: (k-3)·1 + 2 + 4 + 5k+18 = 6k+21, all R
+CASE 1R 2R 3B 4R 5B 6R 7B 8R
+          2k+12 is B   since  (k-3)·2 + 4 + 6 + 8 = 2k+12 (all R)
+            k+9 is B   since  (k-3)·1 + 2 + 4 + 6 = k+9 (all R)
+          4k+12 is R   since  (k-3)·3 + 5 + 7 + k+9 = 4k+12 (all B)
+          5k+15 is B   since  (k-3)·1 + 2 + 4 + 4k+12 = 5k+15 (all R)
+   CONTRADICTION: (k-3)·3 + 5 + 7 + 2k+12 = 5k+15, all B
+CASE 1R 2R 3B 4R 5B 6R 7B 8B
+          3k+11 is R   since  (k-3)·3 + 5 + 7 + 8 = 3k+11 (all B)
+          5k+10 is B   since  (k-3)·2 + 1 + 4 + 3k+11 = 5k+10 (all R)
+            k+9 is B   since  (k-3)·1 + 2 + 4 + 6 = k+9 (all R)
+           6k+9 is R   since  (k-3)·5 + 7 + 8 + k+9 = 6k+9 (all B)
+          8k+13 is B   since  (k-3)·2 + 4 + 6 + 6k+9 = 8k+13 (all R)
+   CONTRADICTION: (k-3)·3 + 5 + 7 + 5k+10 = 8k+13, all B
+CASE 1R 2R 3B 4R 5B 6B 7R 8R
+          2k+13 is B   since  (k-3)·2 + 4 + 7 + 8 = 2k+13 (all R)
+           k+10 is B   since  (k-3)·1 + 2 + 4 + 7 = k+10 (all R)
+          4k+12 is R   since  (k-3)·3 + 5 + 6 + k+10 = 4k+12 (all B)
+          5k+15 is B   since  (k-3)·1 + 2 + 4 + 4k+12 = 5k+15 (all R)
+   CONTRADICTION: (k-3)·3 + 5 + 6 + 2k+13 = 5k+15, all B
+CASE 1R 2R 3B 4R 5B 6B 7R 8B
+          3k+10 is R   since  (k-3)·3 + 5 + 6 + 8 = 3k+10 (all B)
+          4k+13 is B   since  (k-3)·1 + 2 + 4 + 3k+10 = 4k+13 (all R)
+           k+10 is B   since  (k-3)·1 + 2 + 4 + 7 = k+10 (all R)
+           6k+9 is R   since  (k-3)·5 + 6 + 8 + k+10 = 6k+9 (all B)
+          7k+15 is B   since  (k-3)·1 + 2 + 7 + 6k+9 = 7k+15 (all R)
+   CONTRADICTION: (k-3)·3 + 5 + 6 + 4k+13 = 7k+15, all B
+CASE 1R 2R 3B 4R 5B 6B 7B 8R
+           3k+9 is R   since  (k-3)·3 + 5 + 6 + 7 = 3k+9 (all B)
+          5k+15 is B   since  (k-3)·2 + 4 + 8 + 3k+9 = 5k+15 (all R)
+          4k+12 is B   since  (k-3)·1 + 2 + 4 + 3k+9 = 4k+12 (all R)
+          7k+14 is R   since  (k-3)·3 + 5 + 6 + 4k+12 = 7k+14 (all B)
+          8k+17 is B   since  (k-3)·1 + 2 + 4 + 7k+14 = 8k+17 (all R)
+   CONTRADICTION: (k-3)·3 + 5 + 6 + 5k+15 = 8k+17, all B
+CASE 1R 2R 3B 4R 5B 6B 7B 8B
+           3k+9 is R   since  (k-3)·3 + 5 + 6 + 7 = 3k+9 (all B)
+          4k+12 is B   since  (k-3)·1 + 2 + 4 + 3k+9 = 4k+12 (all R)
+           5k+1 is R   since  (k-3)·5 + 3 + 6 + 7 = 5k+1 (all B)
+           6k+4 is B   since  (k-3)·1 + 2 + 4 + 5k+1 = 6k+4 (all R)
+           9k+6 is R   since  (k-3)·3 + 5 + 6 + 6k+4 = 9k+6 (all B)
+          10k+9 is B   since  (k-3)·1 + 2 + 4 + 9k+6 = 10k+9 (all R)
+   CONTRADICTION: (k-3)·6 + 7 + 8 + 4k+12 = 10k+9, all B
+CASE 1R 2R 3B 4B 5R 6R 7R
+           k+11 is B   since  (k-3)·1 + 2 + 5 + 7 = k+11 (all R)
+           k+12 is B   since  (k-3)·1 + 2 + 6 + 7 = k+12 (all R)
+          5k+18 is R   since  (k-3)·3 + 4 + k+11 + k+12 = 5k+18 (all B)
+           k+15 is B   since  (k-3)·1 + 5 + 6 + 7 = k+15 (all R)
+          2k+12 is B   since  (k-3)·2 + 5 + 6 + 7 = 2k+12 (all R)
+          6k+22 is R   since  (k-3)·3 + 4 + k+15 + 2k+12 = 6k+22 (all B)
+   CONTRADICTION: (k-3)·1 + 2 + 5 + 5k+18 = 6k+22, all R
+CASE 1R 2R 3B 4B 5R 6R 7B 8R
+           k+10 is B   since  (k-3)·1 + 2 + 5 + 6 = k+10 (all R)
+           k+12 is B   since  (k-3)·1 + 2 + 5 + 8 = k+12 (all R)
+          4k+12 is R   since  (k-3)·3 + 4 + 7 + k+10 = 4k+12 (all B)
+          5k+17 is B   since  (k-3)·1 + 2 + 6 + 4k+12 = 5k+17 (all R)
+   CONTRADICTION: (k-3)·3 + 4 + k+10 + k+12 = 5k+17, all B
+CASE 1R 2R 3B 4B 5R 6R 7B 8B
+          3k+10 is R   since  (k-3)·3 + 4 + 7 + 8 = 3k+10 (all B)
+          4k+15 is B   since  (k-3)·1 + 2 + 6 + 3k+10 = 4k+15 (all R)
+           2k+6 is B   since  (k-3)·2 + 1 + 5 + 6 = 2k+6 (all R)
+           6k+9 is R   since  (k-3)·4 + 7 + 8 + 2k+6 = 6k+9 (all B)
+          7k+17 is B   since  (k-3)·1 + 5 + 6 + 6k+9 = 7k+17 (all R)
+   CONTRADICTION: (k-3)·3 + 4 + 7 + 4k+15 = 7k+17, all B
+CASE 1R 2R 3B 4B 5R 6B 7R 8R
+           k+11 is B   since  (k-3)·1 + 2 + 5 + 7 = k+11 (all R)
+           k+12 is B   since  (k-3)·1 + 2 + 5 + 8 = k+12 (all R)
+          4k+12 is R   since  (k-3)·3 + 4 + 6 + k+11 = 4k+12 (all B)
+          5k+18 is B   since  (k-3)·1 + 2 + 7 + 4k+12 = 5k+18 (all R)
+   CONTRADICTION: (k-3)·3 + 4 + k+11 + k+12 = 5k+18, all B
+CASE 1R 2R 3B 4B 5R 6B 7R 8B
+           3k+9 is R   since  (k-3)·3 + 4 + 6 + 8 = 3k+9 (all B)
+          4k+13 is B   since  (k-3)·1 + 2 + 5 + 3k+9 = 4k+13 (all R)
+           2k+7 is B   since  (k-3)·2 + 1 + 5 + 7 = 2k+7 (all R)
+           5k+8 is R   since  (k-3)·3 + 4 + 6 + 2k+7 = 5k+8 (all B)
+          7k+14 is B   since  (k-3)·2 + 5 + 7 + 5k+8 = 7k+14 (all R)
+   CONTRADICTION: (k-3)·3 + 4 + 6 + 4k+13 = 7k+14, all B
+CASE 1R 2R 3B 4B 5R 6B 7B 8R
+           3k+8 is R   since  (k-3)·3 + 4 + 6 + 7 = 3k+8 (all B)
+          5k+15 is B   since  (k-3)·2 + 5 + 8 + 3k+8 = 5k+15 (all R)
+          4k+12 is B   since  (k-3)·1 + 2 + 5 + 3k+8 = 4k+12 (all R)
+          7k+13 is R   since  (k-3)·3 + 4 + 6 + 4k+12 = 7k+13 (all B)
+          8k+17 is B   since  (k-3)·1 + 2 + 5 + 7k+13 = 8k+17 (all R)
+   CONTRADICTION: (k-3)·3 + 4 + 7 + 5k+15 = 8k+17, all B
+CASE 1R 2R 3B 4B 5R 6B 7B 8B
+           3k+8 is R   since  (k-3)·3 + 4 + 6 + 7 = 3k+8 (all B)
+          4k+12 is B   since  (k-3)·1 + 2 + 5 + 3k+8 = 4k+12 (all R)
+           4k+4 is R   since  (k-3)·4 + 3 + 6 + 7 = 4k+4 (all B)
+           6k+4 is B   since  (k-3)·2 + 1 + 5 + 4k+4 = 6k+4 (all R)
+           9k+5 is R   since  (k-3)·3 + 4 + 6 + 6k+4 = 9k+5 (all B)
+          10k+9 is B   since  (k-3)·1 + 2 + 5 + 9k+5 = 10k+9 (all R)
+   CONTRADICTION: (k-3)·6 + 7 + 8 + 4k+12 = 10k+9, all B
+CASE 1R 2R 3B 4B 5B 6R 7R 8R
+           k+12 is B   since  (k-3)·1 + 2 + 6 + 7 = k+12 (all R)
+          4k+12 is R   since  (k-3)·3 + 4 + 5 + k+12 = 4k+12 (all B)
+           2k+8 is B   since  (k-3)·2 + 1 + 6 + 7 = 2k+8 (all R)
+           6k+4 is R   since  (k-3)·4 + 3 + 5 + 2k+8 = 6k+4 (all B)
+           7k+9 is B   since  (k-3)·1 + 2 + 6 + 6k+4 = 7k+9 (all R)
+          10k+9 is R   since  (k-3)·3 + 4 + 5 + 7k+9 = 10k+9 (all B)
+   CONTRADICTION: (k-3)·6 + 7 + 8 + 4k+12 = 10k+9, all R
+CASE 1R 2R 3B 4B 5B 6R 7R 8B
+           3k+8 is R   since  (k-3)·3 + 4 + 5 + 8 = 3k+8 (all B)
+          4k+13 is B   since  (k-3)·1 + 2 + 6 + 3k+8 = 4k+13 (all R)
+           k+12 is B   since  (k-3)·1 + 2 + 6 + 7 = k+12 (all R)
+           6k+8 is R   since  (k-3)·5 + 3 + 8 + k+12 = 6k+8 (all B)
+          7k+13 is B   since  (k-3)·1 + 2 + 6 + 6k+8 = 7k+13 (all R)
+   CONTRADICTION: (k-3)·3 + 4 + 5 + 4k+13 = 7k+13, all B
+CASE 1R 2R 3B 4B 5B 6R 7B 8R
+           3k+7 is R   since  (k-3)·3 + 4 + 5 + 7 = 3k+7 (all B)
+          5k+15 is B   since  (k-3)·2 + 6 + 8 + 3k+7 = 5k+15 (all R)
+          4k+12 is B   since  (k-3)·1 + 2 + 6 + 3k+7 = 4k+12 (all R)
+          7k+12 is R   since  (k-3)·3 + 4 + 5 + 4k+12 = 7k+12 (all B)
+          8k+17 is B   since  (k-3)·1 + 2 + 6 + 7k+12 = 8k+17 (all R)
+   CONTRADICTION: (k-3)·3 + 4 + 7 + 5k+15 = 8k+17, all B
+CASE 1R 2R 3B 4B 5B 6R 7B 8B
+           3k+7 is R   since  (k-3)·3 + 4 + 5 + 7 = 3k+7 (all B)
+           3k+8 is R   since  (k-3)·3 + 4 + 5 + 8 = 3k+8 (all B)
+          4k+12 is B   since  (k-3)·1 + 2 + 6 + 3k+7 = 4k+12 (all R)
+          7k+14 is R   since  (k-3)·3 + 4 + 7 + 4k+12 = 7k+14 (all B)
+   CONTRADICTION: (k-3)·1 + 2 + 3k+7 + 3k+8 = 7k+14, all R
+CASE 1R 2R 3B 4B 5B 6B 7R 8R
+           3k+6 is R   since  (k-3)·3 + 4 + 5 + 6 = 3k+6 (all B)
+          5k+15 is B   since  (k-3)·2 + 7 + 8 + 3k+6 = 5k+15 (all R)
+           4k+2 is R   since  (k-3)·4 + 3 + 5 + 6 = 4k+2 (all B)
+           5k+8 is B   since  (k-3)·1 + 2 + 7 + 4k+2 = 5k+8 (all R)
+           8k+8 is R   since  (k-3)·3 + 4 + 5 + 5k+8 = 8k+8 (all B)
+          9k+14 is B   since  (k-3)·1 + 2 + 7 + 8k+8 = 9k+14 (all R)
+   CONTRADICTION: (k-3)·4 + 5 + 6 + 5k+15 = 9k+14, all B
+CASE 1R 2R 3B 4B 5B 6B 7R 8B
+           3k+6 is R   since  (k-3)·3 + 4 + 5 + 6 = 3k+6 (all B)
+           3k+8 is R   since  (k-3)·3 + 4 + 5 + 8 = 3k+8 (all B)
+          4k+12 is B   since  (k-3)·1 + 2 + 7 + 3k+6 = 4k+12 (all R)
+          7k+13 is R   since  (k-3)·3 + 4 + 6 + 4k+12 = 7k+13 (all B)
+   CONTRADICTION: (k-3)·1 + 2 + 3k+6 + 3k+8 = 7k+13, all R
+CASE 1R 2R 3B 4B 5B 6B 7B 8R
+           3k+9 is R   since  (k-3)·3 + 5 + 6 + 7 = 3k+9 (all B)
+           6k-2 is R   since  (k-3)·6 + 4 + 5 + 7 = 6k-2 (all B)
+           3k+6 is R   since  (k-3)·3 + 4 + 5 + 6 = 3k+6 (all B)
+           3k+7 is R   since  (k-3)·3 + 4 + 5 + 7 = 3k+7 (all B)
+          7k+12 is B   since  (k-3)·1 + 2 + 3k+6 + 3k+7 = 7k+12 (all R)
+         10k+12 is R   since  (k-3)·3 + 4 + 5 + 7k+12 = 10k+12 (all B)
+   CONTRADICTION: (k-3)·1 + 8 + 3k+9 + 6k-2 = 10k+12, all R
+CASE 1R 2R 3B 4B 5B 6B 7B 8B
+          3k+11 is R   since  (k-3)·3 + 5 + 7 + 8 = 3k+11 (all B)
+           6k+2 is R   since  (k-3)·6 + 5 + 7 + 8 = 6k+2 (all B)
+           3k+6 is R   since  (k-3)·3 + 4 + 5 + 6 = 3k+6 (all B)
+           3k+7 is R   since  (k-3)·3 + 4 + 5 + 7 = 3k+7 (all B)
+          7k+12 is B   since  (k-3)·1 + 2 + 3k+6 + 3k+7 = 7k+12 (all R)
+         10k+12 is R   since  (k-3)·3 + 4 + 5 + 7k+12 = 10k+12 (all B)
+   CONTRADICTION: (k-3)·1 + 2 + 3k+11 + 6k+2 = 10k+12, all R
+CASE 1R 2B 3R 4R 5R 6R 7R
+            k+9 is B   since  (k-3)·1 + 3 + 4 + 5 = k+9 (all R)
+           k+11 is B   since  (k-3)·1 + 3 + 5 + 6 = k+11 (all R)
+           4k+6 is B   since  (k-3)·4 + 5 + 6 + 7 = 4k+6 (all R)
+           k+10 is B   since  (k-3)·1 + 3 + 4 + 6 = k+10 (all R)
+           3k+3 is B   since  (k-3)·3 + 1 + 5 + 6 = 3k+3 (all R)
+          7k+16 is R   since  (k-3)·2 + k+9 + k+10 + 3k+3 = 7k+16 (all B)
+          8k+20 is B   since  (k-3)·1 + 3 + 4 + 7k+16 = 8k+20 (all R)
+   CONTRADICTION: (k-3)·2 + k+9 + k+11 + 4k+6 = 8k+20, all B
+CASE 1R 2B 3R 4R 5R 6R 7B
+            k+9 is B   since  (k-3)·1 + 3 + 4 + 5 = k+9 (all R)
+           k+10 is B   since  (k-3)·1 + 3 + 4 + 6 = k+10 (all R)
+           3k+6 is B   since  (k-3)·3 + 4 + 5 + 6 = 3k+6 (all R)
+           3k+2 is B   since  (k-3)·3 + 1 + 4 + 6 = 3k+2 (all R)
+           5k-5 is B   since  (k-3)·5 + 1 + 3 + 6 = 5k-5 (all R)
+            11k is R   since  (k-3)·2 + k+9 + 3k+2 + 5k-5 = 11k (all B)
+          12k+4 is B   since  (k-3)·1 + 3 + 4 + 11k = 12k+4 (all R)
+   CONTRADICTION: (k-3)·7 + k+9 + k+10 + 3k+6 = 12k+4, all B
+CASE 1R 2B 3R 4R 5R 6B 7R
+            k+9 is B   since  (k-3)·1 + 3 + 4 + 5 = k+9 (all R)
+           k+13 is B   since  (k-3)·1 + 4 + 5 + 7 = k+13 (all R)
+          4k+22 is R   since  (k-3)·2 + 6 + k+9 + k+13 = 4k+22 (all B)
+           k+11 is B   since  (k-3)·1 + 3 + 4 + 7 = k+11 (all R)
+           k+12 is B   since  (k-3)·1 + 3 + 5 + 7 = k+12 (all R)
+          5k+26 is R   since  (k-3)·2 + k+9 + k+11 + k+12 = 5k+26 (all B)
+   CONTRADICTION: (k-3)·1 + 3 + 4 + 4k+22 = 5k+26, all R
+CASE 1R 2B 3R 4R 5R 6B 7B 8R
+            k+9 is B   since  (k-3)·1 + 3 + 4 + 5 = k+9 (all R)
+           k+12 is B   since  (k-3)·1 + 3 + 4 + 8 = k+12 (all R)
+          3k+16 is R   since  (k-3)·2 + 6 + 7 + k+9 = 3k+16 (all B)
+          4k+21 is B   since  (k-3)·1 + 3 + 5 + 3k+16 = 4k+21 (all R)
+   CONTRADICTION: (k-3)·2 + 6 + k+9 + k+12 = 4k+21, all B
+CASE 1R 2B 3R 4R 5R 6B 7B 8B
+           7k-5 is R   since  (k-3)·7 + 2 + 6 + 8 = 7k-5 (all B)
+           8k-1 is B   since  (k-3)·1 + 3 + 4 + 7k-5 = 8k-1 (all R)
+            k+9 is B   since  (k-3)·1 + 3 + 4 + 5 = k+9 (all R)
+           7k+6 is R   since  (k-3)·6 + 7 + 8 + k+9 = 7k+6 (all B)
+          10k+6 is B   since  (k-3)·3 + 4 + 5 + 7k+6 = 10k+6 (all R)
+   CONTRADICTION: (k-3)·2 + 6 + 7 + 8k-1 = 10k+6, all B
+CASE 1R 2B 3R 4R 5B 6R 7R
+           k+11 is B   since  (k-3)·1 + 3 + 4 + 7 = k+11 (all R)
+           k+14 is B   since  (k-3)·1 + 4 + 6 + 7 = k+14 (all R)
+          4k+24 is R   since  (k-3)·2 + 5 + k+11 + k+14 = 4k+24 (all B)
+           k+10 is B   since  (k-3)·1 + 3 + 4 + 6 = k+10 (all R)
+           k+13 is B   since  (k-3)·1 + 3 + 6 + 7 = k+13 (all R)
+          5k+28 is R   since  (k-3)·2 + k+10 + k+11 + k+13 = 5k+28 (all B)
+   CONTRADICTION: (k-3)·1 + 3 + 4 + 4k+24 = 5k+28, all R
+CASE 1R 2B 3R 4R 5B 6R 7B 8R
+           k+10 is B   since  (k-3)·1 + 3 + 4 + 6 = k+10 (all R)
+           k+14 is B   since  (k-3)·1 + 3 + 6 + 8 = k+14 (all R)
+          3k+16 is R   since  (k-3)·2 + 5 + 7 + k+10 = 3k+16 (all B)
+          4k+23 is B   since  (k-3)·1 + 4 + 6 + 3k+16 = 4k+23 (all R)
+   CONTRADICTION: (k-3)·2 + 5 + k+10 + k+14 = 4k+23, all B
+CASE 1R 2B 3R 4R 5B 6R 7B 8B
+          2k+14 is R   since  (k-3)·2 + 5 + 7 + 8 = 2k+14 (all B)
+          5k+10 is B   since  (k-3)·3 + 1 + 4 + 2k+14 = 5k+10 (all R)
+           k+10 is B   since  (k-3)·1 + 3 + 4 + 6 = k+10 (all R)
+          6k+10 is R   since  (k-3)·5 + 7 + 8 + k+10 = 6k+10 (all B)
+          7k+16 is B   since  (k-3)·1 + 3 + 6 + 6k+10 = 7k+16 (all R)
+   CONTRADICTION: (k-3)·2 + 5 + 7 + 5k+10 = 7k+16, all B
+CASE 1R 2B 3R 4R 5B 6B 7R 8R
+           k+11 is B   since  (k-3)·1 + 3 + 4 + 7 = k+11 (all R)
+           k+15 is B   since  (k-3)·1 + 3 + 7 + 8 = k+15 (all R)
+          3k+16 is R   since  (k-3)·2 + 5 + 6 + k+11 = 3k+16 (all B)
+          4k+25 is B   since  (k-3)·1 + 4 + 8 + 3k+16 = 4k+25 (all R)
+   CONTRADICTION: (k-3)·2 + 5 + k+11 + k+15 = 4k+25, all B
+CASE 1R 2B 3R 4R 5B 6B 7R 8B
+          2k+13 is R   since  (k-3)·2 + 5 + 6 + 8 = 2k+13 (all B)
+           5k+9 is B   since  (k-3)·3 + 1 + 4 + 2k+13 = 5k+9 (all R)
+           k+11 is B   since  (k-3)·1 + 3 + 4 + 7 = k+11 (all R)
+          3k+16 is R   since  (k-3)·2 + 5 + 6 + k+11 = 3k+16 (all B)
+          7k+14 is B   since  (k-3)·4 + 3 + 7 + 3k+16 = 7k+14 (all R)
+   CONTRADICTION: (k-3)·2 + 5 + 6 + 5k+9 = 7k+14, all B
+CASE 1R 2B 3R 4R 5B 6B 7B 8R
+          2k+12 is R   since  (k-3)·2 + 5 + 6 + 7 = 2k+12 (all B)
+          6k+11 is B   since  (k-3)·4 + 3 + 8 + 2k+12 = 6k+11 (all R)
+           5k+8 is B   since  (k-3)·3 + 1 + 4 + 2k+12 = 5k+8 (all R)
+          7k+13 is R   since  (k-3)·2 + 5 + 6 + 5k+8 = 7k+13 (all B)
+          8k+17 is B   since  (k-3)·1 + 3 + 4 + 7k+13 = 8k+17 (all R)
+   CONTRADICTION: (k-3)·2 + 5 + 7 + 6k+11 = 8k+17, all B
+CASE 1R 2B 3R 4R 5B 6B 7B 8B
+          2k+12 is R   since  (k-3)·2 + 5 + 6 + 7 = 2k+12 (all B)
+          3k+16 is B   since  (k-3)·1 + 3 + 4 + 2k+12 = 3k+16 (all R)
+             5k is R   since  (k-3)·5 + 2 + 6 + 7 = 5k (all B)
+           6k+4 is B   since  (k-3)·1 + 3 + 4 + 5k = 6k+4 (all R)
+           8k+9 is R   since  (k-3)·2 + 5 + 6 + 6k+4 = 8k+9 (all B)
+          9k+13 is B   since  (k-3)·1 + 3 + 4 + 8k+9 = 9k+13 (all R)
+   CONTRADICTION: (k-3)·6 + 7 + 8 + 3k+16 = 9k+13, all B
+CASE 1R 2B 3R 4B 5R 6R 7R
+           k+12 is B   since  (k-3)·1 + 3 + 5 + 7 = k+12 (all R)
+           k+15 is B   since  (k-3)·1 + 5 + 6 + 7 = k+15 (all R)
+          4k+25 is R   since  (k-3)·2 + 4 + k+12 + k+15 = 4k+25 (all B)
+           k+11 is B   since  (k-3)·1 + 3 + 5 + 6 = k+11 (all R)
+           k+13 is B   since  (k-3)·1 + 3 + 6 + 7 = k+13 (all R)
+          5k+30 is R   since  (k-3)·2 + k+11 + k+12 + k+13 = 5k+30 (all B)
+   CONTRADICTION: (k-3)·1 + 3 + 5 + 4k+25 = 5k+30, all R
+CASE 1R 2B 3R 4B 5R 6R 7B 8R
+           k+11 is B   since  (k-3)·1 + 3 + 5 + 6 = k+11 (all R)
+           k+13 is B   since  (k-3)·1 + 3 + 5 + 8 = k+13 (all R)
+          3k+16 is R   since  (k-3)·2 + 4 + 7 + k+11 = 3k+16 (all B)
+          4k+22 is B   since  (k-3)·1 + 3 + 6 + 3k+16 = 4k+22 (all R)
+   CONTRADICTION: (k-3)·2 + 4 + k+11 + k+13 = 4k+22, all B
+CASE 1R 2B 3R 4B 5R 6R 7B 8B
+           4k+5 is R   since  (k-3)·4 + 2 + 7 + 8 = 4k+5 (all B)
+           7k+2 is B   since  (k-3)·3 + 1 + 5 + 4k+5 = 7k+2 (all R)
+           k+11 is B   since  (k-3)·1 + 3 + 5 + 6 = k+11 (all R)
+           8k+2 is R   since  (k-3)·7 + 4 + 8 + k+11 = 8k+2 (all B)
+           9k+7 is B   since  (k-3)·1 + 3 + 5 + 8k+2 = 9k+7 (all R)
+   CONTRADICTION: (k-3)·2 + 4 + 7 + 7k+2 = 9k+7, all B
+CASE 1R 2B 3R 4B 5R 6B 7R 8R
+           k+12 is B   since  (k-3)·1 + 3 + 5 + 7 = k+12 (all R)
+           k+13 is B   since  (k-3)·1 + 3 + 5 + 8 = k+13 (all R)
+          3k+16 is R   since  (k-3)·2 + 4 + 6 + k+12 = 3k+16 (all B)
+          4k+23 is B   since  (k-3)·1 + 3 + 7 + 3k+16 = 4k+23 (all R)
+   CONTRADICTION: (k-3)·2 + 4 + k+12 + k+13 = 4k+23, all B
+CASE 1R 2B 3R 4B 5R 6B 7R 8B
+           k+12 is B   since  (k-3)·1 + 3 + 5 + 7 = k+12 (all R)
+          5k+14 is R   since  (k-3)·4 + 6 + 8 + k+12 = 5k+14 (all B)
+           3k+4 is B   since  (k-3)·3 + 1 + 5 + 7 = 3k+4 (all R)
+           5k+8 is R   since  (k-3)·2 + 4 + 6 + 3k+4 = 5k+8 (all B)
+          6k+13 is B   since  (k-3)·1 + 3 + 5 + 5k+8 = 6k+13 (all R)
+          8k+17 is R   since  (k-3)·2 + 4 + 6 + 6k+13 = 8k+17 (all B)
+   CONTRADICTION: (k-3)·3 + 5 + 7 + 5k+14 = 8k+17, all R
+CASE 1R 2B 3R 4B 5R 6B 7B 8R
+           6k-5 is R   since  (k-3)·6 + 2 + 4 + 7 = 6k-5 (all B)
+           9k-1 is B   since  (k-3)·3 + 5 + 8 + 6k-5 = 9k-1 (all R)
+           7k-9 is R   since  (k-3)·7 + 2 + 4 + 6 = 7k-9 (all B)
+           8k-4 is B   since  (k-3)·1 + 3 + 5 + 7k-9 = 8k-4 (all R)
+          10k+1 is R   since  (k-3)·2 + 4 + 7 + 8k-4 = 10k+1 (all B)
+          11k+6 is B   since  (k-3)·1 + 3 + 5 + 10k+1 = 11k+6 (all R)
+   CONTRADICTION: (k-3)·2 + 6 + 7 + 9k-1 = 11k+6, all B
+CASE 1R 2B 3R 4B 5R 6B 7B 8B
+           4k+3 is R   since  (k-3)·4 + 2 + 6 + 7 = 4k+3 (all B)
+           5k+8 is B   since  (k-3)·1 + 3 + 5 + 4k+3 = 5k+8 (all R)
+           7k-9 is R   since  (k-3)·7 + 2 + 4 + 6 = 7k-9 (all B)
+           8k-4 is B   since  (k-3)·1 + 3 + 5 + 7k-9 = 8k-4 (all R)
+            10k is R   since  (k-3)·2 + 4 + 6 + 8k-4 = 10k (all B)
+          11k+5 is B   since  (k-3)·1 + 3 + 5 + 10k = 11k+5 (all R)
+   CONTRADICTION: (k-3)·6 + 7 + 8 + 5k+8 = 11k+5, all B
+CASE 1R 2B 3R 4B 5B 6R 7R 8R
+           k+13 is B   since  (k-3)·1 + 3 + 6 + 7 = k+13 (all R)
+          3k+16 is R   since  (k-3)·2 + 4 + 5 + k+13 = 3k+16 (all B)
+           6k+4 is R   since  (k-3)·5 + 2 + 4 + k+13 = 6k+4 (all B)
+          7k+10 is B   since  (k-3)·1 + 3 + 6 + 6k+4 = 7k+10 (all R)
+          9k+13 is R   since  (k-3)·2 + 4 + 5 + 7k+10 = 9k+13 (all B)
+   CONTRADICTION: (k-3)·6 + 7 + 8 + 3k+16 = 9k+13, all R
+CASE 1R 2B 3R 4B 5B 6R 7R 8B
+           k+13 is B   since  (k-3)·1 + 3 + 6 + 7 = k+13 (all R)
+          5k+14 is R   since  (k-3)·4 + 5 + 8 + k+13 = 5k+14 (all B)
+           3k+5 is B   since  (k-3)·3 + 1 + 6 + 7 = 3k+5 (all R)
+           5k+8 is R   since  (k-3)·2 + 4 + 5 + 3k+5 = 5k+8 (all B)
+          6k+15 is B   since  (k-3)·1 + 3 + 7 + 5k+8 = 6k+15 (all R)
+          8k+18 is R   since  (k-3)·2 + 4 + 5 + 6k+15 = 8k+18 (all B)
+   CONTRADICTION: (k-3)·3 + 6 + 7 + 5k+14 = 8k+18, all R
+CASE 1R 2B 3R 4B 5B 6R 7B 8R
+           k+14 is B   since  (k-3)·1 + 3 + 6 + 8 = k+14 (all R)
+          2k+10 is R   since  (k-3)·2 + 4 + 5 + 7 = 2k+10 (all B)
+          3k+16 is B   since  (k-3)·1 + 3 + 6 + 2k+10 = 3k+16 (all R)
+          5k+22 is R   since  (k-3)·2 + 5 + 7 + 3k+16 = 5k+22 (all B)
+          6k+28 is B   since  (k-3)·1 + 3 + 6 + 5k+22 = 6k+28 (all R)
+   CONTRADICTION: (k-3)·2 + 4 + k+14 + 3k+16 = 6k+28, all B
+CASE 1R 2B 3R 4B 5B 6R 7B 8B
+          2k+10 is R   since  (k-3)·2 + 4 + 5 + 7 = 2k+10 (all B)
+          2k+11 is R   since  (k-3)·2 + 4 + 5 + 8 = 2k+11 (all B)
+          3k+16 is B   since  (k-3)·1 + 3 + 6 + 2k+10 = 3k+16 (all R)
+          5k+21 is R   since  (k-3)·2 + 4 + 7 + 3k+16 = 5k+21 (all B)
+   CONTRADICTION: (k-3)·1 + 3 + 2k+10 + 2k+11 = 5k+21, all R
+CASE 1R 2B 3R 4B 5B 6B 7R 8R
+           2k+9 is R   since  (k-3)·2 + 4 + 5 + 6 = 2k+9 (all B)
+          5k+15 is B   since  (k-3)·3 + 7 + 8 + 2k+9 = 5k+15 (all R)
+           5k-3 is R   since  (k-3)·5 + 2 + 4 + 6 = 5k-3 (all B)
+           6k+4 is B   since  (k-3)·1 + 3 + 7 + 5k-3 = 6k+4 (all R)
+           8k+7 is R   since  (k-3)·2 + 4 + 5 + 6k+4 = 8k+7 (all B)
+          9k+14 is B   since  (k-3)·1 + 3 + 7 + 8k+7 = 9k+14 (all R)
+   CONTRADICTION: (k-3)·4 + 5 + 6 + 5k+15 = 9k+14, all B
+CASE 1R 2B 3R 4B 5B 6B 7R 8B
+           2k+9 is R   since  (k-3)·2 + 4 + 5 + 6 = 2k+9 (all B)
+          2k+11 is R   since  (k-3)·2 + 4 + 5 + 8 = 2k+11 (all B)
+          3k+16 is B   since  (k-3)·1 + 3 + 7 + 2k+9 = 3k+16 (all R)
+          5k+20 is R   since  (k-3)·2 + 4 + 6 + 3k+16 = 5k+20 (all B)
+   CONTRADICTION: (k-3)·1 + 3 + 2k+9 + 2k+11 = 5k+20, all R
+CASE 1R 2B 3R 4B 5B 6B 7B 8R
+          2k+11 is R   since  (k-3)·2 + 4 + 6 + 7 = 2k+11 (all B)
+           4k+6 is R   since  (k-3)·4 + 5 + 6 + 7 = 4k+6 (all B)
+           2k+9 is R   since  (k-3)·2 + 4 + 5 + 6 = 2k+9 (all B)
+          2k+10 is R   since  (k-3)·2 + 4 + 5 + 7 = 2k+10 (all B)
+          5k+19 is B   since  (k-3)·1 + 3 + 2k+9 + 2k+10 = 5k+19 (all R)
+          7k+22 is R   since  (k-3)·2 + 4 + 5 + 5k+19 = 7k+22 (all B)
+   CONTRADICTION: (k-3)·1 + 8 + 2k+11 + 4k+6 = 7k+22, all R
+CASE 1R 2B 3R 4B 5B 6B 7B 8B
+          2k+12 is R   since  (k-3)·2 + 5 + 6 + 7 = 2k+12 (all B)
+           6k+2 is R   since  (k-3)·6 + 5 + 7 + 8 = 6k+2 (all B)
+           2k+9 is R   since  (k-3)·2 + 4 + 5 + 6 = 2k+9 (all B)
+           4k+2 is R   since  (k-3)·4 + 2 + 5 + 7 = 4k+2 (all B)
+          7k+11 is B   since  (k-3)·1 + 3 + 2k+9 + 4k+2 = 7k+11 (all R)
+          9k+14 is R   since  (k-3)·2 + 4 + 5 + 7k+11 = 9k+14 (all B)
+   CONTRADICTION: (k-3)·1 + 3 + 2k+12 + 6k+2 = 9k+14, all R
+CASE 1R 2B 3B 4R 5R 6R 7R 8R
+           k+13 is B   since  (k-3)·1 + 4 + 5 + 7 = k+13 (all R)
+           5k+6 is B   since  (k-3)·5 + 6 + 7 + 8 = 5k+6 (all R)
+           k+12 is B   since  (k-3)·1 + 4 + 5 + 6 = k+12 (all R)
+           4k+1 is B   since  (k-3)·4 + 1 + 5 + 7 = 4k+1 (all R)
+          7k+10 is R   since  (k-3)·2 + 3 + k+12 + 4k+1 = 7k+10 (all B)
+          8k+16 is B   since  (k-3)·1 + 4 + 5 + 7k+10 = 8k+16 (all R)
+   CONTRADICTION: (k-3)·2 + 3 + k+13 + 5k+6 = 8k+16, all B
+CASE 1R 2B 3B 4R 5R 6R 7R 8B
+           k+12 is B   since  (k-3)·1 + 4 + 5 + 6 = k+12 (all R)
+           5k+2 is B   since  (k-3)·5 + 4 + 6 + 7 = 5k+2 (all R)
+           4k+1 is B   since  (k-3)·4 + 1 + 5 + 7 = 4k+1 (all R)
+          7k+10 is R   since  (k-3)·2 + 3 + k+12 + 4k+1 = 7k+10 (all B)
+          8k+16 is B   since  (k-3)·1 + 4 + 5 + 7k+10 = 8k+16 (all R)
+   CONTRADICTION: (k-3)·2 + 8 + k+12 + 5k+2 = 8k+16, all B
+CASE 1R 2B 3B 4R 5R 6R 7B 8R
+           k+12 is B   since  (k-3)·1 + 4 + 5 + 6 = k+12 (all R)
+           k+14 is B   since  (k-3)·1 + 4 + 5 + 8 = k+14 (all R)
+          3k+16 is R   since  (k-3)·2 + 3 + 7 + k+12 = 3k+16 (all B)
+          4k+23 is B   since  (k-3)·1 + 4 + 6 + 3k+16 = 4k+23 (all R)
+   CONTRADICTION: (k-3)·2 + 3 + k+12 + k+14 = 4k+23, all B
+CASE 1R 2B 3B 4R 5R 6R 7B 8B
+          2k+12 is R   since  (k-3)·2 + 3 + 7 + 8 = 2k+12 (all B)
+          3k+20 is B   since  (k-3)·1 + 5 + 6 + 2k+12 = 3k+20 (all R)
+           k+12 is B   since  (k-3)·1 + 4 + 5 + 6 = k+12 (all R)
+          4k+18 is R   since  (k-3)·3 + 7 + 8 + k+12 = 4k+18 (all B)
+          5k+24 is B   since  (k-3)·1 + 4 + 5 + 4k+18 = 5k+24 (all R)
+   CONTRADICTION: (k-3)·2 + 3 + 7 + 3k+20 = 5k+24, all B
+CASE 1R 2B 3B 4R 5R 6B 7R 8R
+           k+13 is B   since  (k-3)·1 + 4 + 5 + 7 = k+13 (all R)
+           k+14 is B   since  (k-3)·1 + 4 + 5 + 8 = k+14 (all R)
+          3k+16 is R   since  (k-3)·2 + 3 + 6 + k+13 = 3k+16 (all B)
+          4k+24 is B   since  (k-3)·1 + 4 + 7 + 3k+16 = 4k+24 (all R)
+   CONTRADICTION: (k-3)·2 + 3 + k+13 + k+14 = 4k+24, all B
+CASE 1R 2B 3B 4R 5R 6B 7R 8B
+          2k+11 is R   since  (k-3)·2 + 3 + 6 + 8 = 2k+11 (all B)
+           k+13 is B   since  (k-3)·1 + 4 + 5 + 7 = k+13 (all R)
+          3k+16 is R   since  (k-3)·2 + 3 + 6 + k+13 = 3k+16 (all B)
+          4k+25 is B   since  (k-3)·1 + 5 + 7 + 3k+16 = 4k+25 (all R)
+          6k+28 is R   since  (k-3)·2 + 3 + 6 + 4k+25 = 6k+28 (all B)
+   CONTRADICTION: (k-3)·1 + 4 + 2k+11 + 3k+16 = 6k+28, all R
+CASE 1R 2B 3B 4R 5R 6B 7B 8R
+          2k+10 is R   since  (k-3)·2 + 3 + 6 + 7 = 2k+10 (all B)
+          6k+11 is B   since  (k-3)·4 + 5 + 8 + 2k+10 = 6k+11 (all R)
+           3k+6 is R   since  (k-3)·3 + 2 + 6 + 7 = 3k+6 (all B)
+          4k+12 is B   since  (k-3)·1 + 4 + 5 + 3k+6 = 4k+12 (all R)
+          7k+12 is R   since  (k-3)·3 + 2 + 7 + 4k+12 = 7k+12 (all B)
+          8k+18 is B   since  (k-3)·1 + 4 + 5 + 7k+12 = 8k+18 (all R)
+   CONTRADICTION: (k-3)·2 + 6 + 7 + 6k+11 = 8k+18, all B
+CASE 1R 2B 3B 4R 5R 6B 7B 8B
+          2k+10 is R   since  (k-3)·2 + 3 + 6 + 7 = 2k+10 (all B)
+          3k+16 is B   since  (k-3)·1 + 4 + 5 + 2k+10 = 3k+16 (all R)
+           6k+4 is B   since  (k-3)·4 + 1 + 5 + 2k+10 = 6k+4 (all R)
+           8k+7 is R   since  (k-3)·2 + 3 + 6 + 6k+4 = 8k+7 (all B)
+          9k+13 is B   since  (k-3)·1 + 4 + 5 + 8k+7 = 9k+13 (all R)
+   CONTRADICTION: (k-3)·6 + 7 + 8 + 3k+16 = 9k+13, all B
+CASE 1R 2B 3B 4R 5B 6R 7R 8R
+           k+14 is B   since  (k-3)·1 + 4 + 6 + 7 = k+14 (all R)
+          3k+16 is R   since  (k-3)·2 + 3 + 5 + k+14 = 3k+16 (all B)
+           4k+2 is B   since  (k-3)·4 + 1 + 6 + 7 = 4k+2 (all R)
+           6k+4 is R   since  (k-3)·2 + 3 + 5 + 4k+2 = 6k+4 (all B)
+          7k+11 is B   since  (k-3)·1 + 4 + 6 + 6k+4 = 7k+11 (all R)
+          9k+13 is R   since  (k-3)·2 + 3 + 5 + 7k+11 = 9k+13 (all B)
+   CONTRADICTION: (k-3)·6 + 7 + 8 + 3k+16 = 9k+13, all R
+CASE 1R 2B 3B 4R 5B 6R 7R 8B
+           k+14 is B   since  (k-3)·1 + 4 + 6 + 7 = k+14 (all R)
+          3k+21 is R   since  (k-3)·2 + 5 + 8 + k+14 = 3k+21 (all B)
+          4k+12 is R   since  (k-3)·3 + 2 + 5 + k+14 = 4k+12 (all B)
+          5k+20 is B   since  (k-3)·1 + 4 + 7 + 4k+12 = 5k+20 (all R)
+          7k+22 is R   since  (k-3)·2 + 3 + 5 + 5k+20 = 7k+22 (all B)
+   CONTRADICTION: (k-3)·4 + 6 + 7 + 3k+21 = 7k+22, all R
+CASE 1R 2B 3B 4R 5B 6R 7B 8R
+           2k+9 is R   since  (k-3)·2 + 3 + 5 + 7 = 2k+9 (all B)
+          6k+11 is B   since  (k-3)·4 + 6 + 8 + 2k+9 = 6k+11 (all R)
+           3k+5 is R   since  (k-3)·3 + 2 + 5 + 7 = 3k+5 (all B)
+          4k+12 is B   since  (k-3)·1 + 4 + 6 + 3k+5 = 4k+12 (all R)
+          7k+10 is R   since  (k-3)·3 + 2 + 5 + 4k+12 = 7k+10 (all B)
+          8k+17 is B   since  (k-3)·1 + 4 + 6 + 7k+10 = 8k+17 (all R)
+   CONTRADICTION: (k-3)·2 + 5 + 7 + 6k+11 = 8k+17, all B
+CASE 1R 2B 3B 4R 5B 6R 7B 8B
+           2k+9 is R   since  (k-3)·2 + 3 + 5 + 7 = 2k+9 (all B)
+          2k+10 is R   since  (k-3)·2 + 3 + 5 + 8 = 2k+10 (all B)
+          3k+16 is B   since  (k-3)·1 + 4 + 6 + 2k+9 = 3k+16 (all R)
+          5k+20 is R   since  (k-3)·2 + 3 + 7 + 3k+16 = 5k+20 (all B)
+   CONTRADICTION: (k-3)·1 + 4 + 2k+9 + 2k+10 = 5k+20, all R
+CASE 1R 2B 3B 4R 5B 6B 7R 8R
+           k+16 is B   since  (k-3)·1 + 4 + 7 + 8 = k+16 (all R)
+          4k+14 is R   since  (k-3)·3 + 2 + 5 + k+16 = 4k+14 (all B)
+           2k+8 is R   since  (k-3)·2 + 3 + 5 + 6 = 2k+8 (all B)
+          3k+20 is B   since  (k-3)·1 + 7 + 8 + 2k+8 = 3k+20 (all R)
+          5k+22 is R   since  (k-3)·2 + 3 + 5 + 3k+20 = 5k+22 (all B)
+   CONTRADICTION: (k-3)·1 + 4 + 7 + 4k+14 = 5k+22, all R
+CASE 1R 2B 3B 4R 5B 6B 7R 8B
+           2k+8 is R   since  (k-3)·2 + 3 + 5 + 6 = 2k+8 (all B)
+          2k+10 is R   since  (k-3)·2 + 3 + 5 + 8 = 2k+10 (all B)
+          3k+16 is B   since  (k-3)·1 + 4 + 7 + 2k+8 = 3k+16 (all R)
+          5k+19 is R   since  (k-3)·2 + 3 + 6 + 3k+16 = 5k+19 (all B)
+   CONTRADICTION: (k-3)·1 + 4 + 2k+8 + 2k+10 = 5k+19, all R
+CASE 1R 2B 3B 4R 5B 6B 7B
+           2k+9 is R   since  (k-3)·2 + 3 + 5 + 7 = 2k+9 (all B)
+          2k+12 is R   since  (k-3)·2 + 5 + 6 + 7 = 2k+12 (all B)
+          5k+22 is B   since  (k-3)·1 + 4 + 2k+9 + 2k+12 = 5k+22 (all R)
+           2k+8 is R   since  (k-3)·2 + 3 + 5 + 6 = 2k+8 (all B)
+          2k+10 is R   since  (k-3)·2 + 3 + 6 + 7 = 2k+10 (all B)
+          7k+24 is B   since  (k-3)·1 + 2k+8 + 2k+9 + 2k+10 = 7k+24 (all R)
+   CONTRADICTION: (k-3)·2 + 3 + 5 + 5k+22 = 7k+24, all B
+CASE 1R 2B 3B 4B 5R 6R 7R 8R
+           k+15 is B   since  (k-3)·1 + 5 + 6 + 7 = k+15 (all R)
+          3k+16 is R   since  (k-3)·2 + 3 + 4 + k+15 = 3k+16 (all B)
+           5k+8 is R   since  (k-3)·4 + 2 + 3 + k+15 = 5k+8 (all B)
+          6k+16 is B   since  (k-3)·1 + 5 + 6 + 5k+8 = 6k+16 (all R)
+          9k+13 is R   since  (k-3)·3 + 2 + 4 + 6k+16 = 9k+13 (all B)
+   CONTRADICTION: (k-3)·6 + 7 + 8 + 3k+16 = 9k+13, all R
+CASE 1R 2B 3B 4B 5R 6R 7R 8B
+           2k+9 is R   since  (k-3)·2 + 3 + 4 + 8 = 2k+9 (all B)
+           k+15 is B   since  (k-3)·1 + 5 + 6 + 7 = k+15 (all R)
+          3k+16 is R   since  (k-3)·2 + 3 + 4 + k+15 = 3k+16 (all B)
+          4k+26 is B   since  (k-3)·1 + 6 + 7 + 3k+16 = 4k+26 (all R)
+          6k+27 is R   since  (k-3)·2 + 3 + 4 + 4k+26 = 6k+27 (all B)
+   CONTRADICTION: (k-3)·1 + 5 + 2k+9 + 3k+16 = 6k+27, all R
+CASE 1R 2B 3B 4B 5R 6R 7B 8R
+           2k+8 is R   since  (k-3)·2 + 3 + 4 + 7 = 2k+8 (all B)
+           7k+7 is B   since  (k-3)·5 + 6 + 8 + 2k+8 = 7k+7 (all R)
+             7k is B   since  (k-3)·5 + 1 + 6 + 2k+8 = 7k (all R)
+           9k+1 is R   since  (k-3)·2 + 3 + 4 + 7k = 9k+1 (all B)
+          10k+9 is B   since  (k-3)·1 + 5 + 6 + 9k+1 = 10k+9 (all R)
+   CONTRADICTION: (k-3)·3 + 4 + 7 + 7k+7 = 10k+9, all B
+CASE 1R 2B 3B 4B 5R 6R 7B 8B
+           2k+8 is R   since  (k-3)·2 + 3 + 4 + 7 = 2k+8 (all B)
+          2k+12 is R   since  (k-3)·2 + 3 + 7 + 8 = 2k+12 (all B)
+          3k+16 is B   since  (k-3)·1 + 5 + 6 + 2k+8 = 3k+16 (all R)
+          5k+22 is R   since  (k-3)·2 + 4 + 8 + 3k+16 = 5k+22 (all B)
+   CONTRADICTION: (k-3)·1 + 5 + 2k+8 + 2k+12 = 5k+22, all R
+CASE 1R 2B 3B 4B 5R 6B 7R 8R
+           k+17 is B   since  (k-3)·1 + 5 + 7 + 8 = k+17 (all R)
+          4k+14 is R   since  (k-3)·3 + 2 + 4 + k+17 = 4k+14 (all B)
+           2k+7 is R   since  (k-3)·2 + 3 + 4 + 6 = 2k+7 (all B)
+          3k+19 is B   since  (k-3)·1 + 7 + 8 + 2k+7 = 3k+19 (all R)
+          5k+23 is R   since  (k-3)·2 + 4 + 6 + 3k+19 = 5k+23 (all B)
+   CONTRADICTION: (k-3)·1 + 5 + 7 + 4k+14 = 5k+23, all R
+CASE 1R 2B 3B 4B 5R 6B 7R 8B
+           2k+7 is R   since  (k-3)·2 + 3 + 4 + 6 = 2k+7 (all B)
+          2k+11 is R   since  (k-3)·2 + 3 + 6 + 8 = 2k+11 (all B)
+          3k+16 is B   since  (k-3)·1 + 5 + 7 + 2k+7 = 3k+16 (all R)
+          5k+20 is R   since  (k-3)·2 + 4 + 6 + 3k+16 = 5k+20 (all B)
+   CONTRADICTION: (k-3)·1 + 5 + 2k+7 + 2k+11 = 5k+20, all R
+CASE 1R 2B 3B 4B 5R 6B 7B
+           2k+8 is R   since  (k-3)·2 + 3 + 4 + 7 = 2k+8 (all B)
+          2k+11 is R   since  (k-3)·2 + 4 + 6 + 7 = 2k+11 (all B)
+          5k+21 is B   since  (k-3)·1 + 5 + 2k+8 + 2k+11 = 5k+21 (all R)
+           2k+7 is R   since  (k-3)·2 + 3 + 4 + 6 = 2k+7 (all B)
+          2k+10 is R   since  (k-3)·2 + 3 + 6 + 7 = 2k+10 (all B)
+          7k+22 is B   since  (k-3)·1 + 2k+7 + 2k+8 + 2k+10 = 7k+22 (all R)
+   CONTRADICTION: (k-3)·2 + 3 + 4 + 5k+21 = 7k+22, all B
+CASE 1R 2B 3B 4B 5B 6R 7R 8R
+           7k-6 is B   since  (k-3)·7 + 1 + 6 + 8 = 7k-6 (all R)
+           9k-5 is R   since  (k-3)·2 + 3 + 4 + 7k-6 = 9k-5 (all B)
+           2k+6 is R   since  (k-3)·2 + 3 + 4 + 5 = 2k+6 (all B)
+           8k+3 is B   since  (k-3)·6 + 7 + 8 + 2k+6 = 8k+3 (all R)
+          10k+5 is R   since  (k-3)·2 + 3 + 5 + 8k+3 = 10k+5 (all B)
+   CONTRADICTION: (k-3)·1 + 6 + 7 + 9k-5 = 10k+5, all R
+CASE 1R 2B 3B 4B 5B 6R 7R 8B
+           2k+6 is R   since  (k-3)·2 + 3 + 4 + 5 = 2k+6 (all B)
+           2k+9 is R   since  (k-3)·2 + 3 + 4 + 8 = 2k+9 (all B)
+          3k+16 is B   since  (k-3)·1 + 6 + 7 + 2k+6 = 3k+16 (all R)
+          5k+18 is R   since  (k-3)·2 + 3 + 5 + 3k+16 = 5k+18 (all B)
+   CONTRADICTION: (k-3)·1 + 6 + 2k+6 + 2k+9 = 5k+18, all R
+CASE 1R 2B 3B 4B 5B 6R 7B
+           2k+6 is R   since  (k-3)·2 + 3 + 4 + 5 = 2k+6 (all B)
+          2k+10 is R   since  (k-3)·2 + 4 + 5 + 7 = 2k+10 (all B)
+          5k+19 is B   since  (k-3)·1 + 6 + 2k+6 + 2k+10 = 5k+19 (all R)
+           2k+8 is R   since  (k-3)·2 + 3 + 4 + 7 = 2k+8 (all B)
+           2k+9 is R   since  (k-3)·2 + 3 + 5 + 7 = 2k+9 (all B)
+          7k+20 is B   since  (k-3)·1 + 2k+6 + 2k+8 + 2k+9 = 7k+20 (all R)
+   CONTRADICTION: (k-3)·2 + 3 + 4 + 5k+19 = 7k+20, all B
+CASE 1R 2B 3B 4B 5B 6B 7R
+           2k+6 is R   since  (k-3)·2 + 3 + 4 + 5 = 2k+6 (all B)
+           2k+7 is R   since  (k-3)·2 + 3 + 4 + 6 = 2k+7 (all B)
+          5k+17 is B   since  (k-3)·1 + 7 + 2k+6 + 2k+7 = 5k+17 (all R)
+           2k+8 is R   since  (k-3)·2 + 3 + 5 + 6 = 2k+8 (all B)
+          7k+18 is B   since  (k-3)·1 + 2k+6 + 2k+7 + 2k+8 = 7k+18 (all R)
+   CONTRADICTION: (k-3)·2 + 3 + 4 + 5k+17 = 7k+18, all B
+CASE 1R 2B 3B 4B 5B 6B 7B 8R
+           2k+6 is R   since  (k-3)·2 + 3 + 4 + 5 = 2k+6 (all B)
+           2k+7 is R   since  (k-3)·2 + 3 + 4 + 6 = 2k+7 (all B)
+          5k+18 is B   since  (k-3)·1 + 8 + 2k+6 + 2k+7 = 5k+18 (all R)
+           2k+9 is R   since  (k-3)·2 + 4 + 5 + 6 = 2k+9 (all B)
+          7k+19 is B   since  (k-3)·1 + 2k+6 + 2k+7 + 2k+9 = 7k+19 (all R)
+   CONTRADICTION: (k-3)·2 + 3 + 4 + 5k+18 = 7k+19, all B
+CASE 1R 2B 3B 4B 5B 6B 7B 8B 9R
+           2k+6 is R   since  (k-3)·2 + 3 + 4 + 5 = 2k+6 (all B)
+           2k+7 is R   since  (k-3)·2 + 3 + 4 + 6 = 2k+7 (all B)
+          5k+19 is B   since  (k-3)·1 + 9 + 2k+6 + 2k+7 = 5k+19 (all R)
+           2k+8 is R   since  (k-3)·2 + 3 + 5 + 6 = 2k+8 (all B)
+           2k+9 is R   since  (k-3)·2 + 4 + 5 + 6 = 2k+9 (all B)
+          7k+20 is B   since  (k-3)·1 + 2k+6 + 2k+8 + 2k+9 = 7k+20 (all R)
+   CONTRADICTION: (k-3)·2 + 3 + 4 + 5k+19 = 7k+20, all B
+CASE 1R 2B 3B 4B 5B 6B 7B 8B 9B 10R
+           2k+6 is R   since  (k-3)·2 + 3 + 4 + 5 = 2k+6 (all B)
+           2k+7 is R   since  (k-3)·2 + 3 + 4 + 6 = 2k+7 (all B)
+          5k+20 is B   since  (k-3)·1 + 10 + 2k+6 + 2k+7 = 5k+20 (all R)
+           2k+8 is R   since  (k-3)·2 + 3 + 5 + 6 = 2k+8 (all B)
+           2k+9 is R   since  (k-3)·2 + 4 + 5 + 6 = 2k+9 (all B)
+          7k+21 is B   since  (k-3)·1 + 2k+7 + 2k+8 + 2k+9 = 7k+21 (all R)
+   CONTRADICTION: (k-3)·2 + 3 + 4 + 5k+20 = 7k+21, all B
+CASE 1R 2B 3B 4B 5B 6B 7B 8B 9B 10B 11R
+           2k+6 is R   since  (k-3)·2 + 3 + 4 + 5 = 2k+6 (all B)
+           2k+7 is R   since  (k-3)·2 + 3 + 4 + 6 = 2k+7 (all B)
+          5k+21 is B   since  (k-3)·1 + 11 + 2k+6 + 2k+7 = 5k+21 (all R)
+          2k+12 is R   since  (k-3)·2 + 5 + 6 + 7 = 2k+12 (all B)
+          7k+22 is B   since  (k-3)·1 + 2k+6 + 2k+7 + 2k+12 = 7k+22 (all R)
+   CONTRADICTION: (k-3)·2 + 3 + 4 + 5k+21 = 7k+22, all B
+CASE 1R 2B 3B 4B 5B 6B 7B 8B 9B 10B 11B 12R
+           2k+6 is R   since  (k-3)·2 + 3 + 4 + 5 = 2k+6 (all B)
+           2k+7 is R   since  (k-3)·2 + 3 + 4 + 6 = 2k+7 (all B)
+          5k+22 is B   since  (k-3)·1 + 12 + 2k+6 + 2k+7 = 5k+22 (all R)
+           2k+8 is R   since  (k-3)·2 + 3 + 5 + 6 = 2k+8 (all B)
+          2k+12 is R   since  (k-3)·2 + 5 + 6 + 7 = 2k+12 (all B)
+          7k+23 is B   since  (k-3)·1 + 2k+6 + 2k+8 + 2k+12 = 7k+23 (all R)
+   CONTRADICTION: (k-3)·2 + 3 + 4 + 5k+22 = 7k+23, all B
+CASE 1R 2B 3B 4B 5B 6B 7B 8B 9B 10B 11B 12B 13R
+           2k+6 is R   since  (k-3)·2 + 3 + 4 + 5 = 2k+6 (all B)
+           2k+7 is R   since  (k-3)·2 + 3 + 4 + 6 = 2k+7 (all B)
+          5k+23 is B   since  (k-3)·1 + 13 + 2k+6 + 2k+7 = 5k+23 (all R)
+           2k+9 is R   since  (k-3)·2 + 4 + 5 + 6 = 2k+9 (all B)
+          2k+12 is R   since  (k-3)·2 + 5 + 6 + 7 = 2k+12 (all B)
+          7k+24 is B   since  (k-3)·1 + 2k+6 + 2k+9 + 2k+12 = 7k+24 (all R)
+   CONTRADICTION: (k-3)·2 + 3 + 4 + 5k+23 = 7k+24, all B
+CASE 1R 2B 3B 4B 5B 6B 7B 8B 9B 10B 11B 12B 13B
+           2k+6 is R   since  (k-3)·2 + 3 + 4 + 5 = 2k+6 (all B)
+           2k+7 is R   since  (k-3)·2 + 3 + 4 + 6 = 2k+7 (all B)
+           5k-4 is R   since  (k-3)·5 + 2 + 3 + 6 = 5k-4 (all B)
+          10k+6 is B   since  (k-3)·1 + 2k+6 + 2k+7 + 5k-4 = 10k+6 (all R)
+   CONTRADICTION: (k-3)·10 + 11 + 12 + 13 = 10k+6, all B

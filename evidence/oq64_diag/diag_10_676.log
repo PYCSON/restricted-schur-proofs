@@ -1,0 +1,11 @@
+02:26:31 numeng2 10 10 676
+02:37:25 numeng2 rc=0 UNSAT: k=10 l=10 n=676 nodes=336819 leaves=168410 maxdepth=67 forced=30537759 edges=751585 641.5s
+02:37:37 mkcnf: hyperedges ok=751585 bad=0 clauses=1503171
+02:40:32 cadical rc=20
+02:40:38 trimcore: original clauses used 707236; hyperedges kept 705419 of 751585
+02:40:50 mkcnf core: hyperedges ok=705419 bad=0 clauses=1410839
+02:43:23 cadical core rc=20
+02:43:27 lrat-check: c VERIFIED
+02:43:40 cake_lpr: s VERIFIED UNSAT
+02:53:51 numeng2 at n-1: TIMEOUT: k=10 l=10 n=675 nodes=317910 leaves=158952 maxdepth=67 forced=28656091 edges=709948 600.0s
+02:53:51 done

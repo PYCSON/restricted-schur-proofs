@@ -1,0 +1,12 @@
+Test/Fault.lean:5:93: error: Tactic `decide` proved that the proposition
+  ({ a := 0, c := 2, oth := [(1, 1), (1, 2)], w := 4 } :: l3E0.tail).all (edgeOK 3 3 4 l3V l3F) = true
+is false
+Test/Fault.lean:7:55: error: Tactic `decide` proved that the proposition
+  l3E0.all (edgeOK 3 2 4 l3V l3F) = true
+is false
+Test/Fault.lean:9:61: error: Tactic `decide` proved that the proposition
+  l3E0.all (edgeOK 3 3 4 l3V [2, 4, 1]) = true
+is false
+Test/Fault.lean:11:86: error: Tactic `decide` proved that the proposition
+  checkSegF ({ id := 208, clause := [5, 7, 9], hints := [] } :: l3Seg0.tail) l3Db0 = true
+is false

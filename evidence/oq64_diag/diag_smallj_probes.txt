@@ -1,0 +1,18 @@
+k=l=20 n=4752 j=2 :: UNSAT: k=20 l=20 n=4752 nodes=5910 maxdepth=200 0.2s 
+k=l=20 n=4752 j=3 :: UNSAT: k=20 l=20 n=4752 nodes=40675 maxdepth=203 2.0s 
+k=l=20 n=4752 j=4 :: UNSAT: k=20 l=20 n=4752 nodes=45634 maxdepth=204 2.5s 
+k=l=20 n=4752 j=5 :: UNSAT: k=20 l=20 n=4752 nodes=20104 maxdepth=204 1.5s 
+k=l=20 n=4752 j=6 :: UNSAT: k=20 l=20 n=4752 nodes=4984 maxdepth=202 0.5s 
+k=l=20 n=4752 j=7 :: UNSAT: k=20 l=20 n=4752 nodes=287 maxdepth=198 0.0s 
+k=l=21 n=5462 j=2 :: UNSAT: k=21 l=21 n=5462 nodes=11755 maxdepth=221 0.5s 
+k=l=21 n=5462 j=3 :: UNSAT: k=21 l=21 n=5462 nodes=101561 maxdepth=225 5.6s 
+k=l=21 n=5462 j=4 :: UNSAT: k=21 l=21 n=5462 nodes=128995 maxdepth=226 7.5s 
+k=l=21 n=5462 j=5 :: UNSAT: k=21 l=21 n=5462 nodes=65171 maxdepth=226 4.8s 
+k=l=21 n=5462 j=6 :: UNSAT: k=21 l=21 n=5462 nodes=15047 maxdepth=224 1.4s 
+k=l=21 n=5462 j=7 :: UNSAT: k=21 l=21 n=5462 nodes=2863 maxdepth=221 0.3s 
+k=l=22 n=6241 j=4 :: UNSAT: k=22 l=22 n=6241 nodes=356671 maxdepth=249 24.7s 
+k=l=22 n=6241 j=5 :: GOOD_COLOURING: k=22 l=22 n=6241 nodes=314 maxdepth=313 0.0s colouring runs: R[1,1] B[2,6] R[7,357] B[358,6241] 
+k=l=22 n=6241 j=6 :: UNSAT: k=22 l=22 n=6241 nodes=57301 maxdepth=248 6.0s 
+k=l=22 n=6242 j=4 :: UNSAT: k=22 l=22 n=6242 nodes=347420 maxdepth=249 24.6s 
+k=l=22 n=6242 j=5 :: UNSAT: k=22 l=22 n=6242 nodes=185294 maxdepth=250 16.7s 
+k=l=22 n=6242 j=6 :: UNSAT: k=22 l=22 n=6242 nodes=56055 maxdepth=248 5.6s 

@@ -1,0 +1,13 @@
+k=3 l=3 n=23 target=GOOD | UNIQUE (search closed): k=3 l=3 n=23 nodes=73 leaves=37 maxdepth=12 forced=148 edges=71 0.0s | edges=71 cadical_rc=20 lrat-check=1 cake_lpr=1
+k=4 l=4 n=51 target=GOOD | ANOTHER_GOOD_COLOURING: k=4 l=4 n=51 nodes=151 leaves=70 maxdepth=23 forced=676 edges=203 0.0s
+k=4 l=3 n=34 target=GOOD | UNIQUE (search closed): k=4 l=3 n=34 nodes=45 leaves=23 maxdepth=14 forced=152 edges=75 0.0s | edges=75 cadical_rc=20 lrat-check=1 cake_lpr=1
+k=5 l=4 n=67 target=GOOD | UNIQUE (search closed): k=5 l=4 n=67 nodes=115 leaves=58 maxdepth=25 forced=993 edges=243 0.1s | edges=243 cadical_rc=20 lrat-check=1 cake_lpr=1
+k=6 l=5 n=116 target=GOOD | UNIQUE (search closed): k=6 l=5 n=116 nodes=325 leaves=163 maxdepth=39 forced=6312 edges=797 0.2s | edges=797 cadical_rc=20 lrat-check=1 cake_lpr=1
+k=7 l=6 n=184 target=GOOD | UNIQUE (search closed): k=7 l=6 n=184 nodes=1029 leaves=515 maxdepth=56 forced=38164 edges=2750 0.6s | edges=2750 cadical_rc=20 lrat-check=1 cake_lpr=1
+k=8 l=7 n=274 target=GOOD | UNIQUE (search closed): k=8 l=7 n=274 nodes=3625 leaves=1813 maxdepth=76 forced=218685 edges=10025 4.3s | edges=10025 cadical_rc=20 lrat-check=1 cake_lpr=1
+k=9 l=8 n=389 target=GOOD | UNIQUE (search closed): k=9 l=8 n=389 nodes=13183 leaves=6592 maxdepth=99 forced=1205371 edges=37364 28.7s | edges=37364 cadical_rc=20 lrat-check=1 cake_lpr=1
+k=10 l=9 n=532 target=GOOD | UNIQUE (search closed): k=10 l=9 n=532 nodes=49033 leaves=24517 maxdepth=125 forced=6388081 edges=140980 167.6s | edges=140980 cadical_rc=20 lrat-check=1 cake_lpr=1
+k=7 l=5 n=140 target=GOOD | UNIQUE (search closed): k=7 l=5 n=140 nodes=325 leaves=163 maxdepth=41 forced=11152 edges=915 0.2s | edges=915 cadical_rc=20 lrat-check=1 cake_lpr=1
+k=8 l=6 n=215 target=GOOD | UNIQUE (search closed): k=8 l=6 n=215 nodes=1029 leaves=515 maxdepth=58 forced=63331 edges=3139 1.3s | edges=3139 cadical_rc=20 lrat-check=1 cake_lpr=1
+k=9 l=7 n=313 target=GOOD | UNIQUE (search closed): k=9 l=7 n=313 nodes=3575 leaves=1788 maxdepth=78 forced=347920 edges=11356 9.2s | edges=11356 cadical_rc=20 lrat-check=1 cake_lpr=1
+k=11 l=10 n=706 target=GOOD | UNIQUE (search closed): k=11 l=10 n=706 nodes=185469 leaves=92735 maxdepth=154 forced=33036070 edges=537090 1268.2s | edges=537090 cadical_rc=20 lrat-check=1 cake_lpr=1

@@ -1,0 +1,19 @@
+# OQ64.Four — build, axioms, leanchecker, fault injection (2026-10-23 02:10 +0800, run by Claude)
+$ lean --version
+Lean (version 4.35.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+$ lake build OQ64.Four
+Build completed successfully (5 jobs).
+$ lake env lean Test/FourAxioms.lean
+'OQ64.four_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ64.S2_25_24_gt_F' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ64.S2_26_25_gt_F' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ64.S2_22_22_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+$ lake env leanchecker OQ64.Four
+rc=0
+$ lake env lean Test/FourFault.lean   # V one larger: must fail
+Test/FourFault.lean:141:4: error: omega could not prove the goal:
+Test/FourFault.lean:183:80: error: Tactic `decide` proved that the proposition
+Test/FourFault.lean:189:80: error: Tactic `decide` proved that the proposition
+Test/FourFault.lean:196:80: error: Tactic `decide` proved that the proposition
+$ lake env lean Test/FourFaultControl.lean   # unmodified standalone copy: must pass
+0

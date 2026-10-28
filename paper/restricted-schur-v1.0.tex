@@ -1,0 +1,518 @@
+\documentclass[11pt]{amsart}
+\usepackage[margin=1in]{geometry}
+\usepackage{amssymb,amsthm,booktabs,enumitem,xcolor,hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue!50!black,citecolor=blue!50!black,urlcolor=blue!50!black}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\F}{F}
+\newcommand{\Stwo}{S_2}
+
+\title[Two open questions on restricted generalized Schur numbers]{On two open questions of Gaiser on restricted generalized Schur numbers}
+\author{Puyi Sun}
+\address{ORCID 0009-0004-1644-5300}
+\date{Preprint v1.0, 28 October 2026. Computer-assisted proof candidate; not peer reviewed.}
+
+\begin{document}
+
+\begin{abstract}
+For integers $2\le \ell\le k$, let $\Stwo(k;\ell)$ be the least $n$ such that every red--blue colouring of $\{1,\dots,n\}$ contains a monochromatic solution of $x_1+\dots+x_k=x_{k+1}$ that uses exactly $\ell+1$ distinct integers. Gaiser proved that $\Stwo(k;\ell)\ge \F(k,\ell):=k^2+\bigl[\tfrac{(\ell+1)(\ell-2)}{2}+2\bigr]k+\ell(\ell-2)$ for all $2\le\ell\le k$, with equality for all sufficiently large $k$, and asked for the smallest threshold $K(\ell)$ from which equality holds (Open Question~6.4). He also asked whether the three-colour analogue satisfies $S_3(k;2)=k^3+3k^2+k-1$ for large $k$ (Open Question~6.2). We show that $S_3(k;2)=k^3+3k^2+2k-2$ for every $k\ge3$, so the answer to Open Question~6.2 is negative; the lower bound had been recorded publicly before, to the best of our knowledge the matching upper bound has not been established before; we certify it by polynomial hypergraph certificates, LRAT proofs and a Lean~4 formalisation. We give computer-assisted proofs that $K(3)=3$, $K(4)=4$, $K(5)=6$, $K(6)=7$, $K(7)=8$, $K(8)=9$, $K(9)=10$ and $K(10)=11$. The upper bounds hold for \emph{all} $k$ beyond a fixed $k_0$ simultaneously; they are certified by finite hypergraphs whose vertices are integer polynomials in $k$, together with LRAT proofs of unsatisfiability. For $\ell=8,9,10$ one remaining value of $k$ is settled by an ordinary (numerical) hypergraph certificate. All LRAT proofs were accepted by two checkers, one of them formally verified. For $\ell\le7$ the certificates were also checked by a second, independently written implementation, and the argument is formalised in Lean~4; the cases $\ell=8,9,10$ have so far been checked only with the authors' own tools. The failure of the formula at $k=\ell$ for $\ell\ge5$ follows from a known lower bound for weak Schur numbers. In the other direction, explicit four-block colourings with a short blue block show that $K(\ell)\ge\ell+2$ for every $\ell\ge24$ and $K(\ell)\ge(\tfrac98-o(1))\ell$, so $K(\ell)-\ell$ is unbounded. For $k=\ell$ the same colourings exceed the known lower bound for two-colour weak Schur numbers when $k\ge22$, giving $(\tfrac9{16}-o(1))k^3$, whereas our certificates show that the earlier lower bound of Ahmed, Boza, Revuelta and Sanz is attained for $k=8,9,10$.
+\end{abstract}
+
+\maketitle
+
+\noindent\fbox{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule}{\small\textbf{Status of this preprint.} Computer-assisted proof candidate; not peer reviewed. For $\ell\le7$ the certificate chain has been replayed by a second, independently written checker (\S\ref{sec:verification}); the Lean formalisation has so far been run only by its authors. The cases $\ell=8,9,10$ (Theorem~\ref{thm:main}(c)) are newer: they have been checked only with the authors' own tools and are not formalised. For Theorem~\ref{thm:oq62} (Open Question~6.2) all certificates have been replayed by a second, independently written checker; its Lean formalisation has been run only by the authors. Theorem~\ref{thm:four} and Corollary~\ref{cor:four} (23 October) are elementary; their proofs, including the asymptotics and the sharpness remark, have been checked by a second party on paper and with a computer algebra system, but their Lean formalisation has been run only by the authors. The literature check for Corollary~\ref{cor:four}(c) and for the new values of $WS_k(2)$ covers the published sources we could access; one announced follow-up paper of Ahmed et al.\ could not be obtained. Extensive use of AI systems is described in Appendix~\ref{app:repro-ai}.}}
+
+\section{Introduction}
+
+Throughout, a \emph{solution} is a tuple $(x_1,\dots,x_{k+1})$ of positive integers with $x_1+\dots+x_k=x_{k+1}$, and $c(S)$ denotes the number of distinct integers among its entries. A colouring is \emph{good} for $(k,\ell,n)$ if it is a red--blue colouring of $[1,n]=\{1,\dots,n\}$ with no monochromatic solution $S$ in $[1,n]$ with $c(S)=\ell+1$.
+
+\begin{definition}[Gaiser~\cite{Gaiser}]
+For $2\le\ell\le k$, $\Stwo(k;\ell)$ is the least $n$ such that no colouring is good for $(k,\ell,n)$.
+\end{definition}
+
+Write
+\[
+\F(k,\ell)=k^2+\Bigl[\frac{(\ell+1)(\ell-2)}{2}+2\Bigr]k+\ell(\ell-2),\qquad D=\binom{\ell}{2},\qquad E=\binom{\ell-1}{2}.
+\]
+
+\begin{theorem}[Gaiser~{\cite[Thm.~1.1]{Gaiser}}]\label{thm:gaiser}
+For all $2\le\ell\le k$, $\Stwo(k;\ell)\ge\F(k,\ell)$. For each fixed $\ell\ge2$, equality holds for all sufficiently large $k$.
+\end{theorem}
+
+\noindent Section~\ref{sec:oq62} treats Gaiser's Open Question~6.2 (three colours, $\ell=2$); the rest of the paper is about Open Question~6.4.
+
+\noindent Gaiser's Open Question~6.4 asks, for $\ell\ge3$, for the smallest $K$ such that $\Stwo(k;\ell)=\F(k,\ell)$ for all $k\ge K$. We denote it by $K(\ell)$; note $K(\ell)\ge\ell$ by definition.
+
+\begin{theorem}[main result; computer-assisted]\label{thm:main}
+\begin{enumerate}[label=(\alph*)]
+\item $\Stwo(k;3)=(k+1)(k+3)$ for all $k\ge3$, and $\Stwo(k;4)=k^2+7k+8$ for all $k\ge4$.
+\item $\Stwo(k;5)=k^2+11k+15$ for all $k\ge6$, \ $\Stwo(k;6)=k^2+16k+24$ for all $k\ge7$, \ and $\Stwo(k;7)=k^2+22k+35$ for all $k\ge8$.
+\item $\Stwo(k;8)=k^2+29k+48$ for all $k\ge9$, $\Stwo(k;9)=k^2+37k+63$ for all $k\ge10$, and $\Stwo(k;10)=k^2+46k+80$ for all $k\ge11$.
+\item Consequently $K(3)=3$, $K(4)=4$, $K(5)=6$, $K(6)=7$, $K(7)=8$, $K(8)=9$, $K(9)=10$ and $K(10)=11$.
+\end{enumerate}
+\end{theorem}
+
+The lower bounds in (a)--(c) are Theorem~\ref{thm:gaiser}. The new content is the upper bounds, each valid for \emph{every} $k$ from the stated threshold on. Part (d) also uses the known fact that the formula fails at $k=\ell$ for $\ell\ge5$ (Proposition~\ref{prop:ahmed} below).
+
+\noindent Theorem~\ref{thm:main} might suggest that $K(\ell)=\ell+1$ for every $\ell\ge5$ (an earlier version of this draft conjectured exactly this). This is false: by Corollary~\ref{cor:four} below, $K(\ell)\ge\ell+2$ for all $\ell\ge24$, and $K(\ell)$ grows at least like $\tfrac98\ell$. We do not know whether $K(\ell)=\ell+1$ for $11\le\ell\le23$.
+
+\section{Prior work and lower bounds}\label{sec:prior}
+
+\subsection*{Lower bound} Gaiser's lower bound uses the three-block colouring red on $[1,s-1]$, blue on $[s,t-1]$, red on $[t,\F-1]$, where $s=k+D$ and $t=ks+D$. Note that $\F(k,\ell)=t+k-1+E$.
+
+\subsection*{The diagonal $k=\ell$} When $k=\ell$, a solution has exactly $\ell+1$ distinct entries precisely when all its entries are distinct, so $\Stwo(k;k)=S_2^*(k)$, the two-colour generalized \emph{weak} Schur number~\cite{Gaiser}. In the notation $WS_k(2)$ of the weak Schur literature (with $k$ summands), the known values are
+\[
+WS_2(2),\dots,WS_7(2)=9,\ 24,\ 52,\ 101,\ 166,\ 253.
+\]
+The value $WS_2(2)=9$ appears as $h(2)=9$ in Blanchard, Harary and Reis~\cite{BHR}. For the equation $x_1+\dots+x_k+c=x_{k+1}$ with distinct summands, Boza, Mar\'in, Revuelta and Sanz~\cite{BMRS} proved $WR_3(2,c)=5c+24$ for every even $c\ge0$ ($WR_3(2,c)=\infty$ for odd $c$) and $WR_4(2,c)=6c+52$ for every $c\ge0$; $c=0$ gives $WS_3(2)=24$ and $WS_4(2)=52$. Ahmed et al.~\cite{ABRS} cite both~\cite{BMRS} and Sanz's thesis~\cite{Sanz} for the early results on $k=3,4$; we have not inspected the thesis. $WS_5(2)=101$ is due to~\cite{BMRS}; see also~\cite{BRS}. $WS_6(2)=166$ and $WS_7(2)=253$ are Theorems~4.2 and~4.6 of Ahmed, Boza, Revuelta and Sanz~\cite{ABRS}.
+
+\begin{proposition}[Ahmed--Boza--Revuelta--Sanz~{\cite[Lemma~2.1]{ABRS}}]\label{prop:ahmed}
+For $k\ge5$, $WS_k(2)\ge\frac{k^3+4k^2-5k+2}{2}$. The colouring $A_1=\{1\}\cup\bigl[\tfrac{k^2+3k}{2},\tfrac{k^3+3k^2-6k+2}{2}\bigr]$, $A_2=\bigl[2,\tfrac{k^2+3k-2}{2}\bigr]\cup\bigl[\tfrac{k^3+3k^2-6k+4}{2},\tfrac{k^3+4k^2-5k}{2}\bigr]$ has no monochromatic solution with distinct entries.
+\end{proposition}
+
+\noindent Since $\F(\ell,\ell)=\frac{\ell^3+3\ell^2-2\ell}{2}$, the bound equals $\F(\ell,\ell)+E$ at $k=\ell$, and $E>0$ for $\ell\ge3$. Hence $\Stwo(\ell;\ell)>\F(\ell,\ell)$ and $K(\ell)\ge\ell+1$ for all $\ell\ge5$; this is an immediate consequence of known results, and we make no claim to it. For $\ell=3,4$ the known values $WS_3(2)=24=\F(3,3)$ and $WS_4(2)=52=\F(4,4)$ agree with Theorem~\ref{thm:main}(a).
+
+\noindent\emph{New values.} With the method of Lemma~\ref{lem:numeric} we also obtained $WS_8(2)=365$, $WS_9(2)=505$ and $WS_{10}(2)=676$. The upper bounds are certified by hypergraphs with LRAT proofs (accepted by \texttt{lrat-check} and \texttt{cake\_lpr}); the lower bounds are Proposition~\ref{prop:ahmed}. Our search, without certificates, also gives $WS_{11}(2)=881$, $WS_{12}(2)=1123$, $WS_{13}(2)=1405$ and $WS_{14}(2)=1730$. So the bound of Proposition~\ref{prop:ahmed} is attained for $5\le k\le 10$, and our uncertified computations support equality also for $11\le k\le14$; by Corollary~\ref{cor:four}(c) below it is not attained for $k\ge22$. In the published sources we could check (including~\cite{ABRS2} and OEIS A365190), $WS_k(2)$ is known exactly only for $k\le7$.
+
+\subsection*{Four-block colourings with a short blue block} The colouring in Proposition~\ref{prop:ahmed} has the shape: red $\{1\}$, blue $[2,j+1]$, red $[j+2,m]$, blue $[m+1,M]$, with $j\approx k^2/2$. Taking $j$ much smaller, about $\ell/4$, gives better colourings when $\ell$ is large, and the same works for $k>\ell$.
+
+\begin{theorem}\label{thm:four}
+Let $k\ge\ell\ge2$, $e=k-\ell$ and $1\le j\le\ell-1$. Put
+\[
+m=e+(\ell-1)j+\frac{\ell(\ell+1)}{2}-1,\qquad V=\frac{j(j+3)}{2}+(\ell-j)\,m+\frac{(\ell-j)(\ell-j+1)}{2}+2e .
+\]
+The colouring of $[1,V-1]$ with red class $\{1\}\cup[j+2,m]$ and blue class $[2,j+1]\cup[m+1,V-1]$ is good for $(k,\ell,V-1)$. Hence $\Stwo(k;\ell)\ge V$.
+\end{theorem}
+
+\begin{proof}
+In a monochromatic solution the sum $x_{k+1}$ has the colour of the summands, and the $k$ summands take exactly $\ell$ distinct values. Let $S$ be a colour class with elements $s_1<s_2<\cdots$; if $|S|<\ell$ there is nothing to show. If the summands take the values $v_1<\dots<v_\ell$ in $S$ with multiplicities $\mu_i\ge1$, then $v_i\ge s_i$ and $\sum_i\mu_iv_i=\sum_iv_i+\sum_i(\mu_i-1)v_i\ge s_1+\dots+s_\ell+(k-\ell)s_1$. For the red class this bound is $1+\sum_{i=2}^{\ell}(j+i)+(k-\ell)=m+1$. The blue class has only $j<\ell$ elements below $m+1$, so its bound is $\sum_{i=2}^{j+1}i+\sum_{i=1}^{\ell-j}(m+i)+2(k-\ell)=V$. In both cases the sum exceeds every element of the class, so no monochromatic solution exists.
+\end{proof}
+
+\begin{corollary}\label{cor:four}
+\begin{enumerate}[label=(\alph*)]
+\item For every $\ell\ge24$, $\Stwo(\ell+1;\ell)>\F(\ell+1,\ell)$, hence $K(\ell)\ge\ell+2$. For example $\Stwo(25;24)\ge8097>8078=\F(25,24)$ and $\Stwo(26;25)\ge9132>9077=\F(26,25)$.
+\item For $\ell\ge26$ and every integer $e$ with $1\le e\le(\ell-18)/8$, $\Stwo(\ell+e;\ell)>\F(\ell+e,\ell)$. Hence $K(\ell)\ge\ell+1+\lfloor(\ell-18)/8\rfloor$ and $K(\ell)\ge(\tfrac98-o(1))\ell$.
+\item For every $k\ge22$, $WS_k(2)=\Stwo(k;k)$ exceeds the bound $\frac{k^3+4k^2-5k+2}{2}$ of Proposition~\ref{prop:ahmed}; asymptotically $WS_k(2)\ge(\tfrac9{16}-o(1))k^3$.
+\end{enumerate}
+\end{corollary}
+
+\begin{proof}
+Let $r\in\{0,1,2,3\}$ with $r\equiv\ell\pmod4$, take $j=(\ell-r)/4$ in Theorem~\ref{thm:four}, and put $G=V-\F(\ell+e,\ell)$. A direct expansion gives
+\[
+G=\frac{\ell^3}{16}-\Bigl(\frac e2+1\Bigr)\ell^2+\Bigl(\frac{16+r(6-r)}{16}-\frac{3e}{4}\Bigr)\ell-e^2+\Bigl(1+\frac r4\Bigr)e-\frac{r(4-r)}{8}.
+\]
+(b) $\partial G/\partial e=-2e-\frac{\ell^2}{2}-\frac{3\ell}{4}+1+\frac r4<0$ for $e\ge0$, so it suffices to take $e=(\ell-18)/8$. There $G=\frac{\ell^2}{64}+\alpha_r\ell-\beta_r$ with $\alpha_r\in\{\frac{27}{8},\frac{119}{32},\frac{63}{16},\frac{129}{32}\}$ and $\beta_r\in\{\frac{117}{16},\frac{33}{4},\frac{143}{16},\frac{75}{8}\}$, which is positive for $\ell\ge3$.
+(a) For $\ell\ge26$ take $e=1$ in (b). For $\ell=24,25$ take $j=5$; the values are as stated.
+(c) For $e=0$, $V-\frac{k^3+4k^2-5k+2}{2}=G-\binom{k-1}{2}=\frac{k^3}{16}-\frac32k^2+\bigl(\frac{16+r(6-r)}{16}+\frac32\bigr)k-1-\frac{r(4-r)}{8}$ (with $\ell=k$), which is positive for $k\ge24$; for $k=22,23$ take $j=5$ ($V=6242>6238$ and $V=7121>7085$). The asymptotic statement is $V=\frac{9}{16}k^3+O(k^2)$.
+\end{proof}
+
+\noindent The four-block colourings themselves were first found by our search program for $(k,\ell)=(26,25)$ and $(31,30)$; Theorem~\ref{thm:four} was then written down by hand. As a check, a separately written exact program (a bit-set dynamic programme over the number of summands and of distinct values) confirmed that the colourings in Theorem~\ref{thm:four} with the optimal $j$ are good for ten pairs $(k,\ell)$ between $(22,22)$ and $(42,40)$ (and, for $(26,25)$, also with $j=6$). Theorem~\ref{thm:four} itself, for all $k,\ell,j$, is also formalised in Lean~4 (module \texttt{OQ64.Four}), together with the instances $\Stwo(25;24)>\F(25,24)$, $\Stwo(26;25)>\F(26,25)$ and $\Stwo(22;22)\ge6242$. The polynomial inequalities behind Corollary~\ref{cor:four} are not formalised; they were checked with a computer algebra system. For $\ell\le23$, no choice of $j$ beats $\F(\ell+1,\ell)$. Corollary~\ref{cor:four}(b) is sharp for this family when $\ell\ge74$: maximising $G$ over real $j$ gives $G_{\max}(e)$, which is decreasing in $e$ and equals $-\frac{12\ell^3-1025\ell^2+4222\ell-4489}{256(\ell-2)}<0$ at $e=(\ell-17)/8$ for $\ell\ge82$ (the cases $74\le\ell\le81$ were checked directly). So for $\ell\ge74$ the largest $k$ for which some colouring of Theorem~\ref{thm:four} beats $\F(k,\ell)$ is exactly $\ell+\lfloor(\ell-18)/8\rfloor$. For $5\le k\le21$ the best choice is the large $j$ of Proposition~\ref{prop:ahmed}, and the two bounds coincide. We do not know whether Corollary~\ref{cor:four}(c) is new: we found no improvement of Proposition~\ref{prop:ahmed} in the literature we checked, but that check is not complete (the brief announcement~\cite{ABRS2} does not contain it; the authors' follow-up paper, listed as submitted, could not be checked).
+
+\section{Symbolic hypergraph certificates}\label{sec:method}
+
+Fix $\ell$ and $k_0\ge\ell$. All polynomials below are integer polynomials of degree at most~2 in $k$, and ``for all $k$'' means for all integers $k\ge k_0$.
+
+\begin{definition}\label{def:cert}
+A \emph{certificate} for $(\ell,k_0)$ consists of
+\begin{enumerate}[label=(\roman*)]
+\item a finite list of polynomials $p_1,\dots,p_N$ (\emph{vertices}) with $p_1=1$, such that $1\le p_i(k)\le\F(k,\ell)$ for all $k$;
+\item a finite list of \emph{edges}. An edge is $(a;c;(m_1,o_1),\dots,(m_{\ell-1},o_{\ell-1});w)$, where $a,o_j,w$ are vertices, $\deg a\le1$, the $m_j$ are positive integers with $\sum_j m_j=c\le k_0-1$, and
+\[ w=(k-c)\,a+\sum_{j=1}^{\ell-1} m_j\,o_j \quad\text{as polynomials,} \]
+and, for all $k$, the $\ell$ summand values $a(k),o_1(k),\dots,o_{\ell-1}(k)$ are pairwise distinct;
+\item the CNF formula over one Boolean variable per vertex (true = red) consisting of the unit clause $\{p_1\}$ and, for each edge, the two clauses ``not all of $a,o_1,\dots,o_{\ell-1},w$ are red'' and ``not all of them are blue''. This CNF is unsatisfiable.
+\end{enumerate}
+\end{definition}
+
+\begin{lemma}[soundness]\label{lem:sound}
+If a certificate for $(\ell,k_0)$ exists, then $\Stwo(k;\ell)\le\F(k,\ell)$ for every $k\ge k_0$.
+\end{lemma}
+
+\begin{proof}
+Fix $k\ge k_0$ and a colouring $\chi$ of $[1,\F(k,\ell)]$. Swapping colours if necessary, $\chi(1)$ is red. Give each vertex $p_i$ the colour $\chi(p_i(k))$, which is defined by (i). This is an assignment of the CNF that satisfies the unit clause, so by (iii) it falsifies the clause of some edge. Thus $a(k)$, the $o_j(k)$ and $w(k)$ all have the same colour. The summand $a(k)$ is taken with multiplicity $k-c\ge1$ and $o_j(k)$ with multiplicity $m_j\ge1$; these multiplicities add up to $k$, so the identity in (ii) is a solution with $k$ summands. Its summands take exactly $\ell$ distinct values by (ii), and $w(k)$ exceeds each of them because it is a sum of at least two positive terms that include that summand. So the solution has exactly $\ell+1$ distinct integers, all in $[1,\F(k,\ell)]$, and it is monochromatic.
+\end{proof}
+
+\begin{remark}
+Two different vertices may take the same value at some $k$. This does not affect the proof: the assignment induced by $\chi$ is still \emph{an} assignment, and every assignment falsifies some clause. Using separate variables only weakens the constraints.
+\end{remark}
+
+\subsection*{Checking the conditions exactly} Each condition in (i) and (ii) has the form $q(k)\ge0$ for all integers $k\ge k_0$, with $\deg q\le2$. Substituting $k=k_0+t$, it suffices to evaluate $q$ at $t=0$ and at the integers next to the real vertex of the parabola, when the leading coefficient is positive. A negative leading coefficient, or a degree-one polynomial with negative slope, fails. No sampling is involved.
+
+\subsection*{Finding certificates} The certificates were found by a DPLL-style search. It branches on the colours of the integers $2,3,\dots$, and in each branch it propagates forced colours through identities of the shape in (ii) among same-coloured vertices. New vertices are created as needed. The identities used in contradictions are recorded and then reduced to a small unsatisfiable core with a SAT solver. For $\ell=8,9,10$ the search only uses identities with $c\in\{\ell-1,\ell\}$, which keeps the number of candidate identities manageable while condition (ii) ($c\le k_0-1$) still holds. The search procedure plays no role in the correctness argument.
+
+\subsection*{Single values of $k$} For one fixed $k$ we use ordinary hypergraphs on integers.
+
+\begin{lemma}\label{lem:numeric}
+Let $k\ge\ell\ge2$ and $n\ge1$. Let $H$ be a finite list of solutions $x_1+\dots+x_k=x_{k+1}$ in $[1,n]$, each with exactly $\ell+1$ distinct integers, and suppose the CNF over variables $1,\dots,n$ consisting of the unit clause $\{1\}$ and, for each member of $H$, the clauses ``not all of its integers are red'' and ``not all of them are blue'' is unsatisfiable. Then $\Stwo(k;\ell)\le n$.
+\end{lemma}
+
+\begin{proof}
+A colouring of $[1,n]$ with $1$ red is an assignment satisfying the unit clause, so it falsifies a clause of some member of $H$, which is then monochromatic. If $1$ is blue, swap the colours first.
+\end{proof}
+
+\noindent The lists $H$ were found by a DPLL search over the colours of $2,3,\dots$, in which forced colours are propagated by a dynamic programme over the integers of each colour class; the solutions that justify forcings and contradictions are recorded and reduced to an unsatisfiable core.
+
+\section{The certificates and their verification}\label{sec:verification}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{ccccccc}
+\toprule
+$\ell$ & $k_0$ & $\F(k,\ell)$ & vertices & edges & CNF clauses & LRAT additions\\
+\midrule
+3 & 3 & $k^2+4k+3$ & 67 & 103 & 207 & 92\\
+4 & 4 & $k^2+7k+8$ & 181 & 387 & 775 & 412\\
+5 & 6 & $k^2+11k+15$ & 288 & 836 & 1673 & 623\\
+6 & 7 & $k^2+16k+24$ & 864 & 3298 & 6597 & 2318\\
+7 & 8 & $k^2+22k+35$ & 843 & 11168 & 22337 & 7858\\
+8 & 10 & $k^2+29k+48$ & 1538 & 42170 & 84341 & 61589\\
+9 & 11 & $k^2+37k+63$ & 2707 & 160068 & 320137 & 183492\\
+10 & 12 & $k^2+46k+80$ & 4448 & 609886 & 1219773 & 662622\\
+\bottomrule
+\end{tabular}
+\caption{Certificates for Theorem~\ref{thm:main}. Each one proves $\Stwo(k;\ell)\le\F(k,\ell)$ for all $k\ge k_0$.}
+\label{tab:certs}
+\end{table}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{cccccc}
+\toprule
+$\ell$ & $k$ & $n$ & solutions in $H$ & CNF clauses & LRAT additions\\
+\midrule
+8 & 9 & 390 & 45478 & 90957 & 77148\\
+9 & 10 & 533 & 140250 & 280501 & 180907\\
+10 & 11 & 707 & 535635 & 1071271 & 682374\\
+\midrule
+8 & 8 & 365 & 47825 & 95651 & 47743\\
+9 & 9 & 505 & 184325 & 368651 & 288821\\
+10 & 10 & 676 & 705419 & 1410839 & 946883\\
+\bottomrule
+\end{tabular}
+\caption{Single-value certificates (Lemma~\ref{lem:numeric}), each proving $\Stwo(k;\ell)\le n$. Top: the remaining cases $k=\ell+1$ of $\ell=8,9,10$, with $n=\F(k,\ell)$. Bottom: the diagonal values $WS_8(2)$, $WS_9(2)$, $WS_{10}(2)$, with $n=\frac{k^3+4k^2-5k+2}{2}$.}
+\label{tab:single}
+\end{table}
+
+\noindent Each certificate for $\ell\le7$ was checked in four independent ways.
+\begin{enumerate}[label=(\arabic*)]
+\item \emph{Independent checker} (not importing the search code): exact checks of (i) and (ii), re-derivation of the CNF and comparison with the stored file, and numerical spot checks of every edge for $k_0\le k\le k_0+200$ and $k=10^3,10^4,10^6$.
+\item \emph{LRAT}: the unsatisfiability proofs produced by CaDiCaL~\cite{cadical} were accepted by \texttt{lrat-check}~\cite{drattrim} and by the verified checker \texttt{cake\_lpr}~\cite{cakelpr}.
+\item \emph{Second, independently written implementation}: a separate implementation, written and run independently of ours, re-checked (i) and (ii), rebuilt each CNF exactly, and replayed each LRAT proof by unit propagation along the hints to the empty clause. All five certificates passed. A further implementation from the same independent source was also run on the full repository, including SHA-256 checks of the original files, and again all five passed.
+\item \emph{Lean~4}: see \S\ref{sec:lean}.
+\end{enumerate}
+
+\noindent \emph{The cases $\ell=8,9,10$.} The symbolic certificates for $(\ell,k_0)=(8,10)$, $(9,11)$ and $(10,12)$ passed checks (1) and (2). The second implementation from (3) was also run on them, with all checks passing, but by us rather than by its author, so this is not an independent replay. For the single-value certificates of Table~\ref{tab:single}, each member of $H$ was checked by a script that does not share code with the search (exactly $k$ summands, exactly $\ell$ distinct summand values, correct sum, all integers in $[1,n]$), the CNF was rebuilt from $H$, and the LRAT proofs were accepted by \texttt{lrat-check} and \texttt{cake\_lpr}. As a sanity check, for the three rows with $k=\ell+1$ the same search finds a good colouring for $n-1$ (Gaiser's three-block colouring), confirmed by a separate checker. For the three diagonal rows, the colouring of Proposition~\ref{prop:ahmed} of $[1,n-1]$ was confirmed by two separate checkers (for $k=8,9$ it is also what the search finds). An independent replay and a Lean formalisation of the cases $\ell=8,9,10$ are pending.
+
+\noindent Three further certificates of the same kind, with target $\F(k,\ell)+E$ on $k\ge\ell$ for $\ell=5,6,7$, give independent re-proofs of the known values $WS_5(2)=101$, $WS_6(2)=166$ and $WS_7(2)=253$. They passed the same checks (1)--(3).
+
+\section{Lean formalisation}\label{sec:lean}
+
+The statement is formalised in Lean~4 (v4.35.0, core library only) as follows (ASCII rendering of the source).
+\begin{verbatim}
+def ExactSol (k l N : Nat) (c : Nat -> Bool) : Prop :=
+  exists (x : Nat -> Nat) (vals : List Nat),
+    (forall i, i <= k -> 1 <= x i /\ x i <= N) /\
+    ((List.range k).map x).sum = x k /\
+    vals.Nodup /\ vals.length = l + 1 /\
+    (forall i, i <= k -> x i in vals) /\
+    (forall v in vals, exists i, i <= k /\ x i = v) /\
+    (forall i, i <= k -> c (x i) = c (x k))
+
+def FormulaHolds (k l : Nat) : Prop :=
+  forall M, (forall c : Nat -> Bool, ExactSol k l M c) <-> F k l <= M
+\end{verbatim}
+Theorems \texttt{K3}, \dots, \texttt{K7} (the case $\ell=8$ is not formalised) state that \texttt{FormulaHolds k l} for all $k$ from the threshold on and, for $\ell=5,6,7$, that it fails at $k=\ell$. The formalisation contains:
+\begin{itemize}
+\item a generic proof of Lemma~\ref{lem:sound}, in which conditions (i) and (ii) are decided by computation;
+\item an LRAT checker with a soundness proof;
+\item Gaiser's lower bound for all $2\le\ell\le k$;
+\item Proposition~\ref{prop:ahmed} for all $\ell\ge5$, which formalises the construction of~\cite{ABRS}.
+\item Theorem~\ref{thm:four} for all $k\ge\ell\ge2$ and all $j$ (module \texttt{OQ64.Four}), with the instances $\Stwo(25;24)>\F(25,24)$, $\Stwo(26;25)>\F(26,25)$ and $\Stwo(22;22)\ge6242$.
+\end{itemize}
+The only axioms used are \texttt{propext}, \texttt{Classical.choice} and \texttt{Quot.sound}, and \texttt{leanchecker} accepts every module. The formalisation has so far been built and checked only by its authors; an independent replay is pending.
+
+\section{Uniqueness of the extremal colouring}\label{sec:unique}
+
+Call Gaiser's three-block colouring of $[1,\F-1]$ (red $[1,s-1]$, blue $[s,t-1]$, red $[t,\F-1]$ with $s=k+D$, $t=ks+D$) the \emph{extremal colouring}.
+
+\begin{proposition}[computer-assisted]\label{prop:unique}
+For each of the twelve pairs
+\[(k,\ell)=(3,3),(4,3),(5,4),(6,5),(7,5),(7,6),(8,6),(8,7),(9,7),(9,8),(10,9),(11,10),\]
+the extremal colouring is, up to swapping the colours, the only good colouring of $[1,\F(k,\ell)-1]$.
+\end{proposition}
+
+\noindent Each case is certified by a list $H$ of solutions as in Lemma~\ref{lem:numeric} together with one extra clause excluding the extremal colouring (with $1$ red); the resulting CNF is unsatisfiable, with LRAT proofs accepted by \texttt{lrat-check} and \texttt{cake\_lpr}. The diagonal case behaves differently: for $k=\ell=4$ there are three good colourings of $[1,51]$.
+
+\begin{conjecture}\label{conj:unique}
+For $\ell\ge3$ and $k\ge\max(\ell+1,K(\ell))$, the extremal colouring is the only good colouring of $[1,\F(k,\ell)-1]$ up to swapping the colours.
+\end{conjecture}
+
+\noindent The search trees behind Table~\ref{tab:single} have a simple shape: for $k=\ell+1$, the search effectively enumerates the colourings of $[2,\approx2\ell-2]$, and each of them is refuted by a short chain of forced colours (typically $5$--$10$ solutions). The number of leaves grows like $2^{2\ell-3}$. Any conceptual proof of $K(\ell)=\ell+1$ for a range of $\ell$ would have to organise these short chains into finitely many patterns, and by Corollary~\ref{cor:four} such a proof can only work for $\ell\le23$.
+
+\section{Partial results for general $\ell$}\label{sec:general}
+
+\noindent\emph{This section is new and has not yet been checked by a second party.} Throughout, $\ell\ge3$, $k=\ell+e$ with $e\ge1$, $N=\F(k,\ell)$, and $\chi$ is a good colouring of $[1,N]$ with $\chi(1)$ red. For a set $S$ of $\ell$ distinct integers of one colour, any $\sum_{v\in S}\mu(v)v$ with $\mu\ge1$ and $\sum\mu=k$ is a \emph{$k$-sum} of $S$; if it is at most $N$, it has the other colour.
+
+\begin{lemma}[$k$-sums of an interval]\label{lem:interval}
+Let $\ell\ge3$ and let $I$ be an interval of $L+1\ge\ell$ consecutive integers starting at $a$. The $k$-sums of the $\ell$-subsets of $I$ are exactly the integers in $[ka+D,\,k(a+L)-D]$, except that for $e=1$ and $|I|=\ell+1$ the single value $\Sigma I$ is missing.
+\end{lemma}
+
+\begin{proof}[Sketch]
+For consecutive $\ell$-blocks the $k$-sums form intervals of length $e(\ell-1)+1$ which, for $e\ge2$, overlap; for $e=1$ consecutive blocks leave single gaps, each filled by the set $[c,c+\ell+1]\setminus\{c+2,c+\ell\}$ with the extra copy on $c+1$ (or by its reflection), as long as $|I|\ge\ell+2$.
+\end{proof}
+
+\begin{proposition}\label{prop:smallblue}
+If $\ell\ge5$, the smallest blue integer is at most $\ell+1$.
+\end{proposition}
+
+\begin{proof}[Sketch]
+If $[1,\ell+1]$ is red, Lemma~\ref{lem:interval} shows that the red $k$-sums cover a blue block starting at $s=k+D$ (for $e=1$ the block $[s,s+2\ell-1]$ misses only $s+\ell$), whose blue $k$-sums contain $t=ks+D$ and $\F$; so $t$ and $\F$ are red. The red solution $1,1,2,\dots,\ell-1,t$ with $e-1$ further copies of $1$ has sum $t+k-1+E=\F$, a contradiction. For $e=1$, $\F$ is reached inside the block while avoiding $s+\ell$ by an explicit family of sets.
+\end{proof}
+
+\begin{proposition}[balanced windows]\label{prop:balanced}
+Let $\ell\ge6$. If both colours have at least $\ell-1$ elements in $[1,2\ell]$, then $\chi$ restricted to $[1,2\ell]$ is the parity colouring (odd red, even blue).
+\end{proposition}
+
+\begin{proof}[Sketch]
+If a colour $C$ has $\ell$ elements and the other colour $C'$ has $\ell-1$ elements in $[1,2\ell]$, and some $b\in C'$ satisfies $b+d=y+r'$ with $y,d,r'\in C$, then five explicit identities (valid for every $e\ge1$) produce two different solutions with the same sum and different forced colours; all values are at most $N$ when $\ell\ge6$. If no such $b$ exists for either choice of $C$, then both colour classes are closed under $x+y-z$ inside $[1,2\ell]$, which forces the parity colouring.
+\end{proof}
+
+\noindent For the parity colouring, an explicit collision exists when $k$ is even (one level of forcing). For $k$ odd we use three levels.
+
+\begin{lemma}[parity window, $k$ odd]\label{lem:parityodd}
+Let $\ell\ge6$, $e\ge1$ and $k=\ell+e$ odd. No good colouring of $[1,\F(k,\ell)]$ is the parity colouring on $[1,2\ell]$.
+\end{lemma}
+
+\begin{proof}[Proof sketch]
+Let $O$ and $E$ be the odd and even numbers in $[1,2\ell]$ (red and blue). The red $k$-sums of $O$ with extra summands from $O$ are the numbers $\ell^2+\sigma$, where $\sigma$ runs over the $e(\ell-1)+1$ values $e,e+2,\dots,e(2\ell-1)$; call this set $A$. It is forced blue. Take $m=1$ for $\ell\in\{6,7\}$ and $m=\lceil\ell/2-\sqrt{\ell-1}\,\rceil$ otherwise. Let $G$ (resp.\ $G'$) be the $m$ largest (resp.\ smallest) even numbers of $E$, and let $L,L'\subseteq A$ have $m$ elements each. The blue $k$-sum $M$ of $(E\setminus G)\cup L$ with the extra copies on $2$ is forced red. The red $k$-sum $w$ of $(O\setminus\{2\ell-1\})\cup\{M\}$ with the extra copies on $1$ is forced blue. The blue $k$-sum $w'$ of $(E\setminus G')\cup L'$ with the extra copies on $2\ell$ is forced red. Then $w=w'$ is equivalent to $\Sigma L'-\Sigma L=r$ with
+\[
+r=(\ell-1)^2-e(2\ell-3)-2m(\ell-m),
+\]
+which is even because $k$ is odd. Since $m$-subsets of an arithmetic progression of step $2$ realise every even difference of sums up to $2m(e(\ell-1)+1-m)$, it remains to check $|r|\le2m(e(\ell-1)+1-m)$ and $w\le\F(k,\ell)$. Writing $\ell=s^2+1$ and $m=\ell/2-s+d$ with $0\le d<1$, both become polynomial inequalities in $s,d,e$. At $e=1$ they reduce to $-4d(2s-d)\le0$ and $-(s^2-1)^2\le0$, and both sides are monotone in $e$ for $\ell\ge8$. The size condition becomes $\F-w\ge s^4(s-1)+2s^3-3s^2-s-2+e(\cdots)>0$. The cases $\ell=6,7$ with $m=1$ are linear in $e$. The construction was also checked explicitly for $6\le\ell\le400$ and $e\le120$.
+\end{proof}
+
+\noindent Hence \emph{every hypothetical good colouring of $[1,\F(k,\ell)]$ with $\ell\ge6$ has a colour with at most $\ell-2$ elements in $[1,2\ell]$.} We could not handle these sparse windows in general: computationally, for $\ell\le11$ and $k\ge\ell+2$ every colouring of $[1,2\ell]$ is refuted by propagation alone, but for larger $\ell$, and for $k=\ell+1$, sparse windows need further case distinctions. For large $\ell$ this gap cannot be closed: the colourings of Theorem~\ref{thm:four} have exactly such a sparse window (blue $=\{2,\dots,j+1\}$ with $j\approx\ell/4$), and for $\ell\ge24$ they are good on $[1,\F(\ell+1,\ell)]$.
+
+\subsection*{A forcing lemma for sparse windows}
+
+The four-block construction of Theorem~\ref{thm:four} suggests isolating the
+small blue interval in the initial window. The following elementary forcing
+lemma supplies a sufficient condition under which that window cannot extend
+to a good colouring. It is not an optimality theorem for four-block colourings.
+
+\begin{lemma}[Two-stage forcing]\label{lem:two-stage-forcing}
+Let $\ell\ge 11$, $e\ge1$, $k=\ell+e$, $1\le j\le\ell-1$, and $n=F(k,\ell)$.
+Suppose the restriction of a good red--blue colouring of $[1,n]$ to
+$[1,2\ell]$ is red on $\{1\}\cup[j+2,2\ell]$ and blue on $[2,j+1]$.
+Write $q=\ell-j$ and
+\[
+\begin{aligned}
+ A_e&=e+1+\frac{(\ell-1)(2j+\ell+2)}2, &
+ L&=(\ell-1)q,\\
+ V_e&=\frac{j(j+3)}2+qA_e+\frac{q(q-1)}2+2e, &
+ H&=q((\ell-2)q+1),\\
+ P_e&=e+1+\frac{(\ell-2)(2j+\ell+1)}2.
+\end{aligned}
+\]
+If $P_e\le H$ and $V_e+P_e\le n$, no such good colouring exists.
+\end{lemma}
+
+\begin{proof}
+We use that the sums of $r$ distinct members of a consecutive integer
+interval $[a,a+M]$ fill the entire interval from
+$ra+\binom r2$ to $ra+\binom r2+r(M-r+1)$.
+Indeed, each integer excess $h=rt+u$, $0\le u<r$, is realised by shifting
+all $r$ consecutive choices by $t$ and shifting the last $u$ of them by
+one more step.
+
+Choose $\ell-1$ distinct red summands in $[j+2,2\ell]$ and take $1$
+with multiplicity $e+1$. Their valid $k$-sums run through
+$[A_e,A_e+L]$. The bound $A_e+L\le n$ holds for every
+$\ell\ge11$ and $e\ge1$, so this entire interval is forced blue.
+
+Now choose all $j$ small blue integers $2,\ldots,j+1$, together with
+$q$ distinct blue integers from $[A_e,A_e+L]$, and repeat $2$ another
+$e$ times. The resulting valid $k$-sums fill $[V_e,V_e+H]$.
+Every sum not exceeding $n$ is forced red. Thus $V_e$ and
+$V_e+P_e$ are red under the stated inequalities.
+
+Finally, take as red summands $V_e$, the $\ell-2$ distinct integers
+$j+2,\ldots,j+\ell-1$, and $1$ with multiplicity $e+1$.
+They have exactly $\ell$ distinct values, their sum is $V_e+P_e$,
+and their right-hand side has the same red colour. This contradicts
+the assumption of a good colouring.
+\end{proof}
+
+The parameter $V_e$ is exactly the lower-bound endpoint $V(k,\ell,j)$
+from Theorem~\ref{thm:four}; specifically its $m$ equals $A_e-1$.
+Thus $V_e>F$ yields an explicit good four-block colouring, while the
+stronger opposite-side inequalities $P_e\le H$ and
+$F-V_e\ge P_e$ exclude extensions of the corresponding initial window.
+The region between these sufficient conditions remains open.
+
+For example, when $(\ell,j,e)=(23,10,1)$, one obtains $k=24$,
+$F=7155$, $A_e=497$, $L=286$, $V_e=6606$, $H=3562$ and $P_e=464$.
+The forced-blue interval is $[497,783]$, and $7070=6606+464\le7155$
+is forced red. Yet $7070$ is also the red sum of $6606$,
+$12,13,\ldots,32$, and two copies of $1$, a contradiction.
+
+At $e=1$, the criterion applies to 100 of the 208 pairs
+$11\le\ell\le23$, $1\le j\le\ell-1$ (a finite exact-integer
+enumeration), and if it holds at $e=1$ it holds for all $1\le e\le 1+H-P_1$. This is a count of the
+lemma's sufficient conditions, not an exhaustive proof for all sparse
+windows. In particular, the difficult small-$j$ cases have
+$V_e+P_e>F$ and require additional colour information.
+
+The same three steps work when the blue part $B$ of $[2,2\ell]$ is an arbitrary set of $j\le\ell-1$ elements: in the first step one takes $r$ summands from a red run $[a,a+t-1]\subseteq[2,2\ell]$ together with $\ell-1-r$ further red \emph{anchors}, in the second step one repeats $\min B$ instead of $2$, and in the third step one uses the $\ell-1$ smallest red elements. For example, for $\ell=11$, $k=12$ and $B=\{2,4,6\}$ (run $[7,22]$, $r=8$, anchors $\{3,5\}$) the forced blue interval is $[94,158]$, the forced red interval starts at $794$, and $794+80=874\le915=\F(12,11)$ gives a contradiction. For $\ell=11,12$ this simple criterion excludes only about $1.5\%$ of all blue sets, so it is far from a treatment of general sparse windows. Computationally, for $11\le\ell\le23$ and $k=\ell+1,\dots,\ell+5$ every window $W_j$ is excluded by an ordinary hypergraph certificate in the sense of Lemma~\ref{lem:numeric} (1040 certificates, each accepted by \texttt{lrat-check} and \texttt{cake\_lpr}; for $k\ge\ell+3$ unit propagation from the window alone already gives a contradiction). The lemma remains valid, with the weaker hypothesis $P_e\le H+e(j-1)$, if the $e$ extra blue summands are spread over $[2,j+1]$ instead of being placed on $2$, because sums of $e$ elements of $[2,j+1]$ fill $[2e,(j+1)e]$. Combining this with further certificates for the finitely many remaining pairs ($6\le e\le31$; 1470 certificates in all, each accepted by \texttt{lrat-check} and \texttt{cake\_lpr}), with Proposition~\ref{prop:balanced} for $j=\ell-1$, and with an explicit form of Gaiser's argument for $k\ge(3\ell^2-3\ell+2)/2$, we find: \emph{for $11\le\ell\le23$ and every $k\ge\ell+1$, no good colouring of $[1,\F(k,\ell)]$ has a window $W_j$.} For $\ell\ge24$ the four-block colourings of Theorem~\ref{thm:four} have exactly such a window. We also note an obstruction: in the windows $W_j$ with $\ell\le23$ not covered by the lemma one has $V_e+P_e>\F$, and then any red $k$-sum that uses a summand $\ge V_e$ exceeds $\F$, so further progress must come from integers below $A_e$.
+
+
+\section{Three colours: Open Question 6.2}\label{sec:oq62}
+
+For $r\ge1$ let $S_r(k;\ell)$ be the least $n$ such that every $r$-colouring of $[1,n]$ contains a monochromatic solution of $x_1+\dots+x_k=x_{k+1}$ with exactly $\ell+1$ distinct integers. For $\ell=2$ such a solution consists of $i$ copies of $u$ and $k-i$ copies of $v$ ($u\ne v$, $1\le i\le k-1$) with sum $w$. Gaiser proved $S_2(k;2)=k^2+2k$ for $k\ge3$ and $S_3(k;2)\ge k^3+3k^2+k-1$, and asked whether equality holds for all large $k$~\cite[Open Question~6.2]{Gaiser}.
+
+\begin{theorem}[computer-assisted]\label{thm:oq62}
+For every $k\ge3$, $S_3(k;2)=k^3+3k^2+2k-2$. In particular the answer to Open Question~6.2 is negative.
+\end{theorem}
+
+\subsection*{Lower bound} Let $T=k^3+2k^2$ and $N=k^3+3k^2+2k-3$. Colour $[1,N]$ by
+\begin{gather*}
+R=[1,k]\cup[k^2+k+1,k^2+2k-1]\cup[T+1,T+k-1]\cup[T+k^2+k-1,N],\\
+B=[k+1,k^2+k]\cup[T+k,T+k^2+k-2],\qquad G=[k^2+2k,T].
+\end{gather*}
+This is Gaiser's colouring with an extra red block of $k-1$ integers at the top. For a solution $w=iu+(k-i)v$ with $u<v$ one has $ku+(v-u)\le w\le kv-(v-u)$, and Table~\ref{tab:seven-blocks} shows that no class contains a solution. The statement is formalised in Lean~4 for all $k\ge2$ (theorem \texttt{Gaiser.lower}). \emph{This lower bound was first recorded publicly by the trureturing project of the Omega Institute on 5~October 2026~\cite{omega}; we found it independently and make no priority claim for it.}
+
+\smallskip\noindent\emph{The block check.} Name the blocks in increasing order $R_1=[1,k]$, $B_1=[k+1,k^2+k]$, $R_2=[k^2+k+1,k^2+2k-1]$, $G_1=[k^2+2k,T]$, $R_3=[T+1,T+k-1]$, $B_2=[T+k,T+k^2+k-2]$, $R_4=[T+k^2+k-1,N]$. If $u<v$ lie in one block $[a,b]$ then $ka+1\le w\le kb-1$; if $u\in[a,b]$ and $v\in[c,d]$ with $b<c$, then $(k-1)a+c\le w\le b+(k-1)d$. Table~\ref{tab:seven-blocks} lists all fourteen same-colour pairs of blocks. Only the pair $R_1,R_3$ needs more: if $v\in R_3$ occurs at least twice then $w\ge2(T+1)+k-2>N$; otherwise $w=(k-1)u+v\in[T+k,T+k^2-1]\subseteq B_2$. All inequalities in the table hold for every $k\ge3$.
+
+\begin{table}[ht]
+\centering\small
+\begin{tabular}{@{}lll@{}}
+\toprule
+Pair of blocks & $w$ lies in & Bound \\
+\midrule
+$R_1,R_1$ & $B_1$ & $k+1\le w\le k^2-1$ \\
+$R_1,R_2$ & $G_1$ & $k^2+2k\le w\le k^3+k^2-2k+1$ \\
+$R_1,R_3$ & $B_2$ or $w>N$ & see the text \\
+$R_1,R_4$ & $w>N$ & $w\ge N+1$ \\
+$R_2,R_2$ & $G_1$ & $k^3+k^2+k+1\le w\le T-k-1$ \\
+$R_2,R_3$ & $w>N$ & $w\ge2k^3+2k^2$ \\
+$R_2,R_4$ & $w>N$ & $w\ge2k^3+3k^2+k-2$ \\
+$R_3,R_3$;\ $R_3,R_4$;\ $R_4,R_4$ & $w>N$ & $w\ge kT+k+1$ \\
+\midrule
+$B_1,B_1$ & $R_2\cup G_1$ & $k^2+k+1\le w\le k^3+k^2-1$ \\
+$B_1,B_2$ & $R_4$ or $w>N$ & $w\ge T+k^2+k-1$ \\
+$B_2,B_2$ & $w>N$ & $w\ge k(T+k)+1$ \\
+\midrule
+$G_1,G_1$ & $R_3\cup B_2\cup R_4$ or $w>N$ & $w\ge T+1$ \\
+\bottomrule
+\end{tabular}
+\caption{The fourteen same-colour pairs of blocks in the lower-bound colouring for Theorem~\ref{thm:oq62}, with $u<v$. In every row $w$ lies in a block of another colour or beyond $N$.}
+\label{tab:seven-blocks}
+\end{table}
+
+\subsection*{Upper bound} We use only the solutions $w=(k-1)u+v$ with $u\ne v$. Let $\chi$ be a 3-colouring of $[1,F_3]$, $F_3=k^3+3k^2+2k-2$, with no such monochromatic triple, $\chi(1)$ red, and let $a$ be the largest $j$ with $[1,j]$ red. Then $a\le k$, since $(k-1)\cdot1+2=k+1$, and $a+1$ may be taken blue. For $k\ge8$ the seven cases $a=1,2,3$, $a=k-2,k-1,k$ and $4\le a\le k-3$ are each refuted by a symbolic certificate in the sense of Section~\ref{sec:method}: its vertices are integer polynomials in $k$ (or in $k$ and $a$ for $4\le a\le k-3$), its edges are polynomial identities $w=(k-1)u+v$, and some vertices are known to be red (they lie in $[1,a]$) or blue (the vertex $a+1$). The range, sign and fact conditions are certified on the whole case region by substituting $k=8+t$ (and $a=4+s$, $k=7+s+t$) and checking that all coefficients are nonnegative. Each three-colour CNF is unsatisfiable. For $3\le k\le7$ the value is settled by direct SAT runs at $n=F_3$.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lccc}
+\toprule
+case & region & vertices & edges\\
+\midrule
+$a=1$ & $k\ge8$ & 54 & 326\\
+$a=2$ & $k\ge8$ & 55 & 345\\
+$a=3$ & $k\ge8$ & 83 & 561\\
+$a=k$ & $k\ge8$ & 55 & 301\\
+$a=k-1$ & $k\ge8$ & 50 & 276\\
+$a=k-2$ & $k\ge8$ & 46 & 265\\
+$4\le a\le k-3$ & $k\ge8$ & 86 & 579\\
+\bottomrule
+\end{tabular}
+\caption{Case certificates for the upper bound in Theorem~\ref{thm:oq62}.}
+\label{tab:oq62}
+\end{table}
+
+\noindent\emph{Verification.} All LRAT proofs (seven case certificates and the five direct runs for $3\le k\le7$) were accepted by \texttt{lrat-check} and \texttt{cake\_lpr}. A separately written checker re-proved all symbolic conditions and rebuilt every CNF; a second, independently written implementation re-checked the semantics and replayed all twelve LRAT proofs (7/7 and 5/5). The whole theorem is also formalised in Lean~4, core library only (\texttt{RSN.S3\_two\_eq}: for $k\ge3$ and all $M$, every 3-colouring of $[1,M]$ has a monochromatic solution if and only if $F_3\le M$); it uses only the axioms \texttt{propext}, \texttt{Classical.choice} and \texttt{Quot.sound}, and \texttt{leanchecker} accepts all 107 modules. The Lean development has so far been built only by the authors.
+
+\begin{remark}
+Writing $S_r(k)$ for the classical $r$-colour generalized Schur numbers ($S_1(k)=k$, $S_2(k)=k^2+k-1$, $S_3(k)=k^3+2k^2-2$), both $S_2(k;2)=1+S_1(k)+S_2(k)$ and Theorem~\ref{thm:oq62}, $S_3(k;2)=1+S_1(k)+S_2(k)+S_3(k)$, fit the pattern $S_r(k;2)=1+\sum_{j\le r}S_j(k)$. A computation for $r=4$, $k=3$ also agrees ($229$), but its unsatisfiability proof was checked and then not archived, so we record it only as evidence.
+\end{remark}
+
+\section{Open problems}
+
+\begin{enumerate}[label=\arabic*.]
+\item Is $K(\ell)=\ell+1$ for $11\le\ell\le23$, and is $24$ the smallest $\ell$ with $K(\ell)>\ell+1$? For $\ell=11$ we have certified the single value $\Stwo(12;11)=915=\F(12,11)$ by a numerical certificate in the sense of Lemma~\ref{lem:numeric} (about $2.05$ million hyperedges; accepted by \texttt{lrat-check} and \texttt{cake\_lpr}; files in \texttt{evidence/oq64\_l11/k12}), so $K(11)=12$ would follow from a symbolic certificate for $k\ge13$; that computation is in progress and is not claimed here. For larger $\ell$ the symbolic search grows quickly: without the restriction on $c$, the search for $\ell=8$ did not terminate within our resources. A heuristic search (not certified) found no good colouring of $[1,\F(\ell+1,\ell)]$ for $20\le\ell\le23$ among colourings whose restriction to $[1,2\ell]$ has blue set $\{2,\dots,j+1\}$, $j\le10$.
+\item Are the colourings of Theorem~\ref{thm:four} optimal when they beat $\F$? For $(k,\ell)=(25,24)$ and $(26,25)$ the same heuristic search found no good colouring of $[1,V]$ with the same kind of window. More boldly: writing $V^*(k,\ell)$ for the largest bound obtainable from four-block colourings (Theorem~\ref{thm:four}, together with the large-$j$ variant of Proposition~\ref{prop:ahmed}), is $\Stwo(k;\ell)=\max\{\F(k,\ell),V^*(k,\ell)\}$ for all $k\ge\ell\ge5$? This is consistent with everything we know: Theorem~\ref{thm:main}, the known values $WS_5(2),WS_6(2),WS_7(2)$, and the uncertified computations above. If true, it would give $K(\ell)=\ell+1$ for $5\le\ell\le23$ and $K(\ell)=\tfrac98\ell+O(1)$. More precisely, for $24\le\ell\le3000$ we computed the largest $k$ with $V^*(k,\ell)>\F(k,\ell)$: it is $\ell+\lfloor(\ell-18)/8\rfloor$ except for $\ell=24,25$ and $\ell\in\{33,41,49,57,65,73\}$, where it is one larger. So the answer would be $K(\ell)=\lfloor(9\ell-10)/8\rfloor$ for $74\le\ell\le3000$ (and, by the sharpness remark after Corollary~\ref{cor:four}, for all $\ell\ge74$). Without that question, all we know is the lower bound $K(\ell)\ge\lfloor(9\ell-10)/8\rfloor$ coming from this one family.
+\item The order of growth of $K(\ell)$. We have $K(\ell)\ge(\tfrac98-o(1))\ell$; Gaiser's argument needs $k$ of order $\ell^2$. A conceptual proof of the upper bound for general $\ell$ would be needed; the certificates suggest that much shorter forcing chains exist than in Gaiser's argument.
+\item \emph{The relaxed variant.} Gaiser also asks about $\Stwo(k;\tilde\ell)$, defined via solutions with ``at least'' a given number of distinct integers. The paper describes it with $c(S)\ge\ell+1$ on p.~2 but defines it with $c(S)\ge\ell$ on p.~12. Under the second reading, Corollary~6.3 would fail already for $\ell=2$, since then $\Stwo(k;\tilde2)=S_2(k)=k^2+k-1$. This was first noted in an AI-generated review page~\cite{pith}. Under the reading $c(S)\ge\ell+1$, the three-block colouring also avoids all solutions with at least $\ell+1$ distinct integers, so the thresholds for the relaxed variant coincide with $K(3),\dots,K(7)$. The same holds for the colourings of Theorem~\ref{thm:four}: in a set $S$, the least sum of $k$ elements with at least $\ell$ distinct values equals the least sum with exactly $\ell$ distinct values, so the proof of Theorem~\ref{thm:four} applies verbatim, and Corollary~\ref{cor:four}(a),(b) hold for the relaxed thresholds as well.
+\end{enumerate}
+
+\appendix
+\section{Reproducibility, verification provenance and AI use}\label{app:repro-ai}
+
+
+
+\smallskip\noindent\textbf{Scope.} The results are computer-assisted proof candidates, not peer-reviewed proofs. This preprint accompanies the public repository \url{https://github.com/PYCSON/restricted-schur-proofs} (release v1.0), which contains all certificates, checkers and Lean sources; paths below refer to that repository. The lower bound of Theorem~\ref{thm:oq62} had been recorded publicly before~\cite{omega}; no priority is claimed for it.
+
+
+\smallskip\noindent\textbf{What the certificates establish.} Unsatisfiability of a CNF is not by itself the mathematical statement. Each claim also needs: the validity of every hyperedge (polynomial identities and the region conditions on the whole parameter range for symbolic certificates, exact arithmetic for numerical ones), the correctness of the colouring-to-CNF encoding, and, for equalities, the lower-bound colouring. For Theorem~\ref{thm:oq62} these are seven symbolic case certificates ($k\ge8$) and five direct runs ($3\le k\le7$). For Theorem~\ref{thm:main} they are the symbolic certificates of Table~\ref{tab:certs} and the single-value certificates of Lemma~\ref{lem:numeric}; the diagonal values $WS_8(2),WS_9(2),WS_{10}(2)$ have their own single-value certificates.
+
+
+\smallskip\noindent\textbf{Who did what.} The search programs, all certificates, most checking scripts, the Lean formalisation and the text of this draft were produced by Claude (Anthropic), working with tools under the project owner's direction; Claude also ran CaDiCaL, \texttt{lrat-check}, \texttt{cake\_lpr} and Lean. A checker called \emph{independently written} below has source code written separately from the search programs; when Claude ran it, that run is \emph{not} a second-party run.
+GPT (OpenAI) wrote and ran its own checkers: for Theorem~\ref{thm:oq62}, a semantic audit of the symbolic conditions, CNF reconstruction and an LRAT replay of all twelve proofs; for Open Question~6.4, a symbolic audit, CNF reconstruction and LRAT replay of eight certificates: the five threshold certificates for $3\le\ell\le7$ in Table~\ref{tab:certs} and the three certificates re-proving the known values $WS_5(2),WS_6(2),WS_7(2)$ (42{,}018 symbolic hyperedges in all; all passed; the two largest JSON files were read in parts, not checked byte for byte). Claude also ran GPT's Python checker on all OQ~6.4 symbolic certificates, including those for $\ell\ge8$. GPT reviewed Theorem~\ref{thm:four}, Corollary~\ref{cor:four} and the sharpness remark on paper and with a computer algebra system, wrote the block table of Section~\ref{sec:oq62} (re-checked by Claude for $3\le k\le2000$), and reviewed the Lean statements without running Lean.
+Codex (OpenAI) ran tests on the project owner's computer; according to its reports, it checked the colouring for $(k,\ell)=(25,24)$ and replayed the certificate chain for $WS_8(2)=365$ with an independent encoder, a fresh solver run, its own LRAT checker and negative controls. Its report, logs and outputs are archived with their hashes. No second-party replay is claimed for the threshold certificates with $\ell\ge8$, for $WS_9(2)$ and $WS_{10}(2)$, or for any Lean development.
+
+
+\smallskip\noindent\textbf{Lean.} The development \texttt{lean/s3k2-full} proves \texttt{RSN.S3\_two\_eq}; \texttt{leanchecker} passed 107/107 modules; a strict NanoDa check timed out without a verdict. The development \texttt{lean/oq64} contains $K(3),\dots,K(7)$, Proposition~\ref{prop:ahmed} and \texttt{OQ64.Four.four\_block}. Both use Lean v4.35.0 (commit \texttt{eb6cafb7290e8bd5f2937522d8d804f58f02bafc}), core library only; the axiom checks show only \texttt{propext}, \texttt{Classical.choice} and \texttt{Quot.sound}. Not formalised: the certificates for $\ell\ge8$, the diagonal values, and the general inequalities of Corollary~\ref{cor:four}.
+
+
+\smallskip\noindent\textbf{Tools.} CaDiCaL~3.0.1; \texttt{lrat-check} from \texttt{drat-trim}; \texttt{cake\_lpr}. CaDiCaL source commit \texttt{c6073042}, \texttt{drat-trim} commit \texttt{2e3b2dc0}; the SHA-256 of the binaries used are recorded in the repository README. Codex's environment (Windows, Python~3.12.9, CaDiCaL~2.1.2) differs from ours.
+
+
+\smallskip\noindent\textbf{Replay.} From a fresh clone of the release (commands from the repository READMEs):
+\begin{verbatim}
+cd evidence/ub_cert            # Theorem (OQ 6.2), seven symbolic cases
+python3 check_kernel.py uni_const1 uni_const2 uni_const3 \
+        uni_top0 uni_top1 uni_top2 bi_mid
+xz -dc CASE.lrat.xz > /scratch/CASE.lrat     # for each CASE
+lrat-check CASE.cnf /scratch/CASE.lrat
+cake_lpr CASE.cnf /scratch/CASE.lrat
+cd ../oq64_kernel              # Theorem (OQ 6.4), symbolic certificates
+python3 check_cert.py cert_3_3.json          # and each other cert_*.json
+cd ../../lean/s3k2-full && ulimit -s unlimited && lake build
+lake env lean Test/Axioms.lean && lake env leanchecker RSN Gaiser
+lake env lean Test/Fault.lean  # 4 tampered checks, all must be rejected
+cd ../oq64 && lake build OQ64.Final OQ64.Final2 OQ64.Four
+\end{verbatim}
+A fault-injection test succeeds when it fails with the designated error. The numerical certificates need a file-by-file manifest.
+
+
+\smallskip\noindent\textbf{Manifest.} The file \texttt{MANIFEST.sha256} in the repository lists the SHA-256 of every file; the README maps each claim to its certificate files and replay commands.
+
+
+\smallskip\noindent\textbf{Author's contribution.} The author selected the problems, organised and directed the work of the AI systems, set the verification requirements (independently written checkers, a formally verified LRAT checker, second-party replays, negative controls) and decided what to release. The author has not checked every proof and every computation personally; the correctness of the results rests on the machine-checkable certificates and formal proofs described in this appendix, which anyone can replay.
+
+
+\smallskip\noindent\textbf{Disclosure.} AI systems (Claude by Anthropic; GPT and Codex by OpenAI) were used extensively for the mathematics, the programs, the computations and the text, as described above. They are not authors. The author takes responsibility for the content of this preprint.
+
+\begin{thebibliography}{9}
+\bibitem{ABRS} T.~Ahmed, L.~Boza, M.~P.~Revuelta, M.~I.~Sanz, \emph{Exact values and lower bounds on the $n$-color weak Schur numbers for $n=2,3$}, Ramanujan J.\ \textbf{62} (2023), 347--363.
+\bibitem{ABRS2} T.~Ahmed, L.~Boza, M.~P.~Revuelta, M.~I.~Sanz, \emph{Lower bounds and exact values of the 2-color off-diagonal generalized weak Schur numbers $WS(2;k_1,k_2)$} (brief announcement), Procedia Comput.\ Sci.\ \textbf{223} (2023), 403--405. DOI 10.1016/j.procs.2023.08.261. [Checked from the text of the paper: on the diagonal its Corollary 3.5 gives the bound of Proposition~\ref{prop:ahmed}, and its list of exact values stops at $WS(2;7,7)=253$. Still to be checked: the authors' follow-up paper \emph{Establishing lower bounds and exact values of the 2-color off-diagonal generalized weak Schur numbers $WS(2;k_1,k_2)$}, listed as submitted. OEIS A365190 reportedly lists only $WS_k(2)$ for $k\le7$ as exact.]
+\bibitem{BMRS} L.~Boza, J.~M.~Mar\'in, M.~P.~Revuelta, M.~I.~Sanz, \emph{On the $n$-color weak Rado numbers for the equation $x_1+\dots+x_k+c=x_{k+1}$}, Exp.\ Math.\ \textbf{28}(2) (2019), 194--208. doi:10.1080/10586458.2017.1382403. (Published online 30 November 2017.)
+\bibitem{BHR} P.~F.~Blanchard, F.~Harary, R.~Reis, \emph{Partitions into sum-free sets}, Integers \textbf{6} (2006), \#A07.
+\bibitem{BRS} L.~Boza, M.~P.~Revuelta, M.~I.~Sanz, \emph{A general lower bound on the weak Schur number}, Electron.\ Notes Discrete Math.\ \textbf{68} (2018), 137--142. doi:10.1016/j.endm.2018.06.024.
+\bibitem{Sanz} I.~Sanz Dom\'inguez, \emph{N\'umeros de Schur y de Rado}, Ph.D. thesis, Universidad de Sevilla, 2010. [Cited by~\cite{ABRS}; not consulted by us.]
+\bibitem{cadical} A.~Biere, T.~Faller, K.~Fazekas, M.~Fleury, N.~Froleyks, F.~Pollitt, \emph{CaDiCaL 2.0}, in: CAV 2024, LNCS \textbf{14681}, Springer, 2024, 133--152. (Version 3.0.1 was used.)
+\bibitem{cakelpr} Y.~K.~Tan, M.~J.~H.~Heule, M.~O.~Myreen, \emph{cake\_lpr: verified propagation redundancy checking in CakeML}, in: TACAS 2021, LNCS \textbf{12652}, Springer, 2021, 223--241. doi:10.1007/978-3-030-72013-1\_12.
+\bibitem{drattrim} M.~J.~H.~Heule, W.~A.~Hunt, N.~Wetzler, \emph{Trimming while checking clausal proofs}, in: FMCAD 2013, 181--188; M.~J.~H.~Heule, \emph{The DRAT format and DRAT-trim checker}, arXiv:1610.06229. (We used \texttt{lrat-check} from the drat-trim distribution.)
+\bibitem{omega} The Omega Institute, \emph{trureturing}, GitHub issue \#13213 and pull request \#13274 (merged 5 October 2026), \url{https://github.com/the-omega-institute/trureturing/issues/13213}.
+\bibitem{Gaiser} C.~Gaiser, \emph{Restricted generalized Schur numbers}, arXiv:2608.08789v1 (2026).
+\bibitem{pith} Pith Review page for arXiv:2608.08789, \url{https://pith.science/paper/2608.08789} (AI-generated, 14 Aug 2026).
+\end{thebibliography}
+
+\end{document}

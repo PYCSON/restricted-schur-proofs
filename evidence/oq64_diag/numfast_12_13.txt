@@ -1,0 +1,6 @@
+UNSAT: k=12 l=12 n=1123 nodes=2498638 maxdepth=93 177.3s
+GOOD_COLOURING: k=12 l=12 n=1122 nodes=2498866 maxdepth=131 161.5s
+colouring runs: R[1,1] B[2,89] R[90,1045] B[1046,1122]
+UNSAT: k=13 l=13 n=1405 nodes=9662745 maxdepth=108 741.1s
+GOOD_COLOURING: k=13 l=13 n=1404 nodes=9664668 maxdepth=155 733.3s
+colouring runs: R[1,1] B[2,103] R[104,1314] B[1315,1404]
