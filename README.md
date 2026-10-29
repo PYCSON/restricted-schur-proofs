@@ -2,7 +2,8 @@
 
 **Author:** Puyi Sun (ORCID [0009-0004-1644-5300](https://orcid.org/0009-0004-1644-5300))<br>
 **Version:** 1.0, 28 October 2026<br>
-**Status:** computer-assisted proof candidate. **Not peer reviewed.**
+**Status:** computer-assisted proof candidate. **Not peer reviewed.**<br>
+**DOI (Zenodo, v1.0.1):** [10.5281/zenodo.23752136](https://doi.org/10.5281/zenodo.23752136)
 
 Preprint: [`paper/restricted-schur-v1.0.pdf`](paper/restricted-schur-v1.0.pdf) (source: `paper/restricted-schur-v1.0.tex`).
 
@@ -158,4 +159,4 @@ Text and data: CC BY 4.0. Code: MIT. See [`LICENSE`](LICENSE).
 
 ## Citation
 
-See [`CITATION.cff`](CITATION.cff). A Zenodo DOI may be added to an archived release.
+See [`CITATION.cff`](CITATION.cff). Archived on Zenodo: [10.5281/zenodo.23752136](https://doi.org/10.5281/zenodo.23752136) (release v1.0.1; content identical to v1.0.0 of 28 October 2026 apart from `CITATION.cff`).
