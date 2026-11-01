@@ -1,5 +1,5 @@
-# tests/negative_controls.sh, run 2026-11-01 +08 (same tools)
-# sha256 of tests/negative_controls.sh that was run: 8492b35c91acbd38db43ec74f340eb4c9ec0eb120d633d52aafabc0548829938
+# tests/negative_controls.sh, run 2026-11-01 12:10-12:13 +08 (Linux x86-64, Python 3.13.16, lrat-check sha256 24a561223ea0f616..., cake_lpr sha256 1822ca1e5d0f925e...)
+# sha256 of tests/negative_controls.sh that was run: d9abdb76831e079e71565d10d05f4c8da23f08fc2f0e637ecaed4fdfec516abd
 rejected (ok): lrat-check prints success but exits 1
 rejected (ok): lrat-check exits 0 without success line
 rejected (ok): cake_lpr prints success but exits 1
@@ -15,5 +15,9 @@ rejected (ok): cube partition with one cube removed
 rejected (ok): cube unit colour flipped against the prefix
 rejected (ok): cube certificate used for a different prefix
 rejected (ok): independent LRAT checker on a proof without the empty clause
+rejected (ok): independent symbolic audit rejects Python optimization
+rejected (ok): independent LRAT replay rejects Python optimization
+rejected (ok): verify_all rejects Python optimization
 ALL NEGATIVE CONTROLS REJECTED
 EXIT 0
+START 2026-11-01 12:10 END 12:13

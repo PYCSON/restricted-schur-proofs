@@ -1,5 +1,5 @@
-# ./verify_all.sh l11k13 l11k13ind, run 2026-11-01 11:24-11:54 +08 (Linux x86-64, Python 3.13.16, lrat-check sha256 24a561223ea0f616..., cake_lpr sha256 1822ca1e5d0f925e...)
-# sha256 of verify_all.sh that was run: e9e2f109aa0cdc2d11350d7a7d0117897244934489d464606104c05dbd8f088a
+# ./verify_all.sh l11k13 l11k13ind, run 2026-11-01 12:10-12:40 +08 (Linux x86-64, Python 3.13.16, lrat-check sha256 24a561223ea0f616..., cake_lpr sha256 1822ca1e5d0f925e...)
+# sha256 of verify_all.sh that was run: f80c7823160950b199fd61362ba0f3853470d756e913e3120abaffd34cfcb3b2
 == Result 4: S_2(k;11) <= F(k,11) for every k >= 13 (222 cube certificates; with l11k12 this gives K(11)=12)
 prefixes=222 lengths={6: 7, 7: 43, 8: 112, 9: 60} weight=1 prefix_free=True
   PASS 20 cube certificates so far
@@ -15,11 +15,12 @@ prefixes=222 lengths={6: 7, 7: 43, 8: 112, 9: 60} weight=1 prefix_free=True
   PASS 220 cube certificates so far
   PASS all 222 cubes (partition, prefix units, symbolic certificate for all k>=13, both LRAT checkers)
 == Result 4 (second-party path): GPT's separately written symbolic validator and LRAT checker on the 222 cubes
-A2-A3 PASS: certs 222 edges 2333853 max_edges 22638 distinct pairs 1039781 seconds 68.87
+A2-A3 PASS: certs 222 edges 2333853 max_edges 22638 distinct pairs 1039781 seconds 67.75
   PASS independent LRAT replay: 222/222
 ALL SELECTED SECTIONS PASSED: l11k13 l11k13ind
 
-real	29m44.375s
-user	28m24.653s
-sys	0m51.464s
+real	29m22.171s
+user	28m7.624s
+sys	0m51.300s
 EXIT 0
+START 2026-11-01 12:10 END 12:40
