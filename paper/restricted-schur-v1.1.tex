@@ -178,7 +178,7 @@ $\ell$ & $k_0$ & $\F(k,\ell)$ & vertices & edges & CNF clauses & LRAT additions\
 10 & 12 & $k^2+46k+80$ & 4448 & 609886 & 1219773 & 662622\\
 \bottomrule
 \end{tabular}
-\caption{Certificates for Theorem~\ref{thm:main}. Each one proves $\Stwo(k;\ell)\le\F(k,\ell)$ for all $k\ge k_0$.}
+\caption{The single-family symbolic certificates for Theorem~\ref{thm:main} with $3\le\ell\le10$. Each proves $\Stwo(k;\ell)\le\F(k,\ell)$ for all $k\ge k_0$. The $\ell=11$ symbolic upper bound is certified instead by the cube family of Table~\ref{tab:t19}.}
 \label{tab:certs}
 \end{table}
 
@@ -218,16 +218,16 @@ Theorem~\ref{thm:main}(d) at $k=12$ is the single-value certificate $\Stwo(12;11
 
 \begin{table}[h]
 \centering
-\begin{tabular}{cccc}
+\begin{tabular}{ccc}
 \toprule
-prefix length & cubes & weight $\sum 2^{9-|P|}$ & \\
+prefix length & cubes & weight $\sum 2^{9-|P|}$\\
 \midrule
-6 & 7 & 56 & \\
-7 & 43 & 172 & \\
-8 & 112 & 224 & \\
-9 & 60 & 60 & \\
+6 & 7 & 56\\
+7 & 43 & 172\\
+8 & 112 & 224\\
+9 & 60 & 60\\
 \midrule
-total & 222 & 512 & $=2^9$\\
+total & 222 & $512=2^9$\\
 \bottomrule
 \end{tabular}
 \caption{The prefix partition for $\ell=11$, $k\ge13$. In all, the 222 certificates have $2{,}333{,}853$ hyperedges (one cube has at most $22{,}638$ hyperedges and $886$ vertices) and their LRAT proofs $4{,}619{,}781$ clause additions.}
@@ -470,7 +470,7 @@ Writing $S_r(k)$ for the classical $r$-colour generalized Schur numbers ($S_1(k)
 \section{Open problems}
 
 \begin{enumerate}[label=\arabic*.]
-\item Is $K(\ell)=\ell+1$ for $12\le\ell\le23$, and is $24$ the smallest $\ell$ with $K(\ell)>\ell+1$? The case $\ell=11$ is settled by Theorem~\ref{thm:main}(d) (\S\ref{sec:l11}). For larger $\ell$ the symbolic search grows quickly: without the restriction on $c$, the search for $\ell=8$ did not terminate within our resources. As evidence only (no certificates were produced, so nothing is claimed): an exhaustive search with the single-value method of Lemma~\ref{lem:numeric} found no good colouring of $[1,\F(\ell+1,\ell)]$ for $12\le\ell\le15$, so $\Stwo(\ell+1;\ell)=\F(\ell+1,\ell)$ there would follow from certificates; and a heuristic search found no good colouring of $[1,\F(\ell+1,\ell)]$ for $20\le\ell\le23$ among colourings whose restriction to $[1,2\ell]$ has blue set $\{2,\dots,j+1\}$, $j\le10$.
+\item Is $K(\ell)=\ell+1$ for $12\le\ell\le23$, and is $24$ the smallest $\ell$ with $K(\ell)>\ell+1$? The case $\ell=11$ is settled by Theorem~\ref{thm:main}(d) (\S\ref{sec:l11}). For larger $\ell$ the symbolic search grows quickly: without the restriction on $c$, the search for $\ell=8$ did not terminate within our resources. As uncertified computational evidence only, a search using the single-value method of Lemma~\ref{lem:numeric} reported no good colouring of $[1,\F(\ell+1,\ell)]$ for $12\le\ell\le15$. No unsatisfiability certificates were archived or independently checked, so these observations do not establish equality. A heuristic search found no good colouring of $[1,\F(\ell+1,\ell)]$ for $20\le\ell\le23$ among colourings whose restriction to $[1,2\ell]$ has blue set $\{2,\dots,j+1\}$, $j\le10$.
 \item Are the colourings of Theorem~\ref{thm:four} optimal when they beat $\F$? For $(k,\ell)=(25,24)$ and $(26,25)$ the same heuristic search found no good colouring of $[1,V]$ with the same kind of window. More boldly: writing $V^*(k,\ell)$ for the largest bound obtainable from four-block colourings (Theorem~\ref{thm:four}, together with the large-$j$ variant of Proposition~\ref{prop:ahmed}), is $\Stwo(k;\ell)=\max\{\F(k,\ell),V^*(k,\ell)\}$ for all $k\ge\ell\ge5$? This is consistent with everything we know: Theorem~\ref{thm:main}, the known values $WS_5(2),WS_6(2),WS_7(2)$, and the uncertified computations above. If true, it would give $K(\ell)=\ell+1$ for $5\le\ell\le23$ and $K(\ell)=\tfrac98\ell+O(1)$. More precisely, for $24\le\ell\le3000$ we computed the largest $k$ with $V^*(k,\ell)>\F(k,\ell)$: it is $\ell+\lfloor(\ell-18)/8\rfloor$ except for $\ell=24,25$ and $\ell\in\{33,41,49,57,65,73\}$, where it is one larger. So the answer would be $K(\ell)=\lfloor(9\ell-10)/8\rfloor$ for $74\le\ell\le3000$ (and, by the sharpness remark after Corollary~\ref{cor:four}, for all $\ell\ge74$). Without that question, all we know is the lower bound $K(\ell)\ge\lfloor(9\ell-10)/8\rfloor$ coming from this one family.
 \item The order of growth of $K(\ell)$. We have $K(\ell)\ge(\tfrac98-o(1))\ell$; Gaiser's argument needs $k$ of order $\ell^2$. A conceptual proof of the upper bound for general $\ell$ would be needed; the certificates suggest that much shorter forcing chains exist than in Gaiser's argument.
 \item \emph{The relaxed variant.} Gaiser also asks about $\Stwo(k;\tilde\ell)$, defined via solutions with ``at least'' a given number of distinct integers. The paper describes it with $c(S)\ge\ell+1$ on p.~2 but defines it with $c(S)\ge\ell$ on p.~12. Under the second reading, Corollary~6.3 would fail already for $\ell=2$, since then $\Stwo(k;\tilde2)=S_2(k)=k^2+k-1$. This was first noted in an AI-generated review page~\cite{pith}. Under the reading $c(S)\ge\ell+1$, the three-block colouring also avoids all solutions with at least $\ell+1$ distinct integers, so the thresholds for the relaxed variant coincide with $K(3),\dots,K(7)$. The same holds for the colourings of Theorem~\ref{thm:four}: in a set $S$, the least sum of $k$ elements with at least $\ell$ distinct values equals the least sum with exactly $\ell$ distinct values, so the proof of Theorem~\ref{thm:four} applies verbatim, and Corollary~\ref{cor:four}(a),(b) hold for the relaxed thresholds as well.

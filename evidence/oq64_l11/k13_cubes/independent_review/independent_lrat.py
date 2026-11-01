@@ -5,7 +5,13 @@ A negative hint (RAT subproof) is rejected, not treated as proof. Each certified
 """
 from pathlib import Path
 import argparse, collections, json,lzma,sys,time
-# Release adaptation (paths only): the certificate directory is taken from --certs (default: ../certs).
+# Release adaptation: refuse to run when assertions are disabled.
+if not __debug__:
+    raise SystemExit(
+        'Refusing optimized Python (-O or PYTHONOPTIMIZE): '
+        'proof-critical assertions would be disabled.'
+    )
+# Release adaptation (file locations): the certificate directory is taken from --certs (default: ../certs).
 R=Path(__file__).resolve().parent
 F=L=R.parent/'certs'
 

@@ -5,7 +5,13 @@ Exact integer arithmetic, no finite sampling for symbolic inequalities.
 """
 from pathlib import Path
 import collections, hashlib, json, lzma, math, re, time, sys
-# Release adaptation (paths only): usage  independent_audit.py <k13_cubes_dir> <output.json>
+# Release adaptation: refuse to run when assertions are disabled.
+if not __debug__:
+    raise SystemExit(
+        'Refusing optimized Python (-O or PYTHONOPTIMIZE): '
+        'proof-critical assertions would be disabled.'
+    )
+# Release adaptation (file locations): usage  independent_audit.py <k13_cubes_dir> <output.json>
 # <k13_cubes_dir> holds certs/ (JSON + LRAT archives and SHA256SUMS) and logs/first_party_results.tsv.
 FOLDER=Path(sys.argv[1]).resolve()
 JDIR=FOLDER/'certs'; LDIR=FOLDER/'certs'

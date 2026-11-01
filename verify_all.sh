@@ -27,6 +27,8 @@ done
 RAN=0
 want() { for s in "${ARGS[@]}"; do [ "$s" = "$1" ] && { RAN=$((RAN+1)); return 0; }; done; return 1; }
 fail() { echo "FAIL: $*" >&2; exit 1; }
+python3 -c 'import sys; sys.exit(0 if __debug__ else 1)' \
+  || fail 'Python optimization (-O/PYTHONOPTIMIZE) disables proof-critical assertions'
 keep() { [ -n "$LOGDIR" ] && cp "$1" "$LOGDIR/$2" || true; }
 
 lrat() { # lrat <cnf> <lrat.xz> : both checkers must accept

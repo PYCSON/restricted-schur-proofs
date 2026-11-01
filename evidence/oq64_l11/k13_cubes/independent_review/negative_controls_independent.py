@@ -2,8 +2,14 @@
 """Independent checks that our LRAT replay does NOT accept invalid proofs. No originals modified."""
 import io, json, lzma
 from pathlib import Path
+# Release adaptation: refuse to run when assertions are disabled.
+if not __debug__:
+    raise SystemExit(
+        'Refusing optimized Python (-O or PYTHONOPTIMIZE): '
+        'proof-critical assertions would be disabled.'
+    )
 from independent_lrat import clauses_from_json,rup_proof
-# Release adaptation (paths only): certificates are read from ../certs.
+# Release adaptation (file locations): certificates are read from ../certs.
 ROOT=Path(__file__).resolve().parent
 F=L=ROOT.parent/'certs';p='000000';b=f'certC{p}_11_13'
 with lzma.open(F/f'{b}.json.xz','rt') as x:j=json.load(x)

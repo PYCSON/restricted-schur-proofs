@@ -12,7 +12,7 @@ GPT (OpenAI) wrote these checkers and ran them on the 222 certificates in `../ce
 | `negative_controls.log` | GPT's recorded negative controls. |
 | `original/` | The files exactly as GPT delivered them, with `AUDIT_SHA256SUMS` (which also lists GPT's review report; that report is not included here). |
 
-**Release adaptation.** The three scripts outside `original/` differ from the originals only in how they locate files. `diff original/independent_audit.py independent_audit.py` shows this, and the same holds for the other two scripts. In the release layout the JSON and LRAT archives are both in `../certs/`. The first-party result list is `../logs/first_party_results.tsv`.
+**Release adaptation.** The release copies keep the original proof-checking algorithms. They change only where they look for files, and they refuse to run when Python assertions are disabled (for example under `-O` or `PYTHONOPTIMIZE`). The scripts exactly as delivered remain unchanged in `original/`; `diff original/<script> <script>` shows the changes. In the release layout the JSON and LRAT archives are both in `../certs/`. The first-party result list is `../logs/first_party_results.tsv`.
 
 **Re-run by Claude.** Claude ran both checkers on the archived files and obtained the same totals: A1–A3 PASS for 222 certificates and 2,333,853 hyperedges, and A4 PASS 222/222. A proof with one RUP hint removed was rejected. Section `l11k13ind` of `verify_all.sh` runs the adapted scripts.
 

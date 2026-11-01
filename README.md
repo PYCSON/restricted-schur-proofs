@@ -33,7 +33,7 @@ What each result has been checked with is stated in the status box on page 1 of 
 Appendix A. In short:
 
 * For Result 1 and for the cases `ℓ ≤ 7` of Result 2, independent checker replays are reported: a second, independently written checker was run on the certificates.
-* For `ℓ = 11, k ≥ 13` (Result 4, new in v1.1), a second party (GPT) wrote and ran its own exact symbolic validator and LRAT checker on all 222 cube certificates: the partition, the archive hashes, all 2,333,853 hyperedges for every `k ≥ 13`, the prefix unit clauses, and all 222 LRAT proofs. Everything passed. Its source, logs and results are in `evidence/oq64_l11/k13_cubes/independent_review/`; only file paths were adapted for the release, and the original files are kept in `original/`. The search program that produced the hyperedges ran on the author's computer and is not trusted.
+* For `ℓ = 11, k ≥ 13` (Result 4, new in v1.1), a second party (GPT) wrote and ran its own exact symbolic validator and LRAT checker on all 222 cube certificates: the partition, the archive hashes, all 2,333,853 hyperedges for every `k ≥ 13`, the prefix unit clauses, and all 222 LRAT proofs. All checks in that second-party replay passed for the 222 symbolic cube certificates at `k ≥ 13`; the separate `k = 12` numerical certificate was not part of this replay. Its source, logs and results are in `evidence/oq64_l11/k13_cubes/independent_review/`; only file paths were adapted for the release, and the original files are kept in `original/`. The search program that produced the hyperedges ran on the author's computer and is not trusted.
 * For `ℓ = 8, 9, 10`, for the `k = 12` certificate of Result 4, and for Results 3, 6 and 7, only first-party tools (written and run within this project) have checked them so far.
 * Codex reported a separate replay of the chain for `WS_8(2)=365` (independent encoder, fresh solver run, its own LRAT checker). That report does not replace an independent examination of its original logs.
 * The archived first-party logs report that every included LRAT proof is accepted by both `lrat-check` and the formally verified checker `cake_lpr`. How far each result has been independently replayed is stated result by result in the preprint.
@@ -75,7 +75,7 @@ they are not needed for verification.
 sha256sum -c MANIFEST.sha256 --quiet          # integrity of every payload file (the manifest does not hash itself)
 export LRAT_CHECK=/path/to/lrat-check CAKE_LPR=/path/to/cake_lpr
 ./verify_all.sh all                            # Results 1-4, 6 and 7
-tests/negative_controls.sh                     # 15 tampered inputs / fake checkers; every one must be rejected
+tests/negative_controls.sh                     # 18 tampered inputs / fake checkers / optimised-Python runs; every one must be rejected
 ```
 
 The sections can also be run on their own:
@@ -88,7 +88,7 @@ The sections can also be run on their own:
 | `diag` | 3 | `WS_8(2)`, `WS_9(2)`, `WS_10(2)` upper bounds |
 | `l11k12` | 4 | `S_2(12;11) ≤ 915` |
 | `l11k13` | 4 | The 222 cube certificates for `k ≥ 13`: archive hashes; the prefixes form a complete partition (`check_partition.py`); every unit clause is implied by its prefix and the cube CNF is rebuilt (`check_cube.py`); the symbolic conditions for every `k ≥ 13` (`check_cert.py`); both LRAT checkers |
-| `l11k13ind` | 4 | The second party's separately written checkers (`independent_review/independent_audit.py`, `independent_lrat.py`) on the same 222 certificates. Needs Python ≥ 3.11 |
+| `l11k13ind` | 4 | The second party's separately written checkers (`independent_review/independent_audit.py`, `independent_lrat.py`) on the same 222 certificates. Needs Python ≥ 3.11. Like the whole script, it refuses to run under Python optimisation (`-O` / `PYTHONOPTIMIZE`), which would remove the checkers' `assert` statements |
 | `unique` | 6 | The 12 extremal colourings are good, and the blocking-clause CNFs are unsatisfiable |
 | `windows` | 7 | All 1470 window certificates (each prefix must be exactly the window `W_j`), then the combined forcing-lemma argument |
 
