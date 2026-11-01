@@ -1,0 +1,19 @@
+# tests/negative_controls.sh, run 2026-11-01 +08 (same tools)
+# sha256 of tests/negative_controls.sh that was run: 8492b35c91acbd38db43ec74f340eb4c9ec0eb120d633d52aafabc0548829938
+rejected (ok): lrat-check prints success but exits 1
+rejected (ok): lrat-check exits 0 without success line
+rejected (ok): cake_lpr prints success but exits 1
+rejected (ok): cake_lpr exits 0 with failure text
+rejected (ok): cake_lpr success text not at line start
+rejected (ok): unknown section name
+rejected (ok): lrat-check on truncated proof
+rejected (ok): cake_lpr on truncated proof
+rejected (ok): tampered hyperedge (hyperedges ok=0 bad=1 clauses=1)
+rejected (ok): tampered symbolic certificate
+rejected (ok): section unique with one of the 12 colourings missing
+rejected (ok): cube partition with one cube removed
+rejected (ok): cube unit colour flipped against the prefix
+rejected (ok): cube certificate used for a different prefix
+rejected (ok): independent LRAT checker on a proof without the empty clause
+ALL NEGATIVE CONTROLS REJECTED
+EXIT 0
