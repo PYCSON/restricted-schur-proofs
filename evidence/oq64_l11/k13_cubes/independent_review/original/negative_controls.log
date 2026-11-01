@@ -1,0 +1,4 @@
+PASS valid proof
+PASS rejected missing_empty_clause AssertionError('no empty clause derived')
+PASS rejected false_antecedent_ID AssertionError(('unknown/deleted antecedent', 20408, 999999999))
+PASS rejected flipped_red_unit AssertionError(('RUP failed no contradiction', 20408))

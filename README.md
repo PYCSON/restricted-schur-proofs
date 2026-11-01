@@ -1,11 +1,11 @@
 # On two open questions of Gaiser on restricted generalized Schur numbers
 
 **Author:** Puyi Sun (ORCID [0009-0004-1644-5300](https://orcid.org/0009-0004-1644-5300))<br>
-**Version:** 1.0, 28 October 2026<br>
+**Version:** 1.1, 1 November 2026 (v1.0: 28 October 2026)<br>
 **Status:** computer-assisted proof candidate. **Not peer reviewed.**<br>
-**DOI (Zenodo, v1.0.1):** [10.5281/zenodo.23752136](https://doi.org/10.5281/zenodo.23752136)
+**DOI (Zenodo):** v1.0.1: [10.5281/zenodo.23752136](https://doi.org/10.5281/zenodo.23752136); v1.1 receives its own DOI from Zenodo when it is released
 
-Preprint: [`paper/restricted-schur-v1.0.pdf`](paper/restricted-schur-v1.0.pdf) (source: `paper/restricted-schur-v1.0.tex`).
+Preprint: [`paper/restricted-schur-v1.1.pdf`](paper/restricted-schur-v1.1.pdf) (source: `paper/restricted-schur-v1.1.tex`). The v1.0 preprint is kept unchanged in `paper/`. Changes: [`CHANGELOG.md`](CHANGELOG.md).
 
 ## The problems
 
@@ -22,9 +22,9 @@ Gaiser proved `S_2(k;ℓ) ≥ F(k,ℓ) := k² + [(ℓ+1)(ℓ−2)/2 + 2]·k + �
 | # | Statement | Where |
 |---|---|---|
 | 1 | `S_3(k;2) = k³+3k²+2k−2` for **every** `k ≥ 3`. So the answer to OQ 6.2 is negative. The lower bound was first made public by the Omega Institute's *trureturing* project (5 Oct 2026, issue #13213); **no priority is claimed for it**. The matching upper bound is, to our knowledge, new. | paper §8; `evidence/ub_cert`, `evidence/s3k2`, `lean/s3k2-full` |
-| 2 | `K(3)=3, K(4)=4, K(5)=6, K(6)=7, K(7)=8, K(8)=9, K(9)=10, K(10)=11`. Each upper bound `S_2(k;ℓ) ≤ F(k,ℓ)` holds for **all** `k` from the threshold on. | paper Thm 3; `evidence/oq64_kernel`, `evidence/oq64_l8/k9`, `evidence/oq64_l9/k10`, `evidence/oq64_l10/k11`, `lean/oq64` (ℓ ≤ 7) |
+| 2 | `K(3)=3, K(4)=4, K(5)=6, K(6)=7, K(7)=8, K(8)=9, K(9)=10, K(10)=11`, and `K(11)=12` (Result 4). Each upper bound `S_2(k;ℓ) ≤ F(k,ℓ)` holds for **all** `k` from the threshold on. | paper Thm 3; `evidence/oq64_kernel`, `evidence/oq64_l8/k9`, `evidence/oq64_l9/k10`, `evidence/oq64_l10/k11`, `lean/oq64` (ℓ ≤ 7) |
 | 3 | Two-colour weak Schur numbers `WS_8(2)=365`, `WS_9(2)=505`, `WS_10(2)=676`. The lower bounds are from Ahmed–Boza–Revuelta–Sanz (2023); the new part is the matching upper bounds. | paper §2, §4; `evidence/oq64_diag` |
-| 4 | `S_2(12;11) = 915 = F(12,11)`. The symbolic certificate for all `k ≥ 13`, which would give `K(11)=12`, is still being computed and is **not** claimed. | paper §9; `evidence/oq64_l11/k12` |
+| 4 | **New in v1.1:** `S_2(k;11) = k²+56k+99` for every `k ≥ 12`, hence `K(11)=12`. The value `k=12` is the single-value certificate `S_2(12;11) ≤ 915` (v1.0). For all `k ≥ 13` there are 222 symbolic certificates, one for each cube of a complete prefix partition of the colourings. All 222 were replayed by a second, independently written implementation run by a second party. | paper Thm 3(d), §4.1; `evidence/oq64_l11/k12`, `evidence/oq64_l11/k13_cubes` |
 | 5 | Four-block colourings: `K(ℓ) ≥ ℓ+2` for every `ℓ ≥ 24` and `K(ℓ) ≥ (9/8 − o(1))ℓ`. This is elementary, with Lean for the main construction. | paper Thm 5, Cor 6; `evidence/oq64_fourblock`, `lean/oq64` (`OQ64.Four`) |
 | 6 | Uniqueness of the extremal colouring for 12 pairs `(k,ℓ)`. | paper §6; `evidence/oq64_structure` |
 | 7 | For `11 ≤ ℓ ≤ 23` and every `k ≥ ℓ+1`, no good colouring of `[1,F(k,ℓ)]` has a window `W_j` (1470 certificates plus a forcing lemma). First-party certificate checks only; an independent second-party replay of all 1470 certificates and of the forcing lemma is still pending. | paper §7; `evidence/oq64_windows` |
@@ -33,11 +33,12 @@ What each result has been checked with is stated in the status box on page 1 of 
 Appendix A. In short:
 
 * For Result 1 and for the cases `ℓ ≤ 7` of Result 2, independent checker replays are reported: a second, independently written checker was run on the certificates.
-* For `ℓ = 8, 9, 10` and Results 3, 4, 6 and 7, only first-party tools (written and run within this project) have checked them so far.
+* For `ℓ = 11, k ≥ 13` (Result 4, new in v1.1), a second party (GPT) wrote and ran its own exact symbolic validator and LRAT checker on all 222 cube certificates: the partition, the archive hashes, all 2,333,853 hyperedges for every `k ≥ 13`, the prefix unit clauses, and all 222 LRAT proofs. Everything passed. Its source, logs and results are in `evidence/oq64_l11/k13_cubes/independent_review/`; only file paths were adapted for the release, and the original files are kept in `original/`. The search program that produced the hyperedges ran on the author's computer and is not trusted.
+* For `ℓ = 8, 9, 10`, for the `k = 12` certificate of Result 4, and for Results 3, 6 and 7, only first-party tools (written and run within this project) have checked them so far.
 * Codex reported a separate replay of the chain for `WS_8(2)=365` (independent encoder, fresh solver run, its own LRAT checker). That report does not replace an independent examination of its original logs.
 * The archived first-party logs report that every included LRAT proof is accepted by both `lrat-check` and the formally verified checker `cake_lpr`. How far each result has been independently replayed is stated result by result in the preprint.
 * The levels of checking are kept distinct. An *independently written* checker means separate source code. A *second-party replay* means the certificate was actually run by a separate system. Neither means that the human author has personally verified the mathematics, which he has not done for every step (see "Use of AI").
-* On 28 October 2026 the final `verify_all.sh` and the certificate inputs of this release were replayed with `./verify_all.sh all`. The first-party logs are archived in `logs/` (`verify_all_v1.0.log`, `checker_outputs_v1.0.tar.xz`, `negative_controls_v1.0.log`).
+* On 28 October 2026 the v1.0 `verify_all.sh` and the certificate inputs of v1.0 were replayed with `./verify_all.sh all`. The first-party logs are archived in `logs/` (`verify_all_v1.0.log`, `checker_outputs_v1.0.tar.xz`, `negative_controls_v1.0.log`). For v1.1 the new sections `l11k13` and `l11k13ind` and the extended negative controls were run; their logs are `logs/verify_all_v1.1_l11k13.log` and `logs/negative_controls_v1.1.log`. The v1.0 certificate files are unchanged (same SHA-256), so their v1.0 replay logs still apply.
 
 ## How the certificates work
 
@@ -74,7 +75,7 @@ they are not needed for verification.
 sha256sum -c MANIFEST.sha256 --quiet          # integrity of every payload file (the manifest does not hash itself)
 export LRAT_CHECK=/path/to/lrat-check CAKE_LPR=/path/to/cake_lpr
 ./verify_all.sh all                            # Results 1-4, 6 and 7
-tests/negative_controls.sh                     # 11 tampered inputs / fake checkers; every one must be rejected
+tests/negative_controls.sh                     # 15 tampered inputs / fake checkers; every one must be rejected
 ```
 
 The sections can also be run on their own:
@@ -86,10 +87,12 @@ The sections can also be run on their own:
 | `oq64single` | 2 | `S_2(9;8)`, `S_2(10;9)`, `S_2(11;10)` |
 | `diag` | 3 | `WS_8(2)`, `WS_9(2)`, `WS_10(2)` upper bounds |
 | `l11k12` | 4 | `S_2(12;11) ≤ 915` |
+| `l11k13` | 4 | The 222 cube certificates for `k ≥ 13`: archive hashes; the prefixes form a complete partition (`check_partition.py`); every unit clause is implied by its prefix and the cube CNF is rebuilt (`check_cube.py`); the symbolic conditions for every `k ≥ 13` (`check_cert.py`); both LRAT checkers |
+| `l11k13ind` | 4 | The second party's separately written checkers (`independent_review/independent_audit.py`, `independent_lrat.py`) on the same 222 certificates. Needs Python ≥ 3.11 |
 | `unique` | 6 | The 12 extremal colourings are good, and the blocking-clause CNFs are unsatisfiable |
 | `windows` | 7 | All 1470 window certificates (each prefix must be exactly the window `W_j`), then the combined forcing-lemma argument |
 
-With no arguments the script runs `oq62 oq64sym oq64single diag l11k12`; an unknown section name is an error.
+With no arguments the script runs `oq62 oq64sym oq64single diag l11k12 l11k13`; an unknown section name is an error.
 For each certificate, the script checks the hyperedges or the symbolic semantics and reconstructs the
 corresponding CNF. Where a stored CNF is supplied, the reconstructed CNF is compared byte for byte with it. For
 the uniqueness certificates, the CNF is generated from the checked hyperedges and the explicit blocking clause
@@ -104,6 +107,30 @@ by itself validate the coverage argument across certificates; for Result 7 that 
 Running time depends strongly on hardware, memory limits and the checker builds. The largest proofs take
 several hours and need a few GB of disk space. `cake_lpr` needs about 4 GB of heap for them; set `CAKE_HEAP`
 (in MB) to change this.
+
+### Result 4 for `k ≥ 13`: the 222 cube certificates (new in v1.1)
+
+`evidence/oq64_l11/k13_cubes/`:
+
+* `certs/certC<P>_11_13.json.xz`: the symbolic certificate of cube `P` (the same format as `evidence/oq64_kernel`, with `l=11`, `k0=13`, plus `prefix` and `cube_units`). The colour of 1 is fixed. Prefix bit `j` is the colour of the integer `j+2`, where `0` means the colour of 1.
+* `certs/certC<P>_11_13.lrat.xz`: the LRAT proof for the cube CNF. The cube CNF is the base CNF of the certificate followed by one unit clause per entry of `cube_units` other than the integer 1.
+* `certs/SHA256SUMS`, `check_partition.py`, `check_cube.py`: section `l11k13` uses these, together with `evidence/oq64_kernel/check_cert.py`.
+* `logs/`: first-party results and checker outputs.
+* `generation/`: the scripts that built the certificates from the search output. They are historical and not needed for verification. `verify_first_party.sh` contains the placeholders `<TOOLS>`/`<REPO>`.
+* `independent_review/`: the second party's checkers and their recorded outputs. See `independent_review/README.md`.
+
+To check one cube by hand:
+
+```bash
+D=evidence/oq64_l11/k13_cubes; P=0110100; B=certC${P}_11_13
+xz -dc $D/certs/$B.json.xz > /tmp/$B.json; xz -dc $D/certs/$B.lrat.xz > /tmp/$B.lrat
+python3 $D/check_cube.py /tmp/$B.json $P /tmp/$B.cnf /tmp/$B.cube.cnf
+python3 evidence/oq64_kernel/check_cert.py /tmp/$B.json 60
+lrat-check /tmp/$B.cube.cnf /tmp/$B.lrat
+cake_lpr --CML_HEAP_SIZE=4000 --CML_STACK_SIZE=500 /tmp/$B.cube.cnf /tmp/$B.lrat
+```
+
+Section `l11k13` does this for all 222 cubes after checking the partition. On a laptop it takes roughly an hour.
 
 ### Lean 4
 
@@ -159,4 +186,4 @@ Text and data: CC BY 4.0. Code: MIT. See [`LICENSE`](LICENSE).
 
 ## Citation
 
-See [`CITATION.cff`](CITATION.cff). Archived on Zenodo: [10.5281/zenodo.23752136](https://doi.org/10.5281/zenodo.23752136) (release v1.0.1; content identical to v1.0.0 of 28 October 2026 apart from `CITATION.cff`).
+See [`CITATION.cff`](CITATION.cff). Archived on Zenodo: [10.5281/zenodo.23752136](https://doi.org/10.5281/zenodo.23752136) (release v1.0.1; content identical to v1.0.0 of 28 October 2026 apart from `CITATION.cff`). Release v1.1 is archived as a new Zenodo version with its own DOI; earlier versions stay unchanged.

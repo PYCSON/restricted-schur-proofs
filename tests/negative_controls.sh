@@ -44,4 +44,22 @@ cp -r "$EV/oq64_structure" "$C/evidence/"; cp "$EV/oq64_l8/k9/checkgood.py" "$C/
 rm "$C/evidence/oq64_structure/g_5_7.good"
 expect_fail "section unique with one of the 12 colourings missing" env LRAT_CHECK="$LRAT_CHECK" CAKE_LPR="$CAKE_LPR" "$C/verify_all.sh" unique
 
+# Result 4, K(11)=12 cube family (section l11k13 and the second-party checker l11k13ind).
+K=$EV/oq64_l11/k13_cubes
+# (a) one cube removed: the remaining prefixes no longer cover all colourings.
+mkdir -p "$W/parts"; cp "$K"/certs/certC*_11_13.*.xz "$W/parts/"; rm "$W/parts/certC0110100_11_13.json.xz" "$W/parts/certC0110100_11_13.lrat.xz"
+expect_fail "cube partition with one cube removed" python3 "$K/check_partition.py" "$W/parts"
+# (b) a cube unit whose colour contradicts the prefix.
+xz -dc "$K/certs/certC0110100_11_13.json.xz" > "$W/cube.json"
+python3 - "$W/cube.json" "$W/cube_bad.json" <<'PYEOF'
+import json,sys; c=json.load(open(sys.argv[1])); u=[x for x in c['cube_units'] if x[0]!=c['unit_red']][0]; u[1]=1-u[1]; json.dump(c,open(sys.argv[2],'w'))
+PYEOF
+expect_fail "cube unit colour flipped against the prefix" python3 "$K/check_cube.py" "$W/cube_bad.json" 0110100 "$W/b.cnf" "$W/bc.cnf"
+# (c) a certificate presented under another prefix.
+expect_fail "cube certificate used for a different prefix" python3 "$K/check_cube.py" "$W/cube.json" 0110101 "$W/b.cnf" "$W/bc.cnf"
+# (d) the second-party LRAT checker on a proof with its last line (the empty clause) removed.
+mkdir -p "$W/ind"; cp "$K/certs/certC0110100_11_13.json.xz" "$W/ind/"
+xz -dc "$K/certs/certC0110100_11_13.lrat.xz" | sed '$d' | xz -c > "$W/ind/certC0110100_11_13.lrat.xz"
+expect_fail "independent LRAT checker on a proof without the empty clause" python3 "$K/independent_review/independent_lrat.py" --certs "$W/ind" 0110100
+
 [ $bad -eq 0 ] && echo "ALL NEGATIVE CONTROLS REJECTED" || { echo "$bad negative control(s) NOT rejected"; exit 1; }

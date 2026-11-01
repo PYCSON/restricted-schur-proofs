@@ -1,0 +1,1537 @@
+{
+  "prefix_count": 222,
+  "depth_counts": {
+    "6": 7,
+    "7": 43,
+    "8": 112,
+    "9": 60
+  },
+  "coverage_denominator": 512,
+  "coverage_numerator": 512,
+  "hashed_files": 444,
+  "hashed_bytes": 59646384,
+  "total_edges": 2333853,
+  "max_edges": 22638,
+  "total_distinct_pair_tests": 1039781,
+  "unique_symbolic_vertex_polynomials": 6939,
+  "sample_units": [
+    {
+      "prefix": "000000",
+      "units": [
+        [
+          [
+            1,
+            0,
+            0
+          ],
+          0
+        ],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          0
+        ],
+        [
+          [
+            3,
+            0,
+            0
+          ],
+          0
+        ],
+        [
+          [
+            4,
+            0,
+            0
+          ],
+          0
+        ],
+        [
+          [
+            5,
+            0,
+            0
+          ],
+          0
+        ],
+        [
+          [
+            6,
+            0,
+            0
+          ],
+          0
+        ],
+        [
+          [
+            7,
+            0,
+            0
+          ],
+          0
+        ]
+      ]
+    },
+    {
+      "prefix": "000001",
+      "units": [
+        [
+          [
+            1,
+            0,
+            0
+          ],
+          0
+        ],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          0
+        ],
+        [
+          [
+            3,
+            0,
+            0
+          ],
+          0
+        ],
+        [
+          [
+            4,
+            0,
+            0
+          ],
+          0
+        ],
+        [
+          [
+            5,
+            0,
+            0
+          ],
+          0
+        ],
+        [
+          [
+            6,
+            0,
+            0
+          ],
+          0
+        ],
+        [
+          [
+            7,
+            0,
+            0
+          ],
+          1
+        ]
+      ]
+    },
+    {
+      "prefix": "000010",
+      "units": [
+        [
+          [
+            1,
+            0,
+            0
+          ],
+          0
+        ],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          0
+        ],
+        [
+          [
+            3,
+            0,
+            0
+          ],
+          0
+        ],
+        [
+          [
+            4,
+            0,
+            0
+          ],
+          0
+        ],
+        [
+          [
+            5,
+            0,
+            0
+          ],
+          0
+        ],
+        [
+          [
+            6,
+            0,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            7,
+            0,
+            0
+          ],
+          0
+        ]
+      ]
+    }
+  ],
+  "per_cube": {
+    "000000": {
+      "vertices": 886,
+      "edges": 10200,
+      "checked_pairs": 7265,
+      "units": 7
+    },
+    "000001": {
+      "vertices": 709,
+      "edges": 21154,
+      "checked_pairs": 6767,
+      "units": 7
+    },
+    "000010": {
+      "vertices": 722,
+      "edges": 21196,
+      "checked_pairs": 6892,
+      "units": 7
+    },
+    "0000110": {
+      "vertices": 576,
+      "edges": 13726,
+      "checked_pairs": 5431,
+      "units": 8
+    },
+    "00001110": {
+      "vertices": 453,
+      "edges": 8714,
+      "checked_pairs": 4303,
+      "units": 9
+    },
+    "00001111": {
+      "vertices": 497,
+      "edges": 11423,
+      "checked_pairs": 4599,
+      "units": 9
+    },
+    "000100": {
+      "vertices": 736,
+      "edges": 21193,
+      "checked_pairs": 7019,
+      "units": 7
+    },
+    "0001010": {
+      "vertices": 579,
+      "edges": 13742,
+      "checked_pairs": 5566,
+      "units": 8
+    },
+    "00010110": {
+      "vertices": 459,
+      "edges": 8705,
+      "checked_pairs": 4441,
+      "units": 9
+    },
+    "00010111": {
+      "vertices": 496,
+      "edges": 11461,
+      "checked_pairs": 4720,
+      "units": 9
+    },
+    "0001100": {
+      "vertices": 566,
+      "edges": 13564,
+      "checked_pairs": 5516,
+      "units": 8
+    },
+    "00011010": {
+      "vertices": 448,
+      "edges": 8578,
+      "checked_pairs": 4390,
+      "units": 9
+    },
+    "00011011": {
+      "vertices": 488,
+      "edges": 11199,
+      "checked_pairs": 4727,
+      "units": 9
+    },
+    "0001110": {
+      "vertices": 608,
+      "edges": 19742,
+      "checked_pairs": 6028,
+      "units": 8
+    },
+    "00011110": {
+      "vertices": 497,
+      "edges": 11214,
+      "checked_pairs": 4667,
+      "units": 9
+    },
+    "000111110": {
+      "vertices": 382,
+      "edges": 6032,
+      "checked_pairs": 3487,
+      "units": 10
+    },
+    "000111111": {
+      "vertices": 375,
+      "edges": 5237,
+      "checked_pairs": 3303,
+      "units": 10
+    },
+    "001000": {
+      "vertices": 732,
+      "edges": 21276,
+      "checked_pairs": 7070,
+      "units": 7
+    },
+    "0010010": {
+      "vertices": 578,
+      "edges": 13666,
+      "checked_pairs": 5626,
+      "units": 8
+    },
+    "00100110": {
+      "vertices": 456,
+      "edges": 8681,
+      "checked_pairs": 4493,
+      "units": 9
+    },
+    "001001110": {
+      "vertices": 373,
+      "edges": 5302,
+      "checked_pairs": 3501,
+      "units": 10
+    },
+    "001001111": {
+      "vertices": 383,
+      "edges": 6118,
+      "checked_pairs": 3611,
+      "units": 10
+    },
+    "0010100": {
+      "vertices": 565,
+      "edges": 13572,
+      "checked_pairs": 5612,
+      "units": 8
+    },
+    "0010101": {
+      "vertices": 598,
+      "edges": 19838,
+      "checked_pairs": 6164,
+      "units": 8
+    },
+    "0010110": {
+      "vertices": 602,
+      "edges": 19914,
+      "checked_pairs": 6125,
+      "units": 8
+    },
+    "00101110": {
+      "vertices": 483,
+      "edges": 11344,
+      "checked_pairs": 4751,
+      "units": 9
+    },
+    "001011110": {
+      "vertices": 377,
+      "edges": 6052,
+      "checked_pairs": 3591,
+      "units": 10
+    },
+    "001011111": {
+      "vertices": 366,
+      "edges": 5256,
+      "checked_pairs": 3368,
+      "units": 10
+    },
+    "0011000": {
+      "vertices": 567,
+      "edges": 13465,
+      "checked_pairs": 5539,
+      "units": 8
+    },
+    "0011001": {
+      "vertices": 599,
+      "edges": 19489,
+      "checked_pairs": 6115,
+      "units": 8
+    },
+    "0011010": {
+      "vertices": 606,
+      "edges": 19473,
+      "checked_pairs": 6113,
+      "units": 8
+    },
+    "00110110": {
+      "vertices": 488,
+      "edges": 10993,
+      "checked_pairs": 4764,
+      "units": 9
+    },
+    "001101110": {
+      "vertices": 379,
+      "edges": 5886,
+      "checked_pairs": 3593,
+      "units": 10
+    },
+    "001101111": {
+      "vertices": 369,
+      "edges": 5101,
+      "checked_pairs": 3403,
+      "units": 10
+    },
+    "0011100": {
+      "vertices": 602,
+      "edges": 19458,
+      "checked_pairs": 6108,
+      "units": 8
+    },
+    "00111010": {
+      "vertices": 483,
+      "edges": 11051,
+      "checked_pairs": 4743,
+      "units": 9
+    },
+    "001110110": {
+      "vertices": 377,
+      "edges": 5924,
+      "checked_pairs": 3622,
+      "units": 10
+    },
+    "001110111": {
+      "vertices": 369,
+      "edges": 5150,
+      "checked_pairs": 3428,
+      "units": 10
+    },
+    "00111100": {
+      "vertices": 490,
+      "edges": 11114,
+      "checked_pairs": 4738,
+      "units": 9
+    },
+    "00111101": {
+      "vertices": 496,
+      "edges": 11168,
+      "checked_pairs": 4738,
+      "units": 9
+    },
+    "00111110": {
+      "vertices": 491,
+      "edges": 11148,
+      "checked_pairs": 4670,
+      "units": 9
+    },
+    "00111111": {
+      "vertices": 479,
+      "edges": 8560,
+      "checked_pairs": 4317,
+      "units": 9
+    },
+    "010000": {
+      "vertices": 730,
+      "edges": 21317,
+      "checked_pairs": 7102,
+      "units": 7
+    },
+    "0100010": {
+      "vertices": 574,
+      "edges": 13799,
+      "checked_pairs": 5653,
+      "units": 8
+    },
+    "01000110": {
+      "vertices": 458,
+      "edges": 8802,
+      "checked_pairs": 4534,
+      "units": 9
+    },
+    "010001110": {
+      "vertices": 374,
+      "edges": 5308,
+      "checked_pairs": 3558,
+      "units": 10
+    },
+    "010001111": {
+      "vertices": 386,
+      "edges": 6168,
+      "checked_pairs": 3677,
+      "units": 10
+    },
+    "0100100": {
+      "vertices": 562,
+      "edges": 13783,
+      "checked_pairs": 5646,
+      "units": 8
+    },
+    "0100101": {
+      "vertices": 598,
+      "edges": 19980,
+      "checked_pairs": 6203,
+      "units": 8
+    },
+    "01001100": {
+      "vertices": 453,
+      "edges": 8730,
+      "checked_pairs": 4501,
+      "units": 9
+    },
+    "01001101": {
+      "vertices": 488,
+      "edges": 11380,
+      "checked_pairs": 4814,
+      "units": 9
+    },
+    "01001110": {
+      "vertices": 490,
+      "edges": 11334,
+      "checked_pairs": 4808,
+      "units": 9
+    },
+    "010011110": {
+      "vertices": 374,
+      "edges": 6093,
+      "checked_pairs": 3623,
+      "units": 10
+    },
+    "010011111": {
+      "vertices": 360,
+      "edges": 5285,
+      "checked_pairs": 3411,
+      "units": 10
+    },
+    "0101000": {
+      "vertices": 566,
+      "edges": 13306,
+      "checked_pairs": 5606,
+      "units": 8
+    },
+    "0101001": {
+      "vertices": 600,
+      "edges": 19594,
+      "checked_pairs": 6177,
+      "units": 8
+    },
+    "01010100": {
+      "vertices": 457,
+      "edges": 8429,
+      "checked_pairs": 4494,
+      "units": 9
+    },
+    "01010101": {
+      "vertices": 494,
+      "edges": 10954,
+      "checked_pairs": 4848,
+      "units": 9
+    },
+    "01010110": {
+      "vertices": 495,
+      "edges": 10997,
+      "checked_pairs": 4848,
+      "units": 9
+    },
+    "010101110": {
+      "vertices": 380,
+      "edges": 5886,
+      "checked_pairs": 3669,
+      "units": 10
+    },
+    "010101111": {
+      "vertices": 365,
+      "edges": 5095,
+      "checked_pairs": 3449,
+      "units": 10
+    },
+    "0101100": {
+      "vertices": 605,
+      "edges": 19445,
+      "checked_pairs": 6199,
+      "units": 8
+    },
+    "01011010": {
+      "vertices": 493,
+      "edges": 10991,
+      "checked_pairs": 4853,
+      "units": 9
+    },
+    "010110110": {
+      "vertices": 378,
+      "edges": 5967,
+      "checked_pairs": 3690,
+      "units": 10
+    },
+    "010110111": {
+      "vertices": 364,
+      "edges": 5208,
+      "checked_pairs": 3492,
+      "units": 10
+    },
+    "01011100": {
+      "vertices": 491,
+      "edges": 10979,
+      "checked_pairs": 4826,
+      "units": 9
+    },
+    "01011101": {
+      "vertices": 482,
+      "edges": 11056,
+      "checked_pairs": 4820,
+      "units": 9
+    },
+    "01011110": {
+      "vertices": 483,
+      "edges": 11068,
+      "checked_pairs": 4759,
+      "units": 9
+    },
+    "01011111": {
+      "vertices": 465,
+      "edges": 8537,
+      "checked_pairs": 4369,
+      "units": 9
+    },
+    "0110000": {
+      "vertices": 566,
+      "edges": 13270,
+      "checked_pairs": 5552,
+      "units": 8
+    },
+    "0110001": {
+      "vertices": 599,
+      "edges": 19266,
+      "checked_pairs": 6130,
+      "units": 8
+    },
+    "01100100": {
+      "vertices": 455,
+      "edges": 8454,
+      "checked_pairs": 4418,
+      "units": 9
+    },
+    "01100101": {
+      "vertices": 491,
+      "edges": 11068,
+      "checked_pairs": 4821,
+      "units": 9
+    },
+    "01100110": {
+      "vertices": 493,
+      "edges": 11076,
+      "checked_pairs": 4778,
+      "units": 9
+    },
+    "011001110": {
+      "vertices": 378,
+      "edges": 5876,
+      "checked_pairs": 3628,
+      "units": 10
+    },
+    "011001111": {
+      "vertices": 363,
+      "edges": 5111,
+      "checked_pairs": 3417,
+      "units": 10
+    },
+    "0110100": {
+      "vertices": 602,
+      "edges": 19117,
+      "checked_pairs": 6156,
+      "units": 8
+    },
+    "01101010": {
+      "vertices": 490,
+      "edges": 10883,
+      "checked_pairs": 4834,
+      "units": 9
+    },
+    "011010110": {
+      "vertices": 377,
+      "edges": 5812,
+      "checked_pairs": 3684,
+      "units": 10
+    },
+    "011010111": {
+      "vertices": 363,
+      "edges": 5050,
+      "checked_pairs": 3480,
+      "units": 10
+    },
+    "01101100": {
+      "vertices": 492,
+      "edges": 10788,
+      "checked_pairs": 4804,
+      "units": 9
+    },
+    "01101101": {
+      "vertices": 482,
+      "edges": 10834,
+      "checked_pairs": 4827,
+      "units": 9
+    },
+    "01101110": {
+      "vertices": 484,
+      "edges": 10790,
+      "checked_pairs": 4779,
+      "units": 9
+    },
+    "01101111": {
+      "vertices": 465,
+      "edges": 8312,
+      "checked_pairs": 4375,
+      "units": 9
+    },
+    "0111000": {
+      "vertices": 601,
+      "edges": 19394,
+      "checked_pairs": 6103,
+      "units": 8
+    },
+    "01110010": {
+      "vertices": 489,
+      "edges": 11103,
+      "checked_pairs": 4788,
+      "units": 9
+    },
+    "011100110": {
+      "vertices": 377,
+      "edges": 5947,
+      "checked_pairs": 3655,
+      "units": 10
+    },
+    "011100111": {
+      "vertices": 363,
+      "edges": 5142,
+      "checked_pairs": 3456,
+      "units": 10
+    },
+    "01110100": {
+      "vertices": 491,
+      "edges": 11088,
+      "checked_pairs": 4795,
+      "units": 9
+    },
+    "011101010": {
+      "vertices": 378,
+      "edges": 5978,
+      "checked_pairs": 3684,
+      "units": 10
+    },
+    "011101011": {
+      "vertices": 360,
+      "edges": 5174,
+      "checked_pairs": 3486,
+      "units": 10
+    },
+    "01110110": {
+      "vertices": 484,
+      "edges": 11073,
+      "checked_pairs": 4778,
+      "units": 9
+    },
+    "01110111": {
+      "vertices": 467,
+      "edges": 8520,
+      "checked_pairs": 4370,
+      "units": 9
+    },
+    "0111100": {
+      "vertices": 626,
+      "edges": 22102,
+      "checked_pairs": 6259,
+      "units": 8
+    },
+    "01111010": {
+      "vertices": 491,
+      "edges": 11139,
+      "checked_pairs": 4793,
+      "units": 9
+    },
+    "01111011": {
+      "vertices": 474,
+      "edges": 8529,
+      "checked_pairs": 4408,
+      "units": 9
+    },
+    "01111100": {
+      "vertices": 491,
+      "edges": 11137,
+      "checked_pairs": 4744,
+      "units": 9
+    },
+    "01111101": {
+      "vertices": 476,
+      "edges": 8552,
+      "checked_pairs": 4425,
+      "units": 9
+    },
+    "01111110": {
+      "vertices": 476,
+      "edges": 8564,
+      "checked_pairs": 4426,
+      "units": 9
+    },
+    "01111111": {
+      "vertices": 418,
+      "edges": 5002,
+      "checked_pairs": 3650,
+      "units": 9
+    },
+    "100000": {
+      "vertices": 677,
+      "edges": 21333,
+      "checked_pairs": 6932,
+      "units": 7
+    },
+    "1000010": {
+      "vertices": 564,
+      "edges": 13913,
+      "checked_pairs": 5677,
+      "units": 8
+    },
+    "10000110": {
+      "vertices": 457,
+      "edges": 8748,
+      "checked_pairs": 4572,
+      "units": 9
+    },
+    "100001110": {
+      "vertices": 378,
+      "edges": 5313,
+      "checked_pairs": 3591,
+      "units": 10
+    },
+    "100001111": {
+      "vertices": 389,
+      "edges": 6151,
+      "checked_pairs": 3722,
+      "units": 10
+    },
+    "1000100": {
+      "vertices": 554,
+      "edges": 13791,
+      "checked_pairs": 5689,
+      "units": 8
+    },
+    "10001010": {
+      "vertices": 445,
+      "edges": 8796,
+      "checked_pairs": 4543,
+      "units": 9
+    },
+    "10001011": {
+      "vertices": 491,
+      "edges": 11559,
+      "checked_pairs": 4900,
+      "units": 9
+    },
+    "10001100": {
+      "vertices": 454,
+      "edges": 8687,
+      "checked_pairs": 4538,
+      "units": 9
+    },
+    "10001101": {
+      "vertices": 499,
+      "edges": 11331,
+      "checked_pairs": 4917,
+      "units": 9
+    },
+    "10001110": {
+      "vertices": 494,
+      "edges": 11400,
+      "checked_pairs": 4887,
+      "units": 9
+    },
+    "100011110": {
+      "vertices": 381,
+      "edges": 6097,
+      "checked_pairs": 3722,
+      "units": 10
+    },
+    "100011111": {
+      "vertices": 362,
+      "edges": 5295,
+      "checked_pairs": 3502,
+      "units": 10
+    },
+    "1001000": {
+      "vertices": 557,
+      "edges": 13645,
+      "checked_pairs": 5657,
+      "units": 8
+    },
+    "10010010": {
+      "vertices": 449,
+      "edges": 8677,
+      "checked_pairs": 4525,
+      "units": 9
+    },
+    "10010011": {
+      "vertices": 493,
+      "edges": 11285,
+      "checked_pairs": 4898,
+      "units": 9
+    },
+    "10010100": {
+      "vertices": 453,
+      "edges": 8644,
+      "checked_pairs": 4506,
+      "units": 9
+    },
+    "10010101": {
+      "vertices": 499,
+      "edges": 11322,
+      "checked_pairs": 4913,
+      "units": 9
+    },
+    "10010110": {
+      "vertices": 494,
+      "edges": 11322,
+      "checked_pairs": 4852,
+      "units": 9
+    },
+    "100101110": {
+      "vertices": 379,
+      "edges": 6078,
+      "checked_pairs": 3695,
+      "units": 10
+    },
+    "100101111": {
+      "vertices": 361,
+      "edges": 5272,
+      "checked_pairs": 3469,
+      "units": 10
+    },
+    "1001100": {
+      "vertices": 607,
+      "edges": 19765,
+      "checked_pairs": 6233,
+      "units": 8
+    },
+    "10011010": {
+      "vertices": 493,
+      "edges": 11204,
+      "checked_pairs": 4905,
+      "units": 9
+    },
+    "100110110": {
+      "vertices": 378,
+      "edges": 6024,
+      "checked_pairs": 3696,
+      "units": 10
+    },
+    "100110111": {
+      "vertices": 363,
+      "edges": 5203,
+      "checked_pairs": 3504,
+      "units": 10
+    },
+    "10011100": {
+      "vertices": 501,
+      "edges": 11143,
+      "checked_pairs": 4907,
+      "units": 9
+    },
+    "100111010": {
+      "vertices": 385,
+      "edges": 6004,
+      "checked_pairs": 3736,
+      "units": 10
+    },
+    "100111011": {
+      "vertices": 369,
+      "edges": 5216,
+      "checked_pairs": 3541,
+      "units": 10
+    },
+    "10011110": {
+      "vertices": 478,
+      "edges": 11203,
+      "checked_pairs": 4857,
+      "units": 9
+    },
+    "10011111": {
+      "vertices": 453,
+      "edges": 8603,
+      "checked_pairs": 4436,
+      "units": 9
+    },
+    "1010000": {
+      "vertices": 559,
+      "edges": 13614,
+      "checked_pairs": 5623,
+      "units": 8
+    },
+    "10100010": {
+      "vertices": 446,
+      "edges": 8599,
+      "checked_pairs": 4495,
+      "units": 9
+    },
+    "10100011": {
+      "vertices": 490,
+      "edges": 11165,
+      "checked_pairs": 4863,
+      "units": 9
+    },
+    "10100100": {
+      "vertices": 453,
+      "edges": 8699,
+      "checked_pairs": 4505,
+      "units": 9
+    },
+    "10100101": {
+      "vertices": 497,
+      "edges": 11271,
+      "checked_pairs": 4897,
+      "units": 9
+    },
+    "10100110": {
+      "vertices": 492,
+      "edges": 11315,
+      "checked_pairs": 4878,
+      "units": 9
+    },
+    "101001110": {
+      "vertices": 378,
+      "edges": 6017,
+      "checked_pairs": 3694,
+      "units": 10
+    },
+    "101001111": {
+      "vertices": 362,
+      "edges": 5210,
+      "checked_pairs": 3511,
+      "units": 10
+    },
+    "1010100": {
+      "vertices": 600,
+      "edges": 20160,
+      "checked_pairs": 6169,
+      "units": 8
+    },
+    "10101010": {
+      "vertices": 496,
+      "edges": 11527,
+      "checked_pairs": 4863,
+      "units": 9
+    },
+    "101010110": {
+      "vertices": 375,
+      "edges": 6138,
+      "checked_pairs": 3664,
+      "units": 10
+    },
+    "101010111": {
+      "vertices": 361,
+      "edges": 5277,
+      "checked_pairs": 3467,
+      "units": 10
+    },
+    "10101100": {
+      "vertices": 495,
+      "edges": 11320,
+      "checked_pairs": 4871,
+      "units": 9
+    },
+    "101011010": {
+      "vertices": 381,
+      "edges": 5995,
+      "checked_pairs": 3691,
+      "units": 10
+    },
+    "101011011": {
+      "vertices": 365,
+      "edges": 5245,
+      "checked_pairs": 3507,
+      "units": 10
+    },
+    "10101110": {
+      "vertices": 474,
+      "edges": 11251,
+      "checked_pairs": 4826,
+      "units": 9
+    },
+    "10101111": {
+      "vertices": 453,
+      "edges": 8612,
+      "checked_pairs": 4452,
+      "units": 9
+    },
+    "1011000": {
+      "vertices": 603,
+      "edges": 19287,
+      "checked_pairs": 6191,
+      "units": 8
+    },
+    "10110010": {
+      "vertices": 492,
+      "edges": 10948,
+      "checked_pairs": 4877,
+      "units": 9
+    },
+    "101100110": {
+      "vertices": 379,
+      "edges": 5893,
+      "checked_pairs": 3735,
+      "units": 10
+    },
+    "101100111": {
+      "vertices": 363,
+      "edges": 5133,
+      "checked_pairs": 3552,
+      "units": 10
+    },
+    "10110100": {
+      "vertices": 495,
+      "edges": 11017,
+      "checked_pairs": 4841,
+      "units": 9
+    },
+    "101101010": {
+      "vertices": 381,
+      "edges": 5855,
+      "checked_pairs": 3698,
+      "units": 10
+    },
+    "101101011": {
+      "vertices": 365,
+      "edges": 5144,
+      "checked_pairs": 3504,
+      "units": 10
+    },
+    "10110110": {
+      "vertices": 477,
+      "edges": 11050,
+      "checked_pairs": 4875,
+      "units": 9
+    },
+    "10110111": {
+      "vertices": 455,
+      "edges": 8482,
+      "checked_pairs": 4477,
+      "units": 9
+    },
+    "1011100": {
+      "vertices": 624,
+      "edges": 22210,
+      "checked_pairs": 6365,
+      "units": 8
+    },
+    "10111010": {
+      "vertices": 475,
+      "edges": 11165,
+      "checked_pairs": 4855,
+      "units": 9
+    },
+    "10111011": {
+      "vertices": 451,
+      "edges": 8579,
+      "checked_pairs": 4493,
+      "units": 9
+    },
+    "10111100": {
+      "vertices": 479,
+      "edges": 11131,
+      "checked_pairs": 4838,
+      "units": 9
+    },
+    "10111101": {
+      "vertices": 459,
+      "edges": 8569,
+      "checked_pairs": 4463,
+      "units": 9
+    },
+    "10111110": {
+      "vertices": 466,
+      "edges": 8570,
+      "checked_pairs": 4505,
+      "units": 9
+    },
+    "10111111": {
+      "vertices": 416,
+      "edges": 5018,
+      "checked_pairs": 3722,
+      "units": 9
+    },
+    "1100000": {
+      "vertices": 559,
+      "edges": 13602,
+      "checked_pairs": 5560,
+      "units": 8
+    },
+    "1100001": {
+      "vertices": 598,
+      "edges": 19710,
+      "checked_pairs": 6133,
+      "units": 8
+    },
+    "11000100": {
+      "vertices": 454,
+      "edges": 8645,
+      "checked_pairs": 4468,
+      "units": 9
+    },
+    "11000101": {
+      "vertices": 497,
+      "edges": 11221,
+      "checked_pairs": 4876,
+      "units": 9
+    },
+    "11000110": {
+      "vertices": 495,
+      "edges": 11169,
+      "checked_pairs": 4878,
+      "units": 9
+    },
+    "110001110": {
+      "vertices": 382,
+      "edges": 5934,
+      "checked_pairs": 3704,
+      "units": 10
+    },
+    "110001111": {
+      "vertices": 363,
+      "edges": 5125,
+      "checked_pairs": 3510,
+      "units": 10
+    },
+    "1100100": {
+      "vertices": 599,
+      "edges": 19862,
+      "checked_pairs": 6131,
+      "units": 8
+    },
+    "11001010": {
+      "vertices": 492,
+      "edges": 11312,
+      "checked_pairs": 4908,
+      "units": 9
+    },
+    "110010110": {
+      "vertices": 378,
+      "edges": 5994,
+      "checked_pairs": 3729,
+      "units": 10
+    },
+    "110010111": {
+      "vertices": 362,
+      "edges": 5187,
+      "checked_pairs": 3521,
+      "units": 10
+    },
+    "11001100": {
+      "vertices": 497,
+      "edges": 11118,
+      "checked_pairs": 4847,
+      "units": 9
+    },
+    "110011010": {
+      "vertices": 383,
+      "edges": 5939,
+      "checked_pairs": 3720,
+      "units": 10
+    },
+    "110011011": {
+      "vertices": 366,
+      "edges": 5131,
+      "checked_pairs": 3499,
+      "units": 10
+    },
+    "11001110": {
+      "vertices": 478,
+      "edges": 11051,
+      "checked_pairs": 4883,
+      "units": 9
+    },
+    "11001111": {
+      "vertices": 455,
+      "edges": 8419,
+      "checked_pairs": 4480,
+      "units": 9
+    },
+    "1101000": {
+      "vertices": 599,
+      "edges": 19634,
+      "checked_pairs": 6141,
+      "units": 8
+    },
+    "11010010": {
+      "vertices": 495,
+      "edges": 11222,
+      "checked_pairs": 4856,
+      "units": 9
+    },
+    "110100110": {
+      "vertices": 384,
+      "edges": 6013,
+      "checked_pairs": 3731,
+      "units": 10
+    },
+    "110100111": {
+      "vertices": 367,
+      "edges": 5236,
+      "checked_pairs": 3543,
+      "units": 10
+    },
+    "11010100": {
+      "vertices": 497,
+      "edges": 11168,
+      "checked_pairs": 4867,
+      "units": 9
+    },
+    "110101010": {
+      "vertices": 385,
+      "edges": 5993,
+      "checked_pairs": 3739,
+      "units": 10
+    },
+    "110101011": {
+      "vertices": 367,
+      "edges": 5204,
+      "checked_pairs": 3539,
+      "units": 10
+    },
+    "11010110": {
+      "vertices": 477,
+      "edges": 11208,
+      "checked_pairs": 4890,
+      "units": 9
+    },
+    "11010111": {
+      "vertices": 456,
+      "edges": 8599,
+      "checked_pairs": 4508,
+      "units": 9
+    },
+    "1101100": {
+      "vertices": 621,
+      "edges": 22453,
+      "checked_pairs": 6347,
+      "units": 8
+    },
+    "11011010": {
+      "vertices": 475,
+      "edges": 11320,
+      "checked_pairs": 4904,
+      "units": 9
+    },
+    "11011011": {
+      "vertices": 450,
+      "edges": 8701,
+      "checked_pairs": 4475,
+      "units": 9
+    },
+    "11011100": {
+      "vertices": 481,
+      "edges": 11151,
+      "checked_pairs": 4902,
+      "units": 9
+    },
+    "11011101": {
+      "vertices": 460,
+      "edges": 8596,
+      "checked_pairs": 4518,
+      "units": 9
+    },
+    "11011110": {
+      "vertices": 467,
+      "edges": 8584,
+      "checked_pairs": 4544,
+      "units": 9
+    },
+    "11011111": {
+      "vertices": 418,
+      "edges": 5021,
+      "checked_pairs": 3763,
+      "units": 9
+    },
+    "1110000": {
+      "vertices": 601,
+      "edges": 19801,
+      "checked_pairs": 6096,
+      "units": 8
+    },
+    "11100010": {
+      "vertices": 496,
+      "edges": 11279,
+      "checked_pairs": 4855,
+      "units": 9
+    },
+    "111000110": {
+      "vertices": 387,
+      "edges": 5988,
+      "checked_pairs": 3740,
+      "units": 10
+    },
+    "111000111": {
+      "vertices": 368,
+      "edges": 5161,
+      "checked_pairs": 3515,
+      "units": 10
+    },
+    "11100100": {
+      "vertices": 495,
+      "edges": 11197,
+      "checked_pairs": 4827,
+      "units": 9
+    },
+    "111001010": {
+      "vertices": 385,
+      "edges": 6009,
+      "checked_pairs": 3737,
+      "units": 10
+    },
+    "111001011": {
+      "vertices": 366,
+      "edges": 5209,
+      "checked_pairs": 3554,
+      "units": 10
+    },
+    "11100110": {
+      "vertices": 477,
+      "edges": 11220,
+      "checked_pairs": 4883,
+      "units": 9
+    },
+    "11100111": {
+      "vertices": 453,
+      "edges": 8573,
+      "checked_pairs": 4464,
+      "units": 9
+    },
+    "1110100": {
+      "vertices": 625,
+      "edges": 22500,
+      "checked_pairs": 6367,
+      "units": 8
+    },
+    "11101010": {
+      "vertices": 479,
+      "edges": 11361,
+      "checked_pairs": 4923,
+      "units": 9
+    },
+    "11101011": {
+      "vertices": 453,
+      "edges": 8639,
+      "checked_pairs": 4521,
+      "units": 9
+    },
+    "11101100": {
+      "vertices": 483,
+      "edges": 11253,
+      "checked_pairs": 4895,
+      "units": 9
+    },
+    "11101101": {
+      "vertices": 463,
+      "edges": 8622,
+      "checked_pairs": 4550,
+      "units": 9
+    },
+    "11101110": {
+      "vertices": 470,
+      "edges": 8664,
+      "checked_pairs": 4545,
+      "units": 9
+    },
+    "11101111": {
+      "vertices": 419,
+      "edges": 5028,
+      "checked_pairs": 3772,
+      "units": 9
+    },
+    "1111000": {
+      "vertices": 624,
+      "edges": 22638,
+      "checked_pairs": 6378,
+      "units": 8
+    },
+    "11110010": {
+      "vertices": 486,
+      "edges": 11279,
+      "checked_pairs": 4921,
+      "units": 9
+    },
+    "11110011": {
+      "vertices": 461,
+      "edges": 8620,
+      "checked_pairs": 4521,
+      "units": 9
+    },
+    "11110100": {
+      "vertices": 491,
+      "edges": 11365,
+      "checked_pairs": 4926,
+      "units": 9
+    },
+    "11110101": {
+      "vertices": 472,
+      "edges": 8691,
+      "checked_pairs": 4569,
+      "units": 9
+    },
+    "11110110": {
+      "vertices": 477,
+      "edges": 8660,
+      "checked_pairs": 4573,
+      "units": 9
+    },
+    "11110111": {
+      "vertices": 429,
+      "edges": 5050,
+      "checked_pairs": 3791,
+      "units": 9
+    },
+    "1111100": {
+      "vertices": 615,
+      "edges": 20230,
+      "checked_pairs": 6187,
+      "units": 8
+    },
+    "1111101": {
+      "vertices": 595,
+      "edges": 13788,
+      "checked_pairs": 5691,
+      "units": 8
+    },
+    "1111110": {
+      "vertices": 592,
+      "edges": 13913,
+      "checked_pairs": 5655,
+      "units": 8
+    },
+    "1111111": {
+      "vertices": 513,
+      "edges": 7382,
+      "checked_pairs": 4666,
+      "units": 8
+    }
+  },
+  "elapsed_seconds": 41.68
+}

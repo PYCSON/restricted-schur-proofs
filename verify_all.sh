@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
 # Replay the certificates behind Results 1-4, 6 and 7 of README.md (Result 5 and the Lean developments: see README).
+# Result 4 (K(11)=12) is sections l11k12 (k=12) and l11k13 (222 cube certificates, every k>=13); l11k13ind runs the
+# separately written second-party checkers on the same 222 certificates (needs Python >= 3.11).
 # Requirements: python3 (with sympy), xz, and the two LRAT checkers:
 #   LRAT_CHECK = path to lrat-check (drat-trim distribution)
 #   CAKE_LPR   = path to cake_lpr (formally verified checker)
 # Usage:  LRAT_CHECK=/path/lrat-check CAKE_LPR=/path/cake_lpr ./verify_all.sh [section ...]
-# Sections: oq62 oq64sym oq64single diag l11k12 unique windows
-#   (default: oq62 oq64sym oq64single diag l11k12; "all" adds unique and windows)
+# Sections: oq62 oq64sym oq64single diag l11k12 l11k13 l11k13ind unique windows
+#   (default: oq62 oq64sym oq64single diag l11k12 l11k13; "all" adds l11k13ind, unique and windows)
 # Optional: CAKE_HEAP (MB, default 4000); LOGDIR (keep every checker output there instead of deleting it).
 # A step passes only if the checker exits with status 0 AND prints its exact success line
 # ("c VERIFIED" for lrat-check, "s VERIFIED UNSAT" for cake_lpr). Any failure stops the script with status 1.
@@ -16,7 +18,7 @@ W=$(mktemp -d); trap 'rm -rf "$W"' EXIT
 HEAP=${CAKE_HEAP:-4000}; LOGDIR=${LOGDIR:-}
 [ -n "$LOGDIR" ] && mkdir -p "$LOGDIR"
 
-DEFAULT=(oq62 oq64sym oq64single diag l11k12); ALL=("${DEFAULT[@]}" unique windows)
+DEFAULT=(oq62 oq64sym oq64single diag l11k12 l11k13); ALL=("${DEFAULT[@]}" l11k13ind unique windows)
 ARGS=("$@"); [ ${#ARGS[@]} -eq 0 ] && ARGS=("${DEFAULT[@]}")
 [ "${ARGS[*]}" = "all" ] && ARGS=("${ALL[@]}")
 for requested in "${ARGS[@]}"; do
@@ -92,6 +94,37 @@ fi
 if want l11k12; then
   echo "== Result 4: S_2(12;11)<=915"
   D=$EV/oq64_l11/k12; single 12 11 915 "$D/core.edges.xz" "$D/core.cnf.xz" "$D/core.lrat.xz" R
+fi
+
+if want l11k13; then
+  echo "== Result 4: S_2(k;11) <= F(k,11) for every k >= 13 (222 cube certificates; with l11k12 this gives K(11)=12)"
+  D=$EV/oq64_l11/k13_cubes
+  ( cd "$D/certs" && sha256sum -c --quiet SHA256SUMS ) || fail "Result 4: certificate archive hashes"
+  python3 "$D/check_partition.py" "$D/certs" || fail "Result 4: the cube prefixes do not form a complete partition"
+  cnt=0
+  for j in "$D"/certs/certC*_11_13.json.xz; do
+    P=$(basename "$j"); P=${P#certC}; P=${P%_11_13.json.xz}; b=certC${P}_11_13
+    xz -dc "$j" > "$W/$b.json"
+    python3 "$D/check_cube.py" "$W/$b.json" "$P" "$W/$b.cnf" "$W/$b.cube.cnf" > "$W/cc.out" || { cat "$W/cc.out" >&2; fail "cube units or CNF: $P"; }
+    python3 "$EV/oq64_kernel/check_cert.py" "$W/$b.json" 60 > "$W/cert.out" || { cat "$W/cert.out" >&2; fail "check_cert: $P"; }
+    lrat "$W/$b.cube.cnf" "$D/certs/$b.lrat.xz" > /dev/null
+    rm -f "$W/$b.json" "$W/$b.cnf" "$W/$b.cube.cnf"
+    cnt=$((cnt+1)); [ $((cnt % 20)) -eq 0 ] && echo "  PASS $cnt cube certificates so far"
+  done
+  [ "$cnt" -eq 222 ] || fail "expected 222 cube certificates, found $cnt"
+  echo "  PASS all $cnt cubes (partition, prefix units, symbolic certificate for all k>=13, both LRAT checkers)"
+fi
+
+if want l11k13ind; then
+  echo "== Result 4 (second-party path): GPT's separately written symbolic validator and LRAT checker on the 222 cubes"
+  D=$EV/oq64_l11/k13_cubes; R=$D/independent_review
+  python3 "$R/independent_audit.py" "$D" "$W/ind_audit.json" > "$W/ia.out" || { cat "$W/ia.out" >&2; fail "independent_audit.py"; }
+  tail -1 "$W/ia.out"
+  grep -q '^A2-A3 PASS: certs 222 ' "$W/ia.out" || fail "independent_audit.py did not report A2-A3 PASS for 222 certificates"
+  python3 "$R/independent_lrat.py" --certs "$D/certs" $(cd "$D/certs" && ls certC*_11_13.json.xz | sed -e 's/^certC//' -e 's/_11_13\.json\.xz$//') > "$W/il.out" 2>&1 \
+    || { tail -3 "$W/il.out" >&2; fail "independent_lrat.py"; }
+  [ "$(grep -c '^A4 PASS' "$W/il.out")" -eq 222 ] || fail "independent_lrat.py did not pass all 222 cubes"
+  echo "  PASS independent LRAT replay: 222/222"
 fi
 
 if want unique; then

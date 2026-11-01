@@ -1,0 +1,9 @@
+A1 PASS 222 prefixes, depth {6: 7, 7: 43, 8: 112, 9: 60} coverage 512 / 512 hashes 444
+A3 progress 30 /222 edges 381053 elapsed 6.4
+A3 progress 60 /222 edges 707224 elapsed 12.1
+A3 progress 90 /222 edges 1009929 elapsed 17.6
+A3 progress 120 /222 edges 1313108 elapsed 22.9
+A3 progress 150 /222 edges 1600288 elapsed 28.6
+A3 progress 180 /222 edges 1901264 elapsed 33.7
+A3 progress 210 /222 edges 2197209 elapsed 38.9
+A2-A3 PASS: certs 222 edges 2333853 max_edges 22638 distinct pairs 1039781 seconds 41.68
