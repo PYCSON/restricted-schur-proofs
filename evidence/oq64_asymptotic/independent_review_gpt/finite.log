@@ -1,0 +1,22 @@
+{'ell': 6, 'eU': 9, 'eJ': 4, 'eL': 0, 'K_upper': 15, 'K_lower_from_threeblock': 7}
+{'ell': 7, 'eU': 10, 'eJ': 3, 'eL': 0, 'K_upper': 17, 'K_lower_from_threeblock': 8}
+{'ell': 8, 'eU': 10, 'eJ': 3, 'eL': 0, 'K_upper': 18, 'K_lower_from_threeblock': 9}
+{'ell': 9, 'eU': 10, 'eJ': 3, 'eL': 0, 'K_upper': 19, 'K_lower_from_threeblock': 10}
+{'ell': 10, 'eU': 10, 'eJ': 3, 'eL': 0, 'K_upper': 20, 'K_lower_from_threeblock': 11}
+{'ell': 11, 'eU': 10, 'eJ': 3, 'eL': 0, 'K_upper': 21, 'K_lower_from_threeblock': 12}
+{'ell': 12, 'eU': 9, 'eJ': 3, 'eL': 0, 'K_upper': 21, 'K_lower_from_threeblock': 13}
+{'ell': 13, 'eU': 9, 'eJ': 3, 'eL': 0, 'K_upper': 22, 'K_lower_from_threeblock': 14}
+{'ell': 14, 'eU': 9, 'eJ': 3, 'eL': 0, 'K_upper': 23, 'K_lower_from_threeblock': 15}
+{'ell': 15, 'eU': 9, 'eJ': 3, 'eL': 0, 'K_upper': 24, 'K_lower_from_threeblock': 16}
+{'ell': 16, 'eU': 9, 'eJ': 3, 'eL': 0, 'K_upper': 25, 'K_lower_from_threeblock': 17}
+{'ell': 17, 'eU': 9, 'eJ': 3, 'eL': 0, 'K_upper': 26, 'K_lower_from_threeblock': 18}
+{'ell': 18, 'eU': 9, 'eJ': 3, 'eL': 0, 'K_upper': 27, 'K_lower_from_threeblock': 19}
+{'ell': 19, 'eU': 9, 'eJ': 3, 'eL': 1, 'K_upper': 28, 'K_lower_from_threeblock': 21}
+{'ell': 20, 'eU': 10, 'eJ': 3, 'eL': 1, 'K_upper': 30, 'K_lower_from_threeblock': 22}
+{'ell': 30, 'eU': 11, 'eJ': 3, 'eL': 3, 'K_upper': 41, 'K_lower_from_threeblock': 34}
+{'ell': 40, 'eU': 13, 'eJ': 3, 'eL': 5, 'K_upper': 53, 'K_lower_from_threeblock': 46}
+{'ell': 50, 'eU': 14, 'eJ': 3, 'eL': 7, 'K_upper': 64, 'K_lower_from_threeblock': 58}
+{'ell': 60, 'eU': 16, 'eJ': 3, 'eL': 9, 'K_upper': 76, 'K_lower_from_threeblock': 70}
+{'ell': 70, 'eU': 18, 'eJ': 3, 'eL': 11, 'K_upper': 88, 'K_lower_from_threeblock': 82}
+{'ell': 80, 'eU': 20, 'eJ': 3, 'eL': 13, 'K_upper': 100, 'K_lower_from_threeblock': 94}
+FINITE PASS count 75 max additive upper 6..49 8.550252531694168

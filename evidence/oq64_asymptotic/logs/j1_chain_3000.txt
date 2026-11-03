@@ -1,0 +1,14 @@
+6 j=1 chain closes for all e >= 4
+7 j=1 chain closes for all e >= 3
+8 j=1 chain closes for all e >= 3
+9 j=1 chain closes for all e >= 3
+10 j=1 chain closes for all e >= 3
+11 j=1 chain closes for all e >= 3
+12 j=1 chain closes for all e >= 3
+500 j=1 chain closes for all e >= 3
+1000 j=1 chain closes for all e >= 3
+1500 j=1 chain closes for all e >= 3
+2000 j=1 chain closes for all e >= 3
+2500 j=1 chain closes for all e >= 3
+3000 j=1 chain closes for all e >= 3
+max over l of least e: 4

@@ -1,0 +1,6 @@
+UPPER case I: e0 = a*l + 4, l >= 50: PASS
+UPPER case II: e0 = a*l + 4, l >= 50: PASS
+LOWER: e1 = a*l - 4, l >= 50: PASS
+  vertex check jv-1 PASS
+  vertex check l-1-jv PASS
+=> ALL PASS

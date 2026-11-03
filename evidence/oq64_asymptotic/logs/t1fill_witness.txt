@@ -1,0 +1,5 @@
+l=12 e=6 random unbalanced windows (2<=j<=l-2): 200/200 refuted by T1-fill with verified hyperedges
+l=16 e=8 random unbalanced windows (2<=j<=l-2): 200/200 refuted by T1-fill with verified hyperedges
+l=20 e=10 random unbalanced windows (2<=j<=l-2): 200/200 refuted by T1-fill with verified hyperedges
+l=24 e=10 random unbalanced windows (2<=j<=l-2): 200/200 refuted by T1-fill with verified hyperedges
+l=40 e=14 random unbalanced windows (2<=j<=l-2): 100/100 refuted by T1-fill with verified hyperedges

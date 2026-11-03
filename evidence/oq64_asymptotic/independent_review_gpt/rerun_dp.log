@@ -1,0 +1,8 @@
+{'l': 4, 'e': 1, 'j': 1, 'n': 52, 'F': 68, 'runtime_sec': 0.0003840280000417806, 'good': True, 'extendable_at_F': True}
+{'l': 5, 'e': 1, 'j': 2, 'n': 90, 'F': 117, 'runtime_sec': 0.0003222689999802242, 'good': True, 'extendable_at_F': True}
+{'l': 6, 'e': 2, 'j': 3, 'n': 151, 'F': 216, 'runtime_sec': 0.0010178259999520378, 'good': True, 'extendable_at_F': True}
+{'l': 7, 'e': 1, 'j': 2, 'n': 238, 'F': 275, 'runtime_sec': 0.0010753290000025117, 'good': True, 'extendable_at_F': True}
+{'l': 8, 'e': 1, 'j': 2, 'n': 348, 'F': 390, 'runtime_sec': 0.0019216370000094685, 'good': True, 'extendable_at_F': True}
+{'l': 19, 'e': 1, 'j': 5, 'n': 4180, 'F': 4163, 'runtime_sec': 0.11484632200000533, 'good': True, 'extendable_at_F': False}
+{'l': 20, 'e': 1, 'j': 5, 'n': 4860, 'F': 4812, 'runtime_sec': 0.15398832500000026, 'good': True, 'extendable_at_F': False}
+elapsed 1.22 sec

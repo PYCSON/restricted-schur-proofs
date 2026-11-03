@@ -1,11 +1,11 @@
 # On two open questions of Gaiser on restricted generalized Schur numbers
 
 **Author:** Puyi Sun (ORCID [0009-0004-1644-5300](https://orcid.org/0009-0004-1644-5300))<br>
-**Version:** 1.1, 1 November 2026 (v1.0: 28 October 2026)<br>
+**Version:** 1.2, 3 November 2026 (v1.1: 1 November 2026; v1.0: 28 October 2026)<br>
 **Status:** computer-assisted proof candidate. **Not peer reviewed.**<br>
-**DOI (Zenodo):** v1.0.1: [10.5281/zenodo.23752136](https://doi.org/10.5281/zenodo.23752136); v1.1 receives its own DOI from Zenodo when it is released
+**DOI (Zenodo):** v1.0.1: [10.5281/zenodo.23752136](https://doi.org/10.5281/zenodo.23752136); v1.1.0: [10.5281/zenodo.23853953](https://doi.org/10.5281/zenodo.23853953); v1.2 receives its own DOI from Zenodo when it is released
 
-Preprint: [`paper/restricted-schur-v1.1.pdf`](paper/restricted-schur-v1.1.pdf) (source: `paper/restricted-schur-v1.1.tex`). The v1.0 preprint is kept unchanged in `paper/`. Changes: [`CHANGELOG.md`](CHANGELOG.md).
+Preprint: [`paper/restricted-schur-v1.2.pdf`](paper/restricted-schur-v1.2.pdf) (source: `paper/restricted-schur-v1.2.tex`). The v1.0 and v1.1 preprints are kept unchanged in `paper/`. Changes: [`CHANGELOG.md`](CHANGELOG.md).
 
 ## The problems
 
@@ -21,24 +21,26 @@ Gaiser proved `S_2(k;ℓ) ≥ F(k,ℓ) := k² + [(ℓ+1)(ℓ−2)/2 + 2]·k + �
 
 | # | Statement | Where |
 |---|---|---|
-| 1 | `S_3(k;2) = k³+3k²+2k−2` for **every** `k ≥ 3`. So the answer to OQ 6.2 is negative. The lower bound was first made public by the Omega Institute's *trureturing* project (5 Oct 2026, issue #13213); **no priority is claimed for it**. The matching upper bound is, to our knowledge, new. | paper §8; `evidence/ub_cert`, `evidence/s3k2`, `lean/s3k2-full` |
+| 1 | `S_3(k;2) = k³+3k²+2k−2` for **every** `k ≥ 3`. So the answer to OQ 6.2 is negative. The lower bound was first made public by the Omega Institute's *trureturing* project (5 Oct 2026, issue #13213); **no priority is claimed for it**. The matching upper bound is, to our knowledge, new. | paper §9; `evidence/ub_cert`, `evidence/s3k2`, `lean/s3k2-full` |
 | 2 | `K(3)=3, K(4)=4, K(5)=6, K(6)=7, K(7)=8, K(8)=9, K(9)=10, K(10)=11`, and `K(11)=12` (Result 4). Each upper bound `S_2(k;ℓ) ≤ F(k,ℓ)` holds for **all** `k` from the threshold on. | paper Thm 3; `evidence/oq64_kernel`, `evidence/oq64_l8/k9`, `evidence/oq64_l9/k10`, `evidence/oq64_l10/k11`, `lean/oq64` (ℓ ≤ 7) |
 | 3 | Two-colour weak Schur numbers `WS_8(2)=365`, `WS_9(2)=505`, `WS_10(2)=676`. The lower bounds are from Ahmed–Boza–Revuelta–Sanz (2023); the new part is the matching upper bounds. | paper §2, §4; `evidence/oq64_diag` |
 | 4 | **New in v1.1:** `S_2(k;11) = k²+56k+99` for every `k ≥ 12`, hence `K(11)=12`. The value `k=12` is the single-value certificate `S_2(12;11) ≤ 915` (v1.0). For all `k ≥ 13` there are 222 symbolic certificates, one for each cube of a complete prefix partition of the colourings. All 222 were replayed by a second, independently written implementation run by a second party. | paper Thm 3(d), §4.1; `evidence/oq64_l11/k12`, `evidence/oq64_l11/k13_cubes` |
-| 5 | Four-block colourings: `K(ℓ) ≥ ℓ+2` for every `ℓ ≥ 24` and `K(ℓ) ≥ (9/8 − o(1))ℓ`. This is elementary, with Lean for the main construction. | paper Thm 5, Cor 6; `evidence/oq64_fourblock`, `lean/oq64` (`OQ64.Four`) |
+| 5 | Four-block colourings: `K(ℓ) ≥ ℓ+2` for every `ℓ ≥ 24` and `K(ℓ) ≥ (9/8 − o(1))ℓ`. This is elementary, with Lean for the main construction. (Improved by Result 8.) | paper Thm 5, Cor 6; `evidence/oq64_fourblock`, `lean/oq64` (`OQ64.Four`) |
 | 6 | Uniqueness of the extremal colouring for 12 pairs `(k,ℓ)`. | paper §6; `evidence/oq64_structure` |
 | 7 | For `11 ≤ ℓ ≤ 23` and every `k ≥ ℓ+1`, no good colouring of `[1,F(k,ℓ)]` has a window `W_j` (1470 certificates plus a forcing lemma). First-party certificate checks only; an independent second-party replay of all 1470 certificates and of the forcing lemma is still pending. | paper §7; `evidence/oq64_windows` |
+| 8 | **New in v1.2:** `K(ℓ) = ((1+√2)/2)·ℓ + O(1)`. More precisely, `(1+a*)ℓ − 4 < K(ℓ) < (1+a*)ℓ + 5` for every `ℓ ≥ 50`, and `K(ℓ) < (1+a*)ℓ + 9` for `6 ≤ ℓ ≤ 49`, where `a* = (√2−1)/2`. The lower bound comes from a three-block colouring (red `[1,j] ∪ [m+1,V−1]`, blue `[j+1,m]`), which also gives `S_2(20;19) ≥ 4181 > 4163`, `S_2(21;20) ≥ 4861 > 4812` (so `K(19) ≥ 21`, `K(20) ≥ 22`) and `WS_20(2) ≥ 4770`. The upper bound comes from a new forcing template for windows with a sparse colour ("T1-fill"), together with the balanced/parity-window lemmas of §7. The same constant holds for the relaxed variant `S_2(k;ℓ̃)`, read with `c(S) ≥ ℓ+1`. The proofs are written out; the exact symbolic (sympy, `√2` kept exact) and finite checks were run with two separately written sets of programs. A second party (GPT) reviewed the whole result. | paper §8, Thm 18; `evidence/oq64_asymptotic` |
 
 What each result has been checked with is stated in the status box on page 1 of the preprint and in its
 Appendix A. In short:
 
 * For Result 1 and for the cases `ℓ ≤ 7` of Result 2, independent checker replays are reported: a second, independently written checker was run on the certificates.
 * For `ℓ = 11, k ≥ 13` (Result 4, new in v1.1), a second party (GPT) wrote and ran its own exact symbolic validator and LRAT checker on all 222 cube certificates: the partition, the archive hashes, all 2,333,853 hyperedges for every `k ≥ 13`, the prefix unit clauses, and all 222 LRAT proofs. All checks in that second-party replay passed for the 222 symbolic cube certificates at `k ≥ 13`; the separate `k = 12` numerical certificate was not part of this replay. Its source, logs and results are in `evidence/oq64_l11/k13_cubes/independent_review/`; only file paths were adapted for the release, and the original files are kept in `original/`. The search program that produced the hyperedges ran on the author's computer and is not trusted.
+* For Result 8 (new in v1.2), GPT reviewed the proofs as a second party and wrote and ran its own exact checkers (`evidence/oq64_asymptotic/independent_review_gpt/`). Claude re-ran those checkers on the release files with the same results (section `asymind`). A separately started Claude instance also re-derived the result with its own code; since it is the same model, that is not counted as a second-party review. Passages of GPT's report that referred to private correspondence were removed for the release.
 * For `ℓ = 8, 9, 10`, for the `k = 12` certificate of Result 4, and for Results 3, 6 and 7, only first-party tools (written and run within this project) have checked them so far.
 * Codex reported a separate replay of the chain for `WS_8(2)=365` (independent encoder, fresh solver run, its own LRAT checker). That report does not replace an independent examination of its original logs.
 * The archived first-party logs report that every included LRAT proof is accepted by both `lrat-check` and the formally verified checker `cake_lpr`. How far each result has been independently replayed is stated result by result in the preprint.
 * The levels of checking are kept distinct. An *independently written* checker means separate source code. A *second-party replay* means the certificate was actually run by a separate system. Neither means that the human author has personally verified the mathematics, which he has not done for every step (see "Use of AI").
-* On 28 October 2026 the v1.0 `verify_all.sh` and the certificate inputs of v1.0 were replayed with `./verify_all.sh all`. The first-party logs are archived in `logs/` (`verify_all_v1.0.log`, `checker_outputs_v1.0.tar.xz`, `negative_controls_v1.0.log`). For v1.1 the new sections `l11k13` and `l11k13ind` and the extended negative controls were run; their logs are `logs/verify_all_v1.1_l11k13.log` and `logs/negative_controls_v1.1.log`. The v1.0 certificate files are unchanged (same SHA-256), so their v1.0 replay logs still apply.
+* On 28 October 2026 the v1.0 `verify_all.sh` and the certificate inputs of v1.0 were replayed with `./verify_all.sh all`. The first-party logs are archived in `logs/` (`verify_all_v1.0.log`, `checker_outputs_v1.0.tar.xz`, `negative_controls_v1.0.log`). For v1.1 the new sections `l11k13` and `l11k13ind` and the extended negative controls were run; their logs are `logs/verify_all_v1.1_l11k13.log` and `logs/negative_controls_v1.1.log`. For v1.2 the new sections `asym` and `asymind` and the negative controls (now 22) were run: `logs/verify_all_v1.2_asym.log`, `logs/negative_controls_v1.2.log`. The certificate files of v1.0 and v1.1 are unchanged (same SHA-256), so their replay logs still apply.
 
 ## How the certificates work
 
@@ -74,8 +76,9 @@ they are not needed for verification.
 ```bash
 sha256sum -c MANIFEST.sha256 --quiet          # integrity of every payload file (the manifest does not hash itself)
 export LRAT_CHECK=/path/to/lrat-check CAKE_LPR=/path/to/cake_lpr
-./verify_all.sh all                            # Results 1-4, 6 and 7
-tests/negative_controls.sh                     # 18 tampered inputs / fake checkers / optimised-Python runs; every one must be rejected
+./verify_all.sh all                            # Results 1-4, 6, 7 and 8
+./verify_all.sh asym asymind                   # Result 8 only (python3 + sympy; no LRAT checkers needed, a few minutes)
+tests/negative_controls.sh                     # 22 tampered inputs / fake checkers / optimised-Python runs; every one must be rejected
 ```
 
 The sections can also be run on their own:
@@ -91,8 +94,10 @@ The sections can also be run on their own:
 | `l11k13ind` | 4 | The second party's separately written checkers (`independent_review/independent_audit.py`, `independent_lrat.py`) on the same 222 certificates. Needs Python ≥ 3.11. Like the whole script, it refuses to run under Python optimisation (`-O` / `PYTHONOPTIMIZE`), which would remove the checkers' `assert` statements |
 | `unique` | 6 | The 12 extremal colourings are good, and the blocking-clause CNFs are unsatisfiable |
 | `windows` | 7 | All 1470 window certificates (each prefix must be exactly the window `W_j`), then the combined forcing-lemma argument |
+| `asym` | 8 | First-party exact checks (`evidence/oq64_asymptotic/scripts`): the all-`ℓ ≥ 50` polynomial proofs of both bounds (with the negative control `cU = 3`), the finite table `6 ≤ ℓ ≤ 49`, the `j = 1` lemma, Fact 1, the DP checks of the colourings for `ℓ = 19, 20` (exact and relaxed) and `WS_20(2)`, and explicit T1-fill hyperedges |
+| `asymind` | 8 | The second party's separately written checkers (`independent_review_gpt/independent_*.py`) |
 
-With no arguments the script runs `oq62 oq64sym oq64single diag l11k12 l11k13`; an unknown section name is an error.
+With no arguments the script runs `oq62 oq64sym oq64single diag l11k12 l11k13 asym asymind`; an unknown section name is an error.
 For each certificate, the script checks the hyperedges or the symbolic semantics and reconstructs the
 corresponding CNF. Where a stored CNF is supplied, the reconstructed CNF is compared byte for byte with it. For
 the uniqueness certificates, the CNF is generated from the checked hyperedges and the explicit blocking clause
@@ -172,13 +177,27 @@ test. It must fail with four errors: three of the form "Tactic `decide` proved t
   certificates. `z1_r23_all_e.py` and `z1b_combined.py` are intermediate steps, and their recorded outputs are in
   `*_out.txt`.
 
+### Result 8 (new in v1.2): `evidence/oq64_asymptotic/`
+
+* `THEOREM_ASYMPTOTIC.md`: the working note behind §8 of the preprint, with the case analysis, every worst-case bound and the list of checks. Paths in it refer to the private research repository; the corresponding release files are listed below.
+* `scripts/`: first-party exact checks (Claude). Run them from inside `scripts/`; section `asym` does this.
+  * `rigorous_asym.py CU CL L1`: the all-`ℓ ≥ L1` proofs. The upper-bound discriminants (cases I and II) at `e = a*ℓ + CU`, and the lower-bound inequality at `e = a*ℓ − CL`, are expanded in `u = ℓ − L1` with `√2` kept exact, and every coefficient is checked to be `≥ 0`. The released run is `4 4 50`; `3 4 50` must fail.
+  * `finite_table.py`: the exact table for `6 ≤ ℓ ≤ 49`. It uses `t1fill_bound.py` (worst-case T1-fill bound) and `j1_chain.py`.
+  * `j1_symbolic.py`, `fact1_constructive.py`: the `j = 1` lemma and Fact 1.
+  * `goodcheck.py`, `goodcheck_relaxed.py`: bit-set dynamic programmes that decide whether a colouring is good (exactly / at least `ℓ` distinct summand values). `check_gaiser.py` validates them on Gaiser's colouring; `check19.py`, `check20.py` and `check_diag.py` are the instances of Theorem 18(c) and Corollary 20(c).
+  * `t1fill_witness.py`: builds the T1-fill hyperedges for actual windows and re-checks every one. `consistency2.py`: the exact minimum of `w` over all parameter choices for windows of known good colourings. It must exceed `N`, and it does for 6807 windows; this takes about half an hour and is not part of `verify_all.sh`.
+  * Exploratory scripts (not needed for verification): `threeblock.py`, `family_search.py`, `gapscan.py`, `ub_analytic.py`.
+* `logs/`: first-party outputs.
+* `independent_review_gpt/`: GPT's second-party review. Its report (`RSN002_R6_INDEPENDENT_REVIEW.md`) is in Chinese, with passages about private correspondence removed. The directory also holds GPT's separately written checkers `independent_*.py`, its recorded outputs, and its LaTeX draft, on which §8 is based. In the release copies only the output paths were adapted (`OUT` environment variable); the originals are in `original/`. Section `asymind` runs them.
+* `independent_review_claude_subagent/`: checks written from scratch by a separately started Claude instance. This is the same model, so it is not a second-party review.
+
 ## Use of AI
 
 The mathematics, programs, computations and text were produced with extensive use of AI systems: Claude
 (Anthropic), and GPT and Codex (OpenAI). The author selected the problems, organised and directed the work, set
 the verification requirements and decided what to release. The author has **not** personally checked every proof.
-Correctness rests on the machine-checkable certificates and formal proofs in this repository, which anyone can
-replay. AI systems are not authors. See Appendix A of the preprint for who did what.
+Correctness rests on the machine-checkable certificates and formal proofs in this repository and, for Result 8,
+on written proofs whose finite and symbolic steps are checked by the included exact programs; anyone can replay them. AI systems are not authors. See Appendix A of the preprint for who did what.
 
 ## Licence
 
@@ -186,4 +205,4 @@ Text and data: CC BY 4.0. Code: MIT. See [`LICENSE`](LICENSE).
 
 ## Citation
 
-See [`CITATION.cff`](CITATION.cff). Archived on Zenodo: [10.5281/zenodo.23752136](https://doi.org/10.5281/zenodo.23752136) (release v1.0.1; content identical to v1.0.0 of 28 October 2026 apart from `CITATION.cff`). Release v1.1 is archived as a new Zenodo version with its own DOI; earlier versions stay unchanged.
+See [`CITATION.cff`](CITATION.cff). Archived on Zenodo: [10.5281/zenodo.23752136](https://doi.org/10.5281/zenodo.23752136) (release v1.0.1; content identical to v1.0.0 of 28 October 2026 apart from `CITATION.cff`). Release v1.1.0 is archived as [10.5281/zenodo.23853953](https://doi.org/10.5281/zenodo.23853953). Release v1.2 is archived as a new Zenodo version with its own DOI; earlier versions stay unchanged.

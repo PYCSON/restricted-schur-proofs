@@ -1,0 +1,27 @@
+RSN-002 R6 INDEPENDENT VERIFICATION BUNDLE — 2026-11-02
+All sources prefixed independent_ were written for this audit, without importing/running Claude-produced checkers.
+Tools: Python 3, SymPy; no SAT solver required for these checks.
+Run from this directory (outputs named logs and JSON/CSV were preserved):
+    python independent_r6_symbolic.py
+    python independent_aux_symbolic.py
+    python independent_t1.py
+    python independent_balanced.py
+    python independent_parity.py
+    python independent_finite.py
+    python independent_dp.py
+    python independent_relaxed_dp.py
+    python independent_fact1.py
+    sha256sum -c SHA256SUMS
+
+Tests on python -O should exit nonzero BEFORE any scientific checks:
+    python -O independent_r6_symbolic.py
+    python -O independent_parity.py
+
+Original R6 input package audited, but no original Claude scripts executed:
+  11-02 ZIP asymptotic/SHA256SUMS 35/35 OK
+  independent_review_subagent/SHA256SUMS 17/17 OK
+
+Warnings:
+ * The downloaded Gaiser PDF was not available through the browsing tool; online public full text was checked for the tilde-definition discrepancy.
+ * Literature/novelty review is partial.
+ * Not formally verified in Lean/Cake, not peer reviewed, not for unqualified publication claims.

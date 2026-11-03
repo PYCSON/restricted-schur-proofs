@@ -1,0 +1,15 @@
+BALANCED coarse w bound PASS t**2 + t*u**2/2 + 9*t*u/2 + 5*t + u**3/2 + 15*u**2/2 + 31*u + 25
+J1 symbolic ALL PASS l>= 7 e>= 3
+J1 symbolic ALL PASS l>= 6 e>= 4
+ALLRED I_lower PASS t + u**2/2 + 9*u/2 + 9
+ALLRED I_upper PASS t**2 + t*u**2/2 + 11*t*u/2 + 18*t + u**3/2 + 19*u**2/2 + 58*u + 115
+ALLRED I_length PASS 2*t*u + 11*t + u**2 + 13*u + 40
+ALLRED t_below_F PASS t + u**2/2 + 11*u/2 + 16
+ALLRED end2_above_F PASS 2*t**2*u + 11*t**2 + 3*t*u**2 + 39*t*u + 123*t + u**3 + 39*u**2/2 + 257*u/2 + 283
+ALLRED end_final PASS 0
+PARITY EVEN symbolic PASS
+ODD r-span polynomial 4*d**2 - 8*d*ss + t*(-2*d*ss**2 - ss**4 + 2*ss**3 - 3*ss**2 + 1)
+ODD negative_r-span polynomial -ss**4 + 2*ss**2 + t*(-2*d*ss**2 - ss**4 + 2*ss**3 + ss**2 - 1) - 1
+ODD F-base polynomial -2*d**2 - d*ss**4 - 2*d*ss**2 + 4*d*ss + ss**5 + ss**4/2 + 2*ss**3 + ss**2 + t**2 + t*(-d + ss**4/2 + 2*ss**2 + ss + 3/2) + 1/2
+ODD F-base+r polynomial -d*ss**4 - 2*d*ss**2 + ss**5 + ss**4 + 2*ss**3 + t**2 + t*(-d + ss**4/2 + ss + 5/2) + 1
+ODD s,d algebraic signs checked on endpoints; continuous proof is in report

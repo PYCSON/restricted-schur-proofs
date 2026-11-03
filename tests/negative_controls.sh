@@ -70,4 +70,42 @@ expect_fail "independent symbolic audit rejects Python optimization" env PYTHONO
 expect_fail "independent LRAT replay rejects Python optimization" env PYTHONOPTIMIZE=1 python3 "$K/independent_review/independent_lrat.py" --certs "$K/certs" 0110100
 expect_fail "verify_all rejects Python optimization" env PYTHONOPTIMIZE=1 LRAT_CHECK="$LRAT_CHECK" CAKE_LPR="$CAKE_LPR" "$ROOT/verify_all.sh" l11k13ind
 
+
+# v1.2 (Result 8, asymptotics): four more controls (22 in all).
+A=$EV/oq64_asymptotic/scripts
+# (19) The upper-bound polynomial proof must fail if the additive constant is lowered to 3.
+( cd "$A" && python3 -I rigorous_asym.py 3 4 50 ) > "$W/ra" 2>&1
+if grep -q '=> ALL PASS' "$W/ra"; then echo "NOT REJECTED: rigorous_asym with cU=3"; bad=$((bad+1)); else echo "rejected (ok): rigorous_asym with cU=3"; fi
+# (20) The l=19 three-block colouring extended by the integer V3 (coloured either way) must be reported as not good.
+cat > "$W/ext.py" <<'PYEOF'
+import sys
+sys.argv=['x']
+exec(open('goodcheck.py').read().split("if __name__")[0])
+l,e,j=19,1,5; k=l+e
+m=l*(l+1)//2+l*j+e*(j+1)-1; V=j*(j+1)//2+(l-j)*(m+1)+(l-j)*(l-j-1)//2+e
+col=[None]+['R' if (x<=j or x>m) else 'B' for x in range(1,V)]
+print('extended good:', [is_good(col+[c],k,l)[0] for c in 'RB'])
+PYEOF
+( cd "$A" && python3 -I "$W/ext.py" ) > "$W/ext" 2>&1
+if grep -q 'extended good: \[False, False\]' "$W/ext"; then echo "rejected (ok): three-block colouring extended to V3"; else echo "NOT REJECTED: three-block colouring extended to V3"; bad=$((bad+1)); fi
+# (21) A T1-fill witness with a tampered parameter (d moved by one) must fail the explicit hyperedge check.
+cat > "$W/t1.py" <<'PYEOF'
+import sys, random
+sys.argv=['x']
+exec(open('t1fill_witness.py').read().split("if __name__")[0])
+random.seed(3); l,e=16,8
+while True:
+    col=[None,'R']+[random.choice('RB') for _ in range(2*l-1)]
+    bw=best_w(l,e,col)
+    if bw and bw[0]<=F(l+e,l): break
+par=dict(bw[1]); par['d']=par['d']+1
+try:
+    r=verify(l,e,col,par); print('ACCEPTED', r)
+except (AssertionError, KeyError) as ex: print('REJECTED', repr(ex))
+PYEOF
+( cd "$A" && python3 -I "$W/t1.py" ) > "$W/t1" 2>&1
+if grep -q '^REJECTED' "$W/t1"; then echo "rejected (ok): tampered T1-fill parameter"; else echo "NOT REJECTED: tampered T1-fill parameter ($(tail -1 "$W/t1"))"; bad=$((bad+1)); fi
+# (22) verify_all must refuse the asymptotic sections under Python optimisation.
+expect_fail "verify_all asym rejects Python optimization" env PYTHONOPTIMIZE=1 "$ROOT/verify_all.sh" asym
+
 [ $bad -eq 0 ] && echo "ALL NEGATIVE CONTROLS REJECTED" || { echo "$bad negative control(s) NOT rejected"; exit 1; }

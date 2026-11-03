@@ -1,0 +1,167 @@
+% Candidate section; requires amsmath, amssymb, amsthm.
+% Status: computer-assisted proof candidate, not peer reviewed.
+% Do not claim human hand-verification of every arithmetic step.
+\section{Asymptotics of the two-colour threshold}\label{sec:K-asymptotic}
+\noindent\emph{Status and provenance.}
+The results below are a computer-assisted proof candidate, not peer reviewed.
+AI systems helped design, calculate, independently check, and write the proofs;
+the human author retains responsibility for any eventual submission.
+In particular, the upper bound invokes the balanced-window and parity-window
+lemmas, whose proof and independent rechecking are described separately.
+
+For $k\ge\ell\ge6$, let
+\[
+ F(k,\ell)=k^2+\left(\binom\ell2+1\right)k+\ell(\ell-2),
+ \qquad a_* = \frac{\sqrt2-1}{2},
+\]
+and let $K(\ell)$ denote the least integer $K$ such that
+$S_2(k;\ell)=F(k,\ell)$ for every $k\ge K$.
+We use $e=k-\ell$.
+
+\begin{theorem}[Asymptotic threshold; proof candidate]\label{thm:K-asymptotic}
+For every integer $\ell\ge50$,
+\[
+ (1+a_*)\ell-4 < K(\ell) < (1+a_*)\ell+5.
+\]
+For $6\le\ell\le49$, the finite certificate table gives
+$K(\ell)<(1+a_*)\ell+9$.
+Consequently
+\[
+ K(\ell)=\frac{1+\sqrt2}{2}\,\ell+O(1).
+\]
+The upper bound uses the separately established balanced-window and
+parity-window lemmas for all $\ell\ge6$, $e\ge1$.
+\end{theorem}
+
+\begin{proof}[Lower bound]
+For $1\le j\le\ell-1$ set
+\[
+ m=\frac{\ell(\ell+1)}2+\ell j+e(j+1)-1,
+ \qquad q=\ell-j,
+\]
+\[
+ V_3=\frac{j(j+1)}2+q(m+1)+\binom q2+e.
+\]
+Colour $[1,V_3-1]$ red on $[1,j]\cup[m+1,V_3-1]$ and blue on
+$[j+1,m]$. Any blue $k$-sum using exactly $\ell$ distinct summand
+values is at least
+$\sum_{i=1}^\ell(j+i)+e(j+1)=m+1$, hence not blue.
+A red $k$-sum has at most $j$ distinct small summands and at least
+$q$ distinct summands at least $m+1$; it therefore is at least
+$\sum_{i=1}^{j}i+\sum_{i=1}^{q}(m+i)+e=V_3$ and hence
+cannot be red. The colouring is good, so $S_2(k;\ell)\ge V_3$.
+
+Set $G(j)=V_3-F(k,\ell)=-Aj^2+\beta j+\gamma$,
+where $A=e+\ell-1>0$. Its vertex is
+\[
+ j_*=\frac{(\ell-1)(2e+\ell-2)}{4(e+\ell-1)}.
+\]
+For $e_1=a_*\ell-4$ and all $\ell\ge50$ it lies within
+$[1,\ell-1]$. Rounding the vertex to an integer loses at most
+$A/4$, so it suffices to check
+\[
+ 4A\gamma+\beta^2-A^2-4A\ge0.
+\]
+An exact symbolic expansion in $u=\ell-50\ge0$, $e=e_1$ has
+nonnegative coefficients (the coefficient list and checker are
+included with the archived independent audit). Moreover
+$\partial G/\partial e<0$ for all admissible $j$ and $e\ge1$.
+Thus whenever $1\le e\le a_*\ell-4$, some integer $j$ satisfies
+$V_3>F(\ell+e,\ell)$, excluding that $k$ from the eventual equality
+range. Hence $K(\ell)>(1+a_*)\ell-4$.
+\end{proof}
+
+\begin{lemma}[T1-fill, sparse windows]\label{lem:T1-fill}
+Suppose the initial interval $[1,2\ell]$ has a colour class $D$
+with $2\le j=|D|\le\ell-2$ and opposite class $M$.
+Put $q=\ell-j$ and let $S$ be the least $\ell$ members of $M$.
+There exist $y,r',d\in S$ and $b\in D$ with $b=y+r'-d$.
+For every $e\ge1$, the six families of forced values $L_1,L_2,Z_i,M_v,w,w'$ defined below constitute
+an impossible colouring whenever $w\le F(\ell+e,\ell)$.
+\end{lemma}
+\begin{proof}
+If no triple existed, $S$ would be closed under $x+y-z$ whenever
+the result lay in $[1,\max S]$. Write $m_1<m_2$ for the first
+members and $\delta=m_2-m_1$. A standard up-and-down translation
+argument yields $S=(m_1+\delta\mathbb Z)\cap[1,\max S]$,
+with $\delta\ge m_1$. For $\delta=1$, the minority colour has no
+value below $\max S$, contrary to the assumed nonempty intersection.
+For $\delta\ge2$,
+$\max S\ge m_1+2(\ell-1)>\ell+j\ge\max S$, a contradiction.
+If the minority class starts above $\max S$, then $S=[1,\ell]$,
+and choosing $y=\ell$, $r'=b+1-\ell$, $d=1$ works for any
+minority $b\le2\ell-1$, which exists since $j\ge2$.
+
+Set $R'=S\setminus\{y\}$, $u=\min R'$,
+$r=\min(S\setminus\{r'\})$,
+$z_1,\ldots,z_{q-1}$ the $q-1$ least members of
+$S\setminus\{r,r'\}$, $d_b=\min(D\setminus\{b\})$,
+and $\Sigma_0=\sum S+(e-1)u$. All of
+\[
+ L_1=\Sigma_0+r,\quad L_2=\Sigma_0+r',\quad
+ Z_i=\Sigma_0+z_i
+\]
+are $M$-colour $k$-sums and therefore are forced to $D$.
+Writing $B_3=(D\setminus\{b\})\cup\{Z_i:1\le i<q\}$,
+we have $|B_3|=\ell-2$, and
+\[
+ M_v=\sum B_3+b+L_1+e\,d_b,
+\quad w=\sum R'+M_v+(e-1)u+d,
+\]
+\[
+ w'=\sum B_3+L_1+L_2+e\,d_b.
+\]
+The first sum forces $M_v$ to $M$, the second forces $w$ to $D$,
+and the third forces $w'$ to $M$. All input sets have precisely
+$\ell$ distinct members, each output exceeds its summands, and
+$w-w'=b+d-y-r'=0$. In this chain $w$ is the largest integer;
+if $w\le F$, a contradiction follows.
+\end{proof}
+
+\begin{proof}[Upper bound in Theorem~\ref{thm:K-asymptotic}]
+Assume a good colouring of $[1,F(\ell+e,\ell)]$.
+The balanced-window lemma excludes the case in which both colours
+occur at least $\ell-1$ times in $[1,2\ell]$, including the parity
+window (proved by an odd/even case split). If the window is all one
+colour, the consecutive-interval $k$-sum lemma applied twice gives
+a contradiction for all $e\ge1$. If one colour occurs only once,
+a three-stage consecutive-sum argument excludes the window for
+$\ell\ge7$, $e\ge3$ (or $\ell=6,e\ge4$).
+
+It remains to take $2\le j\le\ell-2$ and apply
+Lemma~\ref{lem:T1-fill}. Bounding its final value $w$ above using
+the least $\ell$ majority points and the greatest possible positions
+of $j$ minority points gives two explicit quadratic polynomials
+$P_{\rm I}(j)=F-w_{\rm bound}^{\rm I}$ and
+$P_{\rm II}(j)=F-w_{\rm bound}^{\rm II}$, with leading
+coefficients $\ell+1$ and $\ell+e$, respectively. The exact
+arithmetic checks attached to this preprint prove
+\[
+ 4\alpha\gamma-\beta^2\ge0
+ \quad\text{at }e=a_*\ell+4,\quad\ell\ge50
+\]
+for both polynomials $P(j)=\alpha j^2+\beta j+\gamma$.
+The verification is by expansion in $u=\ell-50$ with nonnegative
+coefficients in $\mathbb Q(\sqrt2)$; $P$ is increasing in $e$
+throughout the required range. Therefore every integer
+$e\ge\lceil a_*\ell+4\rceil$ rules out all sparse windows,
+so $K(\ell)\le\ell+\lceil a_*\ell+4\rceil
+<(1+a_*)\ell+5$.
+The finite interval $6\le\ell\le49$ is checked by exhaustive
+integer evaluations of the same upper-bound polynomials; its largest
+additive overhead is $8.5502526\ldots<9$.
+\end{proof}
+
+\paragraph{Relaxed variant.}
+The same asymptotic conclusion is conditional on interpreting the
+relaxed condition as at least $\ell$ distinct \emph{summand} values,
+i.e., $c(\mathcal S)\ge\ell+1$ including the output.
+Gaiser's introduction uses this interpretation but its Section~6
+contains $c(\mathcal S)\ge\ell$; the discrepancy requires
+clarification before publication.
+
+\paragraph{Verification statement.}
+The independent review used newly written exact-integer and
+$\mathbb Q(\sqrt2)$ symbolic programs, selected exhaustive finite
+window scans and explicit sum certificates. This is not a formally
+verified theorem in a proof assistant and has not been peer reviewed.

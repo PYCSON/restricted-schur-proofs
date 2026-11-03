@@ -1,5 +1,27 @@
 # Changelog
 
+## v1.2.0 (3 November 2026)
+
+### Added
+- **Result 8, asymptotics of K(ℓ)** (preprint §8, Theorem 18): `(1+a*)ℓ − 4 < K(ℓ) < (1+a*)ℓ + 5` for every `ℓ ≥ 50`, with `a* = (√2−1)/2`; hence `K(ℓ) = ((1+√2)/2)ℓ + O(1)`. For `6 ≤ ℓ ≤ 49`, `K(ℓ) < (1+a*)ℓ + 9`.
+  - Lower bound: a three-block colouring (Proposition 19). It also gives `S_2(20;19) ≥ 4181 > F`, `S_2(21;20) ≥ 4861 > F` (so `K(19) ≥ 21`, `K(20) ≥ 22`) and, on the diagonal, `WS_k(2)` above the Ahmed et al. bound for every `k ≥ 20` (`WS_20(2) ≥ 4770`).
+  - Upper bound: the T1-fill template (Lemma 22) for windows with a sparse colour, Lemma 23 (worst-case bound, exact `Q(√2)` polynomial check), Lemma 21 (all-red window) and Lemma 24 (one minority element), with Proposition 15 and Lemma 16 for balanced and parity windows.
+  - The relaxed variant `S_2(k;ℓ̃)` (read with `c(S) ≥ ℓ+1`) has the same constant (Open problem 4).
+- `evidence/oq64_asymptotic/`: first-party exact scripts and logs, GPT's second-party review (report with passages about private correspondence removed, separately written checkers, outputs), and an independent re-derivation by a separately started Claude instance.
+- `verify_all.sh` sections `asym` and `asymind` (python3 + sympy only; both are in the default run). These two sections no longer require `LRAT_CHECK`/`CAKE_LPR`.
+- Four more negative controls (22 in all): the upper-bound proof with additive constant 3, the three-block colouring extended by one integer, a tampered T1-fill witness, and `verify_all.sh asym` under Python optimisation.
+- Preprint v1.2 (`paper/restricted-schur-v1.2.{tex,pdf}`). Open problems 1–3 are rewritten: the break point is now open only for `12 ≤ ℓ ≤ 18`. The v1.0 and v1.1 preprints are kept unchanged.
+
+### Changed
+- Proposition 15 and Lemma 16 (balanced and parity windows, §7) were reviewed by a second party as part of the v1.2 review. GPT also wrote out and checked the infinite-parameter inequalities of Lemma 16 in full.
+- In v1.1, Open problem 2 asked whether the four-block colourings are optimal. Proposition 19 beats them, so that form of the question has a negative answer.
+
+### Unchanged
+- All certificates, checkers and Lean developments of v1.0 and v1.1 (byte-identical). Earlier releases and their DOIs are not modified.
+
+### Status
+- Computer-assisted proof candidate, not peer reviewed. The human author has not personally checked every proof step.
+
 ## v1.1.0 (1 November 2026)
 
 ### Added

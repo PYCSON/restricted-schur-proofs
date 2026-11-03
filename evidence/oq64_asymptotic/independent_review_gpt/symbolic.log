@@ -1,0 +1,12 @@
+CASE I P coefficient j²: l + 1 derivative in e: (4*e + 2*j + l**2 - 3*l)/2 quartic discriminant coefficients: [('4', '-5/4 + sqrt(2)'), ('3', '-240 + 393*sqrt(2)/2'), ('2', '-34589/2 + 14489*sqrt(2)'), ('1', '-554420 + 475163*sqrt(2)'), ('0', '-6672195 + 5848150*sqrt(2)')]
+CASE II P coefficient j²: e + l derivative in e: (4*e + 2*j**2 - 2*j*l + 2*j + l**2 - 5*l - 2)/2 quartic discriminant coefficients: [('3', '-2 + 5*sqrt(2)/2'), ('2', '-579/2 + 332*sqrt(2)'), ('1', '-14136 + 14529*sqrt(2)'), ('0', '-232851 + 208950*sqrt(2)')]
+LOWER G(j)= -e**2 - e*l**2/2 - e*l/2 + j**2*(-e - l + 1) + j*(e*l - e + l**2/2 - 3*l/2 + 1) - l**2/2 + l/2
+LOWER H translated= [(3, '-3 + 5*sqrt(2)/2'), (2, '-1729/4 + 769*sqrt(2)/2'), (1, '-20774 + 19586*sqrt(2)'), (0, '-332735 + 330550*sqrt(2)')]
+vertex= (l - 1)*(2*e + l - 2)/(4*(e + l - 1))
+dG/de= -(4*e + 2*j**2 - 2*j*l + 2*j + l**2 + l)/2
+F ell19 e1 4163 V3 j5 4181
+F ell20 e1 4812 V3 j5 4861
+vertex_ge_1 PASS
+vertex_le_l-1 PASS
+NEGATIVE cU=3: [(50, 'II', '-97707.72746984152027333914'), (100, 'II', '-325350.4350615117936970571')]
+SYMBOLIC PASS

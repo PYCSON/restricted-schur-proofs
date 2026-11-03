@@ -1,29 +1,32 @@
 #!/usr/bin/env bash
-# Replay the certificates behind Results 1-4, 6 and 7 of README.md (Result 5 and the Lean developments: see README).
+# Replay the certificates behind Results 1-4, 6 and 7 of README.md (Result 5 and the Lean developments: see README),
+# and (new in v1.2) the exact checks behind Result 8 (asymptotics of K(l)): sections asym and asymind.
 # Result 4 (K(11)=12) is sections l11k12 (k=12) and l11k13 (222 cube certificates, every k>=13); l11k13ind runs the
 # separately written second-party checkers on the same 222 certificates (needs Python >= 3.11).
 # Requirements: python3 (with sympy), xz, and the two LRAT checkers:
 #   LRAT_CHECK = path to lrat-check (drat-trim distribution)
 #   CAKE_LPR   = path to cake_lpr (formally verified checker)
 # Usage:  LRAT_CHECK=/path/lrat-check CAKE_LPR=/path/cake_lpr ./verify_all.sh [section ...]
-# Sections: oq62 oq64sym oq64single diag l11k12 l11k13 l11k13ind unique windows
-#   (default: oq62 oq64sym oq64single diag l11k12 l11k13; "all" adds l11k13ind, unique and windows)
+#   (the sections asym and asymind need only python3 with sympy; LRAT_CHECK/CAKE_LPR are then not required)
+# Sections: oq62 oq64sym oq64single diag l11k12 l11k13 l11k13ind unique windows asym asymind
+#   (default: oq62 oq64sym oq64single diag l11k12 l11k13 asym asymind; "all" adds l11k13ind, unique and windows)
 # Optional: CAKE_HEAP (MB, default 4000); LOGDIR (keep every checker output there instead of deleting it).
 # A step passes only if the checker exits with status 0 AND prints its exact success line
 # ("c VERIFIED" for lrat-check, "s VERIFIED UNSAT" for cake_lpr). Any failure stops the script with status 1.
 set -euo pipefail
-: "${LRAT_CHECK:?set LRAT_CHECK}"; : "${CAKE_LPR:?set CAKE_LPR}"
 ROOT=$(cd "$(dirname "$0")" && pwd); EV=$ROOT/evidence
 W=$(mktemp -d); trap 'rm -rf "$W"' EXIT
 HEAP=${CAKE_HEAP:-4000}; LOGDIR=${LOGDIR:-}
 [ -n "$LOGDIR" ] && mkdir -p "$LOGDIR"
 
-DEFAULT=(oq62 oq64sym oq64single diag l11k12 l11k13); ALL=("${DEFAULT[@]}" l11k13ind unique windows)
+DEFAULT=(oq62 oq64sym oq64single diag l11k12 l11k13 asym asymind); ALL=("${DEFAULT[@]}" l11k13ind unique windows)
 ARGS=("$@"); [ ${#ARGS[@]} -eq 0 ] && ARGS=("${DEFAULT[@]}")
 [ "${ARGS[*]}" = "all" ] && ARGS=("${ALL[@]}")
 for requested in "${ARGS[@]}"; do
   case " ${ALL[*]} " in *" $requested "*) ;; *) echo "Unknown section: $requested (valid: ${ALL[*]} all)" >&2; exit 2;; esac
 done
+NEED_LRAT=0; for s_ in "${ARGS[@]}"; do case "$s_" in asym|asymind) ;; *) NEED_LRAT=1;; esac; done
+if [ "$NEED_LRAT" -eq 1 ]; then : "${LRAT_CHECK:?set LRAT_CHECK}"; : "${CAKE_LPR:?set CAKE_LPR}"; fi
 RAN=0
 want() { for s in "${ARGS[@]}"; do [ "$s" = "$1" ] && { RAN=$((RAN+1)); return 0; }; done; return 1; }
 fail() { echo "FAIL: $*" >&2; exit 1; }
@@ -165,6 +168,43 @@ if want windows; then
   echo "  PASS all $cnt window certificates (prefix = W_j, hyperedges re-checked, CNF identical, both LRAT checkers)"
   echo "== Result 7: combined argument (forcing lemma R-23', R-22 for large k, balanced windows) with these certificates"
   python3 "$D/windows_coverage.py" || fail "window coverage"
+fi
+
+if want asym; then
+  echo "== Result 8 (asymptotics of K(l)): first-party exact checks (evidence/oq64_asymptotic/scripts)"
+  A=$EV/oq64_asymptotic/scripts
+  expect() { local pat=$1; shift; ( cd "$A" && python3 -I "$@" ) > "$W/as.out" 2>&1 || { cat "$W/as.out" >&2; fail "asym: $* exited non-zero"; }
+             grep -Eq "$pat" "$W/as.out" || { cat "$W/as.out" >&2; fail "asym: $* did not print /$pat/"; }; keep "$W/as.out" "asym_$(echo "$*" | tr ' /' '__').log"; echo "  PASS $*"; }
+  expect '=> ALL PASS' rigorous_asym.py 4 4 50          # upper (T1-fill, cases I/II) and lower (three-block) bounds, all real l >= 50
+  ( cd "$A" && python3 -I rigorous_asym.py 3 4 50 ) > "$W/as.out" 2>&1 || true
+  grep -q '=> NOT ALL' "$W/as.out" || fail "asym: negative control (cU=3) was not rejected"; echo "  PASS negative control: cU=3 is rejected"
+  expect 'max K_upper - \(1\+sqrt2\)/2\*l over l=6\.\.49: 8\.55' finite_table.py   # finite part 6 <= l <= 49
+  expect 'l >= 7 e >= 3 => ALL PASS' j1_symbolic.py 7 3   # j = 1 windows
+  expect 'l >= 6 e >= 4 => ALL PASS' j1_symbolic.py 6 4
+  expect '7000 cases, failures: 0' fact1_constructive.py  # Fact 1 (interval k-sums), constructive proof
+  expect 'l=20 k=21: F=4812, good on \[1,F-1\]=True, extendable to F: \[False, False\]' check_gaiser.py   # DP checker validated on Gaiser's colouring
+  expect 'V3= 4181 F= 4163' check19.py; grep -q 'good: (True, None)' "$W/as.out" || fail "asym: l=19 three-block colouring not good"
+  expect 'V3= 4861 F= 4812' check20.py; grep -q 'good: (True, None)' "$W/as.out" || fail "asym: l=20 three-block colouring not good"
+  expect 'k=l=20: j=4 V3=4770 Ahmed=4751  \[1,V3-1\] good=True' check_diag.py
+  expect 'relaxed 3-block 20 1 5 V3 4861 F 4812 good: True' goodcheck_relaxed.py
+  expect '200/200 refuted' t1fill_witness.py 16 8 200     # explicit T1-fill hyperedges on random windows
+fi
+
+if want asymind; then
+  echo "== Result 8: second-party (GPT) independently written checkers (evidence/oq64_asymptotic/independent_review_gpt)"
+  G=$EV/oq64_asymptotic/independent_review_gpt; mkdir -p "$W/gpt"
+  gexp() { local pat=$1 f=$2; ( cd "$G" && OUT="$W/gpt" python3 -I -B -c "import sys,runpy; sys.path.insert(0,'$G'); runpy.run_path('$G/$f', run_name='__main__')" ) > "$W/gp.out" 2>&1 \
+             || { cat "$W/gp.out" >&2; fail "asymind: $f exited non-zero"; }
+           grep -Eq "$pat" "$W/gp.out" || { cat "$W/gp.out" >&2; fail "asymind: $f did not print /$pat/"; }; keep "$W/gp.out" "asymind_$f.log"; echo "  PASS $f"; }
+  gexp 'SYMBOLIC PASS' independent_r6_symbolic.py
+  gexp 'continuous proof is in report' independent_aux_symbolic.py
+  gexp 'l 8 checked 19115 closed 19115 failure 0' independent_t1.py
+  gexp 'TOTAL 23845 PASS 23845 FAIL 0' independent_balanced.py
+  gexp 'PARITY 23740 checks 0 failures' independent_parity.py
+  gexp 'FINITE PASS count 75' independent_finite.py
+  gexp "'l': 20, 'e': 1, 'j': 5, 'n': 4860, 'F': 4812.*'good': True" independent_dp.py
+  gexp "'ell': 20, 'e': 1, 'j': 5, 'V3': 4861, 'F': 4812, 'status': 'PASS'" independent_relaxed_dp.py
+  gexp 'FACT1 exhaustive PASS 480' independent_fact1.py
 fi
 
 [ "$RAN" -gt 0 ] || fail "no section was run"

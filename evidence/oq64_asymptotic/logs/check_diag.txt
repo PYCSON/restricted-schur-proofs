@@ -1,0 +1,3 @@
+diagonal k=l=8: j=1 V3=330 Ahmed=365  [1,V3-1] good=True extendable=[False, True]
+diagonal k=l=12: j=2 V3=1068 Ahmed=1123  [1,V3-1] good=True extendable=[False, False]
+diagonal k=l=20: j=4 V3=4770 Ahmed=4751  [1,V3-1] good=True extendable=[False, False]

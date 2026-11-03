@@ -1,0 +1,10 @@
+l 6 checked 781 closed 781 failure 0
+l 7 checked 4239 closed 4239 failure 0
+l 8 checked 19115 closed 19115 failure 0
+l 9 checked 26221 closed 26221 failure 0
+{
+  "tested": 26221,
+  "closed": 26221,
+  "failures": []
+}
+elapsed 2.64 sec

@@ -1,0 +1,2 @@
+l,e,j= 19 1 5 m= 290 V3= 4181 F= 4163
+[1,V3-1] good: (True, None) time 2 s
