@@ -188,7 +188,7 @@ test. It must fail with four errors: three of the form "Tactic `decide` proved t
   * `t1fill_witness.py`: builds the T1-fill hyperedges for actual windows and re-checks every one. `consistency2.py`: the exact minimum of `w` over all parameter choices for windows of known good colourings. It must exceed `N`, and it does for 6807 windows; this takes about half an hour and is not part of `verify_all.sh`.
   * Exploratory scripts (not needed for verification): `threeblock.py`, `family_search.py`, `gapscan.py`, `ub_analytic.py`.
 * `logs/`: first-party outputs.
-* `independent_review_gpt/`: GPT's second-party review. Its report (`RSN002_R6_INDEPENDENT_REVIEW.md`) is in Chinese, with passages about private correspondence removed. The directory also holds GPT's separately written checkers `independent_*.py`, its recorded outputs, and its LaTeX draft, on which §8 is based. In the release copies only the output paths were adapted (`OUT` environment variable); the originals are in `original/`. Section `asymind` runs them.
+* `independent_review_gpt/`: GPT's second-party review. Its report (`RSN002_R6_INDEPENDENT_REVIEW.md`) is in Chinese, with passages about private correspondence removed. The directory also holds GPT's separately written checkers `independent_*.py`, its recorded outputs, and its LaTeX draft, on which §8 is based. In the release copies only the output paths were adapted (`OUT` environment variable). The originals are kept in `original/` as the historical source; they write to the reviewer's absolute paths and are not portable. For replay, use the top-level scripts or `verify_all.sh asymind`.
 * `independent_review_claude_subagent/`: checks written from scratch by a separately started Claude instance. This is the same model, so it is not a second-party review.
 
 ## Use of AI
@@ -205,4 +205,4 @@ Text and data: CC BY 4.0. Code: MIT. See [`LICENSE`](LICENSE).
 
 ## Citation
 
-See [`CITATION.cff`](CITATION.cff). Archived on Zenodo: [10.5281/zenodo.23752136](https://doi.org/10.5281/zenodo.23752136) (release v1.0.1; content identical to v1.0.0 of 28 October 2026 apart from `CITATION.cff`). Release v1.1.0 is archived as [10.5281/zenodo.23853953](https://doi.org/10.5281/zenodo.23853953). Release v1.2 is archived as a new Zenodo version with its own DOI; earlier versions stay unchanged.
+See [`CITATION.cff`](CITATION.cff). Archived on Zenodo: [10.5281/zenodo.23752136](https://doi.org/10.5281/zenodo.23752136) (release v1.0.1; content identical to v1.0.0 of 28 October 2026 apart from `CITATION.cff`). Release v1.1.0 is archived as [10.5281/zenodo.23853953](https://doi.org/10.5281/zenodo.23853953). Release v1.2.0 will receive a separate DOI when Zenodo archives it; no v1.2 DOI is claimed before that deposit. Earlier versions remain unchanged.

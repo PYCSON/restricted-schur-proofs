@@ -1,4 +1,4 @@
-# tests/negative_controls.sh, run 2026-11-03 15:50 +08 (Linux x86-64, Python 3.13.16, lrat-check sha256 24a561223ea0f616..., cake_lpr sha256 1822ca1e5d0f925e...)
+# tests/negative_controls.sh, run 2026-11-03 19:29 +08 (Linux x86-64, Python 3.13.16, lrat-check sha256 24a561223ea0f616..., cake_lpr sha256 1822ca1e5d0f925e...)
 # sha256 of tests/negative_controls.sh that was run: af24f5466a4c098ccd927452abcb584e256a1c09178f69cea5753709f71e364a
 rejected (ok): lrat-check prints success but exits 1
 rejected (ok): lrat-check exits 0 without success line
@@ -24,4 +24,4 @@ rejected (ok): tampered T1-fill parameter
 rejected (ok): verify_all asym rejects Python optimization
 ALL NEGATIVE CONTROLS REJECTED
 EXIT 0
-START 2026-11-03 15:50 END 15:52
+START 2026-11-03 19:29 END 19:31

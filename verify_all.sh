@@ -174,7 +174,9 @@ if want asym; then
   echo "== Result 8 (asymptotics of K(l)): first-party exact checks (evidence/oq64_asymptotic/scripts)"
   A=$EV/oq64_asymptotic/scripts
   expect() { local pat=$1; shift; ( cd "$A" && python3 -I "$@" ) > "$W/as.out" 2>&1 || { cat "$W/as.out" >&2; fail "asym: $* exited non-zero"; }
-             grep -Eq "$pat" "$W/as.out" || { cat "$W/as.out" >&2; fail "asym: $* did not print /$pat/"; }; keep "$W/as.out" "asym_$(echo "$*" | tr ' /' '__').log"; echo "  PASS $*"; }
+             grep -Eq "$pat" "$W/as.out" || { cat "$W/as.out" >&2; fail "asym: $* did not print /$pat/"; }
+             if grep -Eq 'Traceback \(most recent call last\)|^=> NOT ALL$|^AssertionError|NOT REJECTED|FAIL\(' "$W/as.out"; then cat "$W/as.out" >&2; fail "asym: contradictory failure marker in $*"; fi
+             keep "$W/as.out" "asym_$(echo "$*" | tr ' /' '__').log"; echo "  PASS $*"; }
   expect '=> ALL PASS' rigorous_asym.py 4 4 50          # upper (T1-fill, cases I/II) and lower (three-block) bounds, all real l >= 50
   ( cd "$A" && python3 -I rigorous_asym.py 3 4 50 ) > "$W/as.out" 2>&1 || true
   grep -q '=> NOT ALL' "$W/as.out" || fail "asym: negative control (cU=3) was not rejected"; echo "  PASS negative control: cU=3 is rejected"
@@ -195,7 +197,9 @@ if want asymind; then
   G=$EV/oq64_asymptotic/independent_review_gpt; mkdir -p "$W/gpt"
   gexp() { local pat=$1 f=$2; ( cd "$G" && OUT="$W/gpt" python3 -I -B -c "import sys,runpy; sys.path.insert(0,'$G'); runpy.run_path('$G/$f', run_name='__main__')" ) > "$W/gp.out" 2>&1 \
              || { cat "$W/gp.out" >&2; fail "asymind: $f exited non-zero"; }
-           grep -Eq "$pat" "$W/gp.out" || { cat "$W/gp.out" >&2; fail "asymind: $f did not print /$pat/"; }; keep "$W/gp.out" "asymind_$f.log"; echo "  PASS $f"; }
+           grep -Eq "$pat" "$W/gp.out" || { cat "$W/gp.out" >&2; fail "asymind: $f did not print /$pat/"; }
+           if grep -Eq 'Traceback \(most recent call last\)|^AssertionError|SYMBOLIC FAIL|[1-9][0-9]* failures|FAIL [1-9]' "$W/gp.out"; then cat "$W/gp.out" >&2; fail "asymind: contradictory failure marker in $f"; fi
+           keep "$W/gp.out" "asymind_$f.log"; echo "  PASS $f"; }
   gexp 'SYMBOLIC PASS' independent_r6_symbolic.py
   gexp 'continuous proof is in report' independent_aux_symbolic.py
   gexp 'l 8 checked 19115 closed 19115 failure 0' independent_t1.py

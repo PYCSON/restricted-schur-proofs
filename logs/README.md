@@ -18,7 +18,7 @@ These are first-party runs (Claude), with the same checker builds as for v1.0.
 
 # Verification logs, release v1.2 (added 3 November 2026)
 
-* `verify_all_v1.2_asym.log`: output of `./verify_all.sh asym asymind oq62`, run on 3 November 2026, 15:48–15:50 (UTC+8). It covers the new Result 8 sections. `oq62` was re-run to check that the old sections are unaffected by the changed handling of `LRAT_CHECK`/`CAKE_LPR`. The log begins with the SHA-256 of the `verify_all.sh` that was run and ends with `EXIT 0` and the start and end times.
+* `verify_all_v1.2_asym.log`: output of `./verify_all.sh asym asymind oq62`, run on 3 November 2026, 19:28–19:29 (UTC+8), after the round-7 fixes. It covers the new Result 8 sections. `oq62` was re-run to check that the old sections are unaffected by the changed handling of `LRAT_CHECK`/`CAKE_LPR`. The log begins with the SHA-256 of the `verify_all.sh` that was run and ends with `EXIT 0` and the start and end times.
 * `negative_controls_v1.2.log`: output of `tests/negative_controls.sh` with the four new Result 8 controls. All 22 cases were rejected.
 * The other sections were not re-run for v1.2, because their certificate files are byte-identical to v1.1 (compare `MANIFEST.sha256`).
 

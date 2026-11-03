@@ -1,4 +1,4 @@
-> **Public-release note (added by the repository author, 2026-11-03).** This is GPT's second-party review report. Passages that referred to private correspondence have been replaced by bracketed notes. No verdict, number or other content was changed. The files `GAISER_REPLY_PRIVATE_SOURCE_NOTE.md`, `INPUT_VERSION_DIFF.patch`, `R6_REUPLOAD_CHANGELOG_20261103.md` and GPT's delivery `SHA256SUMS` are not included. `SHA256SUMS_public` lists the files that are included.
+> **Public-release note (added by the repository author, 2026-11-03).** This is GPT's second-party review report. Passages that referred to private correspondence have been replaced by bracketed notes. No mathematical conclusion, reported numerical result, or verdict was changed; only private-correspondence references and related provenance wording were edited. The files `GAISER_REPLY_PRIVATE_SOURCE_NOTE.md`, `INPUT_VERSION_DIFF.patch`, `R6_REUPLOAD_CHANGELOG_20261103.md` and GPT's delivery `SHA256SUMS` are not included. `SHA256SUMS_public` lists the files that are included.
 
 # RSN-002 第六轮：R-37 / R-38 渐近常数独立审查
 

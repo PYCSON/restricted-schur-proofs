@@ -1,5 +1,5 @@
-# ./verify_all.sh asym asymind oq62, run 2026-11-03 15:48 +08 (Linux x86-64, Python 3.13.16, sympy 1.14.0, lrat-check sha256 24a561223ea0f616..., cake_lpr sha256 1822ca1e5d0f925e...)
-# sha256 of verify_all.sh that was run: 9fc3135e7daa15010bb4115603fd2b9f5bb410ec6fc2c2fe97feaaab8be2e7b6
+# ./verify_all.sh asym asymind oq62, run 2026-11-03 19:28 +08 (Linux x86-64, Python 3.13.16, sympy 1.14.0, lrat-check sha256 24a561223ea0f616..., cake_lpr sha256 1822ca1e5d0f925e...)
+# sha256 of verify_all.sh that was run: 259594f60cf7c282185eb2910551588e1ab2254a64d1d4e5b6c4d7bcf3c38d47
 == Result 1 (OQ 6.2): S_3(k;2) <= k^3+3k^2+2k-2 for k>=8 (seven symbolic cases)
 uni_const1: region={'mode': 'uni', 'K': 8, 'case': 'const:1'} vertices=54 edges=326 symbolic_ok=True numeric_grid=60 cnf_match=True
 uni_const2: region={'mode': 'uni', 'K': 8, 'case': 'const:2'} vertices=55 edges=345 symbolic_ok=True numeric_grid=60 cnf_match=True
@@ -52,8 +52,8 @@ ALL OK
   PASS independent_fact1.py
 ALL SELECTED SECTIONS PASSED: asym asymind oq62
 
-real	1m9.646s
-user	1m5.887s
-sys	0m2.728s
+real	1m5.035s
+user	0m59.145s
+sys	0m3.158s
 EXIT 0
-START 2026-11-03 15:48 END 15:50
+START 2026-11-03 19:28 END 19:29

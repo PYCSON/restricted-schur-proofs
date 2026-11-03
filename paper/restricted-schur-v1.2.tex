@@ -440,7 +440,17 @@ Every $k$-sum with exactly $\ell$ distinct summand values exceeds each of its su
 \end{corollary}
 
 \begin{proof}
-(a) Expanding, $G(j)=V_3-\F(\ell+e,\ell)=-Aj^2+\beta j+\gamma$ with $A=e+\ell-1>0$. The real maximum is $\gamma+\beta^2/(4A)$, attained at $j_*=\frac{(\ell-1)(2e+\ell-2)}{4(e+\ell-1)}$. An integer $j$ within $\frac12$ of $j_*$ loses at most $A/4$. So some integer $j$ satisfies $G(j)\ge1$ as soon as $H=4A\gamma+\beta^2-A^2-4A\ge0$. Substitute $\ell=50+u$ and $e=a_*\ell-4$. Then $H$ is a polynomial in $u$ whose coefficients lie in $\mathbb Q(\sqrt2)$, and each coefficient is $\ge0$; the same substitution shows $1\le j_*\le\ell-1$. For fixed $j$, $\partial G/\partial e=q(j+1)+1-\partial\F/\partial e\le-\frac{\ell^2}{4}-\ell+\frac14-2e<0$, so the same $j$ works for every smaller $e\ge1$. With $j=x\ell$ and $e=\varepsilon\ell$, the cubic part of $G$ is $-\frac{\ell^3}{2}\bigl[\varepsilon(2x^2-2x+1)+2x^2-x\bigr]$. Some $x$ makes it positive iff $\varepsilon<\max_x\frac{x-2x^2}{2x^2-2x+1}=a_*$, with the maximum at $x=\frac{2-\sqrt2}{2}$; so the constant $a_*$ is the threshold of this family. (b), (c) are direct evaluations. For $19\le\ell\le49$ the largest admissible $e$ was computed exactly for each $\ell$ (\texttt{finite\_table.py}); the bound of Theorem~\ref{thm:asym}(a) also holds there.
+(a) Expanding, $G(j)=V_3-\F(\ell+e,\ell)=-Aj^2+\beta j+\gamma$ with $A=e+\ell-1>0$. The real maximum is $\gamma+\beta^2/(4A)$, attained at $j_*=\frac{(\ell-1)(2e+\ell-2)}{4(e+\ell-1)}$. An integer $j$ within $\frac12$ of $j_*$ loses at most $A/4$. So some integer $j$ satisfies $G(j)\ge1$ as soon as $H=4A\gamma+\beta^2-A^2-4A\ge0$. Substitute $\ell=50+u$ and $e=a_*\ell-4$. Then $H$ is a polynomial in $u$ whose coefficients lie in $\mathbb Q(\sqrt2)$, and each coefficient is $\ge0$; the same substitution shows $1\le j_*\le\ell-1$. For fixed $j$, $\partial G/\partial e=q(j+1)+1-\partial\F/\partial e\le-\frac{\ell^2}{4}-\ell+\frac14-2e<0$, so the same $j$ works for every smaller $e\ge1$. With $j=x\ell$ and $e=\varepsilon\ell$, the cubic part of $G$ is $-\frac{\ell^3}{2}\bigl[\varepsilon(2x^2-2x+1)+2x^2-x\bigr]$. Some $x$ makes it positive iff $\varepsilon<\max_x\frac{x-2x^2}{2x^2-2x+1}=a_*$, with the maximum at $x=\frac{2-\sqrt2}{2}$; so the constant $a_*$ is the threshold of this family. (b) is a direct evaluation. To prove (c) for every $k\ge20$, write $k=4n+r$ with $0\le r\le3$ and choose $j=n=\lfloor k/4\rfloor$. If $A(k)=(k^3+4k^2-5k+2)/2$ is the Ahmed--Boza--Revuelta--Sanz lower bound, exact expansion gives
+\[
+V_3(k,0,n)-A(k)=
+\begin{cases}
+(4n-1)(n^2-5n+1),&r=0,\\
+2n^2(2n-9),&r=1,\\
+(4n+1)(n^2-4n-1),&r=2,\\
+(n-4)(2n+1)^2,&r=3.
+\end{cases}
+\]
+All four expressions are positive for $n\ge5$, covering $k\ge20$; at $k=19$ the difference is zero. For $19\le\ell\le49$ the largest admissible $e$ was computed exactly for each $\ell$ (\texttt{finite\_table.py}); the bound of Theorem~\ref{thm:asym}(a) also holds there.
 \end{proof}
 
 \noindent The colourings in (b) and (c) were also confirmed to be good by two separately written exact bit-set dynamic programmes, one by Claude and one by GPT. Each checker was first validated on Gaiser's colouring, which is good on $[1,\F-1]$ and cannot be extended. A further run confirmed (b) for the relaxed variant.
@@ -495,7 +505,15 @@ If $\ell\ge50$ and $e\ge a_*\ell+4$, every window of case (U) with $2\le j\le\el
 \end{lemma}
 
 \begin{proof}
-Because at most $j$ elements of $[1,m_i]$ lie outside $M$, we have $m_i\le i+j$. This gives $\sum R'\le\sum S\le\ell j+\frac{\ell(\ell+1)}2$, $z_i\le j+i+2$, $r\le m_2\le j+2$ and $d\le\ell+j$. Also $\sum(D\cap W)\le\sum_{i=1}^{j}(2\ell-j+i)$ and $d_b\le2\ell$. If $M$ is red (case I), then $m_1=1$, and $y\ne1$ can be arranged, because $y=r'=1$ would give $b\le0$; hence $u=1$. If $M$ is blue (case II), $u\le m_2\le j+2$. Since $w$ is increasing in each of these quantities, $N-w\ge P(j)$ for an explicit quadratic $P(j)=\alpha j^2+\beta j+\gamma$, with $\alpha=\ell+1$ in case I and $\alpha=\ell+e$ in case II. We show $4\alpha\gamma-\beta^2\ge0$, which gives $P(j)\ge0$ for every real $j$. Substitute $\ell=50+u'$ and $e=a_*\ell+4$. In both cases $4\alpha\gamma-\beta^2$ becomes a polynomial in $u'$ whose coefficients lie in $\mathbb Q(\sqrt2)$, and every coefficient is nonnegative. Finally, $\partial P/\partial e\ge\frac{\ell^2}{4}-2\ell+2e-\frac54>0$ for $\ell\ge9$, and in case I always; so every larger $e$ works as well. With the additive constant $3$ in place of $4$ the case~II check fails (negative control). For $6\le\ell\le49$ the same integer inequalities were evaluated exactly for every $j$.
+Because at most $j$ elements of $[1,m_i]$ lie outside $M$, we have $m_i\le i+j$. This gives $\sum R'\le\sum S\le\ell j+\frac{\ell(\ell+1)}2$, $z_i\le j+i+2$, $r\le m_2\le j+2$ and $d\le\ell+j$. Also $\sum(D\cap W)\le\sum_{i=1}^{j}(2\ell-j+i)$ and $d_b\le2\ell$. If $M$ is red (case I), then $m_1=1$, and $y\ne1$ can be arranged, because $y=r'=1$ would give $b\le0$; hence $u=1$. If $M$ is blue (case II), $u\le m_2\le j+2$. Since $w$ is increasing in each of these quantities, $N-w\ge P(j)$ for an explicit quadratic $P(j)=\alpha j^2+\beta j+\gamma$, with $\alpha=\ell+1$ in case I and $\alpha=\ell+e$ in case II. We show $4\alpha\gamma-\beta^2\ge0$, which gives $P(j)\ge0$ for every real $j$. Substitute $\ell=50+u'$ and $e=a_*\ell+4$. In both cases $4\alpha\gamma-\beta^2$ becomes a polynomial in $u'$ whose coefficients lie in $\mathbb Q(\sqrt2)$, and every coefficient is nonnegative. Finally, $\partial P/\partial e\ge\frac{\ell^2}{4}-2\ell+2e-\frac54>0$ for $\ell\ge9$, and in case I always; so every larger $e$ works as well. With the additive constant $3$ in place of $4$ the case~II check fails (negative control). For $6\le\ell\le49$ the inequalities $P(j)\ge0$ were evaluated exactly for every integer $2\le j\le\ell-2$ at the tabulated threshold $e_U(\ell)$. To justify all larger $e$ (not merely the finite scan), note that
+\[
+\frac{\partial P}{\partial e}=
+\begin{cases}
+2e+\frac{\ell^2-\ell+2}{2}-(\ell-j+1),&\text{case I},\\
+2e+\frac{\ell^2-\ell+2}{2}-(\ell-j+1)(j+2),&\text{case II}.
+\end{cases}
+\]
+The first is positive for $\ell\ge6$, $e\ge1$. In case II, $(\ell-j+1)(j+2)\le(\ell+3)^2/4$, so the derivative is at least $2e+(\ell^2-8\ell-5)/4$, which is positive for $\ell\ge9$, $e\ge1$, and also for $\ell\in\{6,7,8\}$, $e\ge3$. The exact table has $e_U(6)=9$, $e_U(7)=10$, $e_U(8)=10$, so monotonicity establishes the asserted bound for all $e\ge e_U(\ell)$.
 \end{proof}
 
 \begin{lemma}[one minority element]\label{lem:one}
