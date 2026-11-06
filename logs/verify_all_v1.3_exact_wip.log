@@ -1,0 +1,82 @@
+== Result 9 (K(13)): per-window certificates and survivor files, evidence/oq64_exact/l13
+  PASS l=13 e=1 n=1445: 121 survivors + 26 one-minority windows = 147 certificates (mkcnfw bad=0, lrat-check, cake_lpr)
+  PASS l=13 e=2 n=1553: 5 survivors + 26 one-minority windows = 31 certificates (mkcnfw bad=0, lrat-check, cake_lpr)
+  PASS l=13 e=3 n=1663: no survivors and no one-minority windows to treat (DONE line checked)
+== Result 9 (K(14)): per-window certificates and survivor files, evidence/oq64_exact/l14
+  PASS l=14 e=1 n=1773: 209 survivors + 28 one-minority windows = 237 certificates (mkcnfw bad=0, lrat-check, cake_lpr)
+  PASS l=14 e=2 n=1896: 9 survivors + 28 one-minority windows = 37 certificates (mkcnfw bad=0, lrat-check, cake_lpr)
+  PASS l=14 e=3 n=2021: no survivors and no one-minority windows to treat (DONE line checked)
+== Result 9 (K(15)): per-window certificates and survivor files, evidence/oq64_exact/l15
+  PASS l=15 e=1 n=2147: 389 survivors + 30 one-minority windows = 419 certificates (mkcnfw bad=0, lrat-check, cake_lpr)
+  PASS l=15 e=2 n=2286: 17 survivors + 30 one-minority windows = 47 certificates (mkcnfw bad=0, lrat-check, cake_lpr)
+  PASS l=15 e=3 n=2427: no survivors and no one-minority windows to treat (DONE line checked)
+  PASS l=15 e=4 n=2570: no survivors and no one-minority windows to treat (DONE line checked)
+== Result 9 (K(16)): per-window certificates and survivor files, evidence/oq64_exact/l16
+  PASS l=16 e=1 n=2570: 716 survivors + 32 one-minority windows = 748 certificates (mkcnfw bad=0, lrat-check, cake_lpr)
+  PASS l=16 e=2 n=2726: 33 survivors + 32 one-minority windows = 65 certificates (mkcnfw bad=0, lrat-check, cake_lpr)
+  PASS l=16 e=3 n=2884: 1 survivors + 0 one-minority windows = 1 certificates (mkcnfw bad=0, lrat-check, cake_lpr)
+  PASS l=16 e=4 n=3044: no survivors and no one-minority windows to treat (DONE line checked)
+== Result 9 (K(17)): per-window certificates and survivor files, evidence/oq64_exact/l17
+  PASS l=17 e=1 n=3045: 1311 survivors + 34 one-minority windows = 1345 certificates (mkcnfw bad=0, lrat-check, cake_lpr)
+  PASS l=17 e=2 n=3219: 63 survivors + 34 one-minority windows = 97 certificates (mkcnfw bad=0, lrat-check, cake_lpr)
+  PASS l=17 e=3 n=3395: 3 survivors + 0 one-minority windows = 3 certificates (mkcnfw bad=0, lrat-check, cake_lpr)
+  PASS l=17 e=4 n=3573: no survivors and no one-minority windows to treat (DONE line checked)
+== Result 9 (K(18)): per-window certificates and survivor files, evidence/oq64_exact/l18
+  PASS l=18 e=1 n=3575: 2425 survivors + 36 one-minority windows = 2461 certificates (mkcnfw bad=0, lrat-check, cake_lpr)
+  PASS l=18 e=2 n=3768: 127 survivors + 36 one-minority windows = 163 certificates (mkcnfw bad=0, lrat-check, cake_lpr)
+  PASS l=18 e=3 n=3963: 4 survivors + 0 one-minority windows = 4 certificates (mkcnfw bad=0, lrat-check, cake_lpr)
+  PASS l=18 e=4 n=4160: no survivors and no one-minority windows to treat (DONE line checked)
+== Result 9 (K(19)): per-window certificates and survivor files, evidence/oq64_exact/l19
+  PASS l=19 e=2 n=4376: 236 survivors + 38 one-minority windows = 274 certificates (mkcnfw bad=0, lrat-check, cake_lpr)
+  PASS l=19 e=3 n=4591: 8 survivors + 0 one-minority windows = 8 certificates (mkcnfw bad=0, lrat-check, cake_lpr)
+  PASS l=19 e=4 n=4808: no survivors and no one-minority windows to treat (DONE line checked)
+  PASS l=19 e=5 n=5027: no survivors and no one-minority windows to treat (DONE line checked)
+== Result 9 (K(20)): per-window certificates and survivor files, evidence/oq64_exact/l20
+  PASS l=20 e=2 n=5046: 481 survivors + 40 one-minority windows = 521 certificates (mkcnfw bad=0, lrat-check, cake_lpr)
+  PASS l=20 e=3 n=5282: 15 survivors + 0 one-minority windows = 15 certificates (mkcnfw bad=0, lrat-check, cake_lpr)
+  PASS l=20 e=4 n=5520: no survivors and no one-minority windows to treat (DONE line checked)
+  PASS l=20 e=5 n=5760: no survivors and no one-minority windows to treat (DONE line checked)
+== Result 10: S_2(20;19) <= 4181 (per-window certificates at n = 4181)
+  PASS l=19 e=1 n=4181: 3520 survivors + 38 one-minority windows = 3558 certificates (mkcnfw bad=0, lrat-check, cake_lpr)
+== Result 10: S_2(21;20) <= 4861 (per-window certificates at n = 4861)
+  PASS l=20 e=1 n=4861: 4386 survivors + 40 one-minority windows = 4426 certificates (mkcnfw bad=0, lrat-check, cake_lpr)
+== Results 9-10: replay of the exact T1-fill enumeration for 10 <= l <= 16 (byte-identical survivor files)
+  PASS t1red 10 1: survivors=21
+  PASS t1red 10 2: survivors=1
+  PASS t1red 10 3: survivors=0
+  PASS t1red 11 1: survivors=36
+  PASS t1red 11 2: survivors=1
+  PASS t1red 11 3: survivors=0
+  PASS t1red 12 1: survivors=66
+  PASS t1red 12 2: survivors=2
+  PASS t1red 12 3: survivors=0
+  PASS t1red 13 1: survivors=121
+  PASS t1red 13 2: survivors=5
+  PASS t1red 13 3: survivors=0
+  PASS t1red 14 1: survivors=209
+  PASS t1red 14 2: survivors=9
+  PASS t1red 14 3: survivors=0
+  PASS t1red 15 1: survivors=389
+  PASS t1red 15 2: survivors=17
+  PASS t1red 15 3: survivors=0
+  PASS t1red 15 4: survivors=0
+  PASS t1multi (one pass, monotonicity in e) reproduces every stored survivor file for l = 12..16
+  PASS segments + t1combine reproduce l=14
+closed form checked on 7568 prefix windows: mismatches 0
+  PASS second implementation, all windows: l=9 e=1 N=533 windows=62985 objective mismatches=0 refuted=62974 explicit chains closing=62974 survivors=11
+  PASS second implementation, all windows: l=9 e=3 N=651 windows=62985 objective mismatches=0 refuted=62985 explicit chains closing=62985 survivors=0
+  PASS second implementation, all windows: l=10 e=1 N=707 windows=263929 objective mismatches=0 refuted=263908 explicit chains closing=263908 survivors=21
+== Results 11-12: Lemma P (prefix dominance) and Theorem Q' (evidence/oq64_exact/lemmaP), first-party checks
+  PASS l=6 e=[1, 2, 3, 5, 10, 20, 48] windows=781 failures=0
+  PASS l=7 e=[1, 2, 3, 5, 10, 20, 70] windows=3458 failures=0
+  PASS l=8 e=[1, 2, 3, 5, 10, 20, 96] windows=14876 failures=0
+  PASS l=9 e=[1, 2, 3, 5, 10, 20, 126] windows=62985 failures=0
+  PASS negative control: e > 2l^2-4l is rejected at the predicted window
+  PASS Theorem Q' upper bound: Disc < 0 for e = a* l, all l >= 19
+  PASS Theorem Q' lower bound: H >= 0 for e = a* l - 3.63, all l >= 19
+  PASS vertex of the three-block quadratic lies in [3/2, l-3/2] for all l >= 19
+ALL SELECTED SECTIONS PASSED: exact13 exact14 exact15 exact16 exact17 exact18 exact19 exact20 s2_20_19 s2_21_20 lemmap exactenum
+
+real	13m45.585s
+user	13m46.701s
+sys	5m0.743s

@@ -1,0 +1,18 @@
+positive control (ok): the unmodified copy passes
+rejected (ok): truncated LRAT proof -- FAIL: RBBBBBBBBBBBBBBBBBBBBBBB: lrat-check did not verify (exit 1)
+rejected (ok): proof of another window -- FAIL: RBBBBBBBBBBBBBBBBBBBBBBB: lrat-check did not verify (exit 1)
+rejected (ok): hyperedge with the sum changed by one -- FAIL: RBBBBBBBBBBBBBBBBBBBBBBB: hyperedge check failed (hyperedges ok=20 bad=1 clauses=64)
+rejected (ok): one hyperedge removed from a CNF -- FAIL: RBBBBBBBBBBBBBBBBBBBBBBB: lrat-check did not verify (exit 1)
+rejected (ok): a survivor missing from the per-window list -- FAIL: per-window list differs from survivors + j=1 windows (89 listed, 90 expected)
+rejected (ok): a survivor removed from the survivor file (DONE count unchanged) -- FAIL: survivor count does not match the DONE line, or a survivor is repeated
+rejected (ok): DONE line with the wrong bound N -- FAIL: DONE line is for l=12 e=1 N=1161, expected l=12 e=1 N=1160
+rejected (ok): replay at a larger bound than the certificates -- FAIL: DONE line is for l=12 e=1 N=1160, expected l=12 e=1 N=1161
+rejected (ok): survivor with objective 0 (refuted windows must not be listed as survivors) -- FAIL: malformed survivor line: SURV RBBRRRRRRRRRRRRRRRRRRRRR 0
+rejected (ok): missing proof file -- FAIL: proof directory entries do not match the per-window list
+rejected (ok): extra proof file -- FAIL: proof directory entries do not match the per-window list
+rejected (ok): a j=1 window missing at e=2 -- FAIL: per-window list differs from survivors + j=1 windows (25 listed, 26 expected)
+rejected (ok): lrat-check prints success but exits 1 -- FAIL: RBBBBBBBBBBBBBBBBBBBBBBB: lrat-check did not verify (exit 1)
+rejected (ok): cake_lpr success text not at line start -- FAIL: RBBBBBBBBBBBBBBBBBBBBBBB: cake_lpr did not verify (exit 0)
+rejected (ok): second implementation vs a fake C objective
+rejected (ok): Theorem Q' upper bound with the constant 1 - 7/10 at l0 = 19
+NEGATIVE CONTROLS (v1.3) PASSED
