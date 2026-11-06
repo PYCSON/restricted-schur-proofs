@@ -1,0 +1,1 @@
+DONE l=15 e=3 N=2427 reducedWindows=37442144 reducedNotRefuted=0 windowsCheckedIndividually=278287 survivors=0 lowCases=16

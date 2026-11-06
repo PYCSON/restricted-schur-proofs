@@ -1,0 +1,1 @@
+DONE l=19 e=5 N=5027 reducedWindows=8597496580 reducedNotRefuted=0 windowsCheckedIndividually=5504643 survivors=0 lowCases=20

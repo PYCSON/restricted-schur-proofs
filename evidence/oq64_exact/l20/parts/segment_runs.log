@@ -1,0 +1,32 @@
+rc=0 22:27
+DONE l=20 e=2 survivors=27 reducedNotRefuted=27
+DONE l=20 e=3 survivors=0 reducedNotRefuted=0
+DONE l=20 e=4 survivors=0 reducedNotRefuted=0
+DONE l=20 e=5 survivors=0 reducedNotRefuted=0
+PART l=20 e=2 N=5046 mcol=1 jlo=2 jhi=17 low=0 reducedWindows=8597496580 reducedNotRefuted=27 windowsCheckedIndividually=1097294 survivors=27 lowCases=0
+
+[exited with code 0]
+rc=0 23:31
+DONE l=20 e=2 survivors=0 reducedNotRefuted=0
+DONE l=20 e=3 survivors=0 reducedNotRefuted=0
+DONE l=20 e=4 survivors=0 reducedNotRefuted=0
+DONE l=20 e=5 survivors=0 reducedNotRefuted=0
+PART l=20 e=2 N=5046 mcol=1 jlo=18 jhi=18 low=1 reducedWindows=9075135300 reducedNotRefuted=0 windowsCheckedIndividually=11009647 survivors=0 lowCases=20
+
+[exited with code 0]
+rc=0 23:50
+DONE l=20 e=2 survivors=454 reducedNotRefuted=454
+DONE l=20 e=3 survivors=15 reducedNotRefuted=15
+DONE l=20 e=4 survivors=0 reducedNotRefuted=0
+DONE l=20 e=5 survivors=0 reducedNotRefuted=0
+PART l=20 e=2 N=5046 mcol=0 jlo=2 jhi=17 low=0 reducedWindows=7307872109 reducedNotRefuted=454 windowsCheckedIndividually=11814135 survivors=454 lowCases=0
+
+[exited with code 0]
+rc=0 00:25
+DONE l=20 e=2 survivors=0 reducedNotRefuted=0
+DONE l=20 e=3 survivors=0 reducedNotRefuted=0
+DONE l=20 e=4 survivors=0 reducedNotRefuted=0
+DONE l=20 e=5 survivors=0 reducedNotRefuted=0
+PART l=20 e=2 N=5046 mcol=0 jlo=18 jhi=18 low=1 reducedWindows=8597496600 reducedNotRefuted=0 windowsCheckedIndividually=524268 survivors=0 lowCases=1
+
+[exited with code 0]

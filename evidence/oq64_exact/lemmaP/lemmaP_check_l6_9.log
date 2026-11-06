@@ -1,0 +1,4 @@
+l=6 e=[1, 2, 3, 5, 10, 20, 48] windows=781 failures=0
+l=7 e=[1, 2, 3, 5, 10, 20, 70] windows=3458 failures=0
+l=8 e=[1, 2, 3, 5, 10, 20, 96] windows=14876 failures=0
+l=9 e=[1, 2, 3, 5, 10, 20, 126] windows=62985 failures=0

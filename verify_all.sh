@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 # Replay the certificates behind Results 1-4, 6 and 7 of README.md (Result 5 and the Lean developments: see README),
-# and (new in v1.2) the exact checks behind Result 8 (asymptotics of K(l)): sections asym and asymind.
+# and (new in v1.2) the exact checks behind Result 8 (asymptotics of K(l)): sections asym and asymind,
+# and (new in v1.3) Results 9-12: exact K(12..20), S_2(20;19)=4181, S_2(21;20)=4861 (per-window certificates:
+# sections exact12 ... exact20, s2_20_19, s2_21_20; enumeration replay: exactenum, exactenumbig) and Lemma P /
+# Theorem Q' (section lemmap).
 # Result 4 (K(11)=12) is sections l11k12 (k=12) and l11k13 (222 cube certificates, every k>=13); l11k13ind runs the
 # separately written second-party checkers on the same 222 certificates (needs Python >= 3.11).
 # Requirements: python3 (with sympy), xz, and the two LRAT checkers:
@@ -9,7 +12,12 @@
 # Usage:  LRAT_CHECK=/path/lrat-check CAKE_LPR=/path/cake_lpr ./verify_all.sh [section ...]
 #   (the sections asym and asymind need only python3 with sympy; LRAT_CHECK/CAKE_LPR are then not required)
 # Sections: oq62 oq64sym oq64single diag l11k12 l11k13 l11k13ind unique windows asym asymind
-#   (default: oq62 oq64sym oq64single diag l11k12 l11k13 asym asymind; "all" adds l11k13ind, unique and windows)
+#           exact12 exact13 exact14 exact15 exact16 exact17 exact18 exact19 exact20 s2_20_19 s2_21_20
+#           exactenum exactenumbig lemmap
+#   (default: oq62 oq64sym oq64single diag l11k12 l11k13 asym asymind exact12 exact13 exact14 exact15 exactenum lemmap;
+#    "all" adds l11k13ind, unique, windows, exact16..exact20, s2_20_19 and s2_21_20 -- several hours with JOBS=1;
+#    exactenumbig, the replay of the l >= 17 enumerations (about 7 hours), is run only when named)
+# Optional: JOBS (parallel per-window checks, default 1); exactenum and exactenumbig need gcc.
 # Optional: CAKE_HEAP (MB, default 4000); LOGDIR (keep every checker output there instead of deleting it).
 # A step passes only if the checker exits with status 0 AND prints its exact success line
 # ("c VERIFIED" for lrat-check, "s VERIFIED UNSAT" for cake_lpr). Any failure stops the script with status 1.
@@ -19,13 +27,15 @@ W=$(mktemp -d); trap 'rm -rf "$W"' EXIT
 HEAP=${CAKE_HEAP:-4000}; LOGDIR=${LOGDIR:-}
 [ -n "$LOGDIR" ] && mkdir -p "$LOGDIR"
 
-DEFAULT=(oq62 oq64sym oq64single diag l11k12 l11k13 asym asymind); ALL=("${DEFAULT[@]}" l11k13ind unique windows)
+DEFAULT=(oq62 oq64sym oq64single diag l11k12 l11k13 asym asymind exact12 exact13 exact14 exact15 exactenum lemmap)
+ALL=("${DEFAULT[@]}" l11k13ind unique windows exact16 exact17 exact18 exact19 exact20 s2_20_19 s2_21_20)
+VALID=("${ALL[@]}" exactenumbig)
 ARGS=("$@"); [ ${#ARGS[@]} -eq 0 ] && ARGS=("${DEFAULT[@]}")
 [ "${ARGS[*]}" = "all" ] && ARGS=("${ALL[@]}")
 for requested in "${ARGS[@]}"; do
-  case " ${ALL[*]} " in *" $requested "*) ;; *) echo "Unknown section: $requested (valid: ${ALL[*]} all)" >&2; exit 2;; esac
+  case " ${VALID[*]} " in *" $requested "*) ;; *) echo "Unknown section: $requested (valid: ${VALID[*]} all)" >&2; exit 2;; esac
 done
-NEED_LRAT=0; for s_ in "${ARGS[@]}"; do case "$s_" in asym|asymind) ;; *) NEED_LRAT=1;; esac; done
+NEED_LRAT=0; for s_ in "${ARGS[@]}"; do case "$s_" in asym|asymind|exactenum|exactenumbig|lemmap) ;; *) NEED_LRAT=1;; esac; done
 if [ "$NEED_LRAT" -eq 1 ]; then : "${LRAT_CHECK:?set LRAT_CHECK}"; : "${CAKE_LPR:?set CAKE_LPR}"; fi
 RAN=0
 want() { for s in "${ARGS[@]}"; do [ "$s" = "$1" ] && { RAN=$((RAN+1)); return 0; }; done; return 1; }
@@ -209,6 +219,101 @@ if want asymind; then
   gexp "'l': 20, 'e': 1, 'j': 5, 'n': 4860, 'F': 4812.*'good': True" independent_dp.py
   gexp "'ell': 20, 'e': 1, 'j': 5, 'V3': 4861, 'F': 4812, 'status': 'PASS'" independent_relaxed_dp.py
   gexp 'FACT1 exhaustive PASS 480' independent_fact1.py
+fi
+
+# ---- new in v1.3: exact thresholds K(12..20) and S_2(20;19), S_2(21;20) (evidence/oq64_exact) ----
+X=$EV/oq64_exact; JOBS=${JOBS:-1}
+perwin() { # perwin <setdir> <l> <e> <n>
+  python3 -I "$X/tools/replay_perwin.py" "$X/$1" "$2" "$3" "$4" "$JOBS" > "$W/pw.out" 2>&1 || { cat "$W/pw.out" >&2; fail "per-window replay $1 l=$2 e=$3 n=$4"; }
+  keep "$W/pw.out" "exact_$1_e$3.log"; grep -E '^  PASS' "$W/pw.out"
+}
+exactset() { # exactset <l> <e...> : every stored e for this l, bound F(l+e,l)
+  local l=$1; shift
+  echo "== Result 9 (K($l)): per-window certificates and survivor files, evidence/oq64_exact/l$l"
+  for e in "$@"; do perwin "l$l" "$l" "$e" "$(F2 $((l+e)) "$l")"; done
+}
+want exact12 && exactset 12 1 2 3
+want exact13 && exactset 13 1 2 3
+want exact14 && exactset 14 1 2 3
+want exact15 && exactset 15 1 2 3 4
+want exact16 && exactset 16 1 2 3 4
+want exact17 && exactset 17 1 2 3 4
+want exact18 && exactset 18 1 2 3 4
+want exact19 && exactset 19 2 3 4 5
+want exact20 && exactset 20 2 3 4 5
+if want s2_20_19; then echo "== Result 10: S_2(20;19) <= 4181 (per-window certificates at n = 4181)"; perwin S2_20_19 19 1 4181; fi
+if want s2_21_20; then echo "== Result 10: S_2(21;20) <= 4861 (per-window certificates at n = 4861)"; perwin S2_21_20 20 1 4861; fi
+
+if want exactenum || want exactenumbig; then
+  command -v gcc > /dev/null || fail "exactenum needs gcc"
+  for p in t1red t1multi t1hill; do gcc -O2 -o "$W/$p" "$X/tools/$p.c" || fail "cannot compile $p.c"; done
+fi
+if want exactenum; then
+  echo "== Results 9-10: replay of the exact T1-fill enumeration for 10 <= l <= 16 (byte-identical survivor files)"
+  for le in 10:1 10:2 10:3 11:1 11:2 11:3 12:1 12:2 12:3 13:1 13:2 13:3 14:1 14:2 14:3 15:1 15:2 15:3 15:4; do
+    l=${le%:*}; e=${le#*:}
+    "$W/t1red" "$l" "$e" > "$W/red.txt"
+    cmp -s "$W/red.txt" "$X/l$l/red_l${l}_e$e.txt" || fail "t1red $l $e differs from evidence/oq64_exact/l$l/red_l${l}_e$e.txt"
+    echo "  PASS t1red $l $e: $(tail -1 "$W/red.txt" | grep -o 'survivors=[0-9]*')"
+  done
+  mkdir -p "$W/m" && ( cd "$W/m" && for l in 12 13 14 15; do "$W/t1multi" "$l" 1 3 > /dev/null; done && "$W/t1multi" 16 1 4 > /dev/null )
+  for le in 12:1 12:2 12:3 13:1 13:2 13:3 14:1 14:2 14:3 15:1 15:2 15:3 16:1 16:2 16:3 16:4; do l=${le%:*}; e=${le#*:}
+    cmp -s "$W/m/red_l${l}_e$e.txt" "$X/l$l/red_l${l}_e$e.txt" || fail "t1multi $l (e=$e) differs from the stored survivor file"
+  done
+  echo "  PASS t1multi (one pass, monotonicity in e) reproduces every stored survivor file for l = 12..16"
+  mkdir -p "$W/s" && ( cd "$W/s" && "$W/t1multi" 14 1 3 1 2 12 1 A > /dev/null && "$W/t1multi" 14 1 3 0 2 12 1 B > /dev/null \
+    && for e in 1 2 3; do python3 -I "$X/tools/t1combine.py" 14 "$e" A B > /dev/null; done )
+  for e in 1 2 3; do cmp -s "$W/s/red_l14_e$e.txt" "$X/l14/red_l14_e$e.txt" || fail "segments + t1combine differ (l=14, e=$e)"; done
+  echo "  PASS segments + t1combine reproduce l=14"
+  python3 -I "$X/tools/prefix_closed_form.py" "$W/t1hill" | tee "$W/pf.out"; grep -q 'mismatches 0' "$W/pf.out" || fail "prefix closed form"
+  for le in 9:1 9:3 10:1; do l=${le%:*}; e=${le#*:}
+    python3 -I "$X/fullcheck/full_explicit.py" "$W/t1hill" "$l" "$e" > "$W/fc.out" 2>&1 || { cat "$W/fc.out" >&2; fail "full_explicit $l $e"; }
+    python3 - "$W/fc.out" <<'PYEOF' || { cat "$W/fc.out" >&2; fail "full_explicit $l $e: mismatch or open chain"; }
+import re, sys
+s = open(sys.argv[1]).read(); m = re.search(r'objective mismatches=(\d+) refuted=(\d+) explicit chains closing=(\d+)', s)
+sys.exit(0 if m and m.group(1) == '0' and m.group(2) == m.group(3) and 'NO CLASH' not in s and 'MISMATCH' not in s else 1)
+PYEOF
+    echo "  PASS second implementation, all windows: $(grep -o 'l=.*' "$W/fc.out")"
+  done
+fi
+if want exactenumbig; then
+  echo "== Results 9-10: replay of the large enumerations (hours: l=17,18 about 15 min each, l=19 about 1 h, l=20 about 4 h per bound)"
+  mkdir -p "$W/b" && cd "$W/b"
+  "$W/t1multi" 17 1 4 > /dev/null; "$W/t1multi" 18 1 4 > /dev/null; "$W/t1multi" 19 2 5 > /dev/null; "$W/t1multi" 20 2 5 > /dev/null
+  for le in 17:1 17:2 17:3 17:4 18:1 18:2 18:3 18:4 19:2 19:3 19:4 19:5 20:2 20:3 20:4 20:5; do l=${le%:*}; e=${le#*:}
+    cmp -s "red_l${l}_e$e.txt" "$X/l$l/red_l${l}_e$e.txt" || fail "t1multi $l (e=$e) differs from the stored survivor file"
+    echo "  PASS t1multi l=$l e=$e"
+  done
+  for s in S2_20_19:19:4181 S2_21_20:20:4861; do name=${s%%:*}; r=${s#*:}; l=${r%%:*}; n=${r#*:}
+    mkdir -p "$name" && ( cd "$name" && "$W/t1multi" "$l" 1 1 1 2 $((l-2)) 1 A "$n" > /dev/null && "$W/t1multi" "$l" 1 1 0 2 $((l-2)) 1 B "$n" > /dev/null \
+      && python3 -I "$X/tools/t1combine.py" "$l" 1 A B > /dev/null )
+    cmp -s "$name/red_l${l}_e1.txt" "$X/$name/red_l${l}_e1.txt" || fail "$name: enumeration at N=$n differs from the stored survivor file"
+    echo "  PASS $name: enumeration at N=$n"
+  done
+  cd "$ROOT"
+fi
+
+if want lemmap; then
+  echo "== Results 11-12: Lemma P (prefix dominance) and Theorem Q' (evidence/oq64_exact/lemmaP), first-party checks"
+  L=$X/lemmaP
+  for l in 6 7 8 9; do
+    python3 -I "$L/lemmaP_check.py" "$l" 1 2 3 5 10 20 $((2*l*l-4*l)) > "$W/lp.out" 2>&1 || { cat "$W/lp.out" >&2; fail "lemmaP_check $l"; }
+    grep -Eq "^l=$l .* failures=0$" "$W/lp.out" || { cat "$W/lp.out" >&2; fail "lemmaP_check $l reported failures"; }
+    echo "  PASS $(tail -1 "$W/lp.out")"
+  done
+  python3 -I "$L/lemmaP_check.py" 7 72 100 > "$W/lp.out" 2>&1 || true
+  grep -Eq 'failures=[1-9]' "$W/lp.out" || fail "lemmaP negative control (e beyond 2l^2-4l) was not rejected"
+  echo "  PASS negative control: e > 2l^2-4l is rejected at the predicted window"
+  python3 -I "$L/asym_upper.py" > "$W/au.out" 2>&1 || fail "asym_upper.py"
+  grep -q 'l0=19 c=0: .* ALL NEGATIVE' "$W/au.out" || { cat "$W/au.out" >&2; fail "Theorem Q' upper bound (e = a*l, l >= 19)"; }
+  echo "  PASS Theorem Q' upper bound: Disc < 0 for e = a* l, all l >= 19"
+  python3 -I "$L/asym_lower.py" > "$W/al.out" 2>&1 || fail "asym_lower.py"
+  grep -q 'c=3.630 l0=19: .* ALL >= 0' "$W/al.out" || { cat "$W/al.out" >&2; fail "Theorem Q' lower bound (e = a*l - 3.63, l >= 19)"; }
+  echo "  PASS Theorem Q' lower bound: H >= 0 for e = a* l - 3.63, all l >= 19"
+  python3 -I "$L/asym_vertex.py" > "$W/av.out" 2>&1 || fail "asym_vertex.py"
+  [ "$(grep -c 'coefficient signs \[1' "$W/av.out")" -ge 3 ] && ! grep -q -- '-1' "$W/av.out" || { cat "$W/av.out" >&2; fail "vertex range"; }
+  echo "  PASS vertex of the three-block quadratic lies in [3/2, l-3/2] for all l >= 19"
+  keep "$W/au.out" lemmap_asym_upper.log; keep "$W/al.out" lemmap_asym_lower.log; keep "$W/av.out" lemmap_asym_vertex.log
 fi
 
 [ "$RAN" -gt 0 ] || fail "no section was run"

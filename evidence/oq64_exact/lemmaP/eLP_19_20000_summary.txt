@@ -1,0 +1,6 @@
+l>=19: K-(1+a*)l lower in [-3.6199,-1.935], upper in [-0.7066,0.4437], eP-eL in [3,4]
+l>=100: K-(1+a*)l lower in [-3.6199,-2.4741], upper in [-0.7066,0.3543], eP-eL in [3,4]
+l>=1000: K-(1+a*)l lower in [-3.6199,-2.6043], upper in [-0.7066,0.2982], eP-eL in [3,4]
+l>=10000: K-(1+a*)l lower in [-3.6199,-2.6196], upper in [-0.7066,0.2934], eP-eL in [3,4]
+
+[exited with code 0]

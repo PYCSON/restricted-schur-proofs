@@ -1,0 +1,8 @@
+A done 22:18
+B rc=0 22:51
+PART l=19 e=2 N=4376 mcol=0 jlo=2 jhi=17 low=1 reducedWindows=4059928949 reducedNotRefuted=225 windowsCheckedIndividually=3832607 survivors=225 lowCases=1
+PART l=19 e=3 N=4591 mcol=0 jlo=2 jhi=17 low=1 reducedWindows=4059928949 reducedNotRefuted=8 windowsCheckedIndividually=372601 survivors=8 lowCases=1
+PART l=19 e=4 N=4808 mcol=0 jlo=2 jhi=17 low=1 reducedWindows=4059928949 reducedNotRefuted=0 windowsCheckedIndividually=262125 survivors=0 lowCases=1
+PART l=19 e=5 N=5027 mcol=0 jlo=2 jhi=17 low=1 reducedWindows=4059928949 reducedNotRefuted=0 windowsCheckedIndividually=262125 survivors=0 lowCases=1
+
+[exited with code 0]

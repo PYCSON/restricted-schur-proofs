@@ -1,0 +1,8 @@
+l=9 e=1 N=533 windows=62985 objective mismatches=0 refuted=62974 explicit chains closing=62974 survivors=11
+l=9 e=2 N=591 windows=62985 objective mismatches=0 refuted=62985 explicit chains closing=62985 survivors=0
+l=9 e=3 N=651 windows=62985 objective mismatches=0 refuted=62985 explicit chains closing=62985 survivors=0
+l=10 e=1 N=707 windows=263929 objective mismatches=0 refuted=263908 explicit chains closing=263908 survivors=21
+l=10 e=2 N=776 windows=263929 objective mismatches=0 refuted=263928 explicit chains closing=263928 survivors=1
+l=10 e=3 N=847 windows=263929 objective mismatches=0 refuted=263929 explicit chains closing=263929 survivors=0
+l=11 e=1 N=915 windows=1097767 objective mismatches=0 refuted=1097731 explicit chains closing=1097731 survivors=36
+l=11 e=2 N=996 windows=1097767 objective mismatches=0 refuted=1097766 explicit chains closing=1097766 survivors=1

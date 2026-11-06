@@ -1,0 +1,6 @@
+l=10 e=[1, 2, 3, 4, 5, 7, 10, 20, 160] windows=263929 failures=0
+FAIL RRRRRRRRRBRRRB I (7, 4, 1)
+FAIL RRRRRRRRBRRRRB I (7, 3, 1)
+l=7 e=[72, 100] windows=3458 failures=6
+
+[exited with code 0]

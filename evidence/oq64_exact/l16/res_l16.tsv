@@ -1,0 +1,814 @@
+RRRRRBBBBBBBBBBBBBBBBBBBBBBBBBBB	3	PASS	UNSAT (conflict at root): k=19 l=16 n=2884 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRRBBBBBBBBBBBBBBBBBBBBBBBBBBBB	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=28 0.0s	hyperedges ok=28 bad=0 clauses=88
+RBRRRBBBBBBBBBBBBBBBBBBBBBBBBBBB	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBBRBBBBBBBBBBBBBBBBBBBBBBBBBBB	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=28 0.0s	hyperedges ok=28 bad=0 clauses=88
+RRBBRRBBBBBBBBBBBBBBBBBBBBBBBBBB	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBRBBBBBBBBBBBBBBBBBBBBBBBBBBBB	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=28 0.0s	hyperedges ok=28 bad=0 clauses=88
+RRBRBBRBBBBBBBBBBBBBBBBBBBBBBBBB	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBRBRBBBBBBBBBBBBBBBBBBBBBBBBBB	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBRRBBBBBBBBBBBBBBBBBBBBBBBBBBB	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBRRBRBBBBBBBBBBBBBBBBBBBBBBBBB	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBRRRBBBBBBBBBBBBBBBBBBBBBBBBBB	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBRRRRRRRRRRRRRRRRRRRRRRRRRRRRR	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRRBBBBBBBBBBBBBBBBBBBBBBBBBBBBB	2	PASS	UNSAT: k=18 l=16 n=2726 nodes=119 maxdepth=118 edges=377 0.9s	hyperedges ok=377 bad=0 clauses=786
+RRRBBBBBRBBBBBBBBBBBBBBBBBBBBBBB	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRRBBBBRBBBBBBBBBBBBBBBBBBBBBBBB	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRRBBBRBBBBBBBBBBBBBBBBBBBBBBBBB	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRRBBRBBBBBBBBBBBBBBBBBBBBBBBBBB	2	PASS	UNSAT: k=18 l=16 n=2726 nodes=117 maxdepth=116 edges=370 1.0s	hyperedges ok=370 bad=0 clauses=772
+RRRBBRBRBBBBBBBBBBBBBBBBBBBBBBBB	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRRBBRRBBBBBBBBBBBBBBBBBBBBBBBBB	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRRBRBBBBBBBBBBBBBBBBBBBBBBBBBBB	2	PASS	UNSAT: k=18 l=16 n=2726 nodes=118 maxdepth=117 edges=373 1.2s	hyperedges ok=373 bad=0 clauses=778
+RRRBRBBRBBBBBBBBBBBBBBBBBBBBBBBB	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRRBRBRBBBBBBBBBBBBBBBBBBBBBBBBB	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRRBRRBBBBBBBBBBBBBBBBBBBBBBBBBB	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRRBRRRRRRRRRRRRRRRRRRRRRRRRRRRR	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRRRBBBBBBBBBBBBBBBBBBBBBBBBBBBB	2	PASS	UNSAT: k=18 l=16 n=2726 nodes=119 maxdepth=118 edges=377 0.7s	hyperedges ok=377 bad=0 clauses=786
+RRRRBBBBBRBBBBBBBBBBBBBBBBBBBBBB	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRRRBBBBRBBBBBBBBBBBBBBBBBBBBBBB	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRRRBBBRBBBBBBBBBBBBBBBBBBBBBBBB	2	PASS	UNSAT: k=18 l=16 n=2726 nodes=116 maxdepth=115 edges=365 0.6s	hyperedges ok=365 bad=0 clauses=762
+RRRRBBRBBBBBBBBBBBBBBBBBBBBBBBBB	2	PASS	UNSAT: k=18 l=16 n=2726 nodes=116 maxdepth=115 edges=366 0.5s	hyperedges ok=366 bad=0 clauses=764
+RRRRBRBBBBBBBBBBBBBBBBBBBBBBBBBB	2	PASS	UNSAT: k=18 l=16 n=2726 nodes=117 maxdepth=116 edges=369 0.6s	hyperedges ok=369 bad=0 clauses=770
+RRRRBRRBBBBBBBBBBBBBBBBBBBBBBBBB	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRRBRRRRRRRRRRRRRRRRRRRRRRRRRRR	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRRRRBBBBBBBBBBBBBBBBBBBBBBBBBBB	2	PASS	UNSAT: k=18 l=16 n=2726 nodes=118 maxdepth=117 edges=372 0.6s	hyperedges ok=372 bad=0 clauses=776
+RRRRRBBBRBBBBBBBBBBBBBBBBBBBBBBB	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRRRBBRBBBBBBBBBBBBBBBBBBBBBBBB	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRRRBRBBBBBBBBBBBBBBBBBBBBBBBBB	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRRRBRRRRRRRRRRRRRRRRRRRRRRRRRR	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRRRRRBBBBBBBBBBBBBBBBBBBBBBBBBB	2	PASS	UNSAT: k=18 l=16 n=2726 nodes=116 maxdepth=115 edges=363 0.7s	hyperedges ok=363 bad=0 clauses=758
+RRRRRRBRRRRRRRRRRRRRRRRRRRRRRRRR	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRRRRRRBRRRRRRRRRRRRRRRRRRRRRRRR	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRRRRRRRBRRRRRRRRRRRRRRRRRRRRRRR	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRRRRRRRRBRRRRRRRRRRRRRRRRRRRRRR	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=26 0.0s	hyperedges ok=26 bad=0 clauses=84
+RRRRRRRRRRBRRRRRRRRRRRRRRRRRRRRR	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=26 0.0s	hyperedges ok=26 bad=0 clauses=84
+RRRRRRRRRRRBRRRRRRRRRRRRRRRRRRRR	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=26 0.0s	hyperedges ok=26 bad=0 clauses=84
+RRRRRRRRRRRRBRRRRRRRRRRRRRRRRRRR	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=26 0.0s	hyperedges ok=26 bad=0 clauses=84
+RRRRRRRRRRRRRBRRRRRRRRRRRRRRRRRR	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=26 0.0s	hyperedges ok=26 bad=0 clauses=84
+RRRRRRRRRRRRRRBRRRRRRRRRRRRRRRRR	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=26 0.0s	hyperedges ok=26 bad=0 clauses=84
+RRRRRRRRRRRRRRRBRRRRRRRRRRRRRRRR	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=26 0.0s	hyperedges ok=26 bad=0 clauses=84
+RRRRRRRRRRRRRRRRBRRRRRRRRRRRRRRR	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=18 0.0s	hyperedges ok=18 bad=0 clauses=68
+RRRRRRRRRRRRRRRRRBRRRRRRRRRRRRRR	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=18 0.0s	hyperedges ok=18 bad=0 clauses=68
+RRRRRRRRRRRRRRRRRRBRRRRRRRRRRRRR	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=18 0.0s	hyperedges ok=18 bad=0 clauses=68
+RRRRRRRRRRRRRRRRRRRBRRRRRRRRRRRR	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=18 0.0s	hyperedges ok=18 bad=0 clauses=68
+RRRRRRRRRRRRRRRRRRRRBRRRRRRRRRRR	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=18 0.0s	hyperedges ok=18 bad=0 clauses=68
+RRRRRRRRRRRRRRRRRRRRRBRRRRRRRRRR	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=18 0.0s	hyperedges ok=18 bad=0 clauses=68
+RRRRRRRRRRRRRRRRRRRRRRBRRRRRRRRR	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=18 0.0s	hyperedges ok=18 bad=0 clauses=68
+RRRRRRRRRRRRRRRRRRRRRRRBRRRRRRRR	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=18 0.0s	hyperedges ok=18 bad=0 clauses=68
+RRRRRRRRRRRRRRRRRRRRRRRRBRRRRRRR	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=18 0.0s	hyperedges ok=18 bad=0 clauses=68
+RRRRRRRRRRRRRRRRRRRRRRRRRBRRRRRR	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=18 0.0s	hyperedges ok=18 bad=0 clauses=68
+RRRRRRRRRRRRRRRRRRRRRRRRRRBRRRRR	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=18 0.0s	hyperedges ok=18 bad=0 clauses=68
+RRRRRRRRRRRRRRRRRRRRRRRRRRRBRRRR	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=18 0.0s	hyperedges ok=18 bad=0 clauses=68
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRBRRR	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=18 0.0s	hyperedges ok=18 bad=0 clauses=68
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRBRR	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=18 0.0s	hyperedges ok=18 bad=0 clauses=68
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRBR	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=19 0.0s	hyperedges ok=19 bad=0 clauses=70
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRB	2	PASS	UNSAT (conflict at root): k=18 l=16 n=2726 nodes=0 maxdepth=0 edges=19 0.0s	hyperedges ok=19 bad=0 clauses=70
+RBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBBBBBRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBBBBBRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBBBBBRBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBBBBRBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBBBBBRRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBBBBRRBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBBBBBRRRBRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBBBBBRRRRBRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBBBBBRRRRRBRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBBBBBRRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=370 0.3s	hyperedges ok=370 bad=0 clauses=772
+RBBBBRBBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=118 maxdepth=117 edges=376 0.4s	hyperedges ok=376 bad=0 clauses=784
+RBBBBRBBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBBBRBBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBBBBRBRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBBBRBRBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBBBBRBRRBRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBBBBRBRRRBRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBBBBRBRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=369 0.3s	hyperedges ok=369 bad=0 clauses=770
+RBBBBRRBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBBBRRBBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBBBBRRBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBBBRRBRBRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBBBBRRBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=116 maxdepth=115 edges=367 0.3s	hyperedges ok=367 bad=0 clauses=766
+RBBBBRRRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBBBRRRBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBBBRRRRBRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBBBRRRRRBRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBBBRRRRRRBRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBBBRRRRRRRBRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBBBRRRRRRRRBRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBBBRRRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=119 maxdepth=118 edges=378 0.3s	hyperedges ok=378 bad=0 clauses=788
+RBBBRBBBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=119 maxdepth=118 edges=380 0.4s	hyperedges ok=380 bad=0 clauses=792
+RBBBRBBBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBBRBBBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBBRBBBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBBBRBBRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBBRBBRBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBBBRBBRRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBBRBBRRBRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBBBRBBRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=116 maxdepth=115 edges=367 0.3s	hyperedges ok=367 bad=0 clauses=766
+RBBBRBRBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=118 maxdepth=117 edges=375 0.4s	hyperedges ok=375 bad=0 clauses=782
+RBBBRBRBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBBRBRBBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBBBRBRBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBBRBRBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBBRBRRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBBRBRRBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBBRBRRRBRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBBRBRRRRBRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBBRBRRRRRBRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBBRBRRRRRRBRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBBRBRRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=119 maxdepth=118 edges=377 0.3s	hyperedges ok=377 bad=0 clauses=786
+RBBBRRBBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=119 maxdepth=118 edges=378 0.4s	hyperedges ok=378 bad=0 clauses=788
+RBBBRRBBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBBRRBBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBBRRBBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBBRRBBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBBRRBRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBBRRBRBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBBRRBRRBRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBBRRBRRRBRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBBRRBRRRRBRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBBRRBRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=118 maxdepth=117 edges=375 0.3s	hyperedges ok=375 bad=0 clauses=782
+RBBBRRRBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=370 0.3s	hyperedges ok=370 bad=0 clauses=772
+RBBBRRRBBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBBRRRBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBBRRRBRBRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBBRRRBRRBRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBBRRRBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=372 0.3s	hyperedges ok=372 bad=0 clauses=776
+RBBBRRRRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBBRRRRBBRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBBRRRRBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=370 0.3s	hyperedges ok=370 bad=0 clauses=772
+RBBBRRRRRBRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBBRRRRRRBRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBBRRRRRRRBRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBBRRRRRRRRBRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBBRRRRRRRRRBRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBBRRRRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=126 maxdepth=119 edges=389 0.3s	hyperedges ok=389 bad=0 clauses=810
+RBBRBBBBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=120 maxdepth=119 edges=383 0.4s	hyperedges ok=383 bad=0 clauses=798
+RBBRBBBBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBRBBBBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBRBBBBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBRBBBBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBBRBBBRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=118 maxdepth=117 edges=375 0.3s	hyperedges ok=375 bad=0 clauses=782
+RBBRBBBRBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBRBBBRBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBBRBBBRRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBRBBBRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBRBBRBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=119 maxdepth=118 edges=378 0.4s	hyperedges ok=378 bad=0 clauses=788
+RBBRBBRBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBRBBRBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBRBBRBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBRBBRBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBRBBRRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBRBBRRBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBRBBRRRBRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBRBBRRRRBRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBRBBRRRRRBRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBRBBRRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=118 maxdepth=117 edges=375 0.3s	hyperedges ok=375 bad=0 clauses=782
+RBBRBRBBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=119 maxdepth=118 edges=379 0.4s	hyperedges ok=379 bad=0 clauses=790
+RBBRBRBBBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBRBRBBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBRBRBBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBRBRBBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBRBRBBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBRBRBRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=370 0.4s	hyperedges ok=370 bad=0 clauses=772
+RBBRBRBRBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBRBRBRRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBRBRBRRBRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBRBRBRRRBRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBRBRBRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=372 0.3s	hyperedges ok=372 bad=0 clauses=776
+RBBRBRRBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=372 0.4s	hyperedges ok=372 bad=0 clauses=776
+RBBRBRRBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBRBRRBBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBRBRRBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBRBRRBRBRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBRBRRBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=370 0.3s	hyperedges ok=370 bad=0 clauses=772
+RBBRBRRRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBRBRRRBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBRBRRRRBRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBRBRRRRRBRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBRBRRRRRRBRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBRBRRRRRRRBRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBRBRRRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=119 maxdepth=118 edges=379 0.4s	hyperedges ok=379 bad=0 clauses=790
+RBBRRBBBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=126 maxdepth=119 edges=389 0.4s	hyperedges ok=389 bad=0 clauses=810
+RBBRRBBBBBBBRBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBRRBBBBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBRRBBBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBRRBBBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBRRBBBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=370 0.4s	hyperedges ok=370 bad=0 clauses=772
+RBBRRBBBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBRRBBRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=371 0.3s	hyperedges ok=371 bad=0 clauses=774
+RBBRRBBRBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBRRBBRBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBRRBBRRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBRRBBRRBRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBRRBBRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=371 0.4s	hyperedges ok=371 bad=0 clauses=774
+RBBRRBRBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=118 maxdepth=117 edges=375 0.3s	hyperedges ok=375 bad=0 clauses=782
+RBBRRBRBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBRRBRBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBRRBRBBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBRRBRBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBRRBRBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBRRBRRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBRRBRRBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBRRBRRRBRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBRRBRRRRBRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBRRBRRRRRBRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBRRBRRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=119 maxdepth=118 edges=378 0.3s	hyperedges ok=378 bad=0 clauses=788
+RBBRRRBBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=119 maxdepth=118 edges=377 0.3s	hyperedges ok=377 bad=0 clauses=786
+RBBRRRBBBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBRRRBBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBRRRBBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBRRRBBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBRRRBBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBRRRBRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBBRRRBRBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBRRRBRRBRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBRRRBRRRBRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBRRRBRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=118 maxdepth=117 edges=375 0.5s	hyperedges ok=375 bad=0 clauses=782
+RBBRRRRBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=116 maxdepth=115 edges=367 0.4s	hyperedges ok=367 bad=0 clauses=766
+RBBRRRRBBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBRRRRBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBBRRRRBRBRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBRRRRBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBRRRRRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBBRRRRRBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBRRRRRRBRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBRRRRRRRBRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBBRRRRRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=119 maxdepth=118 edges=380 0.3s	hyperedges ok=380 bad=0 clauses=792
+RBRBBBBBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=184 maxdepth=119 edges=454 0.7s	hyperedges ok=454 bad=0 clauses=940
+RBRBBBBBBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRBBBBBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRBBBBBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRBBBBBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=118 maxdepth=117 edges=375 0.4s	hyperedges ok=375 bad=0 clauses=782
+RBRBBBBBRRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRBBBBBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBRBBBBRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=119 maxdepth=118 edges=378 0.4s	hyperedges ok=378 bad=0 clauses=788
+RBRBBBBRBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRBBBBRBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRBBBBRRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRBBBBRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRBBBRBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=119 maxdepth=118 edges=379 0.4s	hyperedges ok=379 bad=0 clauses=790
+RBRBBBRBBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRBBBRBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRBBBRBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRBBBRBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRBBBRBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRBBBRRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=370 0.4s	hyperedges ok=370 bad=0 clauses=772
+RBRBBBRRBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRBBBRRRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRBBBRRRBRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRBBBRRRRBRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRBBBRRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=372 0.3s	hyperedges ok=372 bad=0 clauses=776
+RBRBBRBBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=126 maxdepth=119 edges=389 0.5s	hyperedges ok=389 bad=0 clauses=810
+RBRBBRBBBBBBRBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRBBRBBBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRBBRBBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRBBRBBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRBBRBBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=370 0.3s	hyperedges ok=370 bad=0 clauses=772
+RBRBBRBBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRBBRBRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=371 0.4s	hyperedges ok=371 bad=0 clauses=774
+RBRBBRBRBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRBBRBRBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRBBRBRRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRBBRBRRBRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRBBRBRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=371 0.3s	hyperedges ok=371 bad=0 clauses=774
+RBRBBRRBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=118 maxdepth=117 edges=375 0.3s	hyperedges ok=375 bad=0 clauses=782
+RBRBBRRBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRBBRRBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRBBRRBBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRBBRRBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRBBRRBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRBBRRRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRBBRRRBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRBBRRRRBRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRBBRRRRRBRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRBBRRRRRRBRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRBBRRRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=119 maxdepth=118 edges=378 0.3s	hyperedges ok=378 bad=0 clauses=788
+RBRBRBBBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=242 maxdepth=120 edges=525 0.9s	hyperedges ok=525 bad=0 clauses=1082
+RBRBRBBBBBBBBRBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRBRBBBBBBBRBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRBRBBBBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRBRBBBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRBRBBBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=370 0.3s	hyperedges ok=370 bad=0 clauses=772
+RBRBRBBBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=371 0.4s	hyperedges ok=371 bad=0 clauses=774
+RBRBRBBBRRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRBRBBBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRBRBBRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=118 maxdepth=117 edges=375 0.3s	hyperedges ok=375 bad=0 clauses=782
+RBRBRBBRBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRBRBBRBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRBRBBRBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRBRBBRRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRBRBBRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRBRBRBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=119 maxdepth=118 edges=377 0.3s	hyperedges ok=377 bad=0 clauses=786
+RBRBRBRBBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRBRBRBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRBRBRBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRBRBRBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRBRBRBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRBRBRRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRBRBRRBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRBRBRRRBRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRBRBRRRRBRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRBRBRRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=118 maxdepth=117 edges=375 0.3s	hyperedges ok=375 bad=0 clauses=782
+RBRBRRBBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=119 maxdepth=118 edges=378 0.4s	hyperedges ok=378 bad=0 clauses=788
+RBRBRRBBBBBBRBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRBRRBBBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRBRRBBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRBRRBBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRBRRBBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRBRRBBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRBRRBRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=116 maxdepth=115 edges=367 0.5s	hyperedges ok=367 bad=0 clauses=766
+RBRBRRBRBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRBRRBRRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBRBRRBRRBRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRBRRBRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRBRRRBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=369 0.5s	hyperedges ok=369 bad=0 clauses=770
+RBRBRRRBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBRBRRRBBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRBRRRBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBRBRRRBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRBRRRRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBRBRRRRBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRBRRRRRBRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRBRRRRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=118 maxdepth=117 edges=377 0.6s	hyperedges ok=377 bad=0 clauses=786
+RBRRBBBBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=503 maxdepth=120 edges=798 2.6s	hyperedges ok=798 bad=0 clauses=1628
+RBRRBBBBBBBBBRBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRRBBBBBBBBRBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRRBBBBBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRRBBBBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=370 0.5s	hyperedges ok=370 bad=0 clauses=772
+RBRRBBBBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=371 0.5s	hyperedges ok=371 bad=0 clauses=774
+RBRRBBBBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=118 maxdepth=117 edges=374 0.5s	hyperedges ok=374 bad=0 clauses=780
+RBRRBBBBRBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRRBBBBRRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRRBBBBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRRBBBRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=119 maxdepth=118 edges=377 0.5s	hyperedges ok=377 bad=0 clauses=786
+RBRRBBBRBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRRBBBRBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRRBBBRBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRRBBBRRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRRBBBRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRRBBRBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=119 maxdepth=118 edges=378 0.4s	hyperedges ok=378 bad=0 clauses=788
+RBRRBBRBBBBBRBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRRBBRBBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRRBBRBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRRBBRBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRRBBRBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRRBBRBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRRBBRRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=116 maxdepth=115 edges=367 0.5s	hyperedges ok=367 bad=0 clauses=766
+RBRRBBRRBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRRBBRRRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBRRBBRRRBRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRRBBRRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=28 0.0s	hyperedges ok=28 bad=0 clauses=88
+RBRRBRBBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=131 maxdepth=119 edges=395 0.6s	hyperedges ok=395 bad=0 clauses=822
+RBRRBRBBBBBBBRBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRRBRBBBBBBRBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRRBRBBBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRRBRBBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRRBRBBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRRBRBBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=116 maxdepth=115 edges=367 0.6s	hyperedges ok=367 bad=0 clauses=766
+RBRRBRBBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRRBRBRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=369 0.5s	hyperedges ok=369 bad=0 clauses=770
+RBRRBRBRBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBRRBRBRBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRRBRBRRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBRRBRBRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRRBRRBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=370 0.4s	hyperedges ok=370 bad=0 clauses=772
+RBRRBRRBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBRRBRRBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBRRBRRBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBRRBRRBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRRBRRRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBRRBRRRBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRRBRRRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRRRBBBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=244 maxdepth=120 edges=537 1.0s	hyperedges ok=537 bad=0 clauses=1106
+RBRRRBBBBBBBBBRBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRRRBBBBBBBBRBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRRRBBBBBBBRBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRRRBBBBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRRRBBBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RBRRRBBBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=116 maxdepth=115 edges=367 0.5s	hyperedges ok=367 bad=0 clauses=766
+RBRRRBBBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=369 0.4s	hyperedges ok=369 bad=0 clauses=770
+RBRRRBBBRRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBRRRBBBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRRRBBRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=370 0.5s	hyperedges ok=370 bad=0 clauses=772
+RBRRRBBRBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBRRRBBRBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBRRRBBRRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBRRRBBRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRRRBRBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=118 maxdepth=117 edges=372 0.4s	hyperedges ok=372 bad=0 clauses=776
+RBRRRBRBBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBRRRBRBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBRRRBRBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBRRRBRBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBRRRBRBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRRRBRRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBRRRBRRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRRRRBBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=118 maxdepth=117 edges=373 0.5s	hyperedges ok=373 bad=0 clauses=778
+RBRRRRBBBBBBRBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBRRRRBBBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBRRRRBBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBRRRRBBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBRRRRBBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBRRRRBRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBRRRRBRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RBRRRRRBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RBRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=883 maxdepth=121 edges=1181 4.3s	hyperedges ok=1181 bad=0 clauses=2394
+RRBBBBBBBBBBRBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBBBBBBBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBBBBBBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=118 maxdepth=117 edges=375 0.5s	hyperedges ok=375 bad=0 clauses=782
+RRBBBBBBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=119 maxdepth=118 edges=378 0.7s	hyperedges ok=378 bad=0 clauses=788
+RRBBBBBBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=119 maxdepth=118 edges=379 0.5s	hyperedges ok=379 bad=0 clauses=790
+RRBBBBBBRBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBBBBBBRRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBBBBBRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=130 maxdepth=119 edges=395 0.6s	hyperedges ok=395 bad=0 clauses=822
+RRBBBBBRBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBBBBBRBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBBBBBRBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBBBBBRRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=370 0.5s	hyperedges ok=370 bad=0 clauses=772
+RRBBBBBRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBBBBRBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=259 maxdepth=120 edges=544 1.3s	hyperedges ok=544 bad=0 clauses=1120
+RRBBBBRBBBBBRBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBBBBRBBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBBBBRBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBBBBRBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=370 0.6s	hyperedges ok=370 bad=0 clauses=772
+RRBBBBRBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=118 maxdepth=117 edges=373 0.6s	hyperedges ok=373 bad=0 clauses=778
+RRBBBBRBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBBBBRRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=118 maxdepth=117 edges=375 0.5s	hyperedges ok=375 bad=0 clauses=782
+RRBBBBRRBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBBBBRRBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBBBBRRRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBBBBRRRBRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBBBBRRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=371 0.4s	hyperedges ok=371 bad=0 clauses=774
+RRBBBRBBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=531 maxdepth=120 edges=825 2.5s	hyperedges ok=825 bad=0 clauses=1682
+RRBBBRBBBBBBBRBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBBBRBBBBBBRBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBBBRBBBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBBBRBBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=370 0.5s	hyperedges ok=370 bad=0 clauses=772
+RRBBBRBBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=118 maxdepth=117 edges=373 0.5s	hyperedges ok=373 bad=0 clauses=778
+RRBBBRBBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=118 maxdepth=117 edges=374 0.6s	hyperedges ok=374 bad=0 clauses=780
+RRBBBRBBRRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBBBRBBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBBBRBRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=119 maxdepth=118 edges=377 0.7s	hyperedges ok=377 bad=0 clauses=786
+RRBBBRBRBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBBBRBRBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBBBRBRBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBBBRBRRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBBBRBRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBBBRRBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=119 maxdepth=118 edges=378 0.5s	hyperedges ok=378 bad=0 clauses=788
+RRBBBRRBBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBBBRRBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBBBRRBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBBBRRBBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBBBRRBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBBBRRBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBBBRRRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=116 maxdepth=115 edges=367 0.5s	hyperedges ok=367 bad=0 clauses=766
+RRBBBRRRBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBBBRRRRBRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBBBRRRRRBRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBBBRRRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=118 maxdepth=117 edges=375 0.4s	hyperedges ok=375 bad=0 clauses=782
+RRBBRBBBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=957 maxdepth=121 edges=1273 4.4s	hyperedges ok=1273 bad=0 clauses=2578
+RRBBRBBBBBBBBRBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBBRBBBBBBBRBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBBRBBBBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=370 0.5s	hyperedges ok=370 bad=0 clauses=772
+RRBBRBBBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=118 maxdepth=117 edges=373 0.5s	hyperedges ok=373 bad=0 clauses=778
+RRBBRBBBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=118 maxdepth=117 edges=374 0.4s	hyperedges ok=374 bad=0 clauses=780
+RRBBRBBBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=119 maxdepth=118 edges=376 0.5s	hyperedges ok=376 bad=0 clauses=784
+RRBBRBBBRBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBBRBBBRRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBBRBBBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBBRBBRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=119 maxdepth=118 edges=378 0.5s	hyperedges ok=378 bad=0 clauses=788
+RRBBRBBRBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBBRBBRBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBBRBBRBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBBRBBRBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBBRBBRRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBBRBBRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBBRBRBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=136 maxdepth=119 edges=402 0.7s	hyperedges ok=402 bad=0 clauses=836
+RRBBRBRBBBBBRBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBBRBRBBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBBRBRBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBBRBRBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBBRBRBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=116 maxdepth=115 edges=367 0.5s	hyperedges ok=367 bad=0 clauses=766
+RRBBRBRBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBBRBRRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=369 0.5s	hyperedges ok=369 bad=0 clauses=770
+RRBBRBRRBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBBRBRRRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRBBRBRRRBRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBBRBRRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=28 0.0s	hyperedges ok=28 bad=0 clauses=88
+RRBBRRBBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=261 maxdepth=120 edges=558 1.1s	hyperedges ok=558 bad=0 clauses=1148
+RRBBRRBBBBBBBRBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBBRRBBBBBBRBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBBRRBBBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBBRRBBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBBRRBBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=116 maxdepth=115 edges=367 0.6s	hyperedges ok=367 bad=0 clauses=766
+RRBBRRBBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=369 0.5s	hyperedges ok=369 bad=0 clauses=770
+RRBBRRBBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBBRRBRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=370 0.5s	hyperedges ok=370 bad=0 clauses=772
+RRBBRRBRBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRBBRRBRBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBBRRBRRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRBBRRBRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBBRRRBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=118 maxdepth=117 edges=372 0.6s	hyperedges ok=372 bad=0 clauses=776
+RRBBRRRBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRBBRRRBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRBBRRRBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRBBRRRBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBBRRRRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRBBRRRRBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBBRRRRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBRBBBBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=1549 maxdepth=122 edges=2145 8.7s	hyperedges ok=2145 bad=0 clauses=4322
+RRBRBBBBBBBBBBRBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBRBBBBBBBBBRBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBRBBBBBBBBRBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=370 0.7s	hyperedges ok=370 bad=0 clauses=772
+RRBRBBBBBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=118 maxdepth=117 edges=373 0.5s	hyperedges ok=373 bad=0 clauses=778
+RRBRBBBBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=118 maxdepth=117 edges=374 0.6s	hyperedges ok=374 bad=0 clauses=780
+RRBRBBBBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=119 maxdepth=118 edges=376 0.5s	hyperedges ok=376 bad=0 clauses=784
+RRBRBBBBBRRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBRBBBBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=119 maxdepth=118 edges=378 0.7s	hyperedges ok=378 bad=0 clauses=788
+RRBRBBBBRBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBRBBBBRBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBRBBBBRRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBRBBBBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBRBBBRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=136 maxdepth=119 edges=402 0.7s	hyperedges ok=402 bad=0 clauses=836
+RRBRBBBRBBBBRBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBRBBBRBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBRBBBRBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBRBBBRBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBRBBBRRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=116 maxdepth=115 edges=367 0.5s	hyperedges ok=367 bad=0 clauses=766
+RRBRBBBRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBRBBRBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=261 maxdepth=120 edges=558 1.1s	hyperedges ok=558 bad=0 clauses=1148
+RRBRBBRBBBBBBRBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBRBBRBBBBBRBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBRBBRBBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBRBBRBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBRBBRBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=116 maxdepth=115 edges=367 0.5s	hyperedges ok=367 bad=0 clauses=766
+RRBRBBRBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=369 0.4s	hyperedges ok=369 bad=0 clauses=770
+RRBRBBRBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBRBBRRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=370 0.5s	hyperedges ok=370 bad=0 clauses=772
+RRBRBBRRBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRBRBBRRBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBRBBRRRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRBRBBRRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=28 0.0s	hyperedges ok=28 bad=0 clauses=88
+RRBRBRBBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=507 maxdepth=120 edges=819 2.4s	hyperedges ok=819 bad=0 clauses=1670
+RRBRBRBBBBBBBBRBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBRBRBBBBBBBRBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBRBRBBBBBBRBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBRBRBBBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBRBRBBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=116 maxdepth=115 edges=367 0.5s	hyperedges ok=367 bad=0 clauses=766
+RRBRBRBBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=369 0.5s	hyperedges ok=369 bad=0 clauses=770
+RRBRBRBBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=370 0.4s	hyperedges ok=370 bad=0 clauses=772
+RRBRBRBBRRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRBRBRBBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBRBRBRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=118 maxdepth=117 edges=372 0.5s	hyperedges ok=372 bad=0 clauses=776
+RRBRBRBRBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRBRBRBRBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRBRBRBRRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRBRBRBRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBRBRRBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=118 maxdepth=117 edges=373 0.6s	hyperedges ok=373 bad=0 clauses=778
+RRBRBRRBBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRBRBRRBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRBRBRRBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRBRBRRBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRBRBRRBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBRBRRRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRBRBRRRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBRRBBBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=880 maxdepth=121 edges=1315 4.6s	hyperedges ok=1315 bad=0 clauses=2662
+RRBRRBBBBBBBBBBRBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBRRBBBBBBBBBRBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBRRBBBBBBBBRBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBRRBBBBBBBRBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRBRRBBBBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=116 maxdepth=115 edges=367 0.5s	hyperedges ok=367 bad=0 clauses=766
+RRBRRBBBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=369 0.5s	hyperedges ok=369 bad=0 clauses=770
+RRBRRBBBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=370 0.5s	hyperedges ok=370 bad=0 clauses=772
+RRBRRBBBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=118 maxdepth=117 edges=372 0.6s	hyperedges ok=372 bad=0 clauses=776
+RRBRRBBBRBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRBRRBBBRRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRBRRBBRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=118 maxdepth=117 edges=373 0.7s	hyperedges ok=373 bad=0 clauses=778
+RRBRRBBRBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRBRRBBRBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRBRRBBRBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRBRRBBRRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRBRRBBRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBRRBRBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=119 maxdepth=118 edges=375 0.4s	hyperedges ok=375 bad=0 clauses=782
+RRBRRBRBBBBBRBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRBRRBRBBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRBRRBRBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRBRRBRBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRBRRBRBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRBRRBRRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRBRRBRRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRBRRRBBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=120 maxdepth=119 edges=379 0.5s	hyperedges ok=379 bad=0 clauses=790
+RRBRRRBBBBBBBRBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRBRRRBBBBBBRBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRBRRRBBBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRBRRRBBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRBRRRBBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRBRRRBBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRBRRRBRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=115 maxdepth=114 edges=362 0.4s	hyperedges ok=362 bad=0 clauses=756
+RRBRRRRBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=116 maxdepth=115 edges=365 0.4s	hyperedges ok=365 bad=0 clauses=762
+RRBRRRRRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=21 0.0s	hyperedges ok=21 bad=0 clauses=74
+RRBRRRRRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRRBBBBBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=4208 maxdepth=123 edges=7060 25.4s	hyperedges ok=7060 bad=0 clauses=14152
+RRRBBBBBBBBBBBBRBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRRBBBBBBBBBBBRBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=371 0.5s	hyperedges ok=371 bad=0 clauses=774
+RRRBBBBBBBBBBRBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=118 maxdepth=117 edges=373 0.5s	hyperedges ok=373 bad=0 clauses=778
+RRRBBBBBBBBBRBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=118 maxdepth=117 edges=374 0.4s	hyperedges ok=374 bad=0 clauses=780
+RRRBBBBBBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=119 maxdepth=118 edges=376 0.5s	hyperedges ok=376 bad=0 clauses=784
+RRRBBBBBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=120 maxdepth=119 edges=379 0.5s	hyperedges ok=379 bad=0 clauses=790
+RRRBBBBBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=142 maxdepth=119 edges=411 0.6s	hyperedges ok=411 bad=0 clauses=854
+RRRBBBBBBRBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRRBBBBBBRRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRRBBBBBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=277 maxdepth=120 edges=576 1.4s	hyperedges ok=576 bad=0 clauses=1184
+RRRBBBBBRBBBRBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRRBBBBBRBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRRBBBBBRBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRRBBBBBRRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=116 maxdepth=115 edges=367 0.5s	hyperedges ok=367 bad=0 clauses=766
+RRRBBBBRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=535 maxdepth=120 edges=845 2.4s	hyperedges ok=845 bad=0 clauses=1722
+RRRBBBBRBBBBBRBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRRBBBBRBBBBRBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRRBBBBRBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRRBBBBRBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=116 maxdepth=115 edges=367 0.6s	hyperedges ok=367 bad=0 clauses=766
+RRRBBBBRBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=369 0.4s	hyperedges ok=369 bad=0 clauses=770
+RRRBBBBRRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=370 0.6s	hyperedges ok=370 bad=0 clauses=772
+RRRBBBBRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRRBBBRBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=920 maxdepth=121 edges=1378 4.4s	hyperedges ok=1378 bad=0 clauses=2788
+RRRBBBRBBBBBBBRBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRRBBBRBBBBBBRBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRRBBBRBBBBBRBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRRBBBRBBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=116 maxdepth=115 edges=367 0.4s	hyperedges ok=367 bad=0 clauses=766
+RRRBBBRBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=369 0.5s	hyperedges ok=369 bad=0 clauses=770
+RRRBBBRBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=370 0.4s	hyperedges ok=370 bad=0 clauses=772
+RRRBBBRBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=118 maxdepth=117 edges=372 0.5s	hyperedges ok=372 bad=0 clauses=776
+RRRBBBRBRRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRBBBRBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRRBBBRRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=119 maxdepth=118 edges=375 0.6s	hyperedges ok=375 bad=0 clauses=782
+RRRBBBRRBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRBBBRRBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRBBBRRRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRBBBRRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=28 0.0s	hyperedges ok=28 bad=0 clauses=88
+RRRBBRBBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=1434 maxdepth=122 edges=2303 8.2s	hyperedges ok=2303 bad=0 clauses=4638
+RRRBBRBBBBBBBBBRBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRRBBRBBBBBBBBRBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRRBBRBBBBBBBRBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRRBBRBBBBBBRBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=116 maxdepth=115 edges=367 0.4s	hyperedges ok=367 bad=0 clauses=766
+RRRBBRBBBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=369 0.4s	hyperedges ok=369 bad=0 clauses=770
+RRRBBRBBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=370 0.4s	hyperedges ok=370 bad=0 clauses=772
+RRRBBRBBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=118 maxdepth=117 edges=372 0.4s	hyperedges ok=372 bad=0 clauses=776
+RRRBBRBBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=119 maxdepth=118 edges=375 0.5s	hyperedges ok=375 bad=0 clauses=782
+RRRBBRBBRBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRBBRBBRRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRBBRBRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=119 maxdepth=118 edges=376 0.5s	hyperedges ok=376 bad=0 clauses=784
+RRRBBRBRBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRBBRBRBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRBBRBRBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRBBRBRRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRBBRBRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRRBBRRBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=120 maxdepth=119 edges=378 0.6s	hyperedges ok=378 bad=0 clauses=788
+RRRBBRRBBBBBRBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRBBRRBBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRBBRRBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRBBRRBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRBBRRBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=115 maxdepth=114 edges=362 0.5s	hyperedges ok=362 bad=0 clauses=756
+RRRBBRRBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRRBBRRRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=115 maxdepth=114 edges=362 0.6s	hyperedges ok=362 bad=0 clauses=756
+RRRBBRRRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRRBRBBBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=2073 maxdepth=122 edges=3550 10.2s	hyperedges ok=3550 bad=0 clauses=7132
+RRRBRBBBBBBBBBBBRBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRRBRBBBBBBBBBBRBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRRBRBBBBBBBBBRBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRRBRBBBBBBBBRBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=116 maxdepth=115 edges=367 0.3s	hyperedges ok=367 bad=0 clauses=766
+RRRBRBBBBBBBRBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=369 0.3s	hyperedges ok=369 bad=0 clauses=770
+RRRBRBBBBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=370 0.3s	hyperedges ok=370 bad=0 clauses=772
+RRRBRBBBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=118 maxdepth=117 edges=372 0.3s	hyperedges ok=372 bad=0 clauses=776
+RRRBRBBBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=119 maxdepth=118 edges=375 0.3s	hyperedges ok=375 bad=0 clauses=782
+RRRBRBBBBRRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRBRBBBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=119 maxdepth=118 edges=376 0.3s	hyperedges ok=376 bad=0 clauses=784
+RRRBRBBBRBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRBRBBBRBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRBRBBBRRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRBRBBRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=120 maxdepth=119 edges=378 0.3s	hyperedges ok=378 bad=0 clauses=788
+RRRBRBBRBBBBRBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRBRBBRBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRBRBBRBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRBRBBRBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRBRBBRRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=115 maxdepth=114 edges=362 0.3s	hyperedges ok=362 bad=0 clauses=756
+RRRBRBBRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRRBRBRBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=149 maxdepth=119 edges=422 0.4s	hyperedges ok=422 bad=0 clauses=876
+RRRBRBRBBBBBBRBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRBRBRBBBBBRBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRBRBRBBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRBRBRBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRBRBRBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=115 maxdepth=114 edges=362 0.3s	hyperedges ok=362 bad=0 clauses=756
+RRRBRBRBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=115 maxdepth=114 edges=362 0.3s	hyperedges ok=362 bad=0 clauses=756
+RRRBRBRRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=116 maxdepth=115 edges=365 0.3s	hyperedges ok=365 bad=0 clauses=762
+RRRBRRBBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=277 maxdepth=120 edges=586 0.8s	hyperedges ok=586 bad=0 clauses=1204
+RRRBRRBBBBBBBRBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRBRRBBBBBBRBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRBRRBBBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRBRRBBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=115 maxdepth=114 edges=361 0.3s	hyperedges ok=361 bad=0 clauses=754
+RRRBRRBBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=115 maxdepth=114 edges=362 0.3s	hyperedges ok=362 bad=0 clauses=756
+RRRBRRBBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=116 maxdepth=115 edges=365 0.4s	hyperedges ok=365 bad=0 clauses=762
+RRRBRRBRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=116 maxdepth=115 edges=365 0.3s	hyperedges ok=365 bad=0 clauses=762
+RRRBRRRBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=368 0.4s	hyperedges ok=368 bad=0 clauses=768
+RRRBRRRBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=21 0.0s	hyperedges ok=21 bad=0 clauses=74
+RRRBRRRRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=21 0.0s	hyperedges ok=21 bad=0 clauses=74
+RRRBRRRRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRRRBBBBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=4108 maxdepth=124 edges=7587 17.9s	hyperedges ok=7587 bad=0 clauses=15206
+RRRRBBBBBBBBBBBBBRBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRRRBBBBBBBBBBBBRBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=25 0.0s	hyperedges ok=25 bad=0 clauses=82
+RRRRBBBBBBBBBBBRBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=116 maxdepth=115 edges=366 0.3s	hyperedges ok=366 bad=0 clauses=764
+RRRRBBBBBBBBBBRBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=368 0.3s	hyperedges ok=368 bad=0 clauses=768
+RRRRBBBBBBBBBRBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=370 0.4s	hyperedges ok=370 bad=0 clauses=772
+RRRRBBBBBBBBRBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=118 maxdepth=117 edges=372 0.4s	hyperedges ok=372 bad=0 clauses=776
+RRRRBBBBBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=119 maxdepth=118 edges=375 0.4s	hyperedges ok=375 bad=0 clauses=782
+RRRRBBBBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=119 maxdepth=118 edges=376 0.4s	hyperedges ok=376 bad=0 clauses=784
+RRRRBBBBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=120 maxdepth=119 edges=378 0.4s	hyperedges ok=378 bad=0 clauses=788
+RRRRBBBBBRBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRRBBBBBRRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRRBBBBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=158 maxdepth=119 edges=436 0.5s	hyperedges ok=436 bad=0 clauses=904
+RRRRBBBBRBBBRBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRRBBBBRBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRRBBBBRBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRRBBBBRRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=115 maxdepth=114 edges=362 0.3s	hyperedges ok=362 bad=0 clauses=756
+RRRRBBBRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=294 maxdepth=120 edges=606 0.9s	hyperedges ok=606 bad=0 clauses=1244
+RRRRBBBRBBBBBRBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRRBBBRBBBBRBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRRBBBRBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRRBBBRBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=115 maxdepth=114 edges=361 0.3s	hyperedges ok=361 bad=0 clauses=754
+RRRRBBBRBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=115 maxdepth=114 edges=362 0.3s	hyperedges ok=362 bad=0 clauses=756
+RRRRBBBRRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=116 maxdepth=115 edges=365 0.3s	hyperedges ok=365 bad=0 clauses=762
+RRRRBBRBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=535 maxdepth=121 edges=982 1.9s	hyperedges ok=982 bad=0 clauses=1996
+RRRRBBRBBBBBBRBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRRBBRBBBBBRBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRRBBRBBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=115 maxdepth=114 edges=361 0.3s	hyperedges ok=361 bad=0 clauses=754
+RRRRBBRBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=115 maxdepth=114 edges=361 0.3s	hyperedges ok=361 bad=0 clauses=754
+RRRRBBRBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=116 maxdepth=115 edges=365 0.4s	hyperedges ok=365 bad=0 clauses=762
+RRRRBBRBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=116 maxdepth=115 edges=365 0.3s	hyperedges ok=365 bad=0 clauses=762
+RRRRBBRRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=368 0.4s	hyperedges ok=368 bad=0 clauses=768
+RRRRBRBBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=877 maxdepth=121 edges=1624 3.7s	hyperedges ok=1624 bad=0 clauses=3280
+RRRRBRBBBBBBBBRBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRRBRBBBBBBBRBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRRBRBBBBBBRBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=115 maxdepth=114 edges=361 0.4s	hyperedges ok=361 bad=0 clauses=754
+RRRRBRBBBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=115 maxdepth=114 edges=361 0.3s	hyperedges ok=361 bad=0 clauses=754
+RRRRBRBBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=116 maxdepth=115 edges=365 0.4s	hyperedges ok=365 bad=0 clauses=762
+RRRRBRBBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=116 maxdepth=115 edges=365 0.4s	hyperedges ok=365 bad=0 clauses=762
+RRRRBRBBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=368 0.3s	hyperedges ok=368 bad=0 clauses=768
+RRRRBRBRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=368 0.4s	hyperedges ok=368 bad=0 clauses=768
+RRRRBRBRRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=21 0.0s	hyperedges ok=21 bad=0 clauses=74
+RRRRBRRBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=118 maxdepth=117 edges=371 0.3s	hyperedges ok=371 bad=0 clauses=774
+RRRRBRRBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=21 0.0s	hyperedges ok=21 bad=0 clauses=74
+RRRRBRRBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=21 0.0s	hyperedges ok=21 bad=0 clauses=74
+RRRRBRRRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=21 0.0s	hyperedges ok=21 bad=0 clauses=74
+RRRRBRRRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRRRRBBBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=1943 maxdepth=122 edges=3686 8.7s	hyperedges ok=3686 bad=0 clauses=7404
+RRRRRBBBBBBBBBBRBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=23 0.0s	hyperedges ok=23 bad=0 clauses=78
+RRRRRBBBBBBBBBRBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=115 maxdepth=114 edges=361 0.4s	hyperedges ok=361 bad=0 clauses=754
+RRRRRBBBBBBBBRBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=115 maxdepth=114 edges=362 0.3s	hyperedges ok=362 bad=0 clauses=756
+RRRRRBBBBBBBRBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=116 maxdepth=115 edges=364 0.3s	hyperedges ok=364 bad=0 clauses=760
+RRRRRBBBBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=116 maxdepth=115 edges=366 0.3s	hyperedges ok=366 bad=0 clauses=764
+RRRRRBBBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=368 0.3s	hyperedges ok=368 bad=0 clauses=768
+RRRRRBBBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=117 maxdepth=116 edges=369 0.3s	hyperedges ok=369 bad=0 clauses=770
+RRRRRBBBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=118 maxdepth=117 edges=371 0.3s	hyperedges ok=371 bad=0 clauses=774
+RRRRRBBRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=118 maxdepth=117 edges=372 0.3s	hyperedges ok=372 bad=0 clauses=776
+RRRRRBBRBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=21 0.0s	hyperedges ok=21 bad=0 clauses=74
+RRRRRBBRRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=21 0.0s	hyperedges ok=21 bad=0 clauses=74
+RRRRRBRBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=119 maxdepth=118 edges=374 0.3s	hyperedges ok=374 bad=0 clauses=780
+RRRRRBRBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=21 0.0s	hyperedges ok=21 bad=0 clauses=74
+RRRRRBRBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=21 0.0s	hyperedges ok=21 bad=0 clauses=74
+RRRRRBRBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=21 0.0s	hyperedges ok=21 bad=0 clauses=74
+RRRRRBRRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=21 0.0s	hyperedges ok=21 bad=0 clauses=74
+RRRRRBRRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRRRRRBBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=123 maxdepth=119 edges=381 0.3s	hyperedges ok=381 bad=0 clauses=794
+RRRRRRBBBBBRBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=21 0.0s	hyperedges ok=21 bad=0 clauses=74
+RRRRRRBBBBRBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=21 0.0s	hyperedges ok=21 bad=0 clauses=74
+RRRRRRBBBRBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=21 0.0s	hyperedges ok=21 bad=0 clauses=74
+RRRRRRBBRBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=113 maxdepth=112 edges=354 0.3s	hyperedges ok=354 bad=0 clauses=740
+RRRRRRBRBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=114 maxdepth=113 edges=358 0.3s	hyperedges ok=358 bad=0 clauses=748
+RRRRRRBRRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRRRRRRBBBBBBBBBBBBBBBBBBBBBBBBB	1	PASS	UNSAT: k=17 l=16 n=2570 nodes=115 maxdepth=114 edges=361 0.3s	hyperedges ok=361 bad=0 clauses=754
+RRRRRRRBRRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=27 0.0s	hyperedges ok=27 bad=0 clauses=86
+RRRRRRRRBRRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=26 0.0s	hyperedges ok=26 bad=0 clauses=84
+RRRRRRRRRBRRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=26 0.0s	hyperedges ok=26 bad=0 clauses=84
+RRRRRRRRRRBRRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=26 0.0s	hyperedges ok=26 bad=0 clauses=84
+RRRRRRRRRRRBRRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=26 0.0s	hyperedges ok=26 bad=0 clauses=84
+RRRRRRRRRRRRBRRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=26 0.0s	hyperedges ok=26 bad=0 clauses=84
+RRRRRRRRRRRRRBRRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=26 0.0s	hyperedges ok=26 bad=0 clauses=84
+RRRRRRRRRRRRRRBRRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=26 0.0s	hyperedges ok=26 bad=0 clauses=84
+RRRRRRRRRRRRRRRBRRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=26 0.0s	hyperedges ok=26 bad=0 clauses=84
+RRRRRRRRRRRRRRRRBRRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=18 0.0s	hyperedges ok=18 bad=0 clauses=68
+RRRRRRRRRRRRRRRRRBRRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=18 0.0s	hyperedges ok=18 bad=0 clauses=68
+RRRRRRRRRRRRRRRRRRBRRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=18 0.0s	hyperedges ok=18 bad=0 clauses=68
+RRRRRRRRRRRRRRRRRRRBRRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=18 0.0s	hyperedges ok=18 bad=0 clauses=68
+RRRRRRRRRRRRRRRRRRRRBRRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=18 0.0s	hyperedges ok=18 bad=0 clauses=68
+RRRRRRRRRRRRRRRRRRRRRBRRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=18 0.0s	hyperedges ok=18 bad=0 clauses=68
+RRRRRRRRRRRRRRRRRRRRRRBRRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=18 0.0s	hyperedges ok=18 bad=0 clauses=68
+RRRRRRRRRRRRRRRRRRRRRRRBRRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=18 0.0s	hyperedges ok=18 bad=0 clauses=68
+RRRRRRRRRRRRRRRRRRRRRRRRBRRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=18 0.0s	hyperedges ok=18 bad=0 clauses=68
+RRRRRRRRRRRRRRRRRRRRRRRRRBRRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=18 0.0s	hyperedges ok=18 bad=0 clauses=68
+RRRRRRRRRRRRRRRRRRRRRRRRRRBRRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=18 0.0s	hyperedges ok=18 bad=0 clauses=68
+RRRRRRRRRRRRRRRRRRRRRRRRRRRBRRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=18 0.0s	hyperedges ok=18 bad=0 clauses=68
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRBRRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=18 0.0s	hyperedges ok=18 bad=0 clauses=68
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRBRR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=18 0.0s	hyperedges ok=18 bad=0 clauses=68
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRBR	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=19 0.0s	hyperedges ok=19 bad=0 clauses=70
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRB	1	PASS	UNSAT (conflict at root): k=17 l=16 n=2570 nodes=0 maxdepth=0 edges=19 0.0s	hyperedges ok=19 bad=0 clauses=70

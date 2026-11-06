@@ -1,0 +1,2 @@
+SURV RRRBBBBBBBBBBBBBBBBB 1
+DONE l=10 e=2 N=776 reducedWindows=43747 reducedNotRefuted=1 windowsCheckedIndividually=6153 survivors=1 lowCases=11

@@ -1,11 +1,11 @@
 # On two open questions of Gaiser on restricted generalized Schur numbers
 
 **Author:** Puyi Sun (ORCID [0009-0004-1644-5300](https://orcid.org/0009-0004-1644-5300))<br>
-**Version:** 1.2, 3 November 2026 (v1.1: 1 November 2026; v1.0: 28 October 2026)<br>
+**Version:** 1.3, [RELEASE DATE] (v1.2: 3 November 2026; v1.1: 1 November 2026; v1.0: 28 October 2026)<br>
 **Status:** computer-assisted proof candidate. **Not peer reviewed.**<br>
-**DOI (Zenodo):** v1.0.1: [10.5281/zenodo.23752136](https://doi.org/10.5281/zenodo.23752136); v1.1.0: [10.5281/zenodo.23853953](https://doi.org/10.5281/zenodo.23853953); v1.2 receives its own DOI from Zenodo when it is released
+**DOI (Zenodo):** v1.0.1: [10.5281/zenodo.23752136](https://doi.org/10.5281/zenodo.23752136); v1.1.0: [10.5281/zenodo.23853953](https://doi.org/10.5281/zenodo.23853953); v1.2.0: [10.5281/zenodo.23938150](https://doi.org/10.5281/zenodo.23938150); v1.3 receives its own DOI from Zenodo when it is released
 
-Preprint: [`paper/restricted-schur-v1.2.pdf`](paper/restricted-schur-v1.2.pdf) (source: `paper/restricted-schur-v1.2.tex`). The v1.0 and v1.1 preprints are kept unchanged in `paper/`. Changes: [`CHANGELOG.md`](CHANGELOG.md).
+Preprint: [`paper/restricted-schur-v1.3.pdf`](paper/restricted-schur-v1.3.pdf) (source: `paper/restricted-schur-v1.3.tex`). The v1.0, v1.1 and v1.2 preprints are kept unchanged in `paper/`. Changes: [`CHANGELOG.md`](CHANGELOG.md).
 
 ## The problems
 
@@ -29,6 +29,10 @@ Gaiser proved `S_2(k;ℓ) ≥ F(k,ℓ) := k² + [(ℓ+1)(ℓ−2)/2 + 2]·k + �
 | 6 | Uniqueness of the extremal colouring for 12 pairs `(k,ℓ)`. | paper §6; `evidence/oq64_structure` |
 | 7 | For `11 ≤ ℓ ≤ 23` and every `k ≥ ℓ+1`, no good colouring of `[1,F(k,ℓ)]` has a window `W_j` (1470 certificates plus a forcing lemma). First-party certificate checks only; an independent second-party replay of all 1470 certificates and of the forcing lemma is still pending. | paper §7; `evidence/oq64_windows` |
 | 8 | **New in v1.2:** `K(ℓ) = ((1+√2)/2)·ℓ + O(1)`. More precisely, `(1+a*)ℓ − 4 < K(ℓ) < (1+a*)ℓ + 5` for every `ℓ ≥ 50`, and `K(ℓ) < (1+a*)ℓ + 9` for `6 ≤ ℓ ≤ 49`, where `a* = (√2−1)/2`. The lower bound comes from a three-block colouring (red `[1,j] ∪ [m+1,V−1]`, blue `[j+1,m]`), which also gives `S_2(20;19) ≥ 4181 > 4163`, `S_2(21;20) ≥ 4861 > 4812` (so `K(19) ≥ 21`, `K(20) ≥ 22`) and `WS_20(2) ≥ 4770`. The upper bound comes from a new forcing template for windows with a sparse colour ("T1-fill"), together with the balanced/parity-window lemmas of §7. The same constant holds for the relaxed variant `S_2(k;ℓ̃)`, read with `c(S) ≥ ℓ+1`. The proofs are written out; the exact symbolic (sympy, `√2` kept exact) and finite checks were run with two separately written sets of programs. A second party (GPT) reviewed the whole result. | paper §8, Thm 18; `evidence/oq64_asymptotic` |
+| 9 | **New in v1.3:** `K(ℓ) = ℓ+1` for every `12 ≤ ℓ ≤ 18`, which answers the first open problem of the v1.2 preprint: the first `ℓ` with `S_2(ℓ+1;ℓ) > F(ℓ+1,ℓ)` is exactly `ℓ = 19`. Also `K(19) = 21` and `K(20) = 22`, so the three-block lower bound of Result 8 is exact there. The upper bounds combine the lemmas of §8 with an exact computation of the T1-fill minimum for every window, using a reduction lemma and monotonicity in `e`. The few windows not refuted that way are each refuted by a per-window certificate: 5921 certificates for `ℓ ≤ 18` and 818 for `ℓ = 19, 20`. First-party computation (Claude); second-party review: see CHANGELOG. | paper [§]; `evidence/oq64_exact` |
+| 10 | **New in v1.3:** `S_2(20;19) = 4181` and `S_2(21;20) = 4861`. These are the two smallest pairs with `k > ℓ` and `S_2(k;ℓ) > F(k,ℓ)`. In both cases `S_2 = max{F, V_3}`, the form asked about in the second open problem of v1.2. Same method at the fixed bound `N = V_3`, with 3558 and 4426 per-window certificates. | paper [§]; `evidence/oq64_exact/S2_20_19`, `S2_21_20` |
+| 11 | **New in v1.3 (Lemma P):** for `1 ≤ e ≤ 2ℓ²−4ℓ`, the exact T1-fill minimum over all windows with `2 ≤ j ≤ ℓ−2` is largest at a prefix window (red `[1,j]`), and that value has a closed form. A written proof, whose constructions are machine-checked on every window for `ℓ ≤ 10`. | paper [§]; `evidence/oq64_exact/lemmaP` |
+| 12 | **New in v1.3 (Theorem Q′):** `(1+a*)ℓ − 3.63 < K(ℓ) < (1+a*)ℓ + 1` for every `ℓ ≥ 19`; Result 8 had `(−4, +5)` for `ℓ ≥ 50`. The upper bound uses Lemma P; the lower bound uses only the three-block family. Exact sympy checks with `√2` kept exact. | paper [§]; `evidence/oq64_exact/lemmaP` |
 
 What each result has been checked with is stated in the status box on page 1 of the preprint and in its
 Appendix A. In short:
@@ -36,6 +40,7 @@ Appendix A. In short:
 * For Result 1 and for the cases `ℓ ≤ 7` of Result 2, independent checker replays are reported: a second, independently written checker was run on the certificates.
 * For `ℓ = 11, k ≥ 13` (Result 4, new in v1.1), a second party (GPT) wrote and ran its own exact symbolic validator and LRAT checker on all 222 cube certificates: the partition, the archive hashes, all 2,333,853 hyperedges for every `k ≥ 13`, the prefix unit clauses, and all 222 LRAT proofs. All checks in that second-party replay passed for the 222 symbolic cube certificates at `k ≥ 13`; the separate `k = 12` numerical certificate was not part of this replay. Its source, logs and results are in `evidence/oq64_l11/k13_cubes/independent_review/`; only file paths were adapted for the release, and the original files are kept in `original/`. The search program that produced the hyperedges ran on the author's computer and is not trusted.
 * For Result 8 (new in v1.2), GPT reviewed the proofs as a second party and wrote and ran its own exact checkers (`evidence/oq64_asymptotic/independent_review_gpt/`). Claude re-ran those checkers on the release files with the same results (section `asymind`). A separately started Claude instance also re-derived the result with its own code; since it is the same model, that is not counted as a second-party review. Passages of GPT's report that referred to private correspondence were removed for the release.
+* For Results 9–12 (new in v1.3), the computation and the replay scripts are first-party (Claude). The state of the second-party review is recorded in `CHANGELOG.md` [to be completed after the review].
 * For `ℓ = 8, 9, 10`, for the `k = 12` certificate of Result 4, and for Results 3, 6 and 7, only first-party tools (written and run within this project) have checked them so far.
 * Codex reported a separate replay of the chain for `WS_8(2)=365` (independent encoder, fresh solver run, its own LRAT checker). That report does not replace an independent examination of its original logs.
 * The archived first-party logs report that every included LRAT proof is accepted by both `lrat-check` and the formally verified checker `cake_lpr`. How far each result has been independently replayed is stated result by result in the preprint.
@@ -62,7 +67,7 @@ they are not needed for verification.
 
 ### Requirements
 
-* `bash`, `xz`, Python 3 with `sympy`. The commands target a POSIX shell (Linux, macOS, or WSL on Windows). The binary hashes below apply to the stated Linux x86-64 builds; builds on other platforms may differ.
+* `bash`, `xz`, Python 3 with `sympy`; `gcc` for the sections `exactenum` and `exactenumbig`. The commands target a POSIX shell (Linux, macOS, or WSL on Windows). The binary hashes below apply to the stated Linux x86-64 builds; builds on other platforms may differ.
 * The two LRAT checkers:
 
 | Tool | Repository | Commit | SHA-256 of the binary we used (Linux x86-64) |
@@ -78,6 +83,10 @@ sha256sum -c MANIFEST.sha256 --quiet          # integrity of every payload file 
 export LRAT_CHECK=/path/to/lrat-check CAKE_LPR=/path/to/cake_lpr
 ./verify_all.sh all                            # Results 1-4, 6, 7 and 8
 ./verify_all.sh asym asymind                   # Result 8 only (python3 + sympy; no LRAT checkers needed, a few minutes)
+JOBS=4 ./verify_all.sh exact12 exact13 exact14 exact15 exactenum lemmap   # Results 9-12, the quick part (minutes)
+JOBS=4 ./verify_all.sh exact16 exact17 exact18 exact19 exact20 s2_20_19 s2_21_20   # the remaining 13,689 certificates
+./verify_all.sh exactenumbig                   # re-runs the l >= 17 enumerations (about 7 hours; gcc)
+tests/negative_controls_exact.sh               # 16 tampered inputs / fake checkers for the v1.3 sections, plus a positive control
 tests/negative_controls.sh                     # 22 tampered inputs / fake checkers / optimised-Python runs; every one must be rejected
 ```
 
@@ -96,8 +105,13 @@ The sections can also be run on their own:
 | `windows` | 7 | All 1470 window certificates (each prefix must be exactly the window `W_j`), then the combined forcing-lemma argument |
 | `asym` | 8 | First-party exact checks (`evidence/oq64_asymptotic/scripts`): the all-`ℓ ≥ 50` polynomial proofs of both bounds (with the negative control `cU = 3`), the finite table `6 ≤ ℓ ≤ 49`, the `j = 1` lemma, Fact 1, the DP checks of the colourings for `ℓ = 19, 20` (exact and relaxed) and `WS_20(2)`, and explicit T1-fill hyperedges |
 | `asymind` | 8 | The second party's separately written checkers (`independent_review_gpt/independent_*.py`) |
+| `exact12` … `exact20` | 9 | For each stored `e`: the survivor file and its `DONE` line, the per-window list (= survivors ∪ the `j = 1` windows when `e ≤ 2`), one hyperedge entry and one proof per window; every hyperedge re-checked and the CNF rebuilt by `mkcnfw.py`; both LRAT checkers (`tools/replay_perwin.py`) |
+| `s2_20_19`, `s2_21_20` | 10 | The same at `n = 4181` and `n = 4861` |
+| `exactenum` | 9–11 | Recompiles the C tools and re-runs the enumeration for `10 ≤ ℓ ≤ 16`: every survivor file is reproduced byte for byte by `t1red`, by the one-pass `t1multi`, and by segments + `t1combine.py` (ℓ = 14). Also checks the closed form for prefix windows (7568 cases) and runs a second implementation of the T1-fill decision on every window for `ℓ = 9, 10` (`fullcheck/`) |
+| `exactenumbig` | 9, 10 | Re-runs the enumerations for `ℓ = 17 … 20` and at `N = 4181, 4861` and compares the survivor files byte for byte (hours; only when named) |
+| `lemmap` | 11, 12 | The constructions of the proof of Lemma P on every window for `ℓ = 6 … 9` (with a negative control beyond `e = 2ℓ²−4ℓ`), and the sympy proofs of both bounds of Theorem Q′ and of the vertex range |
 
-With no arguments the script runs `oq62 oq64sym oq64single diag l11k12 l11k13 asym asymind`; an unknown section name is an error.
+With no arguments the script runs `oq62 oq64sym oq64single diag l11k12 l11k13 asym asymind exact12 exact13 exact14 exact15 exactenum lemmap`; `all` adds `l11k13ind unique windows exact16 … exact20 s2_20_19 s2_21_20`; `exactenumbig` runs only when named. `JOBS=n` runs the per-window checks in parallel. An unknown section name is an error.
 For each certificate, the script checks the hyperedges or the symbolic semantics and reconstructs the
 corresponding CNF. Where a stored CNF is supplied, the reconstructed CNF is compared byte for byte with it. For
 the uniqueness certificates, the CNF is generated from the checked hyperedges and the explicit blocking clause
@@ -191,6 +205,18 @@ test. It must fail with four errors: three of the form "Tactic `decide` proved t
 * `independent_review_gpt/`: GPT's second-party review. Its report (`RSN002_R6_INDEPENDENT_REVIEW.md`) is in Chinese, with passages about private correspondence removed. The directory also holds GPT's separately written checkers `independent_*.py`, its recorded outputs, and its LaTeX draft, on which §8 is based. In the release copies only the output paths were adapted (`OUT` environment variable). The originals are kept in `original/` as the historical source; they write to the reviewer's absolute paths and are not portable. For replay, use the top-level scripts or `verify_all.sh asymind`.
 * `independent_review_claude_subagent/`: checks written from scratch by a separately started Claude instance. This is the same model, so it is not a second-party review.
 
+### Results 9–12 (new in v1.3): `evidence/oq64_exact/`
+
+See `evidence/oq64_exact/README.md`, which covers the method, the directory layout and the tools. In short:
+* `l12/` … `l20/`, `S2_20_19/`, `S2_21_20/` each hold:
+  * the survivor files of the exact T1-fill enumeration;
+  * the per-window lists;
+  * the hyperedges of every certificate (`edges_*.txt.xz`);
+  * one LRAT proof per window (`proofs_e*/`, 14,723 proofs, 43 MB);
+  * the production log `res_*.tsv`.
+* `tools/` contains the enumerators (`t1red.c`, `t1multi.c`, and the exact sources of the binaries used), `t1combine.py`, and the replay script `replay_perwin.py`.
+* `lemmaP/` contains `LEMMA_P.md`, which has the proof of Lemma P and Theorem Q/Q′, together with its checks and logs. `fullcheck/` contains a second implementation of the T1-fill decision.
+
 ## Use of AI
 
 The mathematics, programs, computations and text were produced with extensive use of AI systems: Claude
@@ -205,4 +231,4 @@ Text and data: CC BY 4.0. Code: MIT. See [`LICENSE`](LICENSE).
 
 ## Citation
 
-See [`CITATION.cff`](CITATION.cff). Archived on Zenodo: [10.5281/zenodo.23752136](https://doi.org/10.5281/zenodo.23752136) (release v1.0.1; content identical to v1.0.0 of 28 October 2026 apart from `CITATION.cff`). Release v1.1.0 is archived as [10.5281/zenodo.23853953](https://doi.org/10.5281/zenodo.23853953). Release v1.2.0 will receive a separate DOI when Zenodo archives it; no v1.2 DOI is claimed before that deposit. Earlier versions remain unchanged.
+See [`CITATION.cff`](CITATION.cff). Archived on Zenodo: [10.5281/zenodo.23752136](https://doi.org/10.5281/zenodo.23752136) (release v1.0.1; content identical to v1.0.0 of 28 October 2026 apart from `CITATION.cff`). Release v1.1.0 is archived as [10.5281/zenodo.23853953](https://doi.org/10.5281/zenodo.23853953). Release v1.2.0 is archived as [10.5281/zenodo.23938150](https://doi.org/10.5281/zenodo.23938150). Release v1.3.0 will receive a separate DOI when Zenodo archives it; no v1.3 DOI is claimed before that deposit. Earlier versions remain unchanged.

@@ -1,0 +1,6 @@
+l0=19 c=0: degree 3, coefficient signs (high->low) [-1, -1, -1, -1]  ALL NEGATIVE
+l0=50 c=0: degree 3, coefficient signs (high->low) [-1, -1, -1, -1]  ALL NEGATIVE
+l0=100 c=0: degree 3, coefficient signs (high->low) [-1, -1, -1, -1]  ALL NEGATIVE
+l0=19 c=-1/2: degree 3, coefficient signs (high->low) [-1, -1, 1, 1]  not all negative
+l0=1000 c=-1/2: degree 3, coefficient signs (high->low) [-1, -1, -1, -1]  ALL NEGATIVE
+l0=19 c=-7/10: degree 3, coefficient signs (high->low) [-1, 1, 1, 1]  not all negative

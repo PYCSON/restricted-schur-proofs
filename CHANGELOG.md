@@ -1,5 +1,28 @@
 # Changelog
 
+## v1.3.0 ([RELEASE DATE]) — DRAFT, not yet reviewed
+
+### Added
+- **Result 9, exact thresholds:**
+  - `K(ℓ) = ℓ+1` for every `12 ≤ ℓ ≤ 18`. This answers open problem 1 of v1.2: the break point at `k = ℓ+1` is exactly `ℓ = 19`.
+  - `K(19) = 21` and `K(20) = 22`. The three-block lower bound of Result 8 is exact there.
+- **Result 10:** `S_2(20;19) = 4181` and `S_2(21;20) = 4861`. These are the smallest pairs with `k > ℓ` and `S_2 > F`. In both cases `S_2 = max{F, V_3}`.
+- **Method for Results 9 and 10.** For every window, the exact minimum of the T1-fill template (Lemma 22) is computed, using a reduction lemma and monotonicity in `e`. Each surviving window, and each window with one minority element at `e ≤ 2`, is refuted by a per-window certificate: 14,723 certificates in all. Each consists of hyperedges re-checked by `mkcnfw.py`, followed by an LRAT proof accepted by both lrat-check and cake_lpr.
+- **Result 11 (Lemma P, prefix dominance)** and **Result 12 (Theorem Q′):** `(1+a*)ℓ − 3.63 < K(ℓ) < (1+a*)ℓ + 1` for every `ℓ ≥ 19`. These are written proofs with machine-checked constructions and exact sympy checks.
+- `evidence/oq64_exact/`: survivor files, per-window lists, hyperedges, all 14,723 LRAT proofs (43 MB), production logs, the enumerators and the exact sources of the binaries used, the replay script, the Lemma P material, and a second implementation of the T1-fill decision (`fullcheck/`).
+- `verify_all.sh` gains the sections `exact12` … `exact20`, `s2_20_19`, `s2_21_20`, `exactenum`, `exactenumbig` and `lemmap`. The quick part (`exact12`–`exact15`, `exactenum`, `lemmap`) is in the default run.
+- `tests/negative_controls_exact.sh`: 16 negative controls and one positive control for the new sections.
+- Preprint v1.3 (`paper/restricted-schur-v1.3.{tex,pdf}`). The v1.0–v1.2 preprints are kept unchanged.
+
+### Changed
+- README and `CITATION.cff` now give the v1.2.0 DOI, 10.5281/zenodo.23938150.
+
+### Unchanged
+- All certificates, checkers and Lean developments of v1.0–v1.2 (byte-identical). Earlier releases and their DOIs are not modified.
+
+### Status
+- Computer-assisted proof candidates, not peer reviewed. The computations for Results 9–12 are first-party (Claude). Second-party review: [to be completed after the GPT round-8 review].
+
 ## v1.2.0 (3 November 2026)
 
 ### Added
