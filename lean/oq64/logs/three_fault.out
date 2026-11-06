@@ -1,0 +1,49 @@
+Test/ThreeFault.lean:104:4: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  p ≥ 0
+  o ≥ 0
+  n ≥ 0
+  n - o ≥ 0
+  i ≥ 0
+  i + n ≥ 2
+  i + n - o ≥ 0
+  g ≥ 0
+  f ≥ 0
+  f + g ≥ 0
+  e ≥ 0
+  e - i - n + o ≥ 0
+  d ≥ 0
+  d - f + i + n ≤ 0
+  d + i + n ≥ 0
+  d + e + o + p ≥ 1
+  d + e + i + n + p ≥ 1
+  c ≥ 0
+  c ≥ 0
+  b ≥ 1
+  b - c ≤ 0
+  a ≥ 0
+  a - b + f + g - i - n ≤ 0
+  a - c + d ≤ 0
+  a - c + d + g ≥ 0
+  a - i - n ≥ 0
+where
+ a := ↑L.length
+ b := ↑w
+ c := ↑(V - 1)
+ d := ↑(l * (l - 1)) / 2
+ e := ↑l * ↑j
+ f := ↑(List.map (shiftDown m (m - j)) vs).sum
+ g := ↑(m - j) * ↑(List.countP (fun v => decide (m < v)) vs)
+ i := ↑(List.filter (fun v => decide (v ≤ m)) vs).length
+ n := ↑(List.countP (fun v => decide (m < v)) vs)
+ o := ↑(l - j)
+ p := ↑(k - l) * ↑(j + 1)
+Test/ThreeFault.lean:134:68: error: Tactic `decide` proved that the proposition
+  4181 = 190 + (290 - 5) * (19 - 5) + (20 - 19) + 1
+is false
+Test/ThreeFault.lean:140:68: error: Tactic `decide` proved that the proposition
+  4861 = 210 + (315 - 5) * (20 - 5) + (21 - 20) + 1
+is false
+Test/ThreeFault.lean:147:68: error: Tactic `decide` proved that the proposition
+  4770 = 210 + (289 - 4) * (20 - 4) + (20 - 20) + 1
+is false

@@ -12,10 +12,13 @@
 - `evidence/oq64_exact/`: survivor files, per-window lists, hyperedges, all 14,723 LRAT proofs (43 MB), production logs, the enumerators and the exact sources of the binaries used, the replay script, the Lemma P material, and a second implementation of the T1-fill decision (`fullcheck/`).
 - `verify_all.sh` gains the sections `exact12` … `exact20`, `s2_20_19`, `s2_21_20`, `exactenum`, `exactenumbig` and `lemmap`. The quick part (`exact12`–`exact15`, `exactenum`, `lemmap`) is in the default run.
 - `tests/negative_controls_exact.sh`: 16 negative controls and one positive control for the new sections.
-- Preprint v1.3 (`paper/restricted-schur-v1.3.{tex,pdf}`). The v1.0–v1.2 preprints are kept unchanged.
+- Lean: `lean/oq64/OQ64/Three.lean` formalises the three-block colouring (Proposition 19) and the instances `S_2(20;19) > F`, `S_2(21;20) > F` and `WS_20(2) ≥ 4770`, which are the lower bounds of Results 9(b) and 10. `Test/ThreeFault.lean` is a negative test, and `leanchecker` accepts the module.
+- Preprint v1.3 (`paper/restricted-schur-v1.3.{tex,pdf}`): new §8.1 (Theorem 25, Lemmas 26 and 27, Table 4) and §8.2 (Lemma 28, Theorem 29), and a rewritten Open problems section. The v1.0–v1.2 preprints are kept unchanged.
 
 ### Changed
 - README and `CITATION.cff` now give the v1.2.0 DOI, 10.5281/zenodo.23938150.
+- Open problem 1 of v1.2 is answered (Theorem 25(a)) and replaced by the question whether `K(ℓ) = ℓ + e_L(ℓ) + 1` for every `ℓ ≥ 19`.
+- Open problem 2 of v1.2 asked whether `S_2 = max{F, V_3}` for `k ≥ ℓ ≥ 5`. On the diagonal the answer is negative; for example `WS_8(2) = 365 > F(8,8) = 344 > max_j V_3 = 330`. v1.3 asks the question for `k > ℓ`, where Theorem 25 confirms it at `(20,19)` and `(21,20)`.
 
 ### Unchanged
 - All certificates, checkers and Lean developments of v1.0–v1.2 (byte-identical). Earlier releases and their DOIs are not modified.

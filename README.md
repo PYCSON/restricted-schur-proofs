@@ -159,7 +159,9 @@ Both Lean projects use Lean v4.35.0 with the core library only (see each `lean-t
 cd lean/s3k2-full && ulimit -s unlimited && lake build && lake env lean Test/Axioms.lean
 lake env lean Test/Fault.lean      # 4 tampered inputs: must print exactly 4 errors (see below)
 lake env lean Test/FaultControl.lean   # the untampered version of input 3: must succeed
-cd ../oq64 && lake build OQ64.Final OQ64.Final2 OQ64.Four
+cd ../oq64 && lake build OQ64.Final OQ64.Final2 OQ64.Four OQ64.Three
+lake env lean Test/ThreeAxioms.lean    # new in v1.3: the three-block lower bound (Proposition 19) and its instances
+lake env lean Test/ThreeFault.lean     # negative test: must fail with 4 errors (bound increased by one)
 ```
 
 The axiom check shows only `propext`, `Classical.choice` and `Quot.sound`. `Test/Fault.lean` is a negative
@@ -168,8 +170,8 @@ test. It must fail with four errors: three of the form "Tactic `decide` proved t
 `lean/s3k2-full/logs/fault.out`.
 
 * `lean/s3k2-full` proves `RSN.S3_two_eq` (result 1).
-* `lean/oq64` covers `K(3),…,K(7)`, the Ahmed et al. lower bound and the four-block construction.
-* Not formalised: the certificates for `ℓ ≥ 8`, the diagonal values, and the general inequalities of Corollary 6.
+* `lean/oq64` covers `K(3),…,K(7)`, the Ahmed et al. lower bound and the four-block construction. New in v1.3: `OQ64.Three` covers the three-block colouring of Proposition 19 for all `2 ≤ ℓ ≤ k` and `j`, and the instances `S_2(20;19) > F(20,19)`, `S_2(21;20) > F(21,20)` and `S_2(20;20) ≥ 4770`. These are the lower bounds of Results 9 and 10. `Test/ThreeFault.lean` is the same proof with the bound increased by one; it must fail with 4 errors (`lean/oq64/logs/three_fault.out`).
+* Not formalised: the certificates for `ℓ ≥ 8`, the diagonal values, the general inequalities of Corollary 6, the upper bounds of Results 8–12, and Lemma P.
 
 ### Results 5–7
 
