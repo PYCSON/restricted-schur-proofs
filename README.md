@@ -81,7 +81,7 @@ they are not needed for verification.
 ```bash
 sha256sum -c MANIFEST.sha256 --quiet          # integrity of every payload file (the manifest does not hash itself)
 export LRAT_CHECK=/path/to/lrat-check CAKE_LPR=/path/to/cake_lpr
-./verify_all.sh all                            # Results 1-4, 6, 7 and 8
+./verify_all.sh all                            # Results 1-4 and 6-12 (about an hour with JOBS=2; exactenumbig excluded)
 ./verify_all.sh asym asymind                   # Result 8 only (python3 + sympy; no LRAT checkers needed, a few minutes)
 JOBS=4 ./verify_all.sh exact12 exact13 exact14 exact15 exactenum lemmap exactind   # Results 9-12, the quick part (minutes)
 JOBS=4 ./verify_all.sh exact16 exact17 exact18 exact19 exact20 s2_20_19 s2_21_20   # the remaining 13,689 certificates
@@ -227,7 +227,7 @@ The mathematics, programs, computations and text were produced with extensive us
 (Anthropic), and GPT and Codex (OpenAI). The author selected the problems, organised and directed the work, set
 the verification requirements and decided what to release. The author has **not** personally checked every proof.
 Correctness rests on the machine-checkable certificates and formal proofs in this repository and, for Result 8,
-on written proofs whose finite and symbolic steps are checked by the included exact programs; anyone can replay them. AI systems are not authors. See Appendix A of the preprint for who did what.
+on written proofs whose finite and symbolic steps are checked by the included exact programs (Results 8, 11 and 12); anyone can replay them. AI systems are not authors. See Appendix A of the preprint for who did what.
 
 ## Licence
 
