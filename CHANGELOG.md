@@ -1,6 +1,6 @@
 # Changelog
 
-## v1.3.0 ([RELEASE DATE]) — DRAFT, not yet reviewed
+## v1.3.0 ([RELEASE DATE]) — DRAFT, pending the second party's release sign-off
 
 ### Added
 - **Result 9, exact thresholds:**
@@ -8,9 +8,10 @@
   - `K(19) = 21` and `K(20) = 22`. The three-block lower bound of Result 8 is exact there.
 - **Result 10:** `S_2(20;19) = 4181` and `S_2(21;20) = 4861`. These are the smallest pairs with `k > ℓ` and `S_2 > F`. In both cases `S_2 = max{F, V_3}`.
 - **Method for Results 9 and 10.** For every window, the exact minimum of the T1-fill template (Lemma 22) is computed, using a reduction lemma and monotonicity in `e`. Each surviving window, and each window with one minority element at `e ≤ 2`, is refuted by a per-window certificate: 14,723 certificates in all. Each consists of hyperedges re-checked by `mkcnfw.py`, followed by an LRAT proof accepted by both lrat-check and cake_lpr.
-- **Result 11 (Lemma P, prefix dominance)** and **Result 12 (Theorem Q′):** `(1+a*)ℓ − 3.63 < K(ℓ) < (1+a*)ℓ + 1` for every `ℓ ≥ 19`. These are written proofs with machine-checked constructions and exact sympy checks.
+- **Result 11 (Lemma P, prefix dominance)** and **Result 12 (Theorem Q′):** `(1+a*)ℓ − 3.63 < K(ℓ) ≤ (1+a*)ℓ + 16 − 11√2` for every `ℓ ≥ 19`. These are written proofs with machine-checked constructions and exact sympy checks. The constant `16 − 11√2 ≈ 0.444` was found by the second party (GPT) and re-derived by Claude; it is attained at `ℓ = 22`.
 - `evidence/oq64_exact/`: survivor files, per-window lists, hyperedges, all 14,723 LRAT proofs (43 MB), production logs, the enumerators and the exact sources of the binaries used, the replay script, the Lemma P material, and a second implementation of the T1-fill decision (`fullcheck/`).
-- `verify_all.sh` gains the sections `exact12` … `exact20`, `s2_20_19`, `s2_21_20`, `exactenum`, `exactenumbig` and `lemmap`. The quick part (`exact12`–`exact15`, `exactenum`, `lemmap`) is in the default run.
+- `evidence/oq64_exact/independent_review_gpt/`: GPT's separately written CNF builder and LRAT checker (`gpt_r9_check.py`, standard library only, with a nine-case self-test) and its SymPy/exhaustive audit of Lemma P and Theorem Q′ (`r9_math_audit.py`), exactly as delivered, with the logs of Claude's runs: all 14,723 certificates accepted, 9/9 tamperings rejected.
+- `verify_all.sh` gains the sections `exact12` … `exact20`, `s2_20_19`, `s2_21_20`, `exactenum`, `exactenumbig`, `lemmap` and `exactind` (GPT's checker on all 14,723 certificates, no LRAT binaries needed). The quick part (`exact12`–`exact15`, `exactenum`, `lemmap`, `exactind`) is in the default run.
 - `tests/negative_controls_exact.sh`: 16 negative controls and one positive control for the new sections.
 - Lean: `lean/oq64/OQ64/Three.lean` formalises the three-block colouring (Proposition 19) and the instances `S_2(20;19) > F`, `S_2(21;20) > F` and `WS_20(2) ≥ 4770`, which are the lower bounds of Results 9(b) and 10. `Test/ThreeFault.lean` is a negative test, and `leanchecker` accepts the module.
 - Preprint v1.3 (`paper/restricted-schur-v1.3.{tex,pdf}`): new §8.1 (Theorem 25, Lemmas 26 and 27, Table 4) and §8.2 (Lemma 28, Theorem 29), and a rewritten Open problems section. The v1.0–v1.2 preprints are kept unchanged.
@@ -24,7 +25,9 @@
 - All certificates, checkers and Lean developments of v1.0–v1.2 (byte-identical). Earlier releases and their DOIs are not modified.
 
 ### Status
-- Computer-assisted proof candidates, not peer reviewed. The computations for Results 9–12 are first-party (Claude). Second-party review: [to be completed after the GPT round-8 review].
+- Computer-assisted proof candidates, not peer reviewed. The computations for Results 9–12 are first-party (Claude).
+- Second-party review (GPT, two rounds, 6–7 November 2026). Round 8: GPT re-enumerated all windows for `ℓ = 12, 13` and the reduced windows for `ℓ ≤ 20` with its own programs, re-checked 4,004,355 hyperedges, decided 1,009 certificate CNFs with Z3 (all 294 for `ℓ = 12, 13`), and found the pruning rule and the constant `16 − 11√2`. Round 9: GPT reviewed the written proofs of Lemma 28 and Theorem 29 line by line with SymPy and exhaustive small-`ℓ` checks (two wording corrections in the low-window part of Lemma 28 were made at its request), confirmed the statements of `OQ64/Three.lean`, and wrote the checker in `independent_review_gpt/`, which Claude ran on all 14,723 certificates. GPT's verdict on Results 9–12 after reviewing the logs: [SECOND-PARTY VERDICT].
+- What this does and does not establish: the per-window certificates were replayed by two first-party checkers (lrat-check, cake_lpr) and by an independently written checker executed by the first party; GPT did not execute the full data set itself. The coverage argument (that the survivor files list every window not refuted by the exact T1-fill minimum) rests on the enumeration code, its byte-for-byte reproduction in `exactenum`/`exactenumbig`, the brute-force check for `ℓ = 12, 13`, GPT's round-8 re-enumeration, and Lemma 28.
 
 ## v1.2.0 (3 November 2026)
 

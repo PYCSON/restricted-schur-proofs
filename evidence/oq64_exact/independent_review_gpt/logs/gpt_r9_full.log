@@ -1,0 +1,27 @@
+START 2026-11-07 10:15:44 +0800
+GROUP l12 l=12 e=1 N=1160 windows=90 pass=90 fail=0
+GROUP l12 l=12 e=2 N=1254 windows=26 pass=26 fail=0
+GROUP l13 l=13 e=1 N=1445 windows=147 pass=147 fail=0
+GROUP l13 l=13 e=2 N=1553 windows=31 pass=31 fail=0
+GROUP l14 l=14 e=1 N=1773 windows=237 pass=237 fail=0
+GROUP l14 l=14 e=2 N=1896 windows=37 pass=37 fail=0
+GROUP l15 l=15 e=1 N=2147 windows=419 pass=419 fail=0
+GROUP l15 l=15 e=2 N=2286 windows=47 pass=47 fail=0
+GROUP l16 l=16 e=1 N=2570 windows=748 pass=748 fail=0
+GROUP l16 l=16 e=2 N=2726 windows=65 pass=65 fail=0
+GROUP l16 l=16 e=3 N=2884 windows=1 pass=1 fail=0
+GROUP l17 l=17 e=1 N=3045 windows=1345 pass=1345 fail=0
+GROUP l17 l=17 e=2 N=3219 windows=97 pass=97 fail=0
+GROUP l17 l=17 e=3 N=3395 windows=3 pass=3 fail=0
+GROUP l18 l=18 e=1 N=3575 windows=2461 pass=2461 fail=0
+GROUP l18 l=18 e=2 N=3768 windows=163 pass=163 fail=0
+GROUP l18 l=18 e=3 N=3963 windows=4 pass=4 fail=0
+GROUP l19 l=19 e=2 N=4376 windows=274 pass=274 fail=0
+GROUP l19 l=19 e=3 N=4591 windows=8 pass=8 fail=0
+GROUP l20 l=20 e=2 N=5046 windows=521 pass=521 fail=0
+GROUP l20 l=20 e=3 N=5282 windows=15 pass=15 fail=0
+GROUP S2_20_19 l=19 e=1 N=4181 windows=3558 pass=3558 fail=0
+GROUP S2_21_20 l=20 e=1 N=4861 windows=4426 pass=4426 fail=0
+TOTAL pass=14723 fail=0
+EXIT_CODE=0
+END 2026-11-07 10:18:45 +0800

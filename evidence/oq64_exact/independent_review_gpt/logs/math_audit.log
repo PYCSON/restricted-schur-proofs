@@ -1,0 +1,28 @@
+START 10:16:25
+SYMPY (diff), L2, L1, L0a, L0b expansions PASS
+SYMPY P0/GP/V3/difference/discrete monotonicity PASS
+DISCRETE GAP = (L**2 - 8*L + 8*e - 1)/4
+UPPER discriminant cubic coefficients: [21 - 15*sqrt(2), 11781/4 - 2099*sqrt(2), 274483/2 - 97493*sqrt(2), 8317573/4 - 1470513*sqrt(2)]
+LOWER H coefficients: [-3 + 213*sqrt(2)/100, -1530169/10000 + 13017*sqrt(2)/100, -1303943/500 + 12720443*sqrt(2)/5000, -914073557/62500 + 79779917*sqrt(2)/5000]
+SYMPY asymptotic discriminants + vertex PASS
+FINITE e_P l=9..54 PASS; equality l=22
+EXHAUST ell=6 e=1 checked=781 errors=0 lowcases={'L2': 25, 'L0a': 45, 'L1': 125, 'L0b': 5}
+ADMISSIBLE_NOT_GOOD: [('L0a', 6, 1, 4, (1, 2, 3, 4, 5, 6), (9, 10, 11, 12), (6, 5, 1)), ('L0a', 6, 1, 4, (1, 2, 3, 4, 5, 6), (8, 10, 11, 12), (6, 5, 1))]
+EXHAUST ell=6 e=2 checked=781 errors=0 lowcases={'L2': 25, 'L0a': 45, 'L1': 125, 'L0b': 5}
+ADMISSIBLE_NOT_GOOD: [('L0a', 6, 2, 4, (1, 2, 3, 4, 5, 6), (9, 10, 11, 12), (6, 5, 1)), ('L0a', 6, 2, 4, (1, 2, 3, 4, 5, 6), (8, 10, 11, 12), (6, 5, 1))]
+EXHAUST ell=6 e=3 checked=781 errors=0 lowcases={'L2': 25, 'L0a': 45, 'L1': 125, 'L0b': 5}
+ADMISSIBLE_NOT_GOOD: [('L0a', 6, 3, 4, (1, 2, 3, 4, 5, 6), (9, 10, 11, 12), (6, 5, 1)), ('L0a', 6, 3, 4, (1, 2, 3, 4, 5, 6), (8, 10, 11, 12), (6, 5, 1))]
+EXHAUST ell=7 e=1 checked=3458 errors=0 lowcases={'L2': 56, 'L0a': 106, 'L1': 336, 'L0b': 6}
+ADMISSIBLE_NOT_GOOD: [('L0a', 7, 1, 5, (1, 2, 3, 4, 5, 6, 7), (10, 11, 12, 13, 14), (7, 5, 1)), ('L0a', 7, 1, 5, (1, 2, 3, 4, 5, 6, 7), (9, 11, 12, 13, 14), (7, 5, 1))]
+EXHAUST ell=7 e=2 checked=3458 errors=0 lowcases={'L2': 56, 'L0a': 106, 'L1': 336, 'L0b': 6}
+ADMISSIBLE_NOT_GOOD: [('L0a', 7, 2, 5, (1, 2, 3, 4, 5, 6, 7), (10, 11, 12, 13, 14), (7, 5, 1)), ('L0a', 7, 2, 5, (1, 2, 3, 4, 5, 6, 7), (9, 11, 12, 13, 14), (7, 5, 1))]
+EXHAUST ell=7 e=3 checked=3458 errors=0 lowcases={'L2': 56, 'L0a': 106, 'L1': 336, 'L0b': 6}
+ADMISSIBLE_NOT_GOOD: [('L0a', 7, 3, 5, (1, 2, 3, 4, 5, 6, 7), (10, 11, 12, 13, 14), (7, 5, 1)), ('L0a', 7, 3, 5, (1, 2, 3, 4, 5, 6, 7), (9, 11, 12, 13, 14), (7, 5, 1))]
+EXHAUST ell=8 e=1 checked=14876 errors=0 lowcases={'L2': 119, 'L0a': 231, 'L1': 833, 'L0b': 7}
+ADMISSIBLE_NOT_GOOD: [('L0a', 8, 1, 6, (1, 2, 3, 4, 5, 6, 7, 8), (11, 12, 13, 14, 15, 16), (8, 5, 1)), ('L0a', 8, 1, 6, (1, 2, 3, 4, 5, 6, 7, 8), (10, 12, 13, 14, 15, 16), (8, 5, 1))]
+EXHAUST ell=8 e=2 checked=14876 errors=0 lowcases={'L2': 119, 'L0a': 231, 'L1': 833, 'L0b': 7}
+ADMISSIBLE_NOT_GOOD: [('L0a', 8, 2, 6, (1, 2, 3, 4, 5, 6, 7, 8), (11, 12, 13, 14, 15, 16), (8, 5, 1)), ('L0a', 8, 2, 6, (1, 2, 3, 4, 5, 6, 7, 8), (10, 12, 13, 14, 15, 16), (8, 5, 1))]
+EXHAUST ell=8 e=3 checked=14876 errors=0 lowcases={'L2': 119, 'L0a': 231, 'L1': 833, 'L0b': 7}
+ADMISSIBLE_NOT_GOOD: [('L0a', 8, 3, 6, (1, 2, 3, 4, 5, 6, 7, 8), (11, 12, 13, 14, 15, 16), (8, 5, 1)), ('L0a', 8, 3, 6, (1, 2, 3, 4, 5, 6, 7, 8), (10, 12, 13, 14, 15, 16), (8, 5, 1))]
+EXIT_CODE=0
+END 10:16:37

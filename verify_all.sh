@@ -27,7 +27,7 @@ W=$(mktemp -d); trap 'rm -rf "$W"' EXIT
 HEAP=${CAKE_HEAP:-4000}; LOGDIR=${LOGDIR:-}
 [ -n "$LOGDIR" ] && mkdir -p "$LOGDIR"
 
-DEFAULT=(oq62 oq64sym oq64single diag l11k12 l11k13 asym asymind exact12 exact13 exact14 exact15 exactenum lemmap)
+DEFAULT=(oq62 oq64sym oq64single diag l11k12 l11k13 asym asymind exact12 exact13 exact14 exact15 exactenum lemmap exactind)
 ALL=("${DEFAULT[@]}" l11k13ind unique windows exact16 exact17 exact18 exact19 exact20 s2_20_19 s2_21_20)
 VALID=("${ALL[@]}" exactenumbig)
 ARGS=("$@"); [ ${#ARGS[@]} -eq 0 ] && ARGS=("${DEFAULT[@]}")
@@ -35,7 +35,7 @@ ARGS=("$@"); [ ${#ARGS[@]} -eq 0 ] && ARGS=("${DEFAULT[@]}")
 for requested in "${ARGS[@]}"; do
   case " ${VALID[*]} " in *" $requested "*) ;; *) echo "Unknown section: $requested (valid: ${VALID[*]} all)" >&2; exit 2;; esac
 done
-NEED_LRAT=0; for s_ in "${ARGS[@]}"; do case "$s_" in asym|asymind|exactenum|exactenumbig|lemmap) ;; *) NEED_LRAT=1;; esac; done
+NEED_LRAT=0; for s_ in "${ARGS[@]}"; do case "$s_" in asym|asymind|exactenum|exactenumbig|lemmap|exactind) ;; *) NEED_LRAT=1;; esac; done
 if [ "$NEED_LRAT" -eq 1 ]; then : "${LRAT_CHECK:?set LRAT_CHECK}"; : "${CAKE_LPR:?set CAKE_LPR}"; fi
 RAN=0
 want() { for s in "${ARGS[@]}"; do [ "$s" = "$1" ] && { RAN=$((RAN+1)); return 0; }; done; return 1; }
@@ -314,6 +314,26 @@ if want lemmap; then
   [ "$(grep -c 'coefficient signs \[1' "$W/av.out")" -ge 3 ] && ! grep -q -- '-1' "$W/av.out" || { cat "$W/av.out" >&2; fail "vertex range"; }
   echo "  PASS vertex of the three-block quadratic lies in [3/2, l-3/2] for all l >= 19"
   keep "$W/au.out" lemmap_asym_upper.log; keep "$W/al.out" lemmap_asym_lower.log; keep "$W/av.out" lemmap_asym_vertex.log
+fi
+
+if want exactind; then
+  echo "== Results 9-10 (second-party path): GPT's separately written CNF builder and LRAT checker on all 14,723 per-window certificates (evidence/oq64_exact/independent_review_gpt)"
+  G=$X/independent_review_gpt
+  ( cd "$G" && sha256sum -c --quiet SHA256SUMS ) || fail "exactind: the delivered files differ from GPT's SHA256SUMS"
+  python3 -I "$G/gpt_r9_check.py" "$X" --selftest > "$W/gs.out" 2>&1 || { cat "$W/gs.out" >&2; fail "exactind: selftest"; }
+  grep -q '^SELFTEST PASS: pristine accepted; all 9 mutations rejected' "$W/gs.out" || { cat "$W/gs.out" >&2; fail "exactind: selftest did not print its success line"; }
+  [ "$(grep -c '^SELFTEST tamper [1-9]/9 REJECTED' "$W/gs.out")" -eq 9 ] || fail "exactind: expected 9 rejected tamperings"
+  echo "  PASS selftest: pristine l12 accepted, 9/9 tamperings rejected"
+  python3 -I "$G/gpt_r9_check.py" "$X" --jobs "$JOBS" > "$W/gf.out" 2>&1 || { tail -5 "$W/gf.out" >&2; fail "exactind: full run"; }
+  grep -q '^TOTAL pass=14723 fail=0$' "$W/gf.out" || { tail -5 "$W/gf.out" >&2; fail "exactind: expected TOTAL pass=14723 fail=0"; }
+  [ "$(grep -c '^GROUP .* fail=0$' "$W/gf.out")" -eq 23 ] || fail "exactind: expected 23 groups"
+  ! grep -q '^FAIL' "$W/gf.out" || fail "exactind: FAIL line in the full run"
+  keep "$W/gf.out" exactind_full.log; echo "  PASS GPT's checker: 23 groups, 14723/14723 certificates"
+  python3 -I "$G/r9_math_audit.py" --min-l 6 --max-l 7 --es 1,3 > "$W/gm.out" 2>&1 || { cat "$W/gm.out" >&2; fail "exactind: r9_math_audit.py"; }
+  for pat in 'SYMPY (diff), L2, L1, L0a, L0b expansions PASS' 'SYMPY asymptotic discriminants + vertex PASS' 'FINITE e_P l=9..54 PASS; equality l=22' 'EXHAUST ell=7 e=3 checked=3458 errors=0'; do
+    grep -qF "$pat" "$W/gm.out" || { cat "$W/gm.out" >&2; fail "exactind: r9_math_audit.py did not print '$pat'"; }
+  done
+  keep "$W/gm.out" exactind_math.log; echo "  PASS GPT's SymPy and exhaustive checks of Lemma 28 / Theorem 29 (l = 6, 7)"
 fi
 
 [ "$RAN" -gt 0 ] || fail "no section was run"

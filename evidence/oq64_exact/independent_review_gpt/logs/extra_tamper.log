@@ -1,0 +1,9 @@
+pristine ACCEPTED | 83357 edges, 281363 LRAT lines | 3.9s
+middle_hint_changed rejected | Bad: LRAT line 141245: satisfied RUP hint 2
+empty_clause_line_dropped rejected | Bad: no empty clause added
+middle_clause_literal_dropped rejected | Bad: LRAT line 141245: RUP hints ended without contradiction
+middle_first_hint_removed rejected | Bad: LRAT line 141245: RUP hints ended without contradiction
+last_hyperedge_removed rejected | Bad: LRAT line 157254: deletion of nonlive clause 166753
+N_4860 rejected | Bad: hyperedge #16964 out-of-range output
+window_RRRB_with_RRRR_proof rejected | Bad: LRAT line 1: satisfied RUP hint 41
+proof lines 281363 additions 141245

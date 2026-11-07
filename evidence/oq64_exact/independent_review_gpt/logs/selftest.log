@@ -1,0 +1,16 @@
+SELFTEST pristine PASS (90/90)
+SELFTEST tamper 1/9 REJECTED: truncated proof
+SELFTEST tamper 2/9 REJECTED: one hint id changed
+SELFTEST tamper 3/9 REJECTED: proof from another window (pretested invalid)
+SELFTEST tamper 4/9 REJECTED: hyperedge sum +1
+SELFTEST tamper 5/9 REJECTED: proof-used hyperedge removed (pretested invalid)
+SELFTEST tamper 6/9 REJECTED: DONE N changed
+SELFTEST tamper 7/9 REJECTED: perwin line removed
+SELFTEST tamper 8/9 REJECTED: extra proof file
+SELFTEST tamper 9/9 REJECTED: edge key flipped
+SELFTEST PASS: pristine accepted; all 9 mutations rejected
+
+real	0m1.955s
+user	0m1.970s
+sys	0m0.402s
+EXIT_CODE=0
