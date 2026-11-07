@@ -1,3 +1,5 @@
+START 2026-11-07 11:22:01 +0800
+== tests/negative_controls_exact.sh
 positive control (ok): the unmodified copy passes
 rejected (ok): truncated LRAT proof -- FAIL: RBBBBBBBBBBBBBBBBBBBBBBB: lrat-check did not verify (exit 1)
 rejected (ok): proof of another window -- FAIL: RBBBBBBBBBBBBBBBBBBBBBBB: lrat-check did not verify (exit 1)
@@ -16,3 +18,30 @@ rejected (ok): cake_lpr success text not at line start -- FAIL: RBBBBBBBBBBBBBBB
 rejected (ok): second implementation vs a fake C objective
 rejected (ok): Theorem Q' upper bound with the constant 1 - 7/10 at l0 = 19
 NEGATIVE CONTROLS (v1.3) PASSED
+EXIT_CODE=0
+== tests/negative_controls.sh
+rejected (ok): lrat-check prints success but exits 1
+rejected (ok): lrat-check exits 0 without success line
+rejected (ok): cake_lpr prints success but exits 1
+rejected (ok): cake_lpr exits 0 with failure text
+rejected (ok): cake_lpr success text not at line start
+rejected (ok): unknown section name
+rejected (ok): lrat-check on truncated proof
+rejected (ok): cake_lpr on truncated proof
+rejected (ok): tampered hyperedge (hyperedges ok=0 bad=1 clauses=1)
+rejected (ok): tampered symbolic certificate
+rejected (ok): section unique with one of the 12 colourings missing
+rejected (ok): cube partition with one cube removed
+rejected (ok): cube unit colour flipped against the prefix
+rejected (ok): cube certificate used for a different prefix
+rejected (ok): independent LRAT checker on a proof without the empty clause
+rejected (ok): independent symbolic audit rejects Python optimization
+rejected (ok): independent LRAT replay rejects Python optimization
+rejected (ok): verify_all rejects Python optimization
+rejected (ok): rigorous_asym with cU=3
+rejected (ok): three-block colouring extended to V3
+rejected (ok): tampered T1-fill parameter
+rejected (ok): verify_all asym rejects Python optimization
+ALL NEGATIVE CONTROLS REJECTED
+EXIT_CODE=0
+END 2026-11-07 11:23:40 +0800

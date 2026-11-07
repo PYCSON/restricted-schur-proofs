@@ -23,3 +23,12 @@ These are first-party runs (Claude), with the same checker builds as for v1.0.
 * The other sections were not re-run for v1.2, because their certificate files are byte-identical to v1.1 (compare `MANIFEST.sha256`).
 
 These are first-party runs (Claude), with the same checker builds as before. The outputs of GPT's checkers are also stored in `evidence/oq64_asymptotic/independent_review_gpt/`: GPT's own runs in `*.log`, and Claude's re-runs through section `asymind` in the log above.
+
+# Verification logs, release v1.3 (added [RELEASE DATE])
+
+* `verify_all_v1.3_all.log`: complete output of `./verify_all.sh all` with `JOBS=2`, run on 7 November 2026, 10:26–11:21 (UTC+8), from a fresh clone of the staging commit `30b286c3` (the release commit differs from it only in the files added afterwards: these logs, `MANIFEST.sha256`, and the final wording of the review verdict and the release date). It covers every section of v1.0–v1.3 except `exactenumbig`. It begins with the commit hash and the SHA-256 of the `verify_all.sh` that was run and ends with `EXIT_CODE=0` and the end time.
+* `negative_controls_v1.3.log`: output of `tests/negative_controls_exact.sh` (16 tampered inputs and fake checkers for the v1.3 sections, plus a positive control) followed by `tests/negative_controls.sh` (22 cases), both run from the same fresh clone. Every case was rejected.
+* `checker_outputs_v1.3.tar.xz`: the per-section outputs kept by `LOGDIR` (the `replay_perwin.py` summaries for every certificate set, and the outputs of GPT's checker in section `exactind`).
+* The large enumerations (`exactenumbig`, about 7 hours) were not re-run from the fresh clone; their byte-for-byte reproductions during production are recorded in `evidence/oq64_exact/README.md` and in the `parts/` directories.
+
+These are first-party runs (Claude), with the same checker builds as before (lrat-check `24a56122…`, cake_lpr `1822ca1e…`). The runs of GPT's independently written checker are in `evidence/oq64_exact/independent_review_gpt/logs/`.
