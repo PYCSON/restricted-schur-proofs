@@ -313,7 +313,10 @@ if want lemmap; then
   python3 -I "$L/asym_vertex.py" > "$W/av.out" 2>&1 || fail "asym_vertex.py"
   [ "$(grep -c 'coefficient signs \[1' "$W/av.out")" -ge 3 ] && ! grep -q -- '-1' "$W/av.out" || { cat "$W/av.out" >&2; fail "vertex range"; }
   echo "  PASS vertex of the three-block quadratic lies in [3/2, l-3/2] for all l >= 19"
-  keep "$W/au.out" lemmap_asym_upper.log; keep "$W/al.out" lemmap_asym_lower.log; keep "$W/av.out" lemmap_asym_vertex.log
+  python3 -I "$L/asym_c0.py" > "$W/ac.out" 2>&1 || { cat "$W/ac.out" >&2; fail "asym_c0.py"; }
+  grep -q 'equality only at l = 22 (e_P = 5); e_P >= 4 throughout. PASS' "$W/ac.out" || { cat "$W/ac.out" >&2; fail "Theorem 29 constant 16 - 11 sqrt2"; }
+  echo "  PASS Theorem 29 upper constant 16 - 11 sqrt2: l >= 55 symbolically, 19 <= l <= 54 exactly (tight at l = 22)"
+  keep "$W/au.out" lemmap_asym_upper.log; keep "$W/al.out" lemmap_asym_lower.log; keep "$W/av.out" lemmap_asym_vertex.log; keep "$W/ac.out" lemmap_asym_c0.log
 fi
 
 if want exactind; then
