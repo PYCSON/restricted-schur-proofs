@@ -1,4 +1,4 @@
-START 2026-11-07 11:22:01 +0800
+# tests/negative_controls_exact.sh then tests/negative_controls.sh, run 2026-11-07 12:27-12:28 +08 from the same fresh clone (ed5dbfa5)
 == tests/negative_controls_exact.sh
 positive control (ok): the unmodified copy passes
 rejected (ok): truncated LRAT proof -- FAIL: RBBBBBBBBBBBBBBBBBBBBBBB: lrat-check did not verify (exit 1)
@@ -44,4 +44,4 @@ rejected (ok): tampered T1-fill parameter
 rejected (ok): verify_all asym rejects Python optimization
 ALL NEGATIVE CONTROLS REJECTED
 EXIT_CODE=0
-END 2026-11-07 11:23:40 +0800
+END2 2026-11-07 12:28:58 +0800
