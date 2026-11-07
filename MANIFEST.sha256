@@ -28227,4 +28227,4 @@ d6509c4e65c2c3e0a1e7fbc651d2358ecd5e8c73cefbdc97edf219e6b8fc46b7  ./paper/restri
 397c57babbc3afb84d81a3a7f3c814bd9f41cc987d69ac70d2a5add2b15166d8  ./paper/restricted-schur-v1.3.tex
 af24f5466a4c098ccd927452abcb584e256a1c09178f69cea5753709f71e364a  ./tests/negative_controls.sh
 527971175ad4b5e5fb258cb9ac3971bc4e0bcd5f2867d97de7a81aeb18497f16  ./tests/negative_controls_exact.sh
-465cceb41173c6b72806d3ddd86553e9cce1e18b9ce61e55aca33da11e5fbcf8  ./verify_all.sh
+388e11fddb7c4d8fdbccf506d1e059b6560e537cbfe6bd20db498d9369fe023d  ./verify_all.sh

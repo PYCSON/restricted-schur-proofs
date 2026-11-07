@@ -3,18 +3,18 @@
 # and (new in v1.2) the exact checks behind Result 8 (asymptotics of K(l)): sections asym and asymind,
 # and (new in v1.3) Results 9-12: exact K(12..20), S_2(20;19)=4181, S_2(21;20)=4861 (per-window certificates:
 # sections exact12 ... exact20, s2_20_19, s2_21_20; enumeration replay: exactenum, exactenumbig) and Lemma P /
-# Theorem Q' (section lemmap).
+# Theorem Q' (section lemmap); exactind runs the second party's separately written checker on all 14,723 certificates.
 # Result 4 (K(11)=12) is sections l11k12 (k=12) and l11k13 (222 cube certificates, every k>=13); l11k13ind runs the
 # separately written second-party checkers on the same 222 certificates (needs Python >= 3.11).
 # Requirements: python3 (with sympy), xz, and the two LRAT checkers:
 #   LRAT_CHECK = path to lrat-check (drat-trim distribution)
 #   CAKE_LPR   = path to cake_lpr (formally verified checker)
 # Usage:  LRAT_CHECK=/path/lrat-check CAKE_LPR=/path/cake_lpr ./verify_all.sh [section ...]
-#   (the sections asym and asymind need only python3 with sympy; LRAT_CHECK/CAKE_LPR are then not required)
+#   (the sections asym, asymind, exactenum, exactenumbig, lemmap and exactind need only python3 (sympy; gcc for exactenum*); LRAT_CHECK/CAKE_LPR are then not required)
 # Sections: oq62 oq64sym oq64single diag l11k12 l11k13 l11k13ind unique windows asym asymind
 #           exact12 exact13 exact14 exact15 exact16 exact17 exact18 exact19 exact20 s2_20_19 s2_21_20
-#           exactenum exactenumbig lemmap
-#   (default: oq62 oq64sym oq64single diag l11k12 l11k13 asym asymind exact12 exact13 exact14 exact15 exactenum lemmap;
+#           exactenum exactenumbig lemmap exactind
+#   (default: oq62 oq64sym oq64single diag l11k12 l11k13 asym asymind exact12 exact13 exact14 exact15 exactenum lemmap exactind;
 #    "all" adds l11k13ind, unique, windows, exact16..exact20, s2_20_19 and s2_21_20 -- several hours with JOBS=1;
 #    exactenumbig, the replay of the l >= 17 enumerations (about 7 hours), is run only when named)
 # Optional: JOBS (parallel per-window checks, default 1); exactenum and exactenumbig need gcc.
