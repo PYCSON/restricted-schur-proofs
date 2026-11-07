@@ -100,6 +100,8 @@ Then:
 
 Write D″ = D ∩ (m_ℓ, 2ℓ]. Formula (★) is used directly; the sums ΣS + ΣD are no longer equal.
 
+The tuples below are admissible and have y ≠ m₁, so u = m₁. They are not necessarily good: r′ need not be among the q+1 least elements of S. The stated bounds on r′ + Q(r′) account for this excess.
+
 - **(L2)** Case II, S = [2, ℓ+1]. Let β = min D″ ∈ [ℓ+2, 2ℓ] and take (y, r′, d) = (ℓ+1, β−ℓ+1, 2). Then b = β, and r′ + Q(r′) ≤ Σ_{q+1}(S) + (j−1). This gives w − w*(P_j) < −j(ℓ−2) < 0.
 - **(L1)** Case I, S = [1, ℓ+1]∖{a} with 2 ≤ a ≤ ℓ. Let β = min D″.
   - If β−ℓ ≠ a, take (ℓ+1, β−ℓ, 1).
