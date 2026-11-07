@@ -1,6 +1,6 @@
 # Exact thresholds K(12), …, K(20) and the values S₂(20;19), S₂(21;20)
 
-**Status.** Computer-assisted proof candidates, not peer reviewed. The method and the computations are first-party: Claude (Anthropic) designed them, wrote the code and ran it. The second-party review is recorded in the CHANGELOG. Lemma numbers below refer to the preprint (`paper/`).
+**Status.** Computer-assisted proof candidates, not peer reviewed. The method and the computations are first-party: Claude (Anthropic) designed them, wrote the code and ran it. The second-party review is recorded in the CHANGELOG and in `independent_review_gpt/`. Lemma numbers below refer to the preprint (`paper/`).
 
 Write k = ℓ + e and F = F(k,ℓ), Gaiser's formula. Write V₃(ℓ,e,j) for the three-block value (Proposition 19). The results are these:
 
@@ -36,9 +36,9 @@ Let χ be a 2-colouring of [1, N] with χ(1) red, and let W = [1, 2ℓ] be its w
 
 **Theorem Q′.** For every ℓ ≥ 19,
 
-  (1+a*)ℓ − 3.63 < K(ℓ) < (1+a*)ℓ + 1,   where a* = (√2−1)/2.
+  (1+a*)ℓ − 3.63 < K(ℓ) ≤ (1+a*)ℓ + 16 − 11√2 < (1+a*)ℓ + 0.444,   where a* = (√2−1)/2.
 
-The upper bound uses Lemma P. The lower bound uses only the three-block family. Theorem 18 of v1.2 gave the window (−4, +5) for ℓ ≥ 50.
+The upper bound uses Lemma P; its constant 16 − 11√2 is attained at ℓ = 22 and was found by the second party (GPT). The lower bound uses only the three-block family. Theorem 18 of v1.2 gave the window (−4, +5) for ℓ ≥ 50.
 
 The computations agree with Lemma P. For every ℓ and e enumerated, the largest surviving objective equals the prefix objective. Examples: 72 at ℓ = 19, e = 3; 238 and 106 at ℓ = 20, e = 2, 3; 300 for S₂(20;19); 326 for S₂(21;20).
 
@@ -53,6 +53,7 @@ The computations agree with Lemma P. For every ℓ and e enumerated, the largest
 | `tools/` | Enumeration and replay code (see below) |
 | `lemmaP/` | Lemma P, Theorem Q/Q′, and their checks and logs |
 | `fullcheck/` | A second implementation of the T1-fill decision, run on every window for ℓ = 9, 10, 11 |
+| `independent_review_gpt/` | The second party's (GPT) separately written checker and SymPy audit, as delivered, with the logs of Claude's runs (see its README) |
 
 **Tools.**
 - `tools/replay_perwin.py` replays one set of certificates. It fails closed if any of the following does not hold:
@@ -69,7 +70,7 @@ The computations agree with Lemma P. For every ℓ and e enumerated, the largest
 ## Replay
 
 ```
-LRAT_CHECK=/path/lrat-check CAKE_LPR=/path/cake_lpr JOBS=4 ./verify_all.sh exact12 exact13 exact14 exact15 exactenum lemmap
+LRAT_CHECK=/path/lrat-check CAKE_LPR=/path/cake_lpr JOBS=4 ./verify_all.sh exact12 exact13 exact14 exact15 exactenum lemmap exactind
 LRAT_CHECK=… CAKE_LPR=… JOBS=4 ./verify_all.sh exact16 exact17 exact18 exact19 exact20 s2_20_19 s2_21_20
 ./verify_all.sh exactenumbig      # several hours: re-runs the enumerations for l >= 17 and at N = 4181, 4861
 ```

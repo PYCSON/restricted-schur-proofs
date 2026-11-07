@@ -139,6 +139,8 @@ For every ℓ ≥ 19,
 
 The upper bound needs Lemma P. The lower bound does not, and it improves the −4 of Corollary 20.
 
+The preprint (Theorem 29) sharpens the upper constant to 16 − 11√2 ≈ 0.444, which is attained at ℓ = 22: substitute e = a*ℓ + (16 − 11√2) − 1 and ℓ = 55 + u, and check the finite range 19 ≤ ℓ ≤ 54 exactly (the second party, GPT, found this constant; `asym_upper.py` and the second party's `../independent_review_gpt/r9_math_audit.py` check it). The derivation below is the earlier form with constant 1.
+
 - **Upper bound** (`asym_upper.py`, sympy exact with √2 kept symbolic).
   - Write G_P = −A j² + β j + γ with A = e+ℓ−1. Its real maximum over j is negative iff Disc := β² + 4Aγ < 0.
   - Substitute e = a*ℓ and ℓ = 19 + u. Every coefficient of Disc, as a polynomial in u, is negative. So G_P < 0 for every real j at e = a*ℓ.

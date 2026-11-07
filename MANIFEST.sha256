@@ -1,5 +1,5 @@
 3dfd465fdcf9952fb7ba12e6bde2161d62d40686850ed1e4ed6264296ec67aa4  ./CHANGELOG.md
-953a4660a6a9ce7b71aa84aba769e35c97506b67b03a0e1ad12fef79e54d35e1  ./CITATION.cff
+26d7f4eaa017074041a1ec1755d1be69e5c300c7dac5779dec3faea516eb21da  ./CITATION.cff
 bd01f08f64381bf0cda6cb76c322136f9cd6603c82c0608c376222e62488d5d3  ./LICENSE
 dc0507311f23926e55e73ff2742ea6c9c54113680892e12140a4ca2bd14f1ff8  ./README.md
 c87e6c5b6960ee10e0a432701ad4d03a080c230238ab7d2c313d51d0eca21e33  ./evidence/oq64_asymptotic/SHA256SUMS
@@ -124,7 +124,7 @@ fe942da969be48eac6022a0618c10821015b127c873c87b41a095c042442d807  ./evidence/oq6
 03837e87bb011c7c6b7aa08629ed834c1ffd6e4debb02baaf19f223309bd4113  ./evidence/oq64_diag/numfast_12_13.txt
 8d4ce712646c26c7cdd5925c516dc1fa48246027dc1e64790adf028770e9810b  ./evidence/oq64_diag/numfast_14.txt
 48269e46eb4107c361d6d4ae19bfd681f90d1e5315aabcf3616656d22ff8108a  ./evidence/oq64_diag/run_diag.sh
-98463ec12663547817b16c4658b07b6c03772cc1cb65e8b48cf395a4e9263fb8  ./evidence/oq64_exact/README.md
+cd8ae6f8e7e2b9b665c8def69dd40f3cedea2aabb24a2be509e7ebb8c86be35c  ./evidence/oq64_exact/README.md
 c37823f56dc93cbf12e3d57a312b3509b3fa4a3f8e8b62b8c90a60309993c7cc  ./evidence/oq64_exact/S2_20_19/edges_l19_e1.txt.xz
 6b29aa222554aef08a53c6fc65063c0876a3537d6c52ac51dae3dc1a92ad1463  ./evidence/oq64_exact/S2_20_19/parts/red_l19_e1.A.part
 9e5d6dfe68c3fe632405544d001471f9894535ab4c52b3fa80529a712a4452c8  ./evidence/oq64_exact/S2_20_19/parts/red_l19_e1.B.part
@@ -15006,7 +15006,7 @@ cb014750bb86cede8389b01fd018de19e153d8fcc4a87d1ef05c8e0615647689  ./evidence/oq6
 3b67075f662b788ab94ed41da8bd9f03a2337cc5aea16b0c7e0baa3cb7a2b827  ./evidence/oq64_exact/l20/red_l20_e4.txt
 05f98d7ebcd95d1b03cd92a88035d3892d3c1fdcf4e449c3f6bc15647f85bffc  ./evidence/oq64_exact/l20/red_l20_e5.txt
 e422f4c5cfda9eb354e88e94604e6978e11ab6a583a7ec0b7b969f60341c1f7a  ./evidence/oq64_exact/l20/res_l20.tsv
-0a01b07685b3fcaac949f0d7c8e73600dba2dec197716bff035e5fe89f051ddf  ./evidence/oq64_exact/lemmaP/LEMMA_P.md
+efc08ef7fe17e7c2b918a54810acacc5fba0ed24ca12b83a095744a1f8b8d865  ./evidence/oq64_exact/lemmaP/LEMMA_P.md
 16add6fc7e8778a99c78cf42835cf3bbe8a90056f246724bc5c5af64336647c9  ./evidence/oq64_exact/lemmaP/asym_lower.log
 5aefcea6f45dc559a0071dabf8d93cfaa00b922cc54b85f1de83500305f6f9a5  ./evidence/oq64_exact/lemmaP/asym_lower.py
 e8704c6c121544f95cb498ea08384358f510e0988efbc3fa95bbc90e4fe020ba  ./evidence/oq64_exact/lemmaP/asym_upper.log
