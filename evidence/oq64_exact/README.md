@@ -11,7 +11,7 @@ Write k = ℓ + e and F = F(k,ℓ), Gaiser's formula. Write V₃(ℓ,e,j) for th
 | 10 | S₂(20;19) = 4181 = V₃(19,1,5) > F(20,19) = 4163 | 3558 |
 | 10 | S₂(21;20) = 4861 = V₃(20,1,5) > F(21,20) = 4812 | 4426 |
 
-All lower bounds are already in v1.2. The diagonal bound S₂(ℓ;ℓ) > F(ℓ,ℓ) gives K(ℓ) ≥ ℓ+1. The three-block colourings, which are checked in Lean (`lean/OQ64/Three.lean`) and in section `asym`, give K(19) ≥ 21, K(20) ≥ 22, S₂(20;19) ≥ 4181 and S₂(21;20) ≥ 4861.
+All lower bounds are already in v1.2. The diagonal bound S₂(ℓ;ℓ) > F(ℓ,ℓ) gives K(ℓ) ≥ ℓ+1. The three-block colourings, which are checked in Lean (`lean/oq64/OQ64/Three.lean`) and in section `asym`, give K(19) ≥ 21, K(20) ≥ 22, S₂(20;19) ≥ 4181 and S₂(21;20) ≥ 4861.
 
 ## Upper bounds: the method
 
@@ -38,7 +38,7 @@ Let χ be a 2-colouring of [1, N] with χ(1) red, and let W = [1, 2ℓ] be its w
 
   (1+a*)ℓ − 3.63 < K(ℓ) ≤ (1+a*)ℓ + 16 − 11√2 < (1+a*)ℓ + 0.444,   where a* = (√2−1)/2.
 
-The upper bound uses Lemma P; its constant 16 − 11√2 is attained at ℓ = 22 and was found by the second party (GPT). The lower bound uses only the three-block family. Theorem 18 of v1.2 gave the window (−4, +5) for ℓ ≥ 50.
+The upper bound uses Lemma P; its constant 16 − 11√2 was found by the second party (GPT). It is optimal for this prefix-threshold estimate: the difference e_P(ℓ) − a*ℓ attains it at ℓ = 22, where e_P(22) = 5. This does not assert that K(22) attains the upper bound. The lower bound uses only the three-block family. Theorem 18 of v1.2 gave the window (−4, +5) for ℓ ≥ 50.
 
 The computations agree with Lemma P. For every ℓ and e enumerated, the largest surviving objective equals the prefix objective. Examples: 72 at ℓ = 19, e = 3; 238 and 106 at ℓ = 20, e = 2, 3; 300 for S₂(20;19); 326 for S₂(21;20).
 

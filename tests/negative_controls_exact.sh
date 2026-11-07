@@ -75,9 +75,13 @@ fresh; expect_fail "lrat-check prints success but exits 1" env LRAT_CHECK="$W/lc
 printf '#!/bin/sh\necho "xs VERIFIED UNSAT"\nexit 0\n' > "$W/ck"; chmod +x "$W/ck"
 fresh; expect_fail "cake_lpr success text not at line start" env CAKE_LPR="$W/ck" $R "$W/s" 12 2 $N2
 
+mkdir -p "$W/v" && ln -s "$ROOT/evidence" "$W/v/evidence" && sed 's/exactset 12 1:90 /exactset 12 1:91 /' "$ROOT/verify_all.sh" > "$W/v/verify_all.sh" && chmod +x "$W/v/verify_all.sh"
+grep -q 'exactset 12 1:91 ' "$W/v/verify_all.sh" || { echo "control setup failed"; exit 1; }
+expect_fail "verify_all.sh expecting 91 certificates for l=12, e=1 (there are 90)" "$W/v/verify_all.sh" exact12
+
 printf '#!/bin/sh\nwhile read l e w; do echo 0; done\n' > "$W/fakehill"; chmod +x "$W/fakehill"
 python3 -I "$X/fullcheck/full_explicit.py" "$W/fakehill" 8 1 > "$W/fc" 2>&1
-if grep -q 'objective mismatches=0' "$W/fc"; then echo "NOT REJECTED: second implementation vs a fake C objective"; bad=$((bad+1)); else echo "rejected (ok): second implementation vs a fake C objective"; fi
+if grep -Eq 'objective mismatches=[1-9][0-9]*' "$W/fc"; then echo "rejected (ok): second implementation vs a fake C objective -- $(grep -Eo 'objective mismatches=[0-9]+' "$W/fc")"; else echo "NOT REJECTED: second implementation vs a fake C objective (no non-zero mismatch count was printed)"; bad=$((bad+1)); fi
 
 python3 -I "$X/lemmaP/asym_upper.py" > "$W/au" 2>&1
 if grep -q 'l0=19 c=-7/10: .* not all negative' "$W/au"; then echo "rejected (ok): Theorem Q' upper bound with the constant 1 - 7/10 at l0 = 19"; else echo "NOT REJECTED: c=-7/10"; bad=$((bad+1)); fi

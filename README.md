@@ -1,7 +1,7 @@
 # On two open questions of Gaiser on restricted generalized Schur numbers
 
 **Author:** Puyi Sun (ORCID [0009-0004-1644-5300](https://orcid.org/0009-0004-1644-5300))<br>
-**Version:** 1.3, [RELEASE DATE] (v1.2: 3 November 2026; v1.1: 1 November 2026; v1.0: 28 October 2026)<br>
+**Version:** 1.3, 8 November 2026 (v1.2: 3 November 2026; v1.1: 1 November 2026; v1.0: 28 October 2026)<br>
 **Status:** computer-assisted proof candidate. **Not peer reviewed.**<br>
 **DOI (Zenodo):** v1.0.1: [10.5281/zenodo.23752136](https://doi.org/10.5281/zenodo.23752136); v1.1.0: [10.5281/zenodo.23853953](https://doi.org/10.5281/zenodo.23853953); v1.2.0: [10.5281/zenodo.23938150](https://doi.org/10.5281/zenodo.23938150); v1.3 receives its own DOI from Zenodo when it is released
 
@@ -45,7 +45,7 @@ Appendix A. In short:
 * Codex reported a separate replay of the chain for `WS_8(2)=365` (independent encoder, fresh solver run, its own LRAT checker). That report does not replace an independent examination of its original logs.
 * The archived first-party logs report that every included LRAT proof is accepted by both `lrat-check` and the formally verified checker `cake_lpr`. How far each result has been independently replayed is stated result by result in the preprint.
 * The levels of checking are kept distinct. An *independently written* checker means separate source code. A *second-party replay* means the certificate was actually run by a separate system. Neither means that the human author has personally verified the mathematics, which he has not done for every step (see "Use of AI").
-* On 28 October 2026 the v1.0 `verify_all.sh` and the certificate inputs of v1.0 were replayed with `./verify_all.sh all`. The first-party logs are archived in `logs/` (`verify_all_v1.0.log`, `checker_outputs_v1.0.tar.xz`, `negative_controls_v1.0.log`). For v1.1 the new sections `l11k13` and `l11k13ind` and the extended negative controls were run; their logs are `logs/verify_all_v1.1_l11k13.log` and `logs/negative_controls_v1.1.log`. For v1.2 the new sections `asym` and `asymind` and the negative controls (now 22) were run: `logs/verify_all_v1.2_asym.log`, `logs/negative_controls_v1.2.log`. For v1.3 every section except `exactenumbig` was replayed from a fresh clone of the release commit with `./verify_all.sh all` (`logs/verify_all_v1.3_all.log`), together with both negative-control scripts (`logs/negative_controls_v1.3.log`, 38 cases rejected). The certificate files of v1.0–v1.2 are unchanged (same SHA-256).
+* On 28 October 2026 the v1.0 `verify_all.sh` and the certificate inputs of v1.0 were replayed with `./verify_all.sh all`. The first-party logs are archived in `logs/` (`verify_all_v1.0.log`, `checker_outputs_v1.0.tar.xz`, `negative_controls_v1.0.log`). For v1.1 the new sections `l11k13` and `l11k13ind` and the extended negative controls were run; their logs are `logs/verify_all_v1.1_l11k13.log` and `logs/negative_controls_v1.1.log`. For v1.2 the new sections `asym` and `asymind` and the negative controls (now 22) were run: `logs/verify_all_v1.2_asym.log`, `logs/negative_controls_v1.2.log`. For v1.3 every section except `exactenumbig` was replayed from a fresh clone of the release commit with `./verify_all.sh all` (`logs/verify_all_v1.3_all.log`), together with both negative-control scripts (`logs/negative_controls_v1.3.log`, 39 cases rejected). The certificate files of v1.0–v1.2 are unchanged (same SHA-256).
 
 ## How the certificates work
 
@@ -86,7 +86,7 @@ export LRAT_CHECK=/path/to/lrat-check CAKE_LPR=/path/to/cake_lpr
 JOBS=4 ./verify_all.sh exact12 exact13 exact14 exact15 exactenum lemmap exactind   # Results 9-12, the quick part (minutes)
 JOBS=4 ./verify_all.sh exact16 exact17 exact18 exact19 exact20 s2_20_19 s2_21_20   # the remaining 13,689 certificates
 ./verify_all.sh exactenumbig                   # re-runs the l >= 17 enumerations (about 7 hours; gcc)
-tests/negative_controls_exact.sh               # 16 tampered inputs / fake checkers for the v1.3 sections, plus a positive control
+tests/negative_controls_exact.sh               # 17 tampered inputs / fake checkers / wrong expected counts for the v1.3 sections, plus a positive control
 tests/negative_controls.sh                     # 22 tampered inputs / fake checkers / optimised-Python runs; every one must be rejected
 ```
 
@@ -105,14 +105,14 @@ The sections can also be run on their own:
 | `windows` | 7 | All 1470 window certificates (each prefix must be exactly the window `W_j`), then the combined forcing-lemma argument |
 | `asym` | 8 | First-party exact checks (`evidence/oq64_asymptotic/scripts`): the all-`ℓ ≥ 50` polynomial proofs of both bounds (with the negative control `cU = 3`), the finite table `6 ≤ ℓ ≤ 49`, the `j = 1` lemma, Fact 1, the DP checks of the colourings for `ℓ = 19, 20` (exact and relaxed) and `WS_20(2)`, and explicit T1-fill hyperedges |
 | `asymind` | 8 | The second party's separately written checkers (`independent_review_gpt/independent_*.py`) |
-| `exact12` … `exact20` | 9 | For each stored `e`: the survivor file and its `DONE` line, the per-window list (= survivors ∪ the `j = 1` windows when `e ≤ 2`), one hyperedge entry and one proof per window; every hyperedge re-checked and the CNF rebuilt by `mkcnfw.py`; both LRAT checkers (`tools/replay_perwin.py`) |
+| `exact12` … `exact20` | 9 | For each stored `e`: the survivor file and its `DONE` line, the per-window list (= survivors ∪ the `j = 1` windows when `e ≤ 2`), one hyperedge entry and one proof per window; every hyperedge re-checked and the CNF rebuilt by `mkcnfw.py`; both LRAT checkers (`tools/replay_perwin.py`); the script then requires its summary line `PERWIN_SUMMARY l= e= N= windows= pass= fail=0` with the expected count of Table 4 |
 | `s2_20_19`, `s2_21_20` | 10 | The same at `n = 4181` and `n = 4861` |
 | `exactenum` | 9–11 | Recompiles the C tools and re-runs the enumeration for `10 ≤ ℓ ≤ 16`: every survivor file is reproduced byte for byte by `t1red`, by the one-pass `t1multi`, and by segments + `t1combine.py` (ℓ = 14). Also checks the closed form for prefix windows (7568 cases) and runs a second implementation of the T1-fill decision on every window for `ℓ = 9, 10` (`fullcheck/`) |
 | `exactenumbig` | 9, 10 | Re-runs the enumerations for `ℓ = 17 … 20` and at `N = 4181, 4861` and compares the survivor files byte for byte (hours; only when named) |
 | `lemmap` | 11, 12 | The constructions of the proof of Lemma P on every window for `ℓ = 6 … 9` (with a negative control beyond `e = 2ℓ²−4ℓ`), and the sympy proofs of both bounds of Theorem Q′ (including the constant `16 − 11√2`: symbolically for `ℓ ≥ 55`, exactly for `19 ≤ ℓ ≤ 54`) and of the vertex range |
 | `exactind` | 9–12 | The second party's separately written CNF builder and LRAT checker (`independent_review_gpt/gpt_r9_check.py`, standard library only) on all 14,723 certificates, after its self-test (9 tamperings rejected); and its SymPy and exhaustive checks of Lemma P and Theorem Q′ (`r9_math_audit.py`). No LRAT binaries needed; about 3 minutes with `JOBS=2` |
 
-With no arguments the script runs `oq62 oq64sym oq64single diag l11k12 l11k13 asym asymind exact12 exact13 exact14 exact15 exactenum lemmap exactind`; `all` adds `l11k13ind unique windows exact16 … exact20 s2_20_19 s2_21_20`; `exactenumbig` runs only when named. `JOBS=n` runs the per-window checks in parallel. An unknown section name is an error.
+With no arguments the script runs `oq62 oq64sym oq64single diag l11k12 l11k13 asym asymind exact12 exact13 exact14 exact15 exactenum lemmap exactind`; `all` adds `l11k13ind unique windows exact16 exact17 exact18 exact19 exact20 s2_20_19 s2_21_20`; `exactenumbig` runs only when named. `JOBS=n` runs the per-window checks in parallel. An unknown section name is an error.
 For each certificate, the script checks the hyperedges or the symbolic semantics and reconstructs the
 corresponding CNF. Where a stored CNF is supplied, the reconstructed CNF is compared byte for byte with it. For
 the uniqueness certificates, the CNF is generated from the checked hyperedges and the explicit blocking clause

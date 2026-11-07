@@ -223,26 +223,33 @@ fi
 
 # ---- new in v1.3: exact thresholds K(12..20) and S_2(20;19), S_2(21;20) (evidence/oq64_exact) ----
 X=$EV/oq64_exact; JOBS=${JOBS:-1}
-perwin() { # perwin <setdir> <l> <e> <n>
+perwin() { # perwin <setdir> <l> <e> <n> <expected number of certificates>
   python3 -I "$X/tools/replay_perwin.py" "$X/$1" "$2" "$3" "$4" "$JOBS" > "$W/pw.out" 2>&1 || { cat "$W/pw.out" >&2; fail "per-window replay $1 l=$2 e=$3 n=$4"; }
-  keep "$W/pw.out" "exact_$1_e$3.log"; grep -E '^  PASS' "$W/pw.out"
+  keep "$W/pw.out" "exact_$1_e$3.log"
+  [ "$(grep -c '^PERWIN_SUMMARY ' "$W/pw.out")" -eq 1 ] || { cat "$W/pw.out" >&2; fail "per-window replay $1 e=$3: expected exactly one summary line"; }
+  grep -qx "PERWIN_SUMMARY l=$2 e=$3 N=$4 windows=$5 pass=$5 fail=0" "$W/pw.out" \
+    || { grep '^PERWIN_SUMMARY' "$W/pw.out" >&2; fail "per-window replay $1 e=$3: summary is not 'l=$2 e=$3 N=$4 windows=$5 pass=$5 fail=0'"; }
+  grep -E '^  PASS' "$W/pw.out"; PERWIN_TOTAL=$((PERWIN_TOTAL + $5))
 }
-exactset() { # exactset <l> <e...> : every stored e for this l, bound F(l+e,l)
+PERWIN_TOTAL=0
+exactset() { # exactset <l> <e:count ...> : every stored e for this l, bound F(l+e,l), with the expected certificate count
   local l=$1; shift
   echo "== Result 9 (K($l)): per-window certificates and survivor files, evidence/oq64_exact/l$l"
-  for e in "$@"; do perwin "l$l" "$l" "$e" "$(F2 $((l+e)) "$l")"; done
+  for ec in "$@"; do local e=${ec%:*} c=${ec#*:}; perwin "l$l" "$l" "$e" "$(F2 $((l+e)) "$l")" "$c"; done
 }
-want exact12 && exactset 12 1 2 3
-want exact13 && exactset 13 1 2 3
-want exact14 && exactset 14 1 2 3
-want exact15 && exactset 15 1 2 3 4
-want exact16 && exactset 16 1 2 3 4
-want exact17 && exactset 17 1 2 3 4
-want exact18 && exactset 18 1 2 3 4
-want exact19 && exactset 19 2 3 4 5
-want exact20 && exactset 20 2 3 4 5
-if want s2_20_19; then echo "== Result 10: S_2(20;19) <= 4181 (per-window certificates at n = 4181)"; perwin S2_20_19 19 1 4181; fi
-if want s2_21_20; then echo "== Result 10: S_2(21;20) <= 4861 (per-window certificates at n = 4861)"; perwin S2_21_20 20 1 4861; fi
+# expected counts (Table 4 of the preprint; also hard-coded in independent_review_gpt/gpt_r9_check.py)
+want exact12 && exactset 12 1:90 2:26 3:0
+want exact13 && exactset 13 1:147 2:31 3:0
+want exact14 && exactset 14 1:237 2:37 3:0
+want exact15 && exactset 15 1:419 2:47 3:0 4:0
+want exact16 && exactset 16 1:748 2:65 3:1 4:0
+want exact17 && exactset 17 1:1345 2:97 3:3 4:0
+want exact18 && exactset 18 1:2461 2:163 3:4 4:0
+want exact19 && exactset 19 2:274 3:8 4:0 5:0
+want exact20 && exactset 20 2:521 3:15 4:0 5:0
+if want s2_20_19; then echo "== Result 10: S_2(20;19) <= 4181 (per-window certificates at n = 4181)"; perwin S2_20_19 19 1 4181 3558; fi
+if want s2_21_20; then echo "== Result 10: S_2(21;20) <= 4861 (per-window certificates at n = 4861)"; perwin S2_21_20 20 1 4861 4426; fi
+if [ "$PERWIN_TOTAL" -gt 0 ]; then echo "  per-window certificates checked in this run: $PERWIN_TOTAL"; fi
 
 if want exactenum || want exactenumbig; then
   command -v gcc > /dev/null || fail "exactenum needs gcc"
@@ -315,7 +322,7 @@ if want lemmap; then
   echo "  PASS vertex of the three-block quadratic lies in [3/2, l-3/2] for all l >= 19"
   python3 -I "$L/asym_c0.py" > "$W/ac.out" 2>&1 || { cat "$W/ac.out" >&2; fail "asym_c0.py"; }
   grep -q 'equality only at l = 22 (e_P = 5); e_P >= 4 throughout. PASS' "$W/ac.out" || { cat "$W/ac.out" >&2; fail "Theorem 29 constant 16 - 11 sqrt2"; }
-  echo "  PASS Theorem 29 upper constant 16 - 11 sqrt2: l >= 55 symbolically, 19 <= l <= 54 exactly (tight at l = 22)"
+  echo "  PASS Theorem 29 upper constant 16 - 11 sqrt2: l >= 55 symbolically, 19 <= l <= 54 exactly (e_P(l) - a* l attains it at l = 22)"
   keep "$W/au.out" lemmap_asym_upper.log; keep "$W/al.out" lemmap_asym_lower.log; keep "$W/av.out" lemmap_asym_vertex.log; keep "$W/ac.out" lemmap_asym_c0.log
 fi
 

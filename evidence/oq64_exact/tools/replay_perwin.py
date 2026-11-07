@@ -62,6 +62,7 @@ expected = sorted(set(surv) | j1)
 lf = os.path.join(setdir, f"perwin_l{l}_e{e}.txt")
 if not expected and not os.path.exists(lf):
     print(f"  PASS l={l} e={e} n={n}: no survivors and no one-minority windows to treat (DONE line checked)")
+    print(f"PERWIN_SUMMARY l={l} e={e} N={n} windows=0 pass=0 fail=0")
     sys.exit(0)
 listed = [x for x in open(lf).read().split("\n") if x]
 if listed != expected:
@@ -107,13 +108,18 @@ def check(w):
 
 ex = ThreadPoolExecutor(max_workers=jobs)
 futs = [ex.submit(check, w) for w in expected]
+passed = 0
 for i, fu in enumerate(futs, 1):
     res = fu.result()
     if res:
         ex.shutdown(wait=True, cancel_futures=True)
         fail(res)
+    passed += 1
     if i % 500 == 0:
         print(f"  ... {i}/{len(expected)}", flush=True)
 ex.shutdown(wait=True)
 print(f"  PASS l={l} e={e} n={n}: {len(surv)} survivors + {len(j1)} one-minority windows = {len(expected)} "
       f"certificates (mkcnfw bad=0, lrat-check, cake_lpr)")
+if passed != len(expected):
+    fail(f"internal error: {passed} certificates checked, {len(expected)} expected")
+print(f"PERWIN_SUMMARY l={l} e={e} N={n} windows={len(expected)} pass={passed} fail=0")

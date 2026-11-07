@@ -1,4 +1,6 @@
-# Lemma P (prefix dominance for T1-fill) — Claude, 2026-11-05, first-party DRAFT, not reviewed
+# Lemma P (prefix dominance for T1-fill) — Claude, 2026-11-05, first-party working note
+
+The reviewed version is Lemma 28 and Theorem 29 of the preprint v1.3 (§8.2); the second party (GPT) reviewed them in November 2026 (see the CHANGELOG). This note is kept as the working record and is not the authoritative text.
 
 **Status.** This is a proof candidate written by Claude. No second party has checked it. Each construction in the proof has been checked by machine:
 
@@ -139,7 +141,7 @@ For every ℓ ≥ 19,
 
 The upper bound needs Lemma P. The lower bound does not, and it improves the −4 of Corollary 20.
 
-The preprint (Theorem 29) sharpens the upper constant to 16 − 11√2 ≈ 0.444, which is attained at ℓ = 22: substitute e = a*ℓ + (16 − 11√2) − 1 and ℓ = 55 + u, and check the finite range 19 ≤ ℓ ≤ 54 exactly (the second party, GPT, found this constant; `asym_c0.py` and the second party's `../independent_review_gpt/r9_math_audit.py` check it). The derivation below is the earlier form with constant 1.
+The preprint (Theorem 29) sharpens the upper constant to 16 − 11√2 ≈ 0.444, which is optimal for this estimate (the difference e_P(ℓ) − a*ℓ equals it at ℓ = 22, where e_P = 5; this says nothing about whether K(22) attains the bound): substitute e = a*ℓ + (16 − 11√2) − 1 and ℓ = 55 + u, and check the finite range 19 ≤ ℓ ≤ 54 exactly (the second party, GPT, found this constant; `asym_c0.py` and the second party's `../independent_review_gpt/r9_math_audit.py` check it). The derivation below is the earlier form with constant 1.
 
 - **Upper bound** (`asym_upper.py`, sympy exact with √2 kept symbolic).
   - Write G_P = −A j² + β j + γ with A = e+ℓ−1. Its real maximum over j is negative iff Disc := β² + 4Aγ < 0.
