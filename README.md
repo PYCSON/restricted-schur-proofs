@@ -226,8 +226,8 @@ See `evidence/oq64_exact/README.md`, which covers the method, the directory layo
 The mathematics, programs, computations and text were produced with extensive use of AI systems: Claude
 (Anthropic), and GPT and Codex (OpenAI). The author selected the problems, organised and directed the work, set
 the verification requirements and decided what to release. The author has **not** personally checked every proof.
-Correctness rests on the machine-checkable certificates and formal proofs in this repository and, for Result 8,
-on written proofs whose finite and symbolic steps are checked by the included exact programs (Results 8, 11 and 12); anyone can replay them. AI systems are not authors. See Appendix A of the preprint for who did what.
+Correctness rests on the machine-checkable certificates and formal proofs in this repository and, for Results 8, 11 and 12,
+on written proofs whose finite and symbolic steps are checked by the included exact programs; anyone can replay them. AI systems are not authors. See Appendix A of the preprint for who did what.
 
 ## Licence
 
