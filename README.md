@@ -3,7 +3,7 @@
 **Author:** Puyi Sun (ORCID [0009-0004-1644-5300](https://orcid.org/0009-0004-1644-5300))<br>
 **Version:** 1.3, 8 November 2026 (v1.2: 3 November 2026; v1.1: 1 November 2026; v1.0: 28 October 2026)<br>
 **Status:** computer-assisted proof candidate. **Not peer reviewed.**<br>
-**DOI (Zenodo):** v1.0.1: [10.5281/zenodo.23752136](https://doi.org/10.5281/zenodo.23752136); v1.1.0: [10.5281/zenodo.23853953](https://doi.org/10.5281/zenodo.23853953); v1.2.0: [10.5281/zenodo.23938150](https://doi.org/10.5281/zenodo.23938150); v1.3 receives its own DOI from Zenodo when it is released
+**DOI (Zenodo):** v1.0.1: [10.5281/zenodo.23752136](https://doi.org/10.5281/zenodo.23752136); v1.1.0: [10.5281/zenodo.23853953](https://doi.org/10.5281/zenodo.23853953); v1.2.0: [10.5281/zenodo.23938150](https://doi.org/10.5281/zenodo.23938150); v1.3.0: [10.5281/zenodo.24050500](https://doi.org/10.5281/zenodo.24050500)
 
 Preprint: [`paper/restricted-schur-v1.3.pdf`](paper/restricted-schur-v1.3.pdf) (source: `paper/restricted-schur-v1.3.tex`). The v1.0, v1.1 and v1.2 preprints are kept unchanged in `paper/`. Changes: [`CHANGELOG.md`](CHANGELOG.md).
 
@@ -235,4 +235,4 @@ Text and data: CC BY 4.0. Code: MIT. See [`LICENSE`](LICENSE).
 
 ## Citation
 
-See [`CITATION.cff`](CITATION.cff). Archived on Zenodo: [10.5281/zenodo.23752136](https://doi.org/10.5281/zenodo.23752136) (release v1.0.1; content identical to v1.0.0 of 28 October 2026 apart from `CITATION.cff`). Release v1.1.0 is archived as [10.5281/zenodo.23853953](https://doi.org/10.5281/zenodo.23853953). Release v1.2.0 is archived as [10.5281/zenodo.23938150](https://doi.org/10.5281/zenodo.23938150). Release v1.3.0 will receive a separate DOI when Zenodo archives it; no v1.3 DOI is claimed before that deposit. Earlier versions remain unchanged.
+See [`CITATION.cff`](CITATION.cff). Archived on Zenodo: [10.5281/zenodo.23752136](https://doi.org/10.5281/zenodo.23752136) (release v1.0.1; content identical to v1.0.0 of 28 October 2026 apart from `CITATION.cff`). Release v1.1.0 is archived as [10.5281/zenodo.23853953](https://doi.org/10.5281/zenodo.23853953). Release v1.2.0 is archived as [10.5281/zenodo.23938150](https://doi.org/10.5281/zenodo.23938150). Release v1.3.0 is archived as [10.5281/zenodo.24050500](https://doi.org/10.5281/zenodo.24050500). Earlier versions remain unchanged.
