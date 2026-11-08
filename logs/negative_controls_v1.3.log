@@ -1,4 +1,4 @@
-# tests/negative_controls_exact.sh then tests/negative_controls.sh, run 2026-11-07 12:27-12:28 +08 from the same fresh clone (ed5dbfa5)
+# tests/negative_controls_exact.sh then tests/negative_controls.sh, run 2026-11-08 08:03-08:05 +08 from the same fresh clone (3c83ea7c)
 == tests/negative_controls_exact.sh
 positive control (ok): the unmodified copy passes
 rejected (ok): truncated LRAT proof -- FAIL: RBBBBBBBBBBBBBBBBBBBBBBB: lrat-check did not verify (exit 1)
@@ -15,7 +15,8 @@ rejected (ok): extra proof file -- FAIL: proof directory entries do not match th
 rejected (ok): a j=1 window missing at e=2 -- FAIL: per-window list differs from survivors + j=1 windows (25 listed, 26 expected)
 rejected (ok): lrat-check prints success but exits 1 -- FAIL: RBBBBBBBBBBBBBBBBBBBBBBB: lrat-check did not verify (exit 1)
 rejected (ok): cake_lpr success text not at line start -- FAIL: RBBBBBBBBBBBBBBBBBBBBBBB: cake_lpr did not verify (exit 0)
-rejected (ok): second implementation vs a fake C objective
+rejected (ok): verify_all.sh expecting 91 certificates for l=12, e=1 (there are 90) -- FAIL: per-window replay l12 e=1: summary is not 'l=12 e=1 N=1160 windows=91 pass=91 fail=0'
+rejected (ok): second implementation vs a fake C objective -- objective mismatches=14875
 rejected (ok): Theorem Q' upper bound with the constant 1 - 7/10 at l0 = 19
 NEGATIVE CONTROLS (v1.3) PASSED
 EXIT_CODE=0
@@ -44,4 +45,4 @@ rejected (ok): tampered T1-fill parameter
 rejected (ok): verify_all asym rejects Python optimization
 ALL NEGATIVE CONTROLS REJECTED
 EXIT_CODE=0
-END2 2026-11-07 12:28:58 +0800
+END2 2026-11-08 08:05:42 +0800
